@@ -1,4 +1,4 @@
-// Wayfind's page: a search box over the crawled index, and the same search for the assistant.
+// Rayo's page: a search box over the crawled index, and the same search for the assistant.
 // The page's own form, the assistant's website_* tools (site-actions.js) and other sites'
 // agents (bridge/bridge-actions.js) all call SearchPage, so they share one set of rules.
 import { prepare, search } from "./lib/search.mjs";
@@ -101,7 +101,7 @@ export class App {
     const act = document.querySelector("#must-act");
     const list = document.querySelector("#results");
     const status = document.querySelector("#search-status");
-    document.querySelector("#network-url").textContent = new URL("wayfind", new URL("./", import.meta.url)).href;
+    document.querySelector("#network-url").textContent = new URL("rayo", new URL("./", import.meta.url)).href;
     try {
       const info = await App.page.info();
       document.querySelector("#index-stats").textContent =

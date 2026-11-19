@@ -1,8 +1,8 @@
 // HTTP fetcher for public agent artifacts. Sends no credentials, caps size and time.
 
 const MAX_BYTES = 2_000_000;
-export const CRAWLER_ORIGIN = "https://wayfind.example";
-export const USER_AGENT = "WayfindCrawler/0.1 (+open agentic web search)";
+export const CRAWLER_ORIGIN = "https://rayo.example";
+export const USER_AGENT = "RayoCrawler/0.1 (+open agentic web search)";
 
 /** Fetch a URL and report status, final URL, CORS header and body. Never throws. */
 export async function fetchResource(url, { timeoutMs = 15_000 } = {}) {

@@ -1,6 +1,6 @@
-// Checks that Wayfind's network, manifest, page actions and bridge work together, with the
+// Checks that Rayo's network, manifest, page actions and bridge work together, with the
 // real runtime and a scripted model. No LLM provider is called.
-// Adapted from the agentify-website test template: Wayfind has only reads, so the write,
+// Adapted from the agentify-website test template: Rayo has only reads, so the write,
 // irreversible and dialog tests do not apply.
 import assert from "node:assert/strict";
 import { readFile } from "node:fs/promises";
@@ -13,7 +13,7 @@ import { StubDocument } from "./stub_document.mjs";
 import { StubElement } from "./stub_element.mjs";
 import { ScriptedModel } from "./scripted_model.mjs";
 
-const NETWORK_NAME = "wayfind";
+const NETWORK_NAME = "rayo";
 const BASE = "http://localhost:8080";
 const CALL_BUDGET = 16000;
 

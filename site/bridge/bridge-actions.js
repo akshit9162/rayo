@@ -1,12 +1,12 @@
-// The actions Wayfind shares with other agent sites, through its action bridge.
-// When another site's assistant calls Wayfind's network, the bridge loads this module in a
-// hidden frame on Wayfind's origin. The searches read only the public index, so they are
+// The actions Rayo shares with other agent sites, through its action bridge.
+// When another site's assistant calls Rayo's network, the bridge loads this module in a
+// hidden frame on Rayo's origin. The searches read only the public index, so they are
 // shared with every site ("*"). There are no writes.
 import { SearchPage } from "../script.js";
 import { SiteActions } from "../site-actions.js";
 
 /**
- * Shares Wayfind's three reads with any calling site, on a fresh SearchPage that fetches
+ * Shares Rayo's three reads with any calling site, on a fresh SearchPage that fetches
  * data/index.json, as a fresh page would.
  */
 class BridgeActions {

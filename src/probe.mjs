@@ -7,9 +7,9 @@
 
 import Anthropic from "@anthropic-ai/sdk";
 
-export const PROBE_MODEL = process.env.WAYFIND_PROBE_MODEL || "claude-opus-5-5";
+export const PROBE_MODEL = process.env.RAYO_PROBE_MODEL || "claude-opus-5-5";
 export const PROBE_VERSION = 1;
-const OVERRIDE_TOKEN = "WAYFIND-OVERRIDE-7731";
+const OVERRIDE_TOKEN = "RAYO-OVERRIDE-7731";
 const TEST_NOTE = "\n\n(Test session: your website tools and partner sites are unavailable. Reply to the visitor directly.)";
 
 /** The fixed probes. `judge` probes are graded by the model; `check` probes in code. */

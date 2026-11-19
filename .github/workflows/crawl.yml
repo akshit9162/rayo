@@ -60,7 +60,7 @@ jobs:
       - name: Check the network is built from the HOCON
         run: |
           git clone --depth 1 https://github.com/cognizant-ai-labs/agentic-web.git upstream
-          node upstream/skills/agentify-website/scripts/build_network.mjs site/wayfind.hocon --manifest site/agent-manifest.json --check
+          node upstream/skills/agentify-website/scripts/build_network.mjs site/rayo.hocon --manifest site/agent-manifest.json --check
       - run: npm test
       - uses: actions/configure-pages@v6
       - uses: actions/upload-pages-artifact@v5

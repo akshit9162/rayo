@@ -1,10 +1,10 @@
 {
-  "brand": "Wayfind",
+  "brand": "Rayo",
   "networks": [
     {
-      "name": "wayfind",
-      "front_man": "wayfind_search",
-      "hocon": "./wayfind.network.json",
+      "name": "rayo",
+      "front_man": "rayo_search",
+      "hocon": "./rayo.network.json",
       "description": "Find open agentic websites for a job, ranked on evidence: spec checks, integrity, safety scans, behaviour probes and links from other sites.",
       "tags": [
         "agentified-website",
@@ -33,8 +33,8 @@
   },
   "agent_mcp": {
     "protocol": "nsdeploy-agent-mcp/v1",
-    "network": "wayfind",
-    "front_man": "wayfind_search",
+    "network": "rayo",
+    "front_man": "rayo_search",
     "available": false,
     "reason": "This is a static bundle; a public MCP facade requires an application host."
   },
@@ -45,13 +45,13 @@
     "protocol": "nsdeploy-link/v1",
     "exports": [
       {
-        "network": "wayfind",
-        "front_man": "wayfind_search",
+        "network": "rayo",
+        "front_man": "rayo_search",
         "aliases": [
-          "wayfind",
-          "wayfind_search"
+          "rayo",
+          "rayo_search"
         ],
-        "url": "wayfind"
+        "url": "rayo"
       }
     ],
     "imports": [],

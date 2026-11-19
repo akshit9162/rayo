@@ -2,13 +2,13 @@
   "protocol": "nsdeploy-link/v1",
   "exports": [
     {
-      "network": "wayfind",
-      "front_man": "wayfind_search",
+      "network": "rayo",
+      "front_man": "rayo_search",
       "aliases": [
-        "wayfind",
-        "wayfind_search"
+        "rayo",
+        "rayo_search"
       ],
-      "url": "wayfind"
+      "url": "rayo"
     }
   ],
   "imports": [],

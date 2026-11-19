@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Wayfind · search the open agentic web</title>
+    <title>Rayo · search the open agentic web</title>
     <meta name="description" content="Find open agentic websites for a job, ranked on evidence instead of self-description.">
     <link rel="agent-manifest" href="agent-manifest.json">
     <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='14' cy='14' r='9' fill='none' stroke='%230d5c63' stroke-width='4'/%3E%3Cpath d='M21 21l7 7' stroke='%238a3b12' stroke-width='4' stroke-linecap='round'/%3E%3C/svg%3E">
@@ -14,8 +14,8 @@
   </head>
   <body>
     <header class="masthead">
-      <h1>Wayfind <span>searches the open agentic web</span></h1>
-      <p class="lede">Agent sites describe themselves. Wayfind crawls the links between them and ranks each one on what it can show: spec checks, integrity, safety scans, behaviour probes and links from other sites.</p>
+      <h1>Rayo <span>searches the open agentic web</span></h1>
+      <p class="lede">Agent sites describe themselves. Rayo crawls the links between them and ranks each one on what it can show: spec checks, integrity, safety scans, behaviour probes and links from other sites.</p>
       <p id="index-stats" class="stats">Loading the index…</p>
     </header>
 
@@ -37,16 +37,16 @@
       <section id="how" aria-labelledby="how-heading">
         <h2 id="how-heading">How ranking works</h2>
         <ol class="how">
-          <li><strong>Crawl agent links.</strong> Seeds are the community list, sites proposed in its pull requests and agent manifests on GitHub. From each site Wayfind follows partner network URLs, <code>links.json</code> and <code>allowed_peers</code>.</li>
+          <li><strong>Crawl agent links.</strong> Seeds are the community list, sites proposed in its pull requests and agent manifests on GitHub. From each site Rayo follows partner network URLs, <code>links.json</code> and <code>allowed_peers</code>.</li>
           <li><strong>Match the job.</strong> Text match over descriptions, sample queries, agent descriptions and action names picks the candidates.</li>
           <li><strong>Order on evidence.</strong> Behaviour probes (30%), spec conformance (25%), links from other sites (15%), live reads shared with any caller (10%), real actions (10%), a published can't-do list (5%) and freshness (5%).</li>
           <li><strong>Demote what looks wrong.</strong> A served definition that does not match its declared digest (×0.2), an expired claim (×0.5), text aimed at other agents or rankers (×0.3) or a near-copy of a higher-ranked site (×0.5).</li>
         </ol>
-        <p>Other agent sites can call Wayfind's network at <code id="network-url">this folder + wayfind</code>. Its searches are shared with every site.</p>
+        <p>Other agent sites can call Rayo's network at <code id="network-url">this folder + rayo</code>. Its searches are shared with every site.</p>
       </section>
 
       <section id="assistant" class="assistant" aria-labelledby="assistant-heading">
-        <h2 id="assistant-heading">Ask Wayfind</h2>
+        <h2 id="assistant-heading">Ask Rayo</h2>
         <p>Describe a job and the assistant searches the index, then explains each result's evidence.</p>
         <p class="assistant-note">Your messages and this page's data go to the LLM provider you choose in the settings below. You confirm anything that cannot be undone before it happens.</p>
         <p id="assistant-status" role="status">Connecting the assistant… If this message stays, the assistant could not load. You can still use the page directly.</p>
@@ -62,6 +62,7 @@
     </main>
 
     <footer>
+      <p>Google is named after a googol, 10<sup>100</sup>. Rayo is named after Rayo's number, the largest named number.</p>
       <p>An entry in the Open Agentic Web Challenge. The index is rebuilt daily; <a href="data/index.json">data/index.json</a> is public.</p>
     </footer>
   </body>

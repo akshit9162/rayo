@@ -193,7 +193,7 @@ export class AssistantMount {
    * :return: Details by label, {refusal: reason}, or {} when the action has none.
    */
   static reviewDetails(action, args) {
-    // Wayfind has no irreversible actions, so no dialog needs details.
+    // Rayo has no irreversible actions, so no dialog needs details.
     return {};
   }
 

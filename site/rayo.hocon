@@ -1,7 +1,7 @@
-# Wayfind assistant. This file is the source of truth for wayfind.network.json.
+# Rayo assistant. This file is the source of truth for rayo.network.json.
 #
 # Build and check from the repo root:
-#   node ../upstream/skills/agentify-website/scripts/build_network.mjs site/wayfind.hocon --manifest site/agent-manifest.json
+#   node ../upstream/skills/agentify-website/scripts/build_network.mjs site/rayo.hocon --manifest site/agent-manifest.json
 {
     "metadata": {
         "description": "Find open agentic websites for a job, ranked on evidence: spec checks, integrity, safety scans, behaviour probes and links from other sites.",
@@ -26,7 +26,7 @@
 
     "commondefs": {
         "replacement_strings": {
-            "site_name": "Wayfind",
+            "site_name": "Rayo",
 
             "grounding_rules": """
 Facts come only from website_* tool results and from this conversation.
@@ -63,7 +63,7 @@ Do not ask the visitor to confirm an irreversible action, in chat or with a conf
 
     "tools": [
         {
-            "name": "wayfind_search",
+            "name": "rayo_search",
             "function": {
                 "description": "Finds open agentic websites for a job and explains why each one ranks where it does: spec conformance, integrity, safety, behaviour probes, links from other sites and whether it can act.",
                 "parameters": {

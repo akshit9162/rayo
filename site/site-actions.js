@@ -1,4 +1,4 @@
-// Registers Wayfind's operations with the agent runtime. agent-manifest.json loads this
+// Registers Rayo's operations with the agent runtime. agent-manifest.json loads this
 // module through "actions.module". Only the names in "actions.agentTools" become model
 // tools, called website_<name>. Every action only reads the public index.
 import { App } from "./script.js";
@@ -54,7 +54,7 @@ export class SiteActions {
       },
       {
         name: "get_index_info",
-        description: "Read when the index was built, how many sites, networks and links it holds, how many were probed, and the ranking weights and penalties. Changes nothing. Call it when the visitor asks how Wayfind works, how fresh it is, or how ranking is decided.",
+        description: "Read when the index was built, how many sites, networks and links it holds, how many were probed, and the ranking weights and penalties. Changes nothing. Call it when the visitor asks how Rayo works, how fresh it is, or how ranking is decided.",
         effect: "read",
         inputSchema: { type: "object", properties: {}, additionalProperties: false },
         execute: () => page.info(),

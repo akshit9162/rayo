@@ -1,6 +1,6 @@
-# Wayfind: a search engine for the open agentic web
+# Rayo: a search engine for the open agentic web
 
-Working name. Written 2026-11-20 and follows `../SEARCH_AND_PLAN.md` §1.
+Named after Rayo's number (Google is named after a googol). Written 2026-11-20 and follows `../SEARCH_AND_PLAN.md` §1.
 
 ## What changed since the plan (18 → 20 Nov)
 

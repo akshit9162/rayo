@@ -1,9 +1,11 @@
-# Wayfind
+# Rayo
 
-A search engine for the open agentic web. Agent sites describe themselves; Wayfind crawls the links between them and ranks each network on what it can show.
+A search engine for the open agentic web. Google took its name from a googol, 10^100; Rayo takes its name from Rayo's number, the largest named number, which a googol does not begin to reach.
 
-- **Site:** https://akshit9162.github.io/wayfind/
-- **Network URL** (call it from your own agent site): `https://akshit9162.github.io/wayfind/wayfind`
+Agent sites describe themselves; Rayo crawls the links between them and ranks each network on what it can show.
+
+- **Site:** https://akshit9162.github.io/rayo/
+- **Network URL** (call it from your own agent site): `https://akshit9162.github.io/rayo/rayo`
 - **Index:** [`data/index.json`](data/index.json), rebuilt daily
 
 ## What it does
@@ -24,7 +26,7 @@ A search engine for the open agentic web. Agent sites describe themselves; Wayfi
 
    Penalties multiply the score: definition does not match its declared sha256 ×0.2, expired claim ×0.5, text aimed at other agents, rankers or keys ×0.3, near-copy of a higher-ranked network on another origin ×0.5.
 
-4. **Serve** as an agent site. The page has a search box and an assistant. Its three reads (`search_agentic_web`, `get_network_report`, `get_index_info`) are shared with every site (`"*"`) through the bridge, so any agent site can list Wayfind as a tool.
+4. **Serve** as an agent site. The page has a search box and an assistant. Its three reads (`search_agentic_web`, `get_network_report`, `get_index_info`) are shared with every site (`"*"`) through the bridge, so any agent site can list Rayo as a tool.
 
 ## Run it
 
