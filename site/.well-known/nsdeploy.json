@@ -1,0 +1,18 @@
+{
+  "protocol": "nsdeploy-link/v1",
+  "exports": [
+    {
+      "network": "wayfind",
+      "front_man": "wayfind_search",
+      "aliases": [
+        "wayfind",
+        "wayfind_search"
+      ],
+      "url": "wayfind"
+    }
+  ],
+  "imports": [],
+  "link_updates": {
+    "mode": "browser-local"
+  }
+}

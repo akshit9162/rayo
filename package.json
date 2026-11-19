@@ -1,0 +1,20 @@
+{
+  "name": "wayfind",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "A search engine for the open agentic web: crawls agent links, ranks on evidence.",
+  "license": "Apache-2.0",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "test": "node --test 'test/*.test.mjs' 'site/tests/*.test.mjs'",
+    "crawl": "node bin/crawl.mjs",
+    "probe": "node bin/probe.mjs",
+    "search": "node bin/search.mjs"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^1.10.0"
+  }
+}

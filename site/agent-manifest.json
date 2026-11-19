@@ -1,0 +1,80 @@
+{
+  "brand": "Wayfind",
+  "networks": [
+    {
+      "name": "wayfind",
+      "front_man": "wayfind_search",
+      "hocon": "./wayfind.network.json",
+      "description": "Find open agentic websites for a job, ranked on evidence: spec checks, integrity, safety scans, behaviour probes and links from other sites.",
+      "tags": [
+        "agentified-website",
+        "search",
+        "directory"
+      ],
+      "sample_queries": [
+        "Is there an agent site that can explain a bank letter in plain words?",
+        "Find me a site whose agent can actually place an order, not just talk about it.",
+        "Why does Agent Customs rank where it does? Is it safe to link to?",
+        "How fresh is your index and how do you rank sites?",
+        "Book me a table at a restaurant in Hyderabad tonight."
+      ]
+    }
+  ],
+  "llm_router": {
+    "base_url": "https://api.otari.ai/api/v1",
+    "mock": false,
+    "byok_router": "https://api.otari.ai/api/v1"
+  },
+  "allowed_peers": [],
+  "peer_policy": {
+    "mode": "closed",
+    "deny_origins": [],
+    "note": "Calls no partner sites. Its searches are shared with every site through the bridge."
+  },
+  "agent_mcp": {
+    "protocol": "nsdeploy-agent-mcp/v1",
+    "network": "wayfind",
+    "front_man": "wayfind_search",
+    "available": false,
+    "reason": "This is a static bundle; a public MCP facade requires an application host."
+  },
+  "theme": {
+    "primary": "#0d5c63"
+  },
+  "linking": {
+    "protocol": "nsdeploy-link/v1",
+    "exports": [
+      {
+        "network": "wayfind",
+        "front_man": "wayfind_search",
+        "aliases": [
+          "wayfind",
+          "wayfind_search"
+        ],
+        "url": "wayfind"
+      }
+    ],
+    "imports": [],
+    "link_updates": {
+      "mode": "browser-local"
+    }
+  },
+  "deployment": {
+    "mode": "static",
+    "self_contained_runtime": true,
+    "browser_mock": false,
+    "direct_byok": true,
+    "direct_mcp_requires_cors": true,
+    "public_mcp_facade": false
+  },
+  "actions": {
+    "version": 1,
+    "module": "./site-actions.js",
+    "bridge": "./bridge/action-bridge.html",
+    "agentTools": [
+      "search_agentic_web",
+      "get_network_report",
+      "get_index_info"
+    ]
+  }
+}
