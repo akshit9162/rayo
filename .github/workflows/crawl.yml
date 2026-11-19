@@ -62,11 +62,18 @@ jobs:
           git clone --depth 1 https://github.com/cognizant-ai-labs/agentic-web.git upstream
           node upstream/skills/agentify-website/scripts/build_network.mjs site/rayo.hocon --manifest site/agent-manifest.json --check
       - run: npm test
+      - name: Build the page (Next.js export around the agent bundle in site/)
+        env:
+          PAGES_BASE_PATH: /rayo
+        run: |
+          npm ci --prefix web
+          npm run build --prefix web
+          npm test --prefix web
       - uses: actions/configure-pages@v6
       - uses: actions/upload-pages-artifact@v5
         with:
-          path: site
-          # site/.well-known holds the discovery files.
+          path: web/out
+          # web/out/.well-known holds the discovery files.
           include-hidden-files: true
 
   # Deploying in its own job, as GitHub's starter workflow does, lets the artifact settle first.

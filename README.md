@@ -26,7 +26,8 @@ Agent sites describe themselves; Rayo crawls the links between them and ranks ea
 
    Penalties multiply the score: definition does not match its declared sha256 ×0.2, expired claim ×0.5, text aimed at other agents, rankers or keys ×0.3, near-copy of a higher-ranked network on another origin ×0.5.
 
-4. **Serve** as an agent site. The page has a search box and an assistant. Its three reads (`search_agentic_web`, `get_network_report`, `get_index_info`) are shared with every site (`"*"`) through the bridge, so any agent site can list Rayo as a tool.
+4. **Hand off.** "Hand it to the top agent" gives the job to the best match's agent instead of opening its page. The page binds the network's `chosen_agent` slot to that site's network URL and sends the job to Rayo's assistant; the runtime asks the visitor on a card before contacting the site, and a booking or order opens in the site's own window.
+5. **Serve** as an agent site. The page has a search box and an assistant. Its three reads (`search_agentic_web`, `get_network_report`, `get_index_info`) are shared with every site (`"*"`) through the bridge, so any agent site can list Rayo as a tool.
 
 ## Run it
 
@@ -41,7 +42,7 @@ npm test
 
 Serve `site/` with any static host. GitHub Pages sends `Access-Control-Allow-Origin: *`, which the spec needs for the public files.
 
-The daily workflow (`.github/workflows/crawl.yml`) crawls, probes, tests, commits the index and deploys `site/` to Pages. Repository secrets: `ANTHROPIC_API_KEY` for probes; `CRAWL_GH_TOKEN` (a fine-grained token with public read access) if `GITHUB_TOKEN` cannot use code search.
+The daily workflow (`.github/workflows/crawl.yml`) crawls, probes, tests, commits the index and builds `web/` and deploys it to Pages. Repository secrets: `ANTHROPIC_API_KEY` for probes; `CRAWL_GH_TOKEN` (a fine-grained token with public read access) if `GITHUB_TOKEN` cannot use code search.
 
 ## Limits
 
@@ -56,6 +57,7 @@ The daily workflow (`.github/workflows/crawl.yml`) crawls, probes, tests, commit
 |---|---|
 | `src/` | Crawler, parsers, safety scan, ranker, probes, search |
 | `bin/` | `crawl`, `probe`, `build-site`, `search` |
-| `site/` | The published agent site, built with the `agentify-website` skill; `site/runtime/` is its unchanged runtime copy |
+| `web/` | The published page: a Next.js static export around the agent bundle in `site/` (`bin/sync-web.mjs` copies it in) |
+| `site/` | The agent bundle, built with the `agentify-website` skill; `site/runtime/` is its unchanged runtime copy |
 | `data/` | `crawl.json` (full crawl), `probes.json` (results by definition digest), `index.json` (what the site serves) |
 | `test/`, `site/tests/` | Node tests, no network or model calls |

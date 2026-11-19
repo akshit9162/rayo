@@ -85,10 +85,14 @@ test("network is valid, has no demo mode and keeps its grounding rules", async (
     "Offer only what your tools can do.",
     "Never ask for passwords or payment card details.",
     "Then give what the page offers instead",
-    "This site cannot contact, run or log in to the sites it finds",
+    "It contacts a site only through chosen_agent.",
+    "Never call chosen_agent otherwise.",
     "If a result failed integrity, safety or original, say so first and do not recommend it.",
   ]) assert.ok(instructions.includes(line), `instructions lost: ${line}`);
   assert.equal(loaded.manifest.peer_policy.mode, "closed");
+  // The handoff button's slot: the only partner, bound by the page before each handoff.
+  assert.deepEqual(Object.keys(loaded.config.link_slots), ["chosen_agent"]);
+  assert.equal(loaded.network.classifyTool("chosen_agent").kind, "link");
 });
 
 test("agentTools are page actions and shared bridge actions with no TODO left", async () => {
