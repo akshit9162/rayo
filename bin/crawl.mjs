@@ -21,8 +21,12 @@ if (!args.includes("--no-github")) {
     log(`github seeds skipped: ${error.message.split("\n")[0]}`);
   }
 }
+// Sites found before stay seeds, so a seed source that fails (such as code search without a
+// token) cannot shrink the index. A site that is gone drops out as a miss.
+const previous = readJson("crawl.json", null);
+for (const site of previous?.sites ?? []) seeds.push({ base: site.base, source: site.sources[0] ?? "previous" });
 log(`total seeds: ${seeds.length}`);
 
-const result = await crawl({ seeds, fetcher: fetchResource, previous: readJson("crawl.json", null), maxSites: max });
+const result = await crawl({ seeds, fetcher: fetchResource, previous, maxSites: max });
 writeJson("crawl.json", { crawledAt: new Date().toISOString(), ...result });
 log(`index: ${JSON.stringify(writeIndex().stats)}`);
