@@ -1,8 +1,8 @@
 :root {
-  --bg: #faf8f4;
+  --bg: #f4f7f7;
   --fg: #1c1b19;
   --muted: #5d5a53;
-  --line: #ddd8cc;
+  --line: #cfdadb;
   --card: #ffffff;
   --primary: #0d5c63;
   --accent: #8a3b12;
@@ -23,11 +23,11 @@ body {
   font: 17px/1.55 Charter, "Iowan Old Style", Georgia, serif;
 }
 
-h1, h2, h3, label, button, .mark, .stats, .meta, summary { font-family: system-ui, -apple-system, "Segoe UI", sans-serif; }
+h1, h2, h3, label, button, .stats, .meta, summary { font-family: system-ui, -apple-system, "Segoe UI", sans-serif; }
 
 .masthead { border-bottom: 2px solid var(--fg); padding-bottom: 20px; }
-.mark { margin: 0; font-weight: 800; letter-spacing: 0.14em; text-transform: uppercase; font-size: 13px; color: var(--accent); }
-h1 { margin: 6px 0 10px; font-size: clamp(30px, 6vw, 48px); line-height: 1.05; letter-spacing: -0.02em; }
+h1 span { display: block; font-weight: 500; color: var(--primary); }
+h1 { margin: 0 0 10px; font-size: clamp(30px, 6vw, 48px); line-height: 1.05; letter-spacing: -0.02em; }
 .lede { max-width: 62ch; margin: 0; color: var(--muted); }
 .stats { margin: 14px 0 0; font-size: 14px; color: var(--muted); }
 
