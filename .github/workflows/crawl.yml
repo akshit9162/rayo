@@ -44,13 +44,10 @@ jobs:
           git add data site/data
           git diff --cached --quiet || git commit -m "Crawl $(date -u +%F)" && git push
 
-  deploy:
+  build:
     needs: [crawl]
     if: always() && (needs.crawl.result == 'success' || needs.crawl.result == 'skipped')
     runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v7
         with:
@@ -71,5 +68,15 @@ jobs:
           path: site
           # site/.well-known holds the discovery files.
           include-hidden-files: true
+
+  # Deploying in its own job, as GitHub's starter workflow does, lets the artifact settle first.
+  deploy:
+    needs: [build]
+    if: always() && needs.build.result == 'success'
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
       - id: deployment
         uses: actions/deploy-pages@v5
