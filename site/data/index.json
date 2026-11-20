@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-19T19:37:35.998Z",
+ "generatedAt": "2026-11-20T01:07:06.964Z",
  "weights": {
   "probes": 0.3,
   "conformance": 0.25,
@@ -16,13 +16,250 @@
   "copy": 0.5
  },
  "stats": {
-  "sites": 40,
-  "networks": 46,
-  "edges": 24,
-  "misses": 69,
+  "sites": 42,
+  "networks": 48,
+  "edges": 26,
+  "misses": 12,
   "probed": 0
  },
  "networks": [
+  {
+   "url": "https://akshit9162.github.io/rayo/rayo",
+   "name": "rayo",
+   "site": "https://akshit9162.github.io/rayo/",
+   "brand": "Rayo",
+   "description": "Find open agentic websites for a job, ranked on evidence: spec checks, integrity, safety scans, behaviour probes and links from other sites.",
+   "sampleQueries": [
+    "Is there an agent site that can explain a bank letter in plain words?",
+    "Find me a site whose agent can actually place an order, not just talk about it.",
+    "Why does Agent Customs rank where it does? Is it safe to link to?",
+    "How fresh is your index and how do you rank sites?",
+    "Book me a table at a restaurant in Hyderabad tonight."
+   ],
+   "tags": [
+    "agentified-website",
+    "search",
+    "directory"
+   ],
+   "agents": [
+    {
+     "name": "rayo_search",
+     "description": "Finds open agentic websites for a job and explains why each one ranks where it does: spec conformance, integrity, safety, behaviour probes, links from other sites and whether it can act."
+    }
+   ],
+   "cannotDo": [
+    "If a result does not contain a fact, say you do not know.",
+    "This site cannot log in to sites, vouch for a business, or add a site on request.",
+    "When the visitor asks for something this site cannot do, say so plainly.",
+    "The partner cannot see this chat."
+   ],
+   "siteActions": [
+    "search_agentic_web",
+    "get_network_report",
+    "get_index_info"
+   ],
+   "sharedActions": [
+    {
+     "name": "search_agentic_web",
+     "effect": "read"
+    },
+    {
+     "name": "get_network_report",
+     "effect": "read"
+    },
+    {
+     "name": "get_index_info",
+     "effect": "read"
+    }
+   ],
+   "digest": "8e21b6e95ce7ee33b4e102fbf06e1f97bfbb3c68ff2437f2f55ae9197c319cef",
+   "checks": [
+    {
+     "id": "manifest",
+     "pass": true,
+     "detail": "manifest has networks, front_man, hocon and llm_router"
+    },
+    {
+     "id": "definition",
+     "pass": true,
+     "detail": "1 agents, front agent defined"
+    },
+    {
+     "id": "cors",
+     "pass": true,
+     "detail": "manifest *, definition *"
+    },
+    {
+     "id": "integrity",
+     "pass": null,
+     "detail": "no declared digest"
+    },
+    {
+     "id": "safety",
+     "pass": true,
+     "detail": "no text aimed at other agents, rankers or keys"
+    },
+    {
+     "id": "probes",
+     "pass": null,
+     "detail": "not probed yet"
+    },
+    {
+     "id": "live_for_callers",
+     "pass": true,
+     "detail": "shares search_agentic_web, get_network_report, get_index_info with any site"
+    },
+    {
+     "id": "acts",
+     "pass": true,
+     "detail": "site actions: search_agentic_web, get_network_report, get_index_info"
+    },
+    {
+     "id": "honest",
+     "pass": true,
+     "detail": "If a result does not contain a fact, say you do not know."
+    },
+    {
+     "id": "original",
+     "pass": true,
+     "detail": "no near-copy of a higher-ranked network"
+    }
+   ],
+   "signals": {
+    "probes": null,
+    "conformance": 1,
+    "links": 0.7191448007774539,
+    "live": 1,
+    "acts": 0.5,
+    "honest": 1,
+    "fresh": 1
+   },
+   "penalty": 1,
+   "score": 0.868,
+   "inbound": [
+    "https://boond-shop.boond-shop.workers.dev/"
+   ],
+   "sources": [
+    "link:https://boond-shop.boond-shop.workers.dev/boond"
+   ]
+  },
+  {
+   "url": "https://boond-shop.boond-shop.workers.dev/boond",
+   "name": "boond",
+   "site": "https://boond-shop.boond-shop.workers.dev/",
+   "brand": "boond",
+   "description": "Ask about boond, a 60 ml litchi and marine collagen shot: what is in it, allergens and Hyderabad delivery. Fill your cart and place a sample order.",
+   "sampleQueries": [
+    "What is in a boond shot, and is it vegetarian?",
+    "Add a week box and two single shots to my cart.",
+    "Order a month box to my flat in Gachibowli, pincode 500032. My name is Asha Rao.",
+    "Can you deliver to Bengaluru, 560001?",
+    "Will boond make my skin glow?",
+    "Can you also send flowers with my order?"
+   ],
+   "tags": [
+    "agentified-website",
+    "shop",
+    "sample"
+   ],
+   "agents": [
+    {
+     "name": "boond_assistant",
+     "description": "Answers questions about boond's 60 ml litchi and marine collagen shots: what is in them, allergens, prices and Hyderabad delivery. Fills the cart and places a sample order for a visitor."
+    }
+   ],
+   "cannotDo": [
+    "If a result does not contain a fact, say you do not know.",
+    "This site cannot take payment, take coupons or discount codes, change what is in a shot, sell a subscription, deliver outside Hyderabad and Secunderabad, deliver on a day other than the next morning, change, cancel or track an order once placed, send confirmation emails or texts, sell the real boond, which is not on sale yet, sell flowers, food, gifts or anything but boond's shots and boxes, or give medical, health or beauty advice or claims.",
+    "When the visitor asks for something this site cannot do, say so plainly.",
+    "The partner cannot see this chat."
+   ],
+   "siteActions": [
+    "get_shop_state",
+    "add_to_cart",
+    "set_cart_quantities",
+    "place_sample_order",
+    "place_order"
+   ],
+   "sharedActions": [
+    {
+     "name": "get_shop_state",
+     "effect": "read"
+    },
+    {
+     "name": "place_order",
+     "effect": "irreversible"
+    }
+   ],
+   "digest": "492097db7d950f90a9416f013e05b5cb5bd530945208b4c29f8f51b72dd7b0c1",
+   "checks": [
+    {
+     "id": "manifest",
+     "pass": true,
+     "detail": "manifest has networks, front_man, hocon and llm_router"
+    },
+    {
+     "id": "definition",
+     "pass": true,
+     "detail": "1 agents, front agent defined"
+    },
+    {
+     "id": "cors",
+     "pass": true,
+     "detail": "manifest *, definition *"
+    },
+    {
+     "id": "integrity",
+     "pass": null,
+     "detail": "no declared digest"
+    },
+    {
+     "id": "safety",
+     "pass": true,
+     "detail": "no text aimed at other agents, rankers or keys"
+    },
+    {
+     "id": "probes",
+     "pass": null,
+     "detail": "not probed yet"
+    },
+    {
+     "id": "live_for_callers",
+     "pass": true,
+     "detail": "shares get_shop_state with any site"
+    },
+    {
+     "id": "acts",
+     "pass": true,
+     "detail": "partners can place_order (irreversible)"
+    },
+    {
+     "id": "honest",
+     "pass": true,
+     "detail": "If a result does not contain a fact, say you do not know."
+    },
+    {
+     "id": "original",
+     "pass": true,
+     "detail": "no near-copy of a higher-ranked network"
+    }
+   ],
+   "signals": {
+    "probes": null,
+    "conformance": 1,
+    "links": 0.38872691933916426,
+    "live": 1,
+    "acts": 1,
+    "honest": 1,
+    "fresh": 0.5
+   },
+   "penalty": 1,
+   "score": 0.833,
+   "inbound": [],
+   "sources": [
+    "submitted"
+   ]
+  },
   {
    "url": "https://startupbros-com.github.io/synthetic-panel-agent/synthetic_panel",
    "name": "synthetic_panel",
@@ -130,7 +367,7 @@
    "signals": {
     "probes": null,
     "conformance": 1,
-    "links": 0.3887269193391642,
+    "links": 0.38872691933916426,
     "live": 1,
     "acts": 0.5,
     "honest": 1,
@@ -252,7 +489,7 @@
    "signals": {
     "probes": null,
     "conformance": 1,
-    "links": 0.3887269193391642,
+    "links": 0.38872691933916426,
     "live": 1,
     "acts": 0.5,
     "honest": 1,
@@ -357,7 +594,7 @@
    "signals": {
     "probes": null,
     "conformance": 1,
-    "links": 0.5539358600583091,
+    "links": 0.553935860058309,
     "live": 1,
     "acts": 0.5,
     "honest": 0,
@@ -464,7 +701,7 @@
    "signals": {
     "probes": null,
     "conformance": 1,
-    "links": 0.5539358600583091,
+    "links": 0.553935860058309,
     "live": 1,
     "acts": 0.5,
     "honest": 0,
@@ -577,7 +814,7 @@
    "signals": {
     "probes": null,
     "conformance": 1,
-    "links": 0.5539358600583091,
+    "links": 0.553935860058309,
     "live": 0,
     "acts": 0.5,
     "honest": 1,
@@ -698,7 +935,7 @@
    "signals": {
     "probes": null,
     "conformance": 1,
-    "links": 0.7191448007774538,
+    "links": 0.7191448007774539,
     "live": 0,
     "acts": 0.5,
     "honest": 1,
@@ -712,9 +949,8 @@
    "sources": [
     "list",
     "peer:https://cocvn157.github.io/nanda-seal/",
-    "pr:#48",
-    "pr:#49",
-    "pr:#51"
+    "pr:#51",
+    "pr:#55"
    ]
   },
   {
@@ -811,7 +1047,7 @@
    "signals": {
     "probes": null,
     "conformance": 1,
-    "links": 0.3887269193391642,
+    "links": 0.38872691933916426,
     "live": 0,
     "acts": 0.5,
     "honest": 1,
@@ -822,9 +1058,8 @@
    "inbound": [],
    "sources": [
     "list",
-    "pr:#48",
-    "pr:#49",
-    "pr:#51"
+    "pr:#51",
+    "pr:#55"
    ]
   },
   {
@@ -941,7 +1176,7 @@
    "signals": {
     "probes": null,
     "conformance": 1,
-    "links": 0.3887269193391642,
+    "links": 0.38872691933916426,
     "live": 0,
     "acts": 0.5,
     "honest": 1,
@@ -1052,7 +1287,7 @@
    "signals": {
     "probes": null,
     "conformance": 1,
-    "links": 0.3887269193391642,
+    "links": 0.38872691933916426,
     "live": 0,
     "acts": 0.5,
     "honest": 1,
@@ -1165,7 +1400,7 @@
    "signals": {
     "probes": null,
     "conformance": 1,
-    "links": 0.3887269193391642,
+    "links": 0.38872691933916426,
     "live": 0,
     "acts": 0.5,
     "honest": 1,
@@ -1175,7 +1410,9 @@
    "score": 0.655,
    "inbound": [],
    "sources": [
-    "pr:#48"
+    "list",
+    "pr:#48",
+    "pr:#55"
    ]
   },
   {
@@ -1283,7 +1520,7 @@
    "signals": {
     "probes": null,
     "conformance": 1,
-    "links": 0.3887269193391642,
+    "links": 0.38872691933916426,
     "live": 0,
     "acts": 0.5,
     "honest": 1,
@@ -1327,7 +1564,7 @@
    "cannotDo": [
     "If a result does not contain a fact, say you do not know.",
     "This site cannot certify networks for others, promise a network is harmless, inspect sites that block cross-site reads, contact publishers, or run networks the inspection turns away.",
-    "The partner cannot see this chat or use its own site's tools, so ask only what it can answer, such as what it offers and how to book, and never include names, emails, phone numbers or booking codes."
+    "The partner cannot see this chat."
    ],
    "siteActions": [
     "get_desk_state",
@@ -1338,7 +1575,7 @@
     "unpin_network"
    ],
    "sharedActions": [],
-   "digest": "b7d4dee97506615168c44ba0b9dc8304394bdac50b66464e9000942d7bebaacf",
+   "digest": "c89d81d079edeb99f4c3f5406b1aa61e9b920cc8c83a95190dce5eca76156c3c",
    "checks": [
     {
      "id": "manifest",
@@ -1394,7 +1631,7 @@
    "signals": {
     "probes": null,
     "conformance": 1,
-    "links": 0.3887269193391642,
+    "links": 0.38872691933916426,
     "live": 0,
     "acts": 0.5,
     "honest": 1,
@@ -1405,9 +1642,8 @@
    "inbound": [],
    "sources": [
     "list",
-    "pr:#48",
-    "pr:#49",
-    "pr:#51"
+    "pr:#51",
+    "pr:#55"
    ]
   },
   {
@@ -1497,7 +1733,7 @@
    "signals": {
     "probes": null,
     "conformance": 1,
-    "links": 0.3887269193391642,
+    "links": 0.38872691933916426,
     "live": 0,
     "acts": 0.5,
     "honest": 1,
@@ -1619,7 +1855,7 @@
    "signals": {
     "probes": null,
     "conformance": 1,
-    "links": 0.3887269193391642,
+    "links": 0.38872691933916426,
     "live": 0,
     "acts": 0.5,
     "honest": 1,
@@ -1723,7 +1959,7 @@
    "signals": {
     "probes": null,
     "conformance": 1,
-    "links": 0.3887269193391642,
+    "links": 0.38872691933916426,
     "live": 0,
     "acts": 0.5,
     "honest": 1,
@@ -1833,7 +2069,7 @@
    "signals": {
     "probes": null,
     "conformance": 1,
-    "links": 0.3887269193391642,
+    "links": 0.38872691933916426,
     "live": 0,
     "acts": 0.5,
     "honest": 1,
@@ -1844,9 +2080,8 @@
    "inbound": [],
    "sources": [
     "list",
-    "pr:#48",
-    "pr:#49",
-    "pr:#51"
+    "pr:#51",
+    "pr:#55"
    ]
   },
   {
@@ -1950,7 +2185,7 @@
    "signals": {
     "probes": null,
     "conformance": 1,
-    "links": 0.3887269193391642,
+    "links": 0.38872691933916426,
     "live": 0,
     "acts": 0.5,
     "honest": 1,
@@ -2059,7 +2294,7 @@
    "signals": {
     "probes": null,
     "conformance": 1,
-    "links": 0.3887269193391642,
+    "links": 0.38872691933916426,
     "live": 0,
     "acts": 0.5,
     "honest": 1,
@@ -2176,7 +2411,7 @@
    "signals": {
     "probes": null,
     "conformance": 1,
-    "links": 0.3887269193391642,
+    "links": 0.38872691933916426,
     "live": 0,
     "acts": 0.5,
     "honest": 1,
@@ -2270,7 +2505,7 @@
    "signals": {
     "probes": null,
     "conformance": 1,
-    "links": 0.7191448007774538,
+    "links": 0.7191448007774539,
     "live": 0,
     "acts": 0.5,
     "honest": 0,
@@ -2386,7 +2621,7 @@
    "signals": {
     "probes": null,
     "conformance": 1,
-    "links": 0.3887269193391642,
+    "links": 0.38872691933916426,
     "live": 0,
     "acts": 0.5,
     "honest": 0,
@@ -2396,7 +2631,9 @@
    "score": 0.583,
    "inbound": [],
    "sources": [
-    "pr:#49"
+    "list",
+    "pr:#49",
+    "pr:#55"
    ]
   },
   {
@@ -2491,7 +2728,7 @@
    "signals": {
     "probes": null,
     "conformance": 1,
-    "links": 0.3887269193391642,
+    "links": 0.38872691933916426,
     "live": 0,
     "acts": 0.5,
     "honest": 0,
@@ -2591,7 +2828,7 @@
    "signals": {
     "probes": null,
     "conformance": 1,
-    "links": 0.3887269193391642,
+    "links": 0.38872691933916426,
     "live": 0,
     "acts": 0.5,
     "honest": 0,
@@ -2682,7 +2919,7 @@
    "signals": {
     "probes": null,
     "conformance": 1,
-    "links": 0.5539358600583091,
+    "links": 0.553935860058309,
     "live": 0,
     "acts": 0,
     "honest": 0,
@@ -2805,9 +3042,8 @@
     "link:https://shutdown-clerk.pages.dev/shutdown_clerk",
     "list",
     "pr:#30",
-    "pr:#48",
-    "pr:#49",
-    "pr:#51"
+    "pr:#51",
+    "pr:#55"
    ]
   },
   {
@@ -2894,7 +3130,7 @@
    "signals": {
     "probes": null,
     "conformance": 1,
-    "links": 0.3887269193391642,
+    "links": 0.38872691933916426,
     "live": 0,
     "acts": 0,
     "honest": 0,
@@ -2987,7 +3223,7 @@
    "signals": {
     "probes": null,
     "conformance": 1,
-    "links": 0.3887269193391642,
+    "links": 0.38872691933916426,
     "live": 0,
     "acts": 0,
     "honest": 0,
@@ -3079,7 +3315,7 @@
    "signals": {
     "probes": null,
     "conformance": 1,
-    "links": 0.3887269193391642,
+    "links": 0.38872691933916426,
     "live": 0,
     "acts": 0,
     "honest": 0,
@@ -3171,7 +3407,7 @@
    "signals": {
     "probes": null,
     "conformance": 1,
-    "links": 0.3887269193391642,
+    "links": 0.38872691933916426,
     "live": 0,
     "acts": 0,
     "honest": 0,
@@ -3263,7 +3499,7 @@
    "signals": {
     "probes": null,
     "conformance": 1,
-    "links": 0.3887269193391642,
+    "links": 0.38872691933916426,
     "live": 0,
     "acts": 0,
     "honest": 0,
@@ -3349,7 +3585,7 @@
    "signals": {
     "probes": null,
     "conformance": 1,
-    "links": 0.3887269193391642,
+    "links": 0.38872691933916426,
     "live": 0,
     "acts": 0,
     "honest": 0,
@@ -3442,7 +3678,7 @@
    "signals": {
     "probes": null,
     "conformance": 1,
-    "links": 0.3887269193391642,
+    "links": 0.38872691933916426,
     "live": 0,
     "acts": 0,
     "honest": 0,
@@ -3535,7 +3771,7 @@
    "signals": {
     "probes": null,
     "conformance": 1,
-    "links": 0.3887269193391642,
+    "links": 0.38872691933916426,
     "live": 0,
     "acts": 0,
     "honest": 0,
@@ -3628,7 +3864,7 @@
    "signals": {
     "probes": null,
     "conformance": 1,
-    "links": 0.3887269193391642,
+    "links": 0.38872691933916426,
     "live": 0,
     "acts": 0,
     "honest": 0,
@@ -3721,7 +3957,7 @@
    "signals": {
     "probes": null,
     "conformance": 1,
-    "links": 0.3887269193391642,
+    "links": 0.38872691933916426,
     "live": 0,
     "acts": 0,
     "honest": 0,
@@ -3814,7 +4050,7 @@
    "signals": {
     "probes": null,
     "conformance": 1,
-    "links": 0.3887269193391642,
+    "links": 0.38872691933916426,
     "live": 0,
     "acts": 0,
     "honest": 0,
@@ -3907,7 +4143,7 @@
    "signals": {
     "probes": null,
     "conformance": 1,
-    "links": 0.3887269193391642,
+    "links": 0.38872691933916426,
     "live": 0,
     "acts": 0,
     "honest": 0,
@@ -4014,7 +4250,7 @@
    "signals": {
     "probes": null,
     "conformance": 1,
-    "links": 0.3887269193391642,
+    "links": 0.38872691933916426,
     "live": 0,
     "acts": 0,
     "honest": 0,
@@ -4122,7 +4358,7 @@
    "signals": {
     "probes": null,
     "conformance": 0.6666666666666666,
-    "links": 0.3887269193391642,
+    "links": 0.38872691933916426,
     "live": 0,
     "acts": 0,
     "honest": 0,
@@ -4217,7 +4453,7 @@
    "signals": {
     "probes": null,
     "conformance": 0.6666666666666666,
-    "links": 0.3887269193391642,
+    "links": 0.38872691933916426,
     "live": 0,
     "acts": 0,
     "honest": 0,
@@ -4309,7 +4545,7 @@
    "signals": {
     "probes": null,
     "conformance": 0.6666666666666666,
-    "links": 0.3887269193391642,
+    "links": 0.38872691933916426,
     "live": 0,
     "acts": 0,
     "honest": 0,
@@ -4403,7 +4639,7 @@
    "signals": {
     "probes": null,
     "conformance": 0.3333333333333333,
-    "links": 0.3887269193391642,
+    "links": 0.38872691933916426,
     "live": 0,
     "acts": 0.5,
     "honest": 0,
@@ -4513,7 +4749,7 @@
    "signals": {
     "probes": null,
     "conformance": 1,
-    "links": 0.5539358600583091,
+    "links": 0.553935860058309,
     "live": 0,
     "acts": 0.5,
     "honest": 1,
@@ -4608,7 +4844,7 @@
    "signals": {
     "probes": null,
     "conformance": 1,
-    "links": 0.3887269193391642,
+    "links": 0.38872691933916426,
     "live": 0,
     "acts": 0,
     "honest": 0,
@@ -4699,7 +4935,7 @@
    "signals": {
     "probes": null,
     "conformance": 1,
-    "links": 0.5539358600583091,
+    "links": 0.553935860058309,
     "live": 0,
     "acts": 0,
     "honest": 0,
@@ -4793,7 +5029,7 @@
    "signals": {
     "probes": null,
     "conformance": 1,
-    "links": 0.3887269193391642,
+    "links": 0.38872691933916426,
     "live": 0,
     "acts": 0,
     "honest": 0,
@@ -4809,273 +5045,10 @@
  ],
  "misses": [
   {
-   "base": "https://agenticsystemcore.com/",
-   "sources": [
-    "github:andreibesleaga/AgenticSystemCore.com"
-   ],
-   "status": 404,
-   "error": "HTTP 404"
-  },
-  {
-   "base": "https://agenticsystemcore.com/agents/",
-   "sources": [
-    "github:andreibesleaga/AgenticSystemCore.com"
-   ],
-   "status": 404,
-   "error": "HTTP 404"
-  },
-  {
-   "base": "https://agenticsystemcore.com/desk/templates/",
-   "sources": [
-    "github:andreibesleaga/AgenticSystemCore.com"
-   ],
-   "status": 404,
-   "error": "HTTP 404"
-  },
-  {
-   "base": "https://agenticsystemcore.com/patterns/agents/",
-   "sources": [
-    "github:andreibesleaga/AgenticSystemCore.com"
-   ],
-   "status": 404,
-   "error": "HTTP 404"
-  },
-  {
-   "base": "https://agenticsystemcore.com/peers/patterns/agents/",
-   "sources": [
-    "github:andreibesleaga/AgenticSystemCore.com"
-   ],
-   "status": 404,
-   "error": "HTTP 404"
-  },
-  {
-   "base": "https://agenticsystemcore.com/peers/standards/agents/",
-   "sources": [
-    "github:andreibesleaga/AgenticSystemCore.com"
-   ],
-   "status": 404,
-   "error": "HTTP 404"
-  },
-  {
-   "base": "https://agenticsystemcore.com/standards/agents/",
-   "sources": [
-    "github:andreibesleaga/AgenticSystemCore.com"
-   ],
-   "status": 404,
-   "error": "HTTP 404"
-  },
-  {
-   "base": "https://agenticsystemcore.com/templates/",
-   "sources": [
-    "github:andreibesleaga/AgenticSystemCore.com"
-   ],
-   "status": 404,
-   "error": "HTTP 404"
-  },
-  {
-   "base": "https://agenticsystemcore.com/www/desk/",
-   "sources": [
-    "github:andreibesleaga/AgenticSystemCore.com"
-   ],
-   "status": 404,
-   "error": "HTTP 404"
-  },
-  {
-   "base": "https://aura-agentic-web.vercel.app/public/",
-   "sources": [
-    "github:wenizmohamed/aura-agentic-web"
-   ],
-   "status": 404,
-   "error": "HTTP 404"
-  },
-  {
-   "base": "https://aura-agentic-web.vercel.app/public/.well-known/",
-   "sources": [
-    "github:wenizmohamed/aura-agentic-web"
-   ],
-   "status": 404,
-   "error": "HTTP 404"
-  },
-  {
-   "base": "https://aura-agentic-web.vercel.app/public/agents/",
-   "sources": [
-    "github:wenizmohamed/aura-agentic-web"
-   ],
-   "status": 404,
-   "error": "HTTP 404"
-  },
-  {
-   "base": "https://bardrop.github.io/travel-desk/agentify-website/templates/",
-   "sources": [
-    "github:bardrop/travel-desk"
-   ],
-   "status": 404,
-   "error": "HTTP 404"
-  },
-  {
-   "base": "https://bardrop.github.io/travel-desk/site/",
-   "sources": [
-    "github:bardrop/travel-desk"
-   ],
-   "status": 404,
-   "error": "HTTP 404"
-  },
-  {
-   "base": "https://bardrop.github.io/travel-desk/templates/",
-   "sources": [
-    "github:bardrop/travel-desk"
-   ],
-   "status": 404,
-   "error": "HTTP 404"
-  },
-  {
-   "base": "https://bardrop.github.io/travel-desk/tools/agentify-website/templates/",
-   "sources": [
-    "github:bardrop/travel-desk"
-   ],
-   "status": 404,
-   "error": "HTTP 404"
-  },
-  {
    "base": "https://cocvn157.github.io/",
    "sources": [
-    "pr:#49"
-   ],
-   "status": 404,
-   "error": "HTTP 404"
-  },
-  {
-   "base": "https://dev-shiki.github.io/manifest-lab/docs/",
-   "sources": [
-    "github:dev-shiki/manifest-lab"
-   ],
-   "status": 404,
-   "error": "HTTP 404"
-  },
-  {
-   "base": "https://dev-shiki.github.io/manifest-lab/docs/peer_fixture/",
-   "sources": [
-    "github:dev-shiki/manifest-lab"
-   ],
-   "status": 404,
-   "error": "HTTP 404"
-  },
-  {
-   "base": "https://dev-shiki.github.io/manifest-lab/public/",
-   "sources": [
-    "github:dev-shiki/manifest-lab"
-   ],
-   "status": 404,
-   "error": "HTTP 404"
-  },
-  {
-   "base": "https://dev-shiki.github.io/manifest-lab/public/peer_fixture/",
-   "sources": [
-    "github:dev-shiki/manifest-lab"
-   ],
-   "status": 404,
-   "error": "HTTP 404"
-  },
-  {
-   "base": "https://emilhuseyn.github.io/cognizant-agentic-web/agentify-website/templates/",
-   "sources": [
-    "github:emilhuseyn/cognizant-agentic-web"
-   ],
-   "status": 404,
-   "error": "HTTP 404"
-  },
-  {
-   "base": "https://emilhuseyn.github.io/cognizant-agentic-web/invalid/",
-   "sources": [
-    "github:emilhuseyn/cognizant-agentic-web"
-   ],
-   "status": 404,
-   "error": "HTTP 404"
-  },
-  {
-   "base": "https://emilhuseyn.github.io/cognizant-agentic-web/lanternmd-desk/",
-   "sources": [
-    "github:emilhuseyn/cognizant-agentic-web"
-   ],
-   "status": 404,
-   "error": "HTTP 404"
-  },
-  {
-   "base": "https://emilhuseyn.github.io/cognizant-agentic-web/sites/lanternmd-desk/",
-   "sources": [
-    "github:emilhuseyn/cognizant-agentic-web"
-   ],
-   "status": 404,
-   "error": "HTTP 404"
-  },
-  {
-   "base": "https://emilhuseyn.github.io/cognizant-agentic-web/sites/tidecache-desk/",
-   "sources": [
-    "github:emilhuseyn/cognizant-agentic-web"
-   ],
-   "status": 404,
-   "error": "HTTP 404"
-  },
-  {
-   "base": "https://emilhuseyn.github.io/cognizant-agentic-web/sites/triage/",
-   "sources": [
-    "github:emilhuseyn/cognizant-agentic-web"
-   ],
-   "status": 404,
-   "error": "HTTP 404"
-  },
-  {
-   "base": "https://emilhuseyn.github.io/cognizant-agentic-web/sites/triage/checks/invalid/",
-   "sources": [
-    "github:emilhuseyn/cognizant-agentic-web"
-   ],
-   "status": 404,
-   "error": "HTTP 404"
-  },
-  {
-   "base": "https://emilhuseyn.github.io/cognizant-agentic-web/src/triage/checks/invalid/",
-   "sources": [
-    "github:emilhuseyn/cognizant-agentic-web"
-   ],
-   "status": 404,
-   "error": "HTTP 404"
-  },
-  {
-   "base": "https://emilhuseyn.github.io/cognizant-agentic-web/templates/",
-   "sources": [
-    "github:emilhuseyn/cognizant-agentic-web"
-   ],
-   "status": 404,
-   "error": "HTTP 404"
-  },
-  {
-   "base": "https://emilhuseyn.github.io/cognizant-agentic-web/tidecache-desk/",
-   "sources": [
-    "github:emilhuseyn/cognizant-agentic-web"
-   ],
-   "status": 404,
-   "error": "HTTP 404"
-  },
-  {
-   "base": "https://emilhuseyn.github.io/cognizant-agentic-web/tools/agentify-website/templates/",
-   "sources": [
-    "github:emilhuseyn/cognizant-agentic-web"
-   ],
-   "status": 404,
-   "error": "HTTP 404"
-  },
-  {
-   "base": "https://emilhuseyn.github.io/cognizant-agentic-web/triage/",
-   "sources": [
-    "github:emilhuseyn/cognizant-agentic-web"
-   ],
-   "status": 404,
-   "error": "HTTP 404"
-  },
-  {
-   "base": "https://emilhuseyn.github.io/cognizant-agentic-web/triage/checks/invalid/",
-   "sources": [
-    "github:emilhuseyn/cognizant-agentic-web"
+    "list",
+    "pr:#55"
    ],
    "status": 404,
    "error": "HTTP 404"
@@ -5083,15 +5056,8 @@
   {
    "base": "https://ledenti.github.io/",
    "sources": [
-    "pr:#48"
-   ],
-   "status": 404,
-   "error": "HTTP 404"
-  },
-  {
-   "base": "https://mikeliso.github.io/bounty-truth-check/site/",
-   "sources": [
-    "github:MikeLiso/bounty-truth-check"
+    "list",
+    "pr:#55"
    ],
    "status": 404,
    "error": "HTTP 404"
@@ -5100,97 +5066,8 @@
    "base": "https://montbaga.github.io/",
    "sources": [
     "list",
-    "pr:#48",
-    "pr:#49",
-    "pr:#51"
-   ],
-   "status": 404,
-   "error": "HTTP 404"
-  },
-  {
-   "base": "https://oaw-formlab-2026.vercel.app/accessrelay/",
-   "sources": [
-    "github:ShenJun93/accessrelay-formlab-agentic-web"
-   ],
-   "status": 404,
-   "error": "HTTP 404"
-  },
-  {
-   "base": "https://oaw-formlab-2026.vercel.app/formlab/",
-   "sources": [
-    "github:ShenJun93/accessrelay-formlab-agentic-web"
-   ],
-   "status": 404,
-   "error": "HTTP 404"
-  },
-  {
-   "base": "https://pritahi.github.io/open-agent-trust-badge/alpha/",
-   "sources": [
-    "github:Pritahi/open-agent-trust-badge"
-   ],
-   "status": 404,
-   "error": "HTTP 404"
-  },
-  {
-   "base": "https://pritahi.github.io/open-agent-trust-badge/beta/",
-   "sources": [
-    "github:Pritahi/open-agent-trust-badge"
-   ],
-   "status": 404,
-   "error": "HTTP 404"
-  },
-  {
-   "base": "https://pritahi.github.io/open-agent-trust-badge/docs/",
-   "sources": [
-    "github:Pritahi/open-agent-trust-badge"
-   ],
-   "status": 404,
-   "error": "HTTP 404"
-  },
-  {
-   "base": "https://pritahi.github.io/open-agent-trust-badge/docs/sites/alpha/",
-   "sources": [
-    "github:Pritahi/open-agent-trust-badge"
-   ],
-   "status": 404,
-   "error": "HTTP 404"
-  },
-  {
-   "base": "https://pritahi.github.io/open-agent-trust-badge/docs/sites/beta/",
-   "sources": [
-    "github:Pritahi/open-agent-trust-badge"
-   ],
-   "status": 404,
-   "error": "HTTP 404"
-  },
-  {
-   "base": "https://pritahi.github.io/open-agent-trust-badge/docs/sites/expired/",
-   "sources": [
-    "github:Pritahi/open-agent-trust-badge"
-   ],
-   "status": 404,
-   "error": "HTTP 404"
-  },
-  {
-   "base": "https://pritahi.github.io/open-agent-trust-badge/docs/sites/tampered/",
-   "sources": [
-    "github:Pritahi/open-agent-trust-badge"
-   ],
-   "status": 404,
-   "error": "HTTP 404"
-  },
-  {
-   "base": "https://pritahi.github.io/open-agent-trust-badge/expired/",
-   "sources": [
-    "github:Pritahi/open-agent-trust-badge"
-   ],
-   "status": 404,
-   "error": "HTTP 404"
-  },
-  {
-   "base": "https://pritahi.github.io/open-agent-trust-badge/tampered/",
-   "sources": [
-    "github:Pritahi/open-agent-trust-badge"
+    "pr:#51",
+    "pr:#55"
    ],
    "status": 404,
    "error": "HTTP 404"
@@ -5200,42 +5077,8 @@
    "sources": [
     "list",
     "peer:https://cocvn157.github.io/nanda-seal/",
-    "pr:#48",
-    "pr:#49",
-    "pr:#51"
-   ],
-   "status": 404,
-   "error": "HTTP 404"
-  },
-  {
-   "base": "https://standards.agenticsystemcore.com/",
-   "sources": [
-    "github:andreibesleaga/agsc-standards-node",
-    "peer:https://agenticsystemcore.com/desk/"
-   ],
-   "status": 404,
-   "error": "HTTP 404"
-  },
-  {
-   "base": "https://standards.agenticsystemcore.com/www/agents/",
-   "sources": [
-    "github:andreibesleaga/agsc-standards-node"
-   ],
-   "status": 404,
-   "error": "HTTP 404"
-  },
-  {
-   "base": "https://thoth.elghaly.dev/",
-   "sources": [
-    "github:elghaly-dev/thoth"
-   ],
-   "status": 404,
-   "error": "HTTP 404"
-  },
-  {
-   "base": "https://workgraph-nine.vercel.app/public/",
-   "sources": [
-    "github:suhailult777/workgraph"
+    "pr:#51",
+    "pr:#55"
    ],
    "status": 404,
    "error": "HTTP 404"
@@ -5247,89 +5090,8 @@
     "peer:https://cocvn157.github.io/nanda-seal/",
     "peer:https://shutdown-clerk.pages.dev/",
     "pr:#30",
-    "pr:#48",
-    "pr:#49",
-    "pr:#51"
-   ],
-   "status": 404,
-   "error": "HTTP 404"
-  },
-  {
-   "base": "https://xegheplimo-web.github.io/agentlint/broken-site/",
-   "sources": [
-    "github:xegheplimo-web/agentlint"
-   ],
-   "status": 404,
-   "error": "HTTP 404"
-  },
-  {
-   "base": "https://yablokolabs.com/next-app/public/",
-   "sources": [
-    "github:yablokolabs/yablokolabs"
-   ],
-   "status": 404,
-   "error": "HTTP 404"
-  },
-  {
-   "base": "https://yablokolabs.com/public/",
-   "sources": [
-    "github:yablokolabs/yablokolabs"
-   ],
-   "status": 404,
-   "error": "HTTP 404"
-  },
-  {
-   "base": "https://zuhairhalawa.github.io/gatehouse/demos/kestrel/",
-   "sources": [
-    "github:zuhairhalawa/gatehouse"
-   ],
-   "status": 404,
-   "error": "HTTP 404"
-  },
-  {
-   "base": "https://zuhairhalawa.github.io/gatehouse/demos/lantern-fixed/",
-   "sources": [
-    "github:zuhairhalawa/gatehouse"
-   ],
-   "status": 404,
-   "error": "HTTP 404"
-  },
-  {
-   "base": "https://zuhairhalawa.github.io/gatehouse/demos/lantern/",
-   "sources": [
-    "github:zuhairhalawa/gatehouse"
-   ],
-   "status": 404,
-   "error": "HTTP 404"
-  },
-  {
-   "base": "https://zuhairhalawa.github.io/gatehouse/kestrel/",
-   "sources": [
-    "github:zuhairhalawa/gatehouse"
-   ],
-   "status": 404,
-   "error": "HTTP 404"
-  },
-  {
-   "base": "https://zuhairhalawa.github.io/gatehouse/lantern-fixed/",
-   "sources": [
-    "github:zuhairhalawa/gatehouse"
-   ],
-   "status": 404,
-   "error": "HTTP 404"
-  },
-  {
-   "base": "https://zuhairhalawa.github.io/gatehouse/lantern/",
-   "sources": [
-    "github:zuhairhalawa/gatehouse"
-   ],
-   "status": 404,
-   "error": "HTTP 404"
-  },
-  {
-   "base": "https://zuhairhalawa.github.io/gatehouse/site/",
-   "sources": [
-    "github:zuhairhalawa/gatehouse"
+    "pr:#51",
+    "pr:#55"
    ],
    "status": 404,
    "error": "HTTP 404"
@@ -5338,6 +5100,14 @@
    "base": "https://agent-customs-range.github.io/",
    "sources": [
     "peer:https://montbaga.github.io/agent-customs/"
+   ],
+   "status": 404,
+   "error": "HTTP 404"
+  },
+  {
+   "base": "https://akshit9162.github.io/",
+   "sources": [
+    "peer:https://boond-shop.boond-shop.workers.dev/"
    ],
    "status": 404,
    "error": "HTTP 404"
@@ -5365,6 +5135,14 @@
    ],
    "status": 0,
    "error": "fetch failed"
+  },
+  {
+   "base": "https://standards.agenticsystemcore.com/",
+   "sources": [
+    "peer:https://agenticsystemcore.com/desk/"
+   ],
+   "status": 404,
+   "error": "HTTP 404"
   },
   {
    "base": "https://three-numbers-mcp.onrender.com/",
