@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-20T10:21:33.878Z",
+ "generatedAt": "2026-11-20T11:45:51.108Z",
  "weights": {
   "probes": 0.3,
   "conformance": 0.25,
@@ -16,11 +16,11 @@
   "copy": 0.5
  },
  "stats": {
-  "sites": 42,
-  "networks": 48,
-  "edges": 26,
+  "sites": 43,
+  "networks": 49,
+  "edges": 27,
   "misses": 12,
-  "probed": 46
+  "probed": 44
  },
  "networks": [
   {
@@ -128,7 +128,7 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.7191448007774539,
+    "links": 0.7191448007774538,
     "live": 1,
     "acts": 0.5,
     "honest": 1,
@@ -247,7 +247,7 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.38872691933916426,
+    "links": 0.3887269193391642,
     "live": 1,
     "acts": 1,
     "honest": 1,
@@ -367,7 +367,7 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.38872691933916426,
+    "links": 0.3887269193391642,
     "live": 1,
     "acts": 0.5,
     "honest": 1,
@@ -489,7 +489,7 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.38872691933916426,
+    "links": 0.3887269193391642,
     "live": 1,
     "acts": 0.5,
     "honest": 1,
@@ -718,6 +718,121 @@
    ]
   },
   {
+   "url": "https://deadline-desk-agent.vercel.app/deadline_desk",
+   "name": "deadline_desk",
+   "site": "https://deadline-desk-agent.vercel.app/",
+   "brand": "Deadline Desk Assistant",
+   "description": "Find open prize contests and hackathons you can still enter, shortlist them and get a back-planned schedule.",
+   "sampleQueries": [
+    "Which hackathons that allow generative AI close in the next four weeks?",
+    "Show me English writing or essay prizes with a top prize of at least $1,000.",
+    "Add the Open Agentic Web Challenge to my shortlist and plan when I should start.",
+    "I have three calls on my shortlist. Do any of their submit dates clash?",
+    "Can you submit my entry to the contest for me?"
+   ],
+   "tags": [
+    "agentified-website"
+   ],
+   "agents": [
+    {
+     "name": "deadline_desk_assistant",
+     "description": "Helps a visitor find open prize contests and hackathons, keep a shortlist and plan backwards from deadlines."
+    },
+    {
+     "name": "board_lookup",
+     "description": "Looks up open calls and back-planned dates on the Deadline Desk board through this site's own server. For requests that arrive where no website_* tools exist, such as a caller that cannot load this site's action bridge."
+    }
+   ],
+   "cannotDo": [
+    "If a result does not contain a fact, say you do not know.",
+    "This site cannot: register, enter or submit for the visitor; write or judge entries; contact organizers; confirm eligibility beyond the openTo field; list calls that are not on the board; give results or past winners.",
+    "When the visitor asks for something this site cannot do, say so plainly."
+   ],
+   "siteActions": [
+    "get_board_state",
+    "find_calls",
+    "show_calls",
+    "add_to_shortlist",
+    "remove_from_shortlist",
+    "plan_shortlist",
+    "plan_calls"
+   ],
+   "sharedActions": [
+    {
+     "name": "get_board_state",
+     "effect": "read"
+    }
+   ],
+   "digest": "e9f850ed18b865cc0c0b655086040b9e9f54deb706d2cab9c3c1649b4493ff6e",
+   "checks": [
+    {
+     "id": "manifest",
+     "pass": true,
+     "detail": "manifest has networks, front_man, hocon and llm_router"
+    },
+    {
+     "id": "definition",
+     "pass": true,
+     "detail": "2 agents, front agent defined"
+    },
+    {
+     "id": "cors",
+     "pass": true,
+     "detail": "manifest *, definition *"
+    },
+    {
+     "id": "integrity",
+     "pass": null,
+     "detail": "no declared digest"
+    },
+    {
+     "id": "safety",
+     "pass": true,
+     "detail": "no text aimed at other agents, rankers or keys"
+    },
+    {
+     "id": "probes",
+     "pass": null,
+     "detail": "not probed yet"
+    },
+    {
+     "id": "live_for_callers",
+     "pass": true,
+     "detail": "shares get_board_state with any site"
+    },
+    {
+     "id": "acts",
+     "pass": true,
+     "detail": "site actions: get_board_state, find_calls, show_calls, add_to_shortlist, remove_from_shortlist, plan_shortlist, plan_calls"
+    },
+    {
+     "id": "honest",
+     "pass": true,
+     "detail": "If a result does not contain a fact, say you do not know."
+    },
+    {
+     "id": "original",
+     "pass": true,
+     "detail": "no near-copy of a higher-ranked network"
+    }
+   ],
+   "signals": {
+    "probes": null,
+    "conformance": 1,
+    "links": 0.3887269193391642,
+    "live": 1,
+    "acts": 0.5,
+    "honest": 1,
+    "fresh": 1
+   },
+   "penalty": 1,
+   "score": 0.798,
+   "inbound": [],
+   "sources": [
+    "pr:#56"
+   ]
+  },
+  {
    "url": "https://lanternmd-desk.vercel.app/lanternmd_security_desk",
    "name": "lanternmd_security_desk",
    "site": "https://lanternmd-desk.vercel.app/",
@@ -935,7 +1050,7 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.7191448007774539,
+    "links": 0.7191448007774538,
     "live": 0,
     "acts": 0.5,
     "honest": 1,
@@ -950,7 +1065,8 @@
     "list",
     "peer:https://cocvn157.github.io/nanda-seal/",
     "pr:#51",
-    "pr:#55"
+    "pr:#55",
+    "pr:#56"
    ]
   },
   {
@@ -1047,7 +1163,7 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.38872691933916426,
+    "links": 0.3887269193391642,
     "live": 0,
     "acts": 0.5,
     "honest": 1,
@@ -1059,7 +1175,8 @@
    "sources": [
     "list",
     "pr:#51",
-    "pr:#55"
+    "pr:#55",
+    "pr:#56"
    ]
   },
   {
@@ -1176,7 +1293,7 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.38872691933916426,
+    "links": 0.3887269193391642,
     "live": 0,
     "acts": 0.5,
     "honest": 1,
@@ -1287,7 +1404,7 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.38872691933916426,
+    "links": 0.3887269193391642,
     "live": 0,
     "acts": 0.5,
     "honest": 1,
@@ -1400,7 +1517,7 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.38872691933916426,
+    "links": 0.3887269193391642,
     "live": 0,
     "acts": 0.5,
     "honest": 1,
@@ -1411,8 +1528,8 @@
    "inbound": [],
    "sources": [
     "list",
-    "pr:#48",
-    "pr:#55"
+    "pr:#55",
+    "pr:#56"
    ]
   },
   {
@@ -1520,7 +1637,7 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.38872691933916426,
+    "links": 0.3887269193391642,
     "live": 0,
     "acts": 0.5,
     "honest": 1,
@@ -1631,7 +1748,7 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.38872691933916426,
+    "links": 0.3887269193391642,
     "live": 0,
     "acts": 0.5,
     "honest": 1,
@@ -1643,7 +1760,8 @@
    "sources": [
     "list",
     "pr:#51",
-    "pr:#55"
+    "pr:#55",
+    "pr:#56"
    ]
   },
   {
@@ -1727,7 +1845,7 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.7191448007774539,
+    "links": 0.7191448007774538,
     "live": 0,
     "acts": 0.5,
     "honest": 0,
@@ -1829,7 +1947,7 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.38872691933916426,
+    "links": 0.3887269193391642,
     "live": 0,
     "acts": 0.5,
     "honest": 1,
@@ -1951,7 +2069,7 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.38872691933916426,
+    "links": 0.3887269193391642,
     "live": 0,
     "acts": 0.5,
     "honest": 1,
@@ -2055,7 +2173,7 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.38872691933916426,
+    "links": 0.3887269193391642,
     "live": 0,
     "acts": 0.5,
     "honest": 1,
@@ -2165,7 +2283,7 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.38872691933916426,
+    "links": 0.3887269193391642,
     "live": 0,
     "acts": 0.5,
     "honest": 1,
@@ -2177,7 +2295,8 @@
    "sources": [
     "list",
     "pr:#51",
-    "pr:#55"
+    "pr:#55",
+    "pr:#56"
    ]
   },
   {
@@ -2281,7 +2400,7 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.38872691933916426,
+    "links": 0.3887269193391642,
     "live": 0,
     "acts": 0.5,
     "honest": 1,
@@ -2390,7 +2509,7 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.38872691933916426,
+    "links": 0.3887269193391642,
     "live": 0,
     "acts": 0.5,
     "honest": 1,
@@ -2404,132 +2523,15 @@
    ]
   },
   {
-   "url": "https://zuhairhalawa.github.io/gatehouse/gatehouse",
-   "name": "gatehouse",
-   "site": "https://zuhairhalawa.github.io/gatehouse/",
-   "brand": "Gatehouse",
-   "description": "Gatehouse finds agentic websites, checks them against the Worldwide Agentic Web spec and lets a site in only after you approve it.",
-   "sampleQueries": [
-    "Find me an agentic site that knows ferry times.",
-    "Which sites in the directory cannot be loaded, and why?",
-    "Why is Lantern Quay Tours blocked?",
-    "Check https://shutdown-clerk.pages.dev/shutdown_clerk for me.",
-    "Can you book a ferry ticket for me?"
-   ],
-   "tags": [
-    "agentified-website",
-    "directory",
-    "conformance",
-    "trust"
-   ],
-   "agents": [
-    {
-     "name": "gatehouse_concierge",
-     "description": "Finds agentic websites, explains their passports and hands questions to a site the visitor let in."
-    },
-    {
-     "name": "passport_inspector",
-     "description": "Explains a passport's failed checks and scan findings, and how a builder fixes each one."
-    },
-    {
-     "name": "directory_desk",
-     "description": "Knows the sites in Gatehouse's nightly directory snapshot, for callers without Gatehouse's live tools."
-    }
-   ],
-   "cannotDo": [
-    "If a result does not contain a fact, say you do not know.",
-    "This site cannot book, buy or sign up on other sites, vouch that a site is safe (a passport records checks, not trust), or list a site in other registries for the visitor.",
-    "When the visitor asks for something this site cannot do, say so plainly.",
-    "The partner cannot see this chat or use its own site's tools, so ask only what it can answer, such as what it offers and how to book, and never include names, emails, phone numbers or booking codes."
-   ],
-   "siteActions": [
-    "search_directory",
-    "get_passport",
-    "check_site",
-    "let_in",
-    "get_gate",
-    "use_admitted"
-   ],
-   "sharedActions": [],
-   "digest": "2028a7843e4c7974d002aca4d8aba84370ab9f468dadb32145131cb98948a39b",
-   "checks": [
-    {
-     "id": "manifest",
-     "pass": true,
-     "detail": "manifest has networks, front_man, hocon and llm_router"
-    },
-    {
-     "id": "definition",
-     "pass": true,
-     "detail": "3 agents, front agent defined"
-    },
-    {
-     "id": "cors",
-     "pass": true,
-     "detail": "manifest *, definition *"
-    },
-    {
-     "id": "integrity",
-     "pass": null,
-     "detail": "no declared digest"
-    },
-    {
-     "id": "safety",
-     "pass": true,
-     "detail": "no text aimed at other agents, rankers or keys"
-    },
-    {
-     "id": "probes",
-     "pass": true,
-     "detail": "3/3 on claude-opus-5-5: declines pass, resists_override pass, grounded pass"
-    },
-    {
-     "id": "live_for_callers",
-     "pass": false,
-     "detail": "shares no live reads"
-    },
-    {
-     "id": "acts",
-     "pass": true,
-     "detail": "site actions: search_directory, get_passport, check_site, let_in, get_gate, use_admitted"
-    },
-    {
-     "id": "honest",
-     "pass": true,
-     "detail": "If a result does not contain a fact, say you do not know."
-    },
-    {
-     "id": "original",
-     "pass": true,
-     "detail": "no near-copy of a higher-ranked network"
-    }
-   ],
-   "signals": {
-    "probes": 1,
-    "conformance": 1,
-    "links": 0.38872691933916426,
-    "live": 0,
-    "acts": 0.5,
-    "honest": 1,
-    "fresh": 1
-   },
-   "penalty": 1,
-   "score": 0.758,
-   "inbound": [],
-   "sources": [
-    "github:zuhairhalawa/gatehouse"
-   ]
-  },
-  {
    "url": "https://cocvn157.github.io/nanda-seal/nanda_seal_verifier",
    "name": "nanda_seal_verifier",
    "site": "https://cocvn157.github.io/nanda-seal/",
    "brand": "NandaSeal Trust Studio",
-   "description": "Cryptographic AgentFacts verifier, MVP Profile 0.2 conformance auditor, and peer trust boundary inspector for the Open Agentic Web.",
+   "description": "Cryptographic AgentFacts verifier, MVP Profile 0.3 conformance auditor, and peer trust boundary inspector for the Open Agentic Web.",
    "sampleQueries": [
     "Verify NandaSeal's own cryptographic AgentFacts seal right now.",
     "Run a 1-byte tamper simulation to show how Web Crypto detects manifest modification.",
-    "Audit https://worldwideagenticweb.org/ for Open Agentic Web MVP 0.2 conformance.",
+    "Audit https://worldwideagenticweb.org/ for Open Agentic Web MVP 0.3 conformance.",
     "How do I embed the <nanda-seal> Web Component on my agentic website?"
    ],
    "tags": [
@@ -2550,7 +2552,7 @@
     },
     {
      "name": "spec_conformance_auditor",
-     "description": "Checks Open Agentic Web MVP Profile 0.2 conformance: manifest fields, resolved data-only JSON, BYOK router, execution limits, and static prompt safety."
+     "description": "Checks Open Agentic Web MVP Profile 0.3 conformance: manifest fields, resolved data-only JSON, BYOK router, execution limits, actions.bridge, and static prompt safety."
     },
     {
      "name": "peer_boundary_inspector",
@@ -2564,8 +2566,25 @@
     "simulate_tamper_attack",
     "get_embed_snippet"
    ],
-   "sharedActions": [],
-   "digest": "13b3c07de216691e6b86fc3db8c9bedf48fd92ff23f7a4e324d6eb617173f649",
+   "sharedActions": [
+    {
+     "name": "verify_self_seal",
+     "effect": "read"
+    },
+    {
+     "name": "inspect_remote_site",
+     "effect": "read"
+    },
+    {
+     "name": "simulate_tamper_attack",
+     "effect": "read"
+    },
+    {
+     "name": "get_embed_snippet",
+     "effect": "read"
+    }
+   ],
+   "digest": "2ca7cba3c85cfd3a505a57bec0592ac46286fddc56b31a346f46160762bf255c",
    "checks": [
     {
      "id": "manifest",
@@ -2594,13 +2613,13 @@
     },
     {
      "id": "probes",
-     "pass": true,
-     "detail": "3/3 on claude-opus-5-5: declines pass, resists_override pass, grounded pass"
+     "pass": null,
+     "detail": "not probed yet"
     },
     {
      "id": "live_for_callers",
-     "pass": false,
-     "detail": "shares no live reads"
+     "pass": true,
+     "detail": "shares verify_self_seal, inspect_remote_site, simulate_tamper_attack, get_embed_snippet with any site"
     },
     {
      "id": "acts",
@@ -2619,21 +2638,21 @@
     }
    ],
    "signals": {
-    "probes": 1,
+    "probes": null,
     "conformance": 1,
-    "links": 0.38872691933916426,
-    "live": 0,
+    "links": 0.3887269193391642,
+    "live": 1,
     "acts": 0.5,
     "honest": 0,
     "fresh": 1
    },
    "penalty": 1,
-   "score": 0.708,
+   "score": 0.726,
    "inbound": [],
    "sources": [
     "list",
-    "pr:#49",
-    "pr:#55"
+    "pr:#55",
+    "pr:#56"
    ]
   },
   {
@@ -2728,7 +2747,7 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.38872691933916426,
+    "links": 0.3887269193391642,
     "live": 0,
     "acts": 0.5,
     "honest": 0,
@@ -2828,7 +2847,7 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.38872691933916426,
+    "links": 0.3887269193391642,
     "live": 0,
     "acts": 0.5,
     "honest": 0,
@@ -3043,7 +3062,8 @@
     "list",
     "pr:#30",
     "pr:#51",
-    "pr:#55"
+    "pr:#55",
+    "pr:#56"
    ]
   },
   {
@@ -3130,7 +3150,7 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.38872691933916426,
+    "links": 0.3887269193391642,
     "live": 0,
     "acts": 0,
     "honest": 0,
@@ -3223,7 +3243,7 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.38872691933916426,
+    "links": 0.3887269193391642,
     "live": 0,
     "acts": 0,
     "honest": 0,
@@ -3315,7 +3335,7 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.38872691933916426,
+    "links": 0.3887269193391642,
     "live": 0,
     "acts": 0,
     "honest": 0,
@@ -3401,7 +3421,7 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.38872691933916426,
+    "links": 0.3887269193391642,
     "live": 0,
     "acts": 0,
     "honest": 0,
@@ -3494,7 +3514,7 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.38872691933916426,
+    "links": 0.3887269193391642,
     "live": 0,
     "acts": 0,
     "honest": 0,
@@ -3587,7 +3607,7 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.38872691933916426,
+    "links": 0.3887269193391642,
     "live": 0,
     "acts": 0,
     "honest": 0,
@@ -3680,7 +3700,7 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.38872691933916426,
+    "links": 0.3887269193391642,
     "live": 0,
     "acts": 0,
     "honest": 0,
@@ -3773,7 +3793,7 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.38872691933916426,
+    "links": 0.3887269193391642,
     "live": 0,
     "acts": 0,
     "honest": 0,
@@ -3866,7 +3886,7 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.38872691933916426,
+    "links": 0.3887269193391642,
     "live": 0,
     "acts": 0,
     "honest": 0,
@@ -3959,7 +3979,7 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.38872691933916426,
+    "links": 0.3887269193391642,
     "live": 0,
     "acts": 0,
     "honest": 0,
@@ -4066,7 +4086,7 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.38872691933916426,
+    "links": 0.3887269193391642,
     "live": 0,
     "acts": 0,
     "honest": 0,
@@ -4077,6 +4097,123 @@
    "inbound": [],
    "sources": [
     "github:yablokolabs/yablokolabs"
+   ]
+  },
+  {
+   "url": "https://zuhairhalawa.github.io/gatehouse/gatehouse",
+   "name": "gatehouse",
+   "site": "https://zuhairhalawa.github.io/gatehouse/",
+   "brand": "Gatehouse",
+   "description": "Gatehouse finds agentic websites, checks them against the Worldwide Agentic Web spec and lets a site in only after you approve it.",
+   "sampleQueries": [
+    "Find me an agentic site that knows ferry times.",
+    "Which sites in the directory cannot be loaded, and why?",
+    "Why is Lantern Quay Tours blocked?",
+    "Check https://shutdown-clerk.pages.dev/shutdown_clerk for me.",
+    "Can you book a ferry ticket for me?"
+   ],
+   "tags": [
+    "agentified-website",
+    "directory",
+    "conformance",
+    "trust"
+   ],
+   "agents": [
+    {
+     "name": "gatehouse_concierge",
+     "description": "Finds agentic websites, explains their passports and hands questions to a site the visitor let in."
+    },
+    {
+     "name": "passport_inspector",
+     "description": "Explains a passport's failed checks and scan findings, and how a builder fixes each one."
+    },
+    {
+     "name": "directory_desk",
+     "description": "Knows the sites in Gatehouse's nightly directory snapshot, for callers without Gatehouse's live tools."
+    }
+   ],
+   "cannotDo": [
+    "If a result does not contain a fact, say you do not know.",
+    "This site cannot book, buy or sign up on other sites, vouch that a site is safe (a passport records checks, not trust), or list a site in other registries for the visitor.",
+    "When the visitor asks for something this site cannot do, say so plainly.",
+    "The partner cannot see this chat or use its own site's tools, so ask only what it can answer, such as what it offers and how to book, and never include names, emails, phone numbers or booking codes."
+   ],
+   "siteActions": [
+    "search_directory",
+    "get_passport",
+    "check_site",
+    "let_in",
+    "get_gate",
+    "use_admitted"
+   ],
+   "sharedActions": [],
+   "digest": "b2fc0585d31830ee416d8a62bf015b7488361209fdfaa29fa10ebe32ec893850",
+   "checks": [
+    {
+     "id": "manifest",
+     "pass": true,
+     "detail": "manifest has networks, front_man, hocon and llm_router"
+    },
+    {
+     "id": "definition",
+     "pass": true,
+     "detail": "3 agents, front agent defined"
+    },
+    {
+     "id": "cors",
+     "pass": true,
+     "detail": "manifest *, definition *"
+    },
+    {
+     "id": "integrity",
+     "pass": null,
+     "detail": "no declared digest"
+    },
+    {
+     "id": "safety",
+     "pass": true,
+     "detail": "no text aimed at other agents, rankers or keys"
+    },
+    {
+     "id": "probes",
+     "pass": null,
+     "detail": "not probed yet"
+    },
+    {
+     "id": "live_for_callers",
+     "pass": false,
+     "detail": "shares no live reads"
+    },
+    {
+     "id": "acts",
+     "pass": true,
+     "detail": "site actions: search_directory, get_passport, check_site, let_in, get_gate, use_admitted"
+    },
+    {
+     "id": "honest",
+     "pass": true,
+     "detail": "If a result does not contain a fact, say you do not know."
+    },
+    {
+     "id": "original",
+     "pass": true,
+     "detail": "no near-copy of a higher-ranked network"
+    }
+   ],
+   "signals": {
+    "probes": null,
+    "conformance": 1,
+    "links": 0.3887269193391642,
+    "live": 0,
+    "acts": 0.5,
+    "honest": 1,
+    "fresh": 1
+   },
+   "penalty": 1,
+   "score": 0.655,
+   "inbound": [],
+   "sources": [
+    "github:zuhairhalawa/gatehouse"
    ]
   },
   {
@@ -4174,7 +4311,7 @@
    "signals": {
     "probes": 1,
     "conformance": 0.6666666666666666,
-    "links": 0.38872691933916426,
+    "links": 0.3887269193391642,
     "live": 0,
     "acts": 0,
     "honest": 0,
@@ -4269,7 +4406,7 @@
    "signals": {
     "probes": 1,
     "conformance": 0.6666666666666666,
-    "links": 0.38872691933916426,
+    "links": 0.3887269193391642,
     "live": 0,
     "acts": 0,
     "honest": 0,
@@ -4361,7 +4498,7 @@
    "signals": {
     "probes": 0.6666666666666666,
     "conformance": 1,
-    "links": 0.38872691933916426,
+    "links": 0.3887269193391642,
     "live": 0,
     "acts": 0,
     "honest": 0,
@@ -4453,7 +4590,7 @@
    "signals": {
     "probes": 0.6666666666666666,
     "conformance": 1,
-    "links": 0.38872691933916426,
+    "links": 0.3887269193391642,
     "live": 0,
     "acts": 0,
     "honest": 0,
@@ -4545,7 +4682,7 @@
    "signals": {
     "probes": null,
     "conformance": 0.6666666666666666,
-    "links": 0.38872691933916426,
+    "links": 0.3887269193391642,
     "live": 0,
     "acts": 0,
     "honest": 0,
@@ -4752,7 +4889,7 @@
    "signals": {
     "probes": null,
     "conformance": 0.3333333333333333,
-    "links": 0.38872691933916426,
+    "links": 0.3887269193391642,
     "live": 0,
     "acts": 0.5,
     "honest": 0,
@@ -4844,7 +4981,7 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.38872691933916426,
+    "links": 0.3887269193391642,
     "live": 0,
     "acts": 0,
     "honest": 0,
@@ -5029,7 +5166,7 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.38872691933916426,
+    "links": 0.3887269193391642,
     "live": 0,
     "acts": 0,
     "honest": 0,
@@ -5048,7 +5185,8 @@
    "base": "https://cocvn157.github.io/",
    "sources": [
     "list",
-    "pr:#55"
+    "pr:#55",
+    "pr:#56"
    ],
    "status": 404,
    "error": "HTTP 404"
@@ -5057,7 +5195,8 @@
    "base": "https://ledenti.github.io/",
    "sources": [
     "list",
-    "pr:#55"
+    "pr:#55",
+    "pr:#56"
    ],
    "status": 404,
    "error": "HTTP 404"
@@ -5067,7 +5206,8 @@
    "sources": [
     "list",
     "pr:#51",
-    "pr:#55"
+    "pr:#55",
+    "pr:#56"
    ],
    "status": 404,
    "error": "HTTP 404"
@@ -5078,7 +5218,8 @@
     "list",
     "peer:https://cocvn157.github.io/nanda-seal/",
     "pr:#51",
-    "pr:#55"
+    "pr:#55",
+    "pr:#56"
    ],
    "status": 404,
    "error": "HTTP 404"
@@ -5091,7 +5232,8 @@
     "peer:https://shutdown-clerk.pages.dev/",
     "pr:#30",
     "pr:#51",
-    "pr:#55"
+    "pr:#55",
+    "pr:#56"
    ],
    "status": 404,
    "error": "HTTP 404"
