@@ -1,0 +1,2 @@
+# Sites submitted to Rayo directly, one URL per line. They are crawled and ranked like any other.
+https://boond-shop.boond-shop.workers.dev/

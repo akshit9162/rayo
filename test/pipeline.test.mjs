@@ -105,3 +105,18 @@ test("tokenize stems and drops stop words", () => {
   assert.deepEqual(tokenize("Booking the boats!"), ["book", "boat"]);
   assert.deepEqual(tokenize("slides slide classes stories booked"), ["slide", "slide", "class", "story", "book"]);
 });
+
+test("a sample query the site turns down does not make it a match", () => {
+  const net = (url, brand, description, sampleQueries, cannotDo) => ({
+    url, brand, name: brand, description, sampleQueries, cannotDo, agents: [], siteActions: [], sharedActions: [],
+    tags: [], checks: [], signals: { acts: 0 }, score: 0.5, inbound: [],
+  });
+  const index = { networks: [
+    net("https://shot.example/shop", "shots", "Collagen shots delivered in Hyderabad", ["Can you also send flowers with my order?"],
+      ["For something this shop does not sell, such as flowers, ask the search engine."]),
+    net("https://bakery.example/cakes", "cakes", "Cakes and pastries in Hyderabad", ["Do you have eggless cakes?"], []),
+  ] };
+  const prepared = prepare(index);
+  assert.deepEqual(search(prepared, "flowers"), []);
+  assert.equal(search(prepared, "collagen shots")[0].url, "https://shot.example/shop");
+});

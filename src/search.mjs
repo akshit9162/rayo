@@ -45,8 +45,12 @@ export function prepare(index) {
   const docs = index.networks.map((n) => {
     const tf = new Map();
     let len = 0;
+    // A sample query can show a request the site turns down ("send flowers too?"). A word the
+    // site's own can't-do sentences use does not count from its sample queries.
+    const cannot = new Set(tokenize((n.cannotDo ?? []).join(" ")));
     for (const [field, text] of Object.entries(fieldsOf(n))) {
       for (const t of tokenize(text ?? "")) {
+        if (field === "sampleQueries" && cannot.has(t)) continue;
         tf.set(t, (tf.get(t) ?? 0) + FIELDS[field]);
         len += FIELDS[field];
       }

@@ -1,6 +1,7 @@
 // Where the crawl starts: the community list, sites proposed in open PRs, and manifests on GitHub.
 
 import { execFile } from "node:child_process";
+import { readFileSync } from "node:fs";
 import { promisify } from "node:util";
 
 const run = promisify(execFile);
@@ -39,6 +40,27 @@ export async function seedsFromUpstream() {
     } catch {}
   }
   return seeds;
+}
+
+/**
+ * Sites submitted to Rayo directly: one URL per line in data/seeds.txt, "#" starts a comment.
+ * A missing file means no submitted sites.
+ */
+export function seedsFromFile(file = new URL("../data/seeds.txt", import.meta.url)) {
+  let text;
+  try {
+    text = readFileSync(file, "utf8");
+  } catch {
+    return [];
+  }
+  const out = [];
+  for (const line of text.split("\n")) {
+    const url = line.replace(/#.*/, "").trim();
+    if (!url.startsWith("https://")) continue;
+    const u = new URL(url);
+    out.push({ base: u.pathname.endsWith("/") ? u.href : new URL(".", u).href, source: "submitted" });
+  }
+  return out;
 }
 
 /** Candidate site bases for repos that contain an agent-manifest.json. */

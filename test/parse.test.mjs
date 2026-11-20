@@ -78,3 +78,17 @@ test("bridge actions are read from source text, including imported modules", () 
   assert.equal(b.publicCallers, false);
   assert.equal(parseBridgeActions(['callerOrigins: ["*"], name: "s", effect: "read"']).publicCallers, true);
 });
+
+test("submitted seeds: one https URL per line, comments and other schemes skipped", async () => {
+  const { writeFileSync, mkdtempSync } = await import("node:fs");
+  const { tmpdir } = await import("node:os");
+  const { join } = await import("node:path");
+  const { seedsFromFile } = await import("../src/seeds.mjs");
+  const file = join(mkdtempSync(join(tmpdir(), "rayo-")), "seeds.txt");
+  writeFileSync(file, "# a comment\nhttps://shop.example/\nhttps://other.example/agent/net.network.json # inline\nhttp://plain.example/\n\n");
+  assert.deepEqual(seedsFromFile(file), [
+    { base: "https://shop.example/", source: "submitted" },
+    { base: "https://other.example/agent/", source: "submitted" },
+  ]);
+  assert.deepEqual(seedsFromFile(join(tmpdir(), "rayo-missing-seeds.txt")), []);
+});

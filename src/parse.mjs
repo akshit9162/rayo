@@ -184,7 +184,7 @@ function cannotDoSentences(json) {
   const visit = (v) => {
     if (typeof v === "string") {
       for (const s of v.split(/(?<=\.)\s+|\n/)) {
-        if (/\b(cannot|can't|can not|does not|doesn't)\b/i.test(s) && s.length < 400) out.add(s.trim());
+        if (/\b(cannot|can't|can not|does not|doesn't)\b/i.test(s) && s.length < 800) out.add(s.trim());
       }
     } else if (Array.isArray(v)) v.forEach(visit);
     else if (v && typeof v === "object") Object.values(v).forEach(visit);

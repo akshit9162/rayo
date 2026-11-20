@@ -4,7 +4,7 @@
 
 import { crawl } from "../src/crawl.mjs";
 import { fetchResource } from "../src/fetch.mjs";
-import { seedsFromUpstream, seedsFromGitHub } from "../src/seeds.mjs";
+import { seedsFromUpstream, seedsFromGitHub, seedsFromFile } from "../src/seeds.mjs";
 import { readJson, writeJson, writeIndex } from "../src/store.mjs";
 
 const args = process.argv.slice(2);
@@ -13,6 +13,9 @@ const log = (m) => process.stderr.write(`${m}\n`);
 
 const seeds = await seedsFromUpstream();
 log(`upstream seeds: ${seeds.length}`);
+const submitted = seedsFromFile();
+seeds.push(...submitted);
+log(`submitted seeds: ${submitted.length}`);
 if (!args.includes("--no-github")) {
   try {
     seeds.push(...(await seedsFromGitHub({ log })));
