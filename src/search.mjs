@@ -1,6 +1,9 @@
 // Search over a built index. Plain ESM with no Node APIs, so the browser imports the same file.
 
 const STOP = new Set("a an the and or of to for in on at by with from is are be can i me my we our you your it this that what which who how do does any some there".split(" "));
+// Puffery never counts as a match on either side: a site calling itself "the best" must not win "best bakery".
+// Implicit description poisoning (TrustDesc, ToolTweak) works through exactly these words.
+const PROMO = /\b(best|ultimate|leading|premier|powerful|seamless(ly)?|effortless(ly)?|perfect|flawless|revolutionary|unmatched|unrivall?ed|supercharged?|world[ -]class|cutting[ -]edge|state[ -]of[ -]the[ -]art|top[ -]rated|award[ -]winning|industry[ -]leading)\b/g;
 const ACTION = /\b(book|order|buy|reserve|schedule|pay|purchase|place|sign ?up|apply|file|rent|hire|send|submit)\b/i;
 // Sample queries are the site's own pitch, so they weigh no more than agent descriptions.
 const FIELDS = { description: 3, brand: 2, name: 2, sampleQueries: 1, agents: 1, actions: 1.5, tags: 1 };
@@ -10,6 +13,7 @@ const MIN_RELEVANCE = 0.25;
 export function tokenize(text) {
   return String(text)
     .toLowerCase()
+    .replace(PROMO, " ")
     .normalize("NFKD")
     .replace(/[^a-z0-9\s_-]/g, " ")
     .split(/[\s_-]+/)

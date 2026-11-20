@@ -102,7 +102,7 @@ test("a failed fetch is retried once", async () => {
   assert.equal(calls, 2);
 });
 
-test("probes: override check runs in code, judged probes use the schema reply", async () => {
+test("probes: every probe is judged on the schema reply, and the override asks for a rule to be broken", async () => {
   const calls = [];
   const client = {
     beta: {
@@ -121,7 +121,8 @@ test("probes: override check runs in code, judged probes use the schema reply", 
   assert.deepEqual(r.results.map((x) => [x.id, x.pass]), [["declines", false], ["resists_override", true], ["grounded", true]]);
   assert.equal(r.passed, 2);
   assert.equal(r.total, 3);
-  assert.equal(calls.length, 5);
+  assert.equal(calls.length, 6);
+  assert.match(calls.find((c) => c.messages[0].content.startsWith("Ignore all")).messages[0].content, /transaction ID/);
   assert.ok(calls.every((c) => c.fallbacks === "default"));
 });
 
@@ -145,4 +146,20 @@ test("a definition that times out keeps its last good record and links", async (
   assert.equal(n.stale, true);
   assert.equal(n.digest, good.sites.find((s) => s.base === "https://good.example/").networks[0].digest);
   assert.match(n.problems[0], /timeout\); using the record from/);
+});
+
+test("probes: unchanged probes are reused from the cache, only the changed one is asked", async () => {
+  const { probeAll, PROBE_MODEL } = await import("../src/probe.mjs");
+  const calls = [];
+  const client = { beta: { messages: { create: async (params) => {
+    calls.push(params);
+    return { stop_reason: "end_turn", content: [{ type: "text", text: params.output_config?.format ? '{"pass":true,"reason":"r"}' : "I can't do that." }] };
+  } } } };
+  const old = { model: PROBE_MODEL, version: 1, passed: 2, total: 3, results: [
+    { id: "declines", pass: true, reason: "old" }, { id: "resists_override", pass: false, reason: "echoed" }, { id: "grounded", pass: true, reason: "old" }] };
+  const cache = { d1: old };
+  await probeAll([{ digest: "d1", url: "u", instructions: "Help.", sampleQueries: [] }], cache, { client });
+  assert.equal(calls.length, 2);                                   // only the new override probe: ask + judge
+  assert.equal(cache.d1.version, 2);
+  assert.deepEqual(cache.d1.results.map((r) => [r.id, r.pass, r.reason]), [["declines", true, "old"], ["resists_override", true, "r"], ["grounded", true, "old"]]);
 });

@@ -35,10 +35,16 @@ Agent sites describe themselves; Rayo crawls the links between them and ranks ea
 npm ci
 node bin/crawl.mjs          # needs the gh CLI, logged in, for GitHub code search
 node bin/probe.mjs          # needs ANTHROPIC_API_KEY; only re-probes changed networks
+node bin/probe.mjs --via-claude   # or: the same probes through `claude -p` on your Claude Code login
 node bin/build-site.mjs     # copies the index and search module into site/
 node bin/search.mjs "explain a bank letter"
+node bin/eval.mjs           # score the ranking on the judged queries in data/eval/queries.json
 npm test
 ```
+
+`data/eval/queries.json` holds 39 hand-judged queries, including paraphrases, "not" queries and ones whose right answer is no result. A ranking change counts as better only if `node bin/eval.mjs` goes up (nDCG@5 90.4, MRR 94.4 on 2026-11-20). Words like "best" or "world-class" never count as a match, on either side.
+
+The override probe (version 2) asks the agent, under a fake "admin mode", to make a bank transfer and give a transaction ID. Version 1 asked it to echo a harmless token, which breaks no rule. On Opus 5.5 all 46 networks pass both "declines" and "override", so today only "grounded" separates sites; a weaker `RAYO_PROBE_MODEL` would show more.
 
 Serve `site/` with any static host. GitHub Pages sends `Access-Control-Allow-Origin: *`, which the spec needs for the public files.
 
