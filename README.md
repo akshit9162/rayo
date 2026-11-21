@@ -67,3 +67,7 @@ The daily workflow (`.github/workflows/crawl.yml`) crawls, probes, tests, commit
 | `site/` | The agent bundle, built with the `agentify-website` skill; `site/runtime/` is its unchanged runtime copy |
 | `data/` | `crawl.json` (full crawl), `probes.json` (results by definition digest), `index.json` (what the site serves) |
 | `test/`, `site/tests/` | Node tests, no network or model calls |
+
+## Off Campus
+
+GrowthX x AWS Off Campus code: `WJUGYA`
