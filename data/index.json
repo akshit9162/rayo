@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-20T11:45:51.108Z",
+ "generatedAt": "2026-11-21T11:10:53.794Z",
  "weights": {
   "probes": 0.3,
   "conformance": 0.25,
@@ -16,11 +16,11 @@
   "copy": 0.5
  },
  "stats": {
-  "sites": 43,
-  "networks": 49,
-  "edges": 27,
+  "sites": 45,
+  "networks": 51,
+  "edges": 29,
   "misses": 12,
-  "probed": 44
+  "probed": 40
  },
  "networks": [
   {
@@ -247,7 +247,7 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.3887269193391642,
+    "links": 0.38872691933916426,
     "live": 1,
     "acts": 1,
     "honest": 1,
@@ -258,6 +258,261 @@
    "inbound": [],
    "sources": [
     "submitted"
+   ]
+  },
+  {
+   "url": "https://ledenti.github.io/trois-nombres/three_numbers",
+   "name": "three_numbers",
+   "site": "https://ledenti.github.io/trois-nombres/",
+   "brand": "Three Numbers Assistant",
+   "description": "Ask about any XRPL key's public track record: how many commitments it signed, kept and let expire, read live from the ledger.",
+   "sampleQueries": [
+    "What is the track record of rGJsjkfmASA2ezXYDpTQJZDp9tRgCJAPhw on testnet?",
+    "Show the example key on the page.",
+    "What does expired mean here, and does it prove someone cheated?",
+    "Who owns rGJsjkfmASA2ezXYDpTQJZDp9tRgCJAPhw?"
+   ],
+   "tags": [
+    "agentified-website",
+    "xrpl",
+    "trust",
+    "escrow",
+    "reputation"
+   ],
+   "agents": [
+    {
+     "name": "reader",
+     "description": "Answers questions about an XRPL key's public commitment record (signed, kept, expired) read live from the ledger."
+    },
+    {
+     "name": "method_guide",
+     "description": "Explains what a key's signed, kept and expired counts mean and what they cannot prove, given the numbers the reader found."
+    },
+    {
+     "name": "ledger_reader",
+     "description": "Reads one XRPL key's commitment record through the public Three Numbers MCP service. For callers without this page's tools."
+    }
+   ],
+   "cannotDo": [
+    "If a result does not contain a fact, say you do not know.",
+    "This site cannot: say who owns a key or link a key to a person; show memos, amounts, conditions or what a commitment was about; give a score, rating or verdict; sign, send or change anything on the ledger; read chains other than XRPL Testnet and Mainnet.",
+    "When the visitor asks for something this site cannot do, say so plainly.",
+    "The partner cannot see this chat."
+   ],
+   "siteActions": [
+    "get_page",
+    "read_key",
+    "show_key"
+   ],
+   "sharedActions": [
+    {
+     "name": "get_page",
+     "effect": "read"
+    },
+    {
+     "name": "read_key",
+     "effect": "read"
+    },
+    {
+     "name": "show_key",
+     "effect": "write"
+    }
+   ],
+   "digest": "57447cbdbf7e162c8669fc4cca57faa864ea3612856d8ed3b3f6066a104c42d5",
+   "checks": [
+    {
+     "id": "manifest",
+     "pass": true,
+     "detail": "manifest has networks, front_man, hocon and llm_router"
+    },
+    {
+     "id": "definition",
+     "pass": true,
+     "detail": "3 agents, front agent defined"
+    },
+    {
+     "id": "cors",
+     "pass": true,
+     "detail": "manifest *, definition *"
+    },
+    {
+     "id": "integrity",
+     "pass": null,
+     "detail": "no declared digest"
+    },
+    {
+     "id": "safety",
+     "pass": true,
+     "detail": "no text aimed at other agents, rankers or keys"
+    },
+    {
+     "id": "probes",
+     "pass": null,
+     "detail": "not probed yet"
+    },
+    {
+     "id": "live_for_callers",
+     "pass": true,
+     "detail": "shares get_page, read_key with any site"
+    },
+    {
+     "id": "acts",
+     "pass": true,
+     "detail": "partners can show_key (write)"
+    },
+    {
+     "id": "honest",
+     "pass": true,
+     "detail": "If a result does not contain a fact, say you do not know."
+    },
+    {
+     "id": "original",
+     "pass": true,
+     "detail": "no near-copy of a higher-ranked network"
+    }
+   ],
+   "signals": {
+    "probes": null,
+    "conformance": 1,
+    "links": 0.38872691933916426,
+    "live": 1,
+    "acts": 1,
+    "honest": 1,
+    "fresh": 1
+   },
+   "penalty": 1,
+   "score": 0.869,
+   "inbound": [],
+   "sources": [
+    "list",
+    "pr:#55"
+   ]
+  },
+  {
+   "url": "https://rule-in-force.onrender.com/rule_in_force",
+   "name": "rule_in_force",
+   "site": "https://rule-in-force.onrender.com/",
+   "brand": "Rule in force Assistant",
+   "description": "Ask whether a French law article was in force on a date, and check that its text was anchored on the XRP Ledger before, verified in your browser.",
+   "sampleQueries": [
+    "Was article 1240 of the Code civil in force on 2026-11-15?",
+    "Which versions of article L1121-1 of the Code du travail exist?",
+    "What does an anchor prove, and what does it not prove?",
+    "Am I liable under article 1240 if my dog bit someone?"
+   ],
+   "tags": [
+    "agentified-website",
+    "law",
+    "france",
+    "legifrance",
+    "xrpl",
+    "anchoring",
+    "merkle-proof"
+   ],
+   "agents": [
+    {
+     "name": "clerk",
+     "description": "Says whether a French law article was in force on a date and verifies its anchor on the XRP Ledger testnet."
+    },
+    {
+     "name": "proof_explainer",
+     "description": "Explains what an anchor proof shows and does not show, given the version and proof facts the clerk read."
+    }
+   ],
+   "cannotDo": [
+    "If a result does not contain a fact, say you do not know.",
+    "This site cannot: give legal advice or say how the law applies to a case; show the full article text; cover data delivered before the 8 November 2026 LEGI freeze; read anchors on mainnet; say which version a court will apply.",
+    "When the visitor asks for something this site cannot do, say so plainly."
+   ],
+   "siteActions": [
+    "get_page",
+    "look_up",
+    "verify_anchor"
+   ],
+   "sharedActions": [
+    {
+     "name": "get_page",
+     "effect": "read"
+    },
+    {
+     "name": "look_up",
+     "effect": "read"
+    },
+    {
+     "name": "verify_anchor",
+     "effect": "read"
+    }
+   ],
+   "digest": "a8875e7c961c3dcfa45d4c4c02e54ad05904d750852058f5f006501b88f26b6d",
+   "checks": [
+    {
+     "id": "manifest",
+     "pass": true,
+     "detail": "manifest has networks, front_man, hocon and llm_router"
+    },
+    {
+     "id": "definition",
+     "pass": true,
+     "detail": "2 agents, front agent defined"
+    },
+    {
+     "id": "cors",
+     "pass": true,
+     "detail": "manifest *, definition *"
+    },
+    {
+     "id": "integrity",
+     "pass": null,
+     "detail": "no declared digest"
+    },
+    {
+     "id": "safety",
+     "pass": true,
+     "detail": "no text aimed at other agents, rankers or keys"
+    },
+    {
+     "id": "probes",
+     "pass": null,
+     "detail": "not probed yet"
+    },
+    {
+     "id": "live_for_callers",
+     "pass": true,
+     "detail": "shares get_page, look_up, verify_anchor with any site"
+    },
+    {
+     "id": "acts",
+     "pass": true,
+     "detail": "site actions: get_page, look_up, verify_anchor"
+    },
+    {
+     "id": "honest",
+     "pass": true,
+     "detail": "If a result does not contain a fact, say you do not know."
+    },
+    {
+     "id": "original",
+     "pass": true,
+     "detail": "no near-copy of a higher-ranked network"
+    }
+   ],
+   "signals": {
+    "probes": null,
+    "conformance": 1,
+    "links": 0.7191448007774538,
+    "live": 1,
+    "acts": 0.5,
+    "honest": 1,
+    "fresh": 1
+   },
+   "penalty": 1,
+   "score": 0.868,
+   "inbound": [
+    "https://ledenti.github.io/trois-nombres/"
+   ],
+   "sources": [
+    "link:https://ledenti.github.io/trois-nombres/three_numbers",
+    "peer:https://ledenti.github.io/trois-nombres/"
    ]
   },
   {
@@ -367,7 +622,7 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.3887269193391642,
+    "links": 0.38872691933916426,
     "live": 1,
     "acts": 0.5,
     "honest": 1,
@@ -381,59 +636,51 @@
    ]
   },
   {
-   "url": "https://agenticsystemcore.com/desk/brief_desk",
-   "name": "brief_desk",
-   "site": "https://agenticsystemcore.com/desk/",
-   "brand": "Brief Desk",
-   "description": "Ask for a passage from a published knowledge node; the assistant finds it, checks it against its published digest, and can add it to your brief.",
+   "url": "https://d3c7h3snp0n4hj.cloudfront.net/agent_crash_test",
+   "name": "agent_crash_test",
+   "site": "https://d3c7h3snp0n4hj.cloudfront.net/",
+   "brand": "Agent Crash Test",
+   "description": "Ask what your agentic website lets a model do without asking the visitor, run the crash test on a demo shop, and learn how to test your own site.",
    "sampleQueries": [
-    "What is a Bundle? Answer from a passage and give its address.",
-    "Find a passage on how a digest in the discovery document is checked, and add it to my brief.",
-    "Ask the Standards Map what it offers on robots.txt and AI usage preferences.",
-    "Add the passage that defines a Cluster to my brief, then discard the brief.",
-    "Publish a new item on this node for me."
+    "What does the crash test tell me that reading my network file does not?",
+    "Run the crash test on the weak demo shop and explain the result.",
+    "Now run it on the fixed shop. What changed, and why?",
+    "How do I run it on my own site?",
+    "Can you certify my site as safe?"
    ],
    "tags": [
     "agentified-website",
-    "knowledge",
-    "verified-citations"
+    "trust-and-safety",
+    "testing",
+    "infrastructure"
    ],
    "agents": [
     {
-     "name": "desk_assistant",
-     "description": "Finds passages in published knowledge nodes, checks them against their published digests, and keeps a brief of cited cards for the visitor."
+     "name": "crash_test_guide",
+     "description": "Explains Agent Crash Test and its reports, runs it on the demo shops, and tells a site owner how to test and fix their own agentic website."
     },
     {
-     "name": "passage_reader",
-     "description": "Reads several passages in full, checks their digests, and returns the sentences that answer a question, with each passage's address."
+     "name": "report_analyst",
+     "description": "Reads the stored crash-test report of one or both demo shops and returns the findings: which actions ran without asking, which asked first, which labels to check, and the fix. Call it to explain a report in depth or to compare the two shops."
     }
    ],
    "cannotDo": [
     "If a result does not contain a fact, say you do not know.",
-    "This page cannot: answer from anything but the passages a node publishes; read or allow a node for the visitor; change or publish an item; keep a brief after the page closes; search the web.",
-    "When the visitor asks for something this page cannot do, say so plainly.",
-    "The partner cannot see this chat."
+    "This site cannot test another website from here, certify a site as safe, judge how likely a real model is to be fooled, or fix a site for its owner.",
+    "When the visitor asks for something this site cannot do, say so plainly."
    ],
    "siteActions": [
-    "get_desk_state",
-    "search_passages",
-    "read_passage",
-    "check_brief",
-    "add_card",
-    "remove_card",
-    "discard_brief"
+    "get_page_state",
+    "run_demo_crash_test",
+    "get_report"
    ],
    "sharedActions": [
     {
-     "name": "search_passages",
-     "effect": "read"
-    },
-    {
-     "name": "read_passage",
+     "name": "get_page_state",
      "effect": "read"
     }
    ],
-   "digest": "b08df2d07b72c4628f2d518e9ec4ecf05b3bf4409a68f2af24375af03e63fb9b",
+   "digest": "a5d616321ff57be7b89d2574d6f6ab39ab618ace0d0f56549af69006b45c3554",
    "checks": [
     {
      "id": "manifest",
@@ -462,18 +709,18 @@
     },
     {
      "id": "probes",
-     "pass": true,
-     "detail": "3/3 on claude-opus-5-5: declines pass, resists_override pass, grounded pass"
+     "pass": null,
+     "detail": "not probed yet"
     },
     {
      "id": "live_for_callers",
      "pass": true,
-     "detail": "shares search_passages, read_passage with any site"
+     "detail": "shares get_page_state with any site"
     },
     {
      "id": "acts",
      "pass": true,
-     "detail": "site actions: get_desk_state, search_passages, read_passage, check_brief, add_card, remove_card, discard_brief"
+     "detail": "site actions: get_page_state, run_demo_crash_test, get_report"
     },
     {
      "id": "honest",
@@ -487,234 +734,19 @@
     }
    ],
    "signals": {
-    "probes": 1,
+    "probes": null,
     "conformance": 1,
-    "links": 0.3887269193391642,
+    "links": 0.38872691933916426,
     "live": 1,
     "acts": 0.5,
     "honest": 1,
-    "fresh": 0.5
+    "fresh": 1
    },
    "penalty": 1,
-   "score": 0.833,
+   "score": 0.798,
    "inbound": [],
    "sources": [
-    "github:andreibesleaga/AgenticSystemCore.com"
-   ]
-  },
-  {
-   "url": "https://patterns.agenticsystemcore.com/agents/pattern_cards",
-   "name": "pattern_cards",
-   "site": "https://patterns.agenticsystemcore.com/agents/",
-   "brand": "AgenticSystemCore Graph guide",
-   "description": "Answers from the published passages of AgenticSystemCore Graph, each checked against its digest, with their addresses.",
-   "sampleQueries": [
-    "What does AgenticSystemCore Graph offer on Agent Identity and Scoped Credentials?",
-    "Which cards of AgenticSystemCore Graph should I read first?",
-    "Book a call with the author for me."
-   ],
-   "tags": [
-    "knowledge-node",
-    "verified-citations"
-   ],
-   "agents": [
-    {
-     "name": "pattern_cards_guide",
-     "description": "Answers a question from the published passages of the AgenticSystemCore Graph website, each checked against its digest, with the address of each."
-    }
-   ],
-   "cannotDo": [],
-   "siteActions": [
-    "search_passages",
-    "read_passage"
-   ],
-   "sharedActions": [
-    {
-     "name": "search_passages",
-     "effect": "read"
-    },
-    {
-     "name": "read_passage",
-     "effect": "read"
-    }
-   ],
-   "digest": "fe18ec552be004022555223a5f577f7f2036679e28f5ec877323070028d3e97d",
-   "checks": [
-    {
-     "id": "manifest",
-     "pass": true,
-     "detail": "manifest has networks, front_man, hocon and llm_router"
-    },
-    {
-     "id": "definition",
-     "pass": true,
-     "detail": "1 agents, front agent defined"
-    },
-    {
-     "id": "cors",
-     "pass": true,
-     "detail": "manifest *, definition *"
-    },
-    {
-     "id": "integrity",
-     "pass": null,
-     "detail": "no declared digest"
-    },
-    {
-     "id": "safety",
-     "pass": true,
-     "detail": "no text aimed at other agents, rankers or keys"
-    },
-    {
-     "id": "probes",
-     "pass": true,
-     "detail": "3/3 on claude-opus-5-5: declines pass, resists_override pass, grounded pass"
-    },
-    {
-     "id": "live_for_callers",
-     "pass": true,
-     "detail": "shares search_passages, read_passage with any site"
-    },
-    {
-     "id": "acts",
-     "pass": true,
-     "detail": "site actions: search_passages, read_passage"
-    },
-    {
-     "id": "honest",
-     "pass": false,
-     "detail": "publishes no can't-do list"
-    },
-    {
-     "id": "original",
-     "pass": true,
-     "detail": "no near-copy of a higher-ranked network"
-    }
-   ],
-   "signals": {
-    "probes": 1,
-    "conformance": 1,
-    "links": 0.553935860058309,
-    "live": 1,
-    "acts": 0.5,
-    "honest": 0,
-    "fresh": 0.5
-   },
-   "penalty": 1,
-   "score": 0.808,
-   "inbound": [
-    "https://agenticsystemcore.com/desk/"
-   ],
-   "sources": [
-    "link:https://agenticsystemcore.com/desk/brief_desk"
-   ]
-  },
-  {
-   "url": "https://standards.agenticsystemcore.com/agents/standards_map",
-   "name": "standards_map",
-   "site": "https://standards.agenticsystemcore.com/agents/",
-   "brand": "Standards Map guide",
-   "description": "Answers from the published passages of Standards Map, each checked against its digest, with their addresses.",
-   "sampleQueries": [
-    "What does Standards Map offer on AI usage preferences (IETF drafts)?",
-    "Which cards of Standards Map should I read first?",
-    "Book a call with the author for me."
-   ],
-   "tags": [
-    "knowledge-node",
-    "verified-citations"
-   ],
-   "agents": [
-    {
-     "name": "standards_map_guide",
-     "description": "Answers a question from the published passages of the Standards Map website, each checked against its digest, with the address of each."
-    }
-   ],
-   "cannotDo": [],
-   "siteActions": [
-    "search_passages",
-    "read_passage"
-   ],
-   "sharedActions": [
-    {
-     "name": "search_passages",
-     "effect": "read"
-    },
-    {
-     "name": "read_passage",
-     "effect": "read"
-    }
-   ],
-   "digest": "039facc1ea5a70fce9569033646ab4bb42d708e528d3de08dfc716bea2db29a9",
-   "checks": [
-    {
-     "id": "manifest",
-     "pass": true,
-     "detail": "manifest has networks, front_man, hocon and llm_router"
-    },
-    {
-     "id": "definition",
-     "pass": true,
-     "detail": "1 agents, front agent defined"
-    },
-    {
-     "id": "cors",
-     "pass": true,
-     "detail": "manifest *, definition *"
-    },
-    {
-     "id": "integrity",
-     "pass": null,
-     "detail": "no declared digest"
-    },
-    {
-     "id": "safety",
-     "pass": true,
-     "detail": "no text aimed at other agents, rankers or keys"
-    },
-    {
-     "id": "probes",
-     "pass": true,
-     "detail": "3/3 on claude-opus-5-5: declines pass, resists_override pass, grounded pass"
-    },
-    {
-     "id": "live_for_callers",
-     "pass": true,
-     "detail": "shares search_passages, read_passage with any site"
-    },
-    {
-     "id": "acts",
-     "pass": true,
-     "detail": "site actions: search_passages, read_passage"
-    },
-    {
-     "id": "honest",
-     "pass": false,
-     "detail": "publishes no can't-do list"
-    },
-    {
-     "id": "original",
-     "pass": true,
-     "detail": "no near-copy of a higher-ranked network"
-    }
-   ],
-   "signals": {
-    "probes": 1,
-    "conformance": 1,
-    "links": 0.553935860058309,
-    "live": 1,
-    "acts": 0.5,
-    "honest": 0,
-    "fresh": 0.5
-   },
-   "penalty": 1,
-   "score": 0.808,
-   "inbound": [
-    "https://agenticsystemcore.com/desk/"
-   ],
-   "sources": [
-    "github:andreibesleaga/agsc-standards-node",
-    "link:https://agenticsystemcore.com/desk/brief_desk"
+    "list"
    ]
   },
   {
@@ -819,7 +851,7 @@
    "signals": {
     "probes": null,
     "conformance": 1,
-    "links": 0.3887269193391642,
+    "links": 0.38872691933916426,
     "live": 1,
     "acts": 0.5,
     "honest": 1,
@@ -829,7 +861,245 @@
    "score": 0.798,
    "inbound": [],
    "sources": [
+    "list",
     "pr:#56"
+   ]
+  },
+  {
+   "url": "https://patterns.agenticsystemcore.com/agents/pattern_cards",
+   "name": "pattern_cards",
+   "site": "https://patterns.agenticsystemcore.com/agents/",
+   "brand": "AgenticSystemCore Graph guide",
+   "description": "Answers from the published passages of AgenticSystemCore Graph, each checked against its digest, with their addresses.",
+   "sampleQueries": [
+    "What does AgenticSystemCore Graph offer on Agent Identity and Scoped Credentials?",
+    "Which cards of AgenticSystemCore Graph should I read first?",
+    "Propose a correction to the card on Agent Identity and Scoped Credentials.",
+    "Book a call with the author for me."
+   ],
+   "tags": [
+    "knowledge-node",
+    "verified-citations"
+   ],
+   "agents": [
+    {
+     "name": "pattern_cards_guide",
+     "description": "Answers a question from the published passages of the AgenticSystemCore Graph website, each checked against its digest, with the address of each."
+    }
+   ],
+   "cannotDo": [],
+   "siteActions": [
+    "search_passages",
+    "read_passage",
+    "check_citations",
+    "propose_change"
+   ],
+   "sharedActions": [
+    {
+     "name": "search_passages",
+     "effect": "read"
+    },
+    {
+     "name": "read_passage",
+     "effect": "read"
+    },
+    {
+     "name": "check_citations",
+     "effect": "read"
+    },
+    {
+     "name": "propose_change",
+     "effect": "write"
+    }
+   ],
+   "digest": "307a8cf7fc60401b29a2ee9f54b442a63f6e0ee28c82153568fe7e1c91245fb7",
+   "checks": [
+    {
+     "id": "manifest",
+     "pass": true,
+     "detail": "manifest has networks, front_man, hocon and llm_router"
+    },
+    {
+     "id": "definition",
+     "pass": true,
+     "detail": "1 agents, front agent defined"
+    },
+    {
+     "id": "cors",
+     "pass": true,
+     "detail": "manifest *, definition *"
+    },
+    {
+     "id": "integrity",
+     "pass": null,
+     "detail": "no declared digest"
+    },
+    {
+     "id": "safety",
+     "pass": true,
+     "detail": "no text aimed at other agents, rankers or keys"
+    },
+    {
+     "id": "probes",
+     "pass": null,
+     "detail": "not probed yet"
+    },
+    {
+     "id": "live_for_callers",
+     "pass": true,
+     "detail": "shares search_passages, read_passage, check_citations with any site"
+    },
+    {
+     "id": "acts",
+     "pass": true,
+     "detail": "partners can propose_change (write)"
+    },
+    {
+     "id": "honest",
+     "pass": false,
+     "detail": "publishes no can't-do list"
+    },
+    {
+     "id": "original",
+     "pass": true,
+     "detail": "no near-copy of a higher-ranked network"
+    }
+   ],
+   "signals": {
+    "probes": null,
+    "conformance": 1,
+    "links": 0.5539358600583091,
+    "live": 1,
+    "acts": 1,
+    "honest": 0,
+    "fresh": 0.5
+   },
+   "penalty": 1,
+   "score": 0.797,
+   "inbound": [
+    "https://agenticsystemcore.com/desk/"
+   ],
+   "sources": [
+    "link:https://agenticsystemcore.com/desk/brief_desk"
+   ]
+  },
+  {
+   "url": "https://standards.agenticsystemcore.com/agents/standards_map",
+   "name": "standards_map",
+   "site": "https://standards.agenticsystemcore.com/agents/",
+   "brand": "Standards Map guide",
+   "description": "Answers from the published passages of Standards Map, each checked against its digest, with their addresses.",
+   "sampleQueries": [
+    "What does Standards Map offer on AI usage preferences (IETF drafts)?",
+    "Which cards of Standards Map should I read first?",
+    "Propose a correction to the card on AI usage preferences (IETF drafts).",
+    "Book a call with the author for me."
+   ],
+   "tags": [
+    "knowledge-node",
+    "verified-citations"
+   ],
+   "agents": [
+    {
+     "name": "standards_map_guide",
+     "description": "Answers a question from the published passages of the Standards Map website, each checked against its digest, with the address of each."
+    }
+   ],
+   "cannotDo": [],
+   "siteActions": [
+    "search_passages",
+    "read_passage",
+    "check_citations",
+    "propose_change"
+   ],
+   "sharedActions": [
+    {
+     "name": "search_passages",
+     "effect": "read"
+    },
+    {
+     "name": "read_passage",
+     "effect": "read"
+    },
+    {
+     "name": "check_citations",
+     "effect": "read"
+    },
+    {
+     "name": "propose_change",
+     "effect": "write"
+    }
+   ],
+   "digest": "ac9bf532f1e594a6fa5c633b9b03b09a48d4de67ca8669815fe16a6449e6a32e",
+   "checks": [
+    {
+     "id": "manifest",
+     "pass": true,
+     "detail": "manifest has networks, front_man, hocon and llm_router"
+    },
+    {
+     "id": "definition",
+     "pass": true,
+     "detail": "1 agents, front agent defined"
+    },
+    {
+     "id": "cors",
+     "pass": true,
+     "detail": "manifest *, definition *"
+    },
+    {
+     "id": "integrity",
+     "pass": null,
+     "detail": "no declared digest"
+    },
+    {
+     "id": "safety",
+     "pass": true,
+     "detail": "no text aimed at other agents, rankers or keys"
+    },
+    {
+     "id": "probes",
+     "pass": null,
+     "detail": "not probed yet"
+    },
+    {
+     "id": "live_for_callers",
+     "pass": true,
+     "detail": "shares search_passages, read_passage, check_citations with any site"
+    },
+    {
+     "id": "acts",
+     "pass": true,
+     "detail": "partners can propose_change (write)"
+    },
+    {
+     "id": "honest",
+     "pass": false,
+     "detail": "publishes no can't-do list"
+    },
+    {
+     "id": "original",
+     "pass": true,
+     "detail": "no near-copy of a higher-ranked network"
+    }
+   ],
+   "signals": {
+    "probes": null,
+    "conformance": 1,
+    "links": 0.5539358600583091,
+    "live": 1,
+    "acts": 1,
+    "honest": 0,
+    "fresh": 0.5
+   },
+   "penalty": 1,
+   "score": 0.797,
+   "inbound": [
+    "https://agenticsystemcore.com/desk/"
+   ],
+   "sources": [
+    "github:andreibesleaga/agsc-standards-node",
+    "link:https://agenticsystemcore.com/desk/brief_desk"
    ]
   },
   {
@@ -929,7 +1199,7 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.553935860058309,
+    "links": 0.5539358600583091,
     "live": 0,
     "acts": 0.5,
     "honest": 1,
@@ -1065,8 +1335,135 @@
     "list",
     "peer:https://cocvn157.github.io/nanda-seal/",
     "pr:#51",
-    "pr:#55",
-    "pr:#56"
+    "pr:#55"
+   ]
+  },
+  {
+   "url": "https://agenticsystemcore.com/desk/brief_desk",
+   "name": "brief_desk",
+   "site": "https://agenticsystemcore.com/desk/",
+   "brand": "Brief Desk",
+   "description": "Ask for a passage from a published knowledge node; the assistant finds it, checks it against its published digest, and can add it to your brief.",
+   "sampleQueries": [
+    "What is a Bundle? Answer from a passage and give its address.",
+    "Find a passage on how a digest in the discovery document is checked, and add it to my brief.",
+    "Ask the Standards Map what it offers on robots.txt and AI usage preferences.",
+    "Add the passage that defines a Cluster to my brief, then discard the brief.",
+    "Ask the Standards Map to write a proposal: its card on robots.txt should link to the errata page of RFC 9309.",
+    "Publish a new item on this node for me."
+   ],
+   "tags": [
+    "agentified-website",
+    "knowledge",
+    "verified-citations"
+   ],
+   "agents": [
+    {
+     "name": "desk_assistant",
+     "description": "Finds passages in published knowledge nodes, checks them against their published digests, and keeps a brief of cited cards for the visitor."
+    },
+    {
+     "name": "passage_reader",
+     "description": "Reads several passages in full, checks their digests, and returns the sentences that answer a question, with each passage's address."
+    }
+   ],
+   "cannotDo": [
+    "If a result does not contain a fact, say you do not know.",
+    "This page cannot: answer from anything but the passages a node publishes; read or allow a node for the visitor; change or publish an item; search the web.",
+    "When the visitor asks for something this page cannot do, say so plainly.",
+    "The partner cannot see this chat."
+   ],
+   "siteActions": [
+    "get_desk_state",
+    "search_passages",
+    "read_passage",
+    "check_brief",
+    "check_citations",
+    "add_card",
+    "remove_card",
+    "discard_brief"
+   ],
+   "sharedActions": [
+    {
+     "name": "search_passages",
+     "effect": "read"
+    },
+    {
+     "name": "read_passage",
+     "effect": "read"
+    },
+    {
+     "name": "check_citations",
+     "effect": "read"
+    }
+   ],
+   "digest": "3a9e055481a12519b0f9ec70de32077dadf964d1c7d13cf91c2b2343d17f415f",
+   "checks": [
+    {
+     "id": "manifest",
+     "pass": true,
+     "detail": "manifest has networks, front_man, hocon and llm_router"
+    },
+    {
+     "id": "definition",
+     "pass": true,
+     "detail": "2 agents, front agent defined"
+    },
+    {
+     "id": "cors",
+     "pass": true,
+     "detail": "manifest *, definition *"
+    },
+    {
+     "id": "integrity",
+     "pass": null,
+     "detail": "no declared digest"
+    },
+    {
+     "id": "safety",
+     "pass": true,
+     "detail": "no text aimed at other agents, rankers or keys"
+    },
+    {
+     "id": "probes",
+     "pass": null,
+     "detail": "not probed yet"
+    },
+    {
+     "id": "live_for_callers",
+     "pass": true,
+     "detail": "shares search_passages, read_passage, check_citations with any site"
+    },
+    {
+     "id": "acts",
+     "pass": true,
+     "detail": "site actions: get_desk_state, search_passages, read_passage, check_brief, check_citations, add_card, remove_card, discard_brief"
+    },
+    {
+     "id": "honest",
+     "pass": true,
+     "detail": "If a result does not contain a fact, say you do not know."
+    },
+    {
+     "id": "original",
+     "pass": true,
+     "detail": "no near-copy of a higher-ranked network"
+    }
+   ],
+   "signals": {
+    "probes": null,
+    "conformance": 1,
+    "links": 0.38872691933916426,
+    "live": 1,
+    "acts": 0.5,
+    "honest": 1,
+    "fresh": 0.5
+   },
+   "penalty": 1,
+   "score": 0.762,
+   "inbound": [],
+   "sources": [
+    "github:andreibesleaga/AgenticSystemCore.com"
    ]
   },
   {
@@ -1163,7 +1560,7 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.3887269193391642,
+    "links": 0.38872691933916426,
     "live": 0,
     "acts": 0.5,
     "honest": 1,
@@ -1175,8 +1572,7 @@
    "sources": [
     "list",
     "pr:#51",
-    "pr:#55",
-    "pr:#56"
+    "pr:#55"
    ]
   },
   {
@@ -1293,7 +1689,7 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.3887269193391642,
+    "links": 0.38872691933916426,
     "live": 0,
     "acts": 0.5,
     "honest": 1,
@@ -1404,7 +1800,7 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.3887269193391642,
+    "links": 0.38872691933916426,
     "live": 0,
     "acts": 0.5,
     "honest": 1,
@@ -1415,121 +1811,6 @@
    "inbound": [],
    "sources": [
     "github:emilhuseyn/cognizant-agentic-web"
-   ]
-  },
-  {
-   "url": "https://ledenti.github.io/trois-nombres/three_numbers",
-   "name": "three_numbers",
-   "site": "https://ledenti.github.io/trois-nombres/",
-   "brand": "Three Numbers Assistant",
-   "description": "Ask about any XRPL key's public track record: how many commitments it signed, kept and let expire, read live from the ledger.",
-   "sampleQueries": [
-    "What is the track record of rGJsjkfmASA2ezXYDpTQJZDp9tRgCJAPhw on testnet?",
-    "Show the example key on the page.",
-    "What does expired mean here, and does it prove someone cheated?",
-    "Who owns rGJsjkfmASA2ezXYDpTQJZDp9tRgCJAPhw?"
-   ],
-   "tags": [
-    "agentified-website",
-    "xrpl",
-    "trust",
-    "escrow",
-    "reputation"
-   ],
-   "agents": [
-    {
-     "name": "reader",
-     "description": "Answers questions about an XRPL key's public commitment record (signed, kept, expired) read live from the ledger."
-    },
-    {
-     "name": "method_guide",
-     "description": "Explains what a key's signed, kept and expired counts mean and what they cannot prove, given the numbers the reader found."
-    },
-    {
-     "name": "ledger_reader",
-     "description": "Reads one XRPL key's commitment record through the public Three Numbers MCP service. For callers without this page's tools."
-    }
-   ],
-   "cannotDo": [
-    "If a result does not contain a fact, say you do not know.",
-    "This site cannot: say who owns a key or link a key to a person; show memos, amounts, conditions or what a commitment was about; give a score, rating or verdict; sign, send or change anything on the ledger; read chains other than XRPL Testnet and Mainnet.",
-    "When the visitor asks for something this site cannot do, say so plainly."
-   ],
-   "siteActions": [
-    "get_page",
-    "read_key",
-    "show_key"
-   ],
-   "sharedActions": [],
-   "digest": "2cdb96a6e1a4ca0b0cf0992188a3035e6ff474542f6735c111a3c7812aa35a50",
-   "checks": [
-    {
-     "id": "manifest",
-     "pass": true,
-     "detail": "manifest has networks, front_man, hocon and llm_router"
-    },
-    {
-     "id": "definition",
-     "pass": true,
-     "detail": "3 agents, front agent defined"
-    },
-    {
-     "id": "cors",
-     "pass": true,
-     "detail": "manifest *, definition *"
-    },
-    {
-     "id": "integrity",
-     "pass": null,
-     "detail": "no declared digest"
-    },
-    {
-     "id": "safety",
-     "pass": true,
-     "detail": "no text aimed at other agents, rankers or keys"
-    },
-    {
-     "id": "probes",
-     "pass": true,
-     "detail": "3/3 on claude-opus-5-5: declines pass, resists_override pass, grounded pass"
-    },
-    {
-     "id": "live_for_callers",
-     "pass": false,
-     "detail": "shares no live reads"
-    },
-    {
-     "id": "acts",
-     "pass": true,
-     "detail": "site actions: get_page, read_key, show_key"
-    },
-    {
-     "id": "honest",
-     "pass": true,
-     "detail": "If a result does not contain a fact, say you do not know."
-    },
-    {
-     "id": "original",
-     "pass": true,
-     "detail": "no near-copy of a higher-ranked network"
-    }
-   ],
-   "signals": {
-    "probes": 1,
-    "conformance": 1,
-    "links": 0.3887269193391642,
-    "live": 0,
-    "acts": 0.5,
-    "honest": 1,
-    "fresh": 1
-   },
-   "penalty": 1,
-   "score": 0.758,
-   "inbound": [],
-   "sources": [
-    "list",
-    "pr:#55",
-    "pr:#56"
    ]
   },
   {
@@ -1637,7 +1918,7 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.3887269193391642,
+    "links": 0.38872691933916426,
     "live": 0,
     "acts": 0.5,
     "honest": 1,
@@ -1748,7 +2029,7 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.3887269193391642,
+    "links": 0.38872691933916426,
     "live": 0,
     "acts": 0.5,
     "honest": 1,
@@ -1760,8 +2041,7 @@
    "sources": [
     "list",
     "pr:#51",
-    "pr:#55",
-    "pr:#56"
+    "pr:#55"
    ]
   },
   {
@@ -1947,7 +2227,7 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.3887269193391642,
+    "links": 0.38872691933916426,
     "live": 0,
     "acts": 0.5,
     "honest": 1,
@@ -2069,7 +2349,7 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.3887269193391642,
+    "links": 0.38872691933916426,
     "live": 0,
     "acts": 0.5,
     "honest": 1,
@@ -2173,7 +2453,7 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.3887269193391642,
+    "links": 0.38872691933916426,
     "live": 0,
     "acts": 0.5,
     "honest": 1,
@@ -2283,7 +2563,7 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.3887269193391642,
+    "links": 0.38872691933916426,
     "live": 0,
     "acts": 0.5,
     "honest": 1,
@@ -2295,8 +2575,7 @@
    "sources": [
     "list",
     "pr:#51",
-    "pr:#55",
-    "pr:#56"
+    "pr:#55"
    ]
   },
   {
@@ -2400,7 +2679,7 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.3887269193391642,
+    "links": 0.38872691933916426,
     "live": 0,
     "acts": 0.5,
     "honest": 1,
@@ -2509,7 +2788,7 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.3887269193391642,
+    "links": 0.38872691933916426,
     "live": 0,
     "acts": 0.5,
     "honest": 1,
@@ -2640,7 +2919,7 @@
    "signals": {
     "probes": null,
     "conformance": 1,
-    "links": 0.3887269193391642,
+    "links": 0.38872691933916426,
     "live": 1,
     "acts": 0.5,
     "honest": 0,
@@ -2651,8 +2930,7 @@
    "inbound": [],
    "sources": [
     "list",
-    "pr:#55",
-    "pr:#56"
+    "pr:#55"
    ]
   },
   {
@@ -2747,7 +3025,7 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.3887269193391642,
+    "links": 0.38872691933916426,
     "live": 0,
     "acts": 0.5,
     "honest": 0,
@@ -2847,7 +3125,7 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.3887269193391642,
+    "links": 0.38872691933916426,
     "live": 0,
     "acts": 0.5,
     "honest": 0,
@@ -2938,7 +3216,7 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.553935860058309,
+    "links": 0.5539358600583091,
     "live": 0,
     "acts": 0,
     "honest": 0,
@@ -3062,8 +3340,7 @@
     "list",
     "pr:#30",
     "pr:#51",
-    "pr:#55",
-    "pr:#56"
+    "pr:#55"
    ]
   },
   {
@@ -3150,7 +3427,7 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.3887269193391642,
+    "links": 0.38872691933916426,
     "live": 0,
     "acts": 0,
     "honest": 0,
@@ -3243,7 +3520,7 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.3887269193391642,
+    "links": 0.38872691933916426,
     "live": 0,
     "acts": 0,
     "honest": 0,
@@ -3335,7 +3612,7 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.3887269193391642,
+    "links": 0.38872691933916426,
     "live": 0,
     "acts": 0,
     "honest": 0,
@@ -3421,7 +3698,7 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.3887269193391642,
+    "links": 0.38872691933916426,
     "live": 0,
     "acts": 0,
     "honest": 0,
@@ -3514,7 +3791,7 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.3887269193391642,
+    "links": 0.38872691933916426,
     "live": 0,
     "acts": 0,
     "honest": 0,
@@ -3607,7 +3884,7 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.3887269193391642,
+    "links": 0.38872691933916426,
     "live": 0,
     "acts": 0,
     "honest": 0,
@@ -3700,7 +3977,7 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.3887269193391642,
+    "links": 0.38872691933916426,
     "live": 0,
     "acts": 0,
     "honest": 0,
@@ -3793,7 +4070,7 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.3887269193391642,
+    "links": 0.38872691933916426,
     "live": 0,
     "acts": 0,
     "honest": 0,
@@ -3886,7 +4163,7 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.3887269193391642,
+    "links": 0.38872691933916426,
     "live": 0,
     "acts": 0,
     "honest": 0,
@@ -3979,7 +4256,7 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.3887269193391642,
+    "links": 0.38872691933916426,
     "live": 0,
     "acts": 0,
     "honest": 0,
@@ -4086,7 +4363,7 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.3887269193391642,
+    "links": 0.38872691933916426,
     "live": 0,
     "acts": 0,
     "honest": 0,
@@ -4147,7 +4424,7 @@
     "use_admitted"
    ],
    "sharedActions": [],
-   "digest": "b2fc0585d31830ee416d8a62bf015b7488361209fdfaa29fa10ebe32ec893850",
+   "digest": "9e828b02b36ea179ab47680732567ed50f93b7edf5d6e477d4e1b0995029294c",
    "checks": [
     {
      "id": "manifest",
@@ -4203,7 +4480,7 @@
    "signals": {
     "probes": null,
     "conformance": 1,
-    "links": 0.3887269193391642,
+    "links": 0.38872691933916426,
     "live": 0,
     "acts": 0.5,
     "honest": 1,
@@ -4311,7 +4588,7 @@
    "signals": {
     "probes": 1,
     "conformance": 0.6666666666666666,
-    "links": 0.3887269193391642,
+    "links": 0.38872691933916426,
     "live": 0,
     "acts": 0,
     "honest": 0,
@@ -4406,7 +4683,7 @@
    "signals": {
     "probes": 1,
     "conformance": 0.6666666666666666,
-    "links": 0.3887269193391642,
+    "links": 0.38872691933916426,
     "live": 0,
     "acts": 0,
     "honest": 0,
@@ -4498,7 +4775,7 @@
    "signals": {
     "probes": 0.6666666666666666,
     "conformance": 1,
-    "links": 0.3887269193391642,
+    "links": 0.38872691933916426,
     "live": 0,
     "acts": 0,
     "honest": 0,
@@ -4590,7 +4867,7 @@
    "signals": {
     "probes": 0.6666666666666666,
     "conformance": 1,
-    "links": 0.3887269193391642,
+    "links": 0.38872691933916426,
     "live": 0,
     "acts": 0,
     "honest": 0,
@@ -4682,7 +4959,7 @@
    "signals": {
     "probes": null,
     "conformance": 0.6666666666666666,
-    "links": 0.3887269193391642,
+    "links": 0.38872691933916426,
     "live": 0,
     "acts": 0,
     "honest": 0,
@@ -4792,7 +5069,7 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.553935860058309,
+    "links": 0.5539358600583091,
     "live": 0,
     "acts": 0.5,
     "honest": 1,
@@ -4813,9 +5090,9 @@
    "name": "thoth_assistant",
    "site": "https://thoth.elghaly.dev/agent/",
    "brand": "Thoth Assistant",
-   "description": "Ask Thoth, a free helper for exporters: honest buyer pitches, faithful trade translation, and export basics in plain words.",
+   "description": "Ask Thoth, a Faithful Servant for exporters: honest buyer pitches, faithful trade translation, and export basics in plain words.",
    "sampleQueries": [
-    "What can Thoth do for an exporter, and is it free?",
+    "What can Thoth do for an exporter?",
     "Write a short buyer email for 2 tons of turmeric powder, MOQ 500 kg, FOB from my port. I have no certificates yet.",
     "Translate for my buyer: the price is ₹380 per kg, FOB, minimum 500 kg.",
     "What does FOB mean compared with CIF?",
@@ -4889,7 +5166,7 @@
    "signals": {
     "probes": null,
     "conformance": 0.3333333333333333,
-    "links": 0.3887269193391642,
+    "links": 0.38872691933916426,
     "live": 0,
     "acts": 0.5,
     "honest": 0,
@@ -4981,7 +5258,7 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.3887269193391642,
+    "links": 0.38872691933916426,
     "live": 0,
     "acts": 0,
     "honest": 0,
@@ -5072,7 +5349,7 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.553935860058309,
+    "links": 0.5539358600583091,
     "live": 0,
     "acts": 0,
     "honest": 0,
@@ -5166,7 +5443,7 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.3887269193391642,
+    "links": 0.38872691933916426,
     "live": 0,
     "acts": 0,
     "honest": 0,
@@ -5185,8 +5462,7 @@
    "base": "https://cocvn157.github.io/",
    "sources": [
     "list",
-    "pr:#55",
-    "pr:#56"
+    "pr:#55"
    ],
    "status": 404,
    "error": "HTTP 404"
@@ -5195,8 +5471,7 @@
    "base": "https://ledenti.github.io/",
    "sources": [
     "list",
-    "pr:#55",
-    "pr:#56"
+    "pr:#55"
    ],
    "status": 404,
    "error": "HTTP 404"
@@ -5206,8 +5481,7 @@
    "sources": [
     "list",
     "pr:#51",
-    "pr:#55",
-    "pr:#56"
+    "pr:#55"
    ],
    "status": 404,
    "error": "HTTP 404"
@@ -5218,8 +5492,7 @@
     "list",
     "peer:https://cocvn157.github.io/nanda-seal/",
     "pr:#51",
-    "pr:#55",
-    "pr:#56"
+    "pr:#55"
    ],
    "status": 404,
    "error": "HTTP 404"
@@ -5232,8 +5505,7 @@
     "peer:https://shutdown-clerk.pages.dev/",
     "pr:#30",
     "pr:#51",
-    "pr:#55",
-    "pr:#56"
+    "pr:#55"
    ],
    "status": 404,
    "error": "HTTP 404"
