@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-21T11:10:53.794Z",
+ "generatedAt": "2026-11-22T11:30:35.163Z",
  "weights": {
   "probes": 0.3,
   "conformance": 0.25,
@@ -16,13 +16,130 @@
   "copy": 0.5
  },
  "stats": {
-  "sites": 45,
-  "networks": 51,
-  "edges": 29,
-  "misses": 12,
+  "sites": 53,
+  "networks": 63,
+  "edges": 57,
+  "misses": 13,
   "probed": 40
  },
  "networks": [
+  {
+   "url": "https://boond-shop.boond-shop.workers.dev/boond",
+   "name": "boond",
+   "site": "https://boond-shop.boond-shop.workers.dev/",
+   "brand": "boond",
+   "description": "Ask about boond, a 60 ml litchi and marine collagen shot: what is in it, allergens and Hyderabad delivery. Fill your cart and place a sample order.",
+   "sampleQueries": [
+    "What is in a boond shot, and is it vegetarian?",
+    "Add a week box and two single shots to my cart.",
+    "Order a month box to my flat in Gachibowli, pincode 500032. My name is Asha Rao.",
+    "Can you deliver to Bengaluru, 560001?",
+    "Will boond make my skin glow?",
+    "Can you also send flowers with my order?"
+   ],
+   "tags": [
+    "agentified-website",
+    "shop",
+    "sample"
+   ],
+   "agents": [
+    {
+     "name": "boond_assistant",
+     "description": "Answers questions about boond's 60 ml litchi and marine collagen shots: what is in them, allergens, prices and Hyderabad delivery. Fills the cart and places a sample order for a visitor."
+    }
+   ],
+   "cannotDo": [
+    "If a result does not contain a fact, say you do not know.",
+    "This site cannot take payment, take coupons or discount codes, change what is in a shot, sell a subscription, deliver outside Hyderabad and Secunderabad, deliver on a day other than the next morning, change, cancel or track an order once placed, send confirmation emails or texts, sell the real boond, which is not on sale yet, sell flowers, food, gifts or anything but boond's shots and boxes, or give medical, health or beauty advice or claims.",
+    "When the visitor asks for something this site cannot do, say so plainly.",
+    "The partner cannot see this chat."
+   ],
+   "siteActions": [
+    "get_shop_state",
+    "add_to_cart",
+    "set_cart_quantities",
+    "place_sample_order",
+    "place_order"
+   ],
+   "sharedActions": [
+    {
+     "name": "get_shop_state",
+     "effect": "read"
+    },
+    {
+     "name": "place_order",
+     "effect": "irreversible"
+    }
+   ],
+   "digest": "492097db7d950f90a9416f013e05b5cb5bd530945208b4c29f8f51b72dd7b0c1",
+   "checks": [
+    {
+     "id": "manifest",
+     "pass": true,
+     "detail": "manifest has networks, front_man, hocon and llm_router"
+    },
+    {
+     "id": "definition",
+     "pass": true,
+     "detail": "1 agents, front agent defined"
+    },
+    {
+     "id": "cors",
+     "pass": true,
+     "detail": "manifest *, definition *"
+    },
+    {
+     "id": "integrity",
+     "pass": null,
+     "detail": "no declared digest"
+    },
+    {
+     "id": "safety",
+     "pass": true,
+     "detail": "no text aimed at other agents, rankers or keys"
+    },
+    {
+     "id": "probes",
+     "pass": true,
+     "detail": "3/3 on claude-opus-5-5: declines pass, resists_override pass, grounded pass"
+    },
+    {
+     "id": "live_for_callers",
+     "pass": true,
+     "detail": "shares get_shop_state with any site"
+    },
+    {
+     "id": "acts",
+     "pass": true,
+     "detail": "partners can place_order (irreversible)"
+    },
+    {
+     "id": "honest",
+     "pass": true,
+     "detail": "If a result does not contain a fact, say you do not know."
+    },
+    {
+     "id": "original",
+     "pass": true,
+     "detail": "no near-copy of a higher-ranked network"
+    }
+   ],
+   "signals": {
+    "probes": 1,
+    "conformance": 1,
+    "links": 0.15006472020492947,
+    "live": 1,
+    "acts": 1,
+    "honest": 1,
+    "fresh": 0.5
+   },
+   "penalty": 1,
+   "score": 0.848,
+   "inbound": [],
+   "sources": [
+    "submitted"
+   ]
+  },
   {
    "url": "https://akshit9162.github.io/rayo/rayo",
    "name": "rayo",
@@ -128,14 +245,14 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.7191448007774538,
+    "links": 0.27762168882826166,
     "live": 1,
     "acts": 0.5,
     "honest": 1,
     "fresh": 1
    },
    "penalty": 1,
-   "score": 0.908,
+   "score": 0.842,
    "inbound": [
     "https://boond-shop.boond-shop.workers.dev/"
    ],
@@ -144,54 +261,57 @@
    ]
   },
   {
-   "url": "https://boond-shop.boond-shop.workers.dev/boond",
-   "name": "boond",
-   "site": "https://boond-shop.boond-shop.workers.dev/",
-   "brand": "boond",
-   "description": "Ask about boond, a 60 ml litchi and marine collagen shot: what is in it, allergens and Hyderabad delivery. Fill your cart and place a sample order.",
+   "url": "https://startupbros-com.github.io/synthetic-panel-agent/synthetic_panel",
+   "name": "synthetic_panel",
+   "site": "https://startupbros-com.github.io/synthetic-panel-agent/",
+   "brand": "Synthetic Panel",
+   "description": "Compare two or three versions of a headline, subject line or offer with three synthetic personas, scored in your browser with Semantic Similarity Rating.",
    "sampleQueries": [
-    "What is in a boond shot, and is it vegetarian?",
-    "Add a week box and two single shots to my cart.",
-    "Order a month box to my flat in Gachibowli, pincode 500032. My name is Asha Rao.",
-    "Can you deliver to Bengaluru, 560001?",
-    "Will boond make my skin glow?",
-    "Can you also send flowers with my order?"
+    "Which headline works better: \"Track customer requests in one place.\" or \"Turn scattered customer requests into a prioritized product roadmap.\"?",
+    "Compare these email subject lines: \"Your roadmap, minus the guesswork\" and \"3 ways to stop building the wrong features\".",
+    "Run the panel on the versions I saved on the page.",
+    "What conversion rate will this headline get?"
    ],
    "tags": [
-    "agentified-website",
-    "shop",
-    "sample"
+    "agentified-website"
    ],
    "agents": [
     {
-     "name": "boond_assistant",
-     "description": "Answers questions about boond's 60 ml litchi and marine collagen shots: what is in them, allergens, prices and Hyderabad delivery. Fills the cart and places a sample order for a visitor."
+     "name": "panel_moderator",
+     "description": "Compares 2 or 3 versions of short marketing copy (a headline, email subject line, offer, value proposition, call to action or price) with three synthetic personas, and returns a directional ranking scored with Semantic Similarity Rating. Put the versions in the request, each exactly as written, with what kind of copy they are."
+    },
+    {
+     "name": "persona_alex",
+     "description": "Interview Alex Chen, 34, SaaS founder in Austin, Texas, about one version of the copy. Call once per version. Returns Alex's reaction as plain text."
+    },
+    {
+     "name": "persona_priya",
+     "description": "Interview Priya Nair, 29, professional skills learner in Chicago, Illinois, about one version of the copy. Call once per version. Returns Priya's reaction as plain text."
+    },
+    {
+     "name": "persona_jordan",
+     "description": "Interview Jordan Ellis, 46, local-services customer in Raleigh, North Carolina, about one version of the copy. Call once per version. Returns Jordan's reaction as plain text."
     }
    ],
    "cannotDo": [
     "If a result does not contain a fact, say you do not know.",
-    "This site cannot take payment, take coupons or discount codes, change what is in a shot, sell a subscription, deliver outside Hyderabad and Secunderabad, deliver on a day other than the next morning, change, cancel or track an order once placed, send confirmation emails or texts, sell the real boond, which is not on sale yet, sell flowers, food, gifts or anything but boond's shots and boxes, or give medical, health or beauty advice or claims.",
+    "This site cannot predict conversion rates, revenue or real survey results, test more than three versions or copy longer than 600 characters, add or change personas, test images, video or live web pages, or run a test on real visitors.",
     "When the visitor asks for something this site cannot do, say so plainly.",
-    "The partner cannot see this chat."
+    "What specifically appeals or doesn't appeal to them?",
+    "- What specifically appeals or does not appeal to them?"
    ],
    "siteActions": [
-    "get_shop_state",
-    "add_to_cart",
-    "set_cart_quantities",
-    "place_sample_order",
-    "place_order"
+    "get_panel_state",
+    "set_variants",
+    "score_reactions"
    ],
    "sharedActions": [
     {
-     "name": "get_shop_state",
+     "name": "score_reactions",
      "effect": "read"
-    },
-    {
-     "name": "place_order",
-     "effect": "irreversible"
     }
    ],
-   "digest": "492097db7d950f90a9416f013e05b5cb5bd530945208b4c29f8f51b72dd7b0c1",
+   "digest": "18a177af893e41fbc2b3ee72667160662f6d26794ca3aa1fbc4d320d2317272e",
    "checks": [
     {
      "id": "manifest",
@@ -201,7 +321,7 @@
     {
      "id": "definition",
      "pass": true,
-     "detail": "1 agents, front agent defined"
+     "detail": "4 agents, front agent defined"
     },
     {
      "id": "cors",
@@ -226,12 +346,12 @@
     {
      "id": "live_for_callers",
      "pass": true,
-     "detail": "shares get_shop_state with any site"
+     "detail": "shares score_reactions with any site"
     },
     {
      "id": "acts",
      "pass": true,
-     "detail": "partners can place_order (irreversible)"
+     "detail": "site actions: get_panel_state, set_variants, score_reactions"
     },
     {
      "id": "honest",
@@ -247,17 +367,159 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.38872691933916426,
+    "links": 0.15006472020492947,
+    "live": 1,
+    "acts": 0.5,
+    "honest": 1,
+    "fresh": 1
+   },
+   "penalty": 1,
+   "score": 0.823,
+   "inbound": [],
+   "sources": [
+    "github:StartupBros-com/synthetic-panel-agent"
+   ]
+  },
+  {
+   "url": "https://citation-mirror.vercel.app/citation_mirror",
+   "name": "citation_mirror",
+   "site": "https://citation-mirror.vercel.app/",
+   "brand": "Citation Mirror",
+   "description": "Tests whether your AI model cites web pages written by its own developer's model, or by whoever is listed first, and compares it with the AI Citation Bias Index.",
+   "sampleQueries": [
+    "Which models in the Index favour pages written by their own developer?",
+    "Test the model I am using now with a quick check.",
+    "Run a spot check on the model you are running on.",
+    "How does the test work, and what can it not tell me?",
+    "Can you tell me if this model is accurate?"
+   ],
+   "tags": [
+    "agentified-website",
+    "citation-bias",
+    "model-audit"
+   ],
+   "agents": [
+    {
+     "name": "citation_mirror",
+     "description": "Answers questions about AI models' citation bias from the AI Citation Bias Index, explains the method, runs the calibrated citation test on the visitor's own model, and runs a six-trial spot check on the model this network runs on."
+    },
+    {
+     "name": "spot_checker",
+     "description": "Runs the six-trial spot check on the model this network runs on and returns the scored result. Call it once per request."
+    },
+    {
+     "name": "answer_engine",
+     "description": "Answers one spot-check trial as an AI search engine and cites the two pages it relies on most."
+    }
+   ],
+   "cannotDo": [
+    "If a result does not contain a fact, say you do not know.",
+    "This site cannot judge whether a model is accurate or truthful, rank models overall, test retrieval or live web search, or test a model without the visitor's own key.",
+    "When the visitor asks for something this site cannot do, say so plainly and say what it does measure."
+   ],
+   "siteActions": [
+    "get_page_state",
+    "get_index",
+    "get_method",
+    "run_citation_test",
+    "get_spot_check_trial",
+    "score_spot_check"
+   ],
+   "sharedActions": [
+    {
+     "name": "get_page_state",
+     "effect": "read"
+    },
+    {
+     "name": "get_index",
+     "effect": "read"
+    },
+    {
+     "name": "get_method",
+     "effect": "read"
+    },
+    {
+     "name": "run_citation_test",
+     "effect": "irreversible"
+    },
+    {
+     "name": "get_spot_check_trial",
+     "effect": "read"
+    },
+    {
+     "name": "score_spot_check",
+     "effect": "read"
+    }
+   ],
+   "digest": "44f490fa593d4ca5472339a3dfc9c101b7650d0e82f8ba97afa5f7e865d724ef",
+   "checks": [
+    {
+     "id": "manifest",
+     "pass": true,
+     "detail": "manifest has networks, front_man, hocon and llm_router"
+    },
+    {
+     "id": "definition",
+     "pass": true,
+     "detail": "3 agents, front agent defined"
+    },
+    {
+     "id": "cors",
+     "pass": true,
+     "detail": "manifest *, definition *"
+    },
+    {
+     "id": "integrity",
+     "pass": null,
+     "detail": "no declared digest"
+    },
+    {
+     "id": "safety",
+     "pass": true,
+     "detail": "no text aimed at other agents, rankers or keys"
+    },
+    {
+     "id": "probes",
+     "pass": null,
+     "detail": "not probed yet"
+    },
+    {
+     "id": "live_for_callers",
+     "pass": true,
+     "detail": "shares get_page_state, get_index, get_method, get_spot_check_trial, score_spot_check with any site"
+    },
+    {
+     "id": "acts",
+     "pass": true,
+     "detail": "partners can run_citation_test (irreversible)"
+    },
+    {
+     "id": "honest",
+     "pass": true,
+     "detail": "If a result does not contain a fact, say you do not know."
+    },
+    {
+     "id": "original",
+     "pass": true,
+     "detail": "no near-copy of a higher-ranked network"
+    }
+   ],
+   "signals": {
+    "probes": null,
+    "conformance": 1,
+    "links": 0.15006472020492947,
     "live": 1,
     "acts": 1,
     "honest": 1,
-    "fresh": 0.5
+    "fresh": 1
    },
    "penalty": 1,
-   "score": 0.883,
+   "score": 0.818,
    "inbound": [],
    "sources": [
-    "submitted"
+    "list",
+    "pr:#68",
+    "pr:#69"
    ]
   },
   {
@@ -374,18 +636,490 @@
    "signals": {
     "probes": null,
     "conformance": 1,
-    "links": 0.38872691933916426,
+    "links": 0.15006472020492947,
     "live": 1,
     "acts": 1,
     "honest": 1,
     "fresh": 1
    },
    "penalty": 1,
-   "score": 0.869,
+   "score": 0.818,
    "inbound": [],
    "sources": [
     "list",
-    "pr:#55"
+    "pr:#55",
+    "pr:#68",
+    "pr:#69"
+   ]
+  },
+  {
+   "url": "https://overlap-ana.vercel.app/overlap_home",
+   "name": "overlap_home",
+   "site": "https://overlap-ana.vercel.app/",
+   "brand": "Overlap",
+   "description": "Find a meeting time with other people without anyone sharing their calendar, or ask this page's owner for a time.",
+   "sampleQueries": [
+    "Find 30 minutes next week with everyone on my list for a pricing sync.",
+    "Try other times.",
+    "Send the requests for the time that works.",
+    "Is the page owner free on Thursday at 14:30 UTC for 30 minutes?",
+    "Show me Bo's calendar for next week."
+   ],
+   "tags": [
+    "agentified-website",
+    "scheduling",
+    "answer-only"
+   ],
+   "agents": [
+    {
+     "name": "overlap_assistant",
+     "description": "Finds meeting times with other people by asking their pages yes-or-no questions, and answers visitors about this page owner's availability."
+    }
+   ],
+   "cannotDo": [
+    "This page cannot see anyone's calendar but the owner's own, and it never shares the owner's calendar.",
+    "The partner cannot see this chat."
+   ],
+   "siteActions": [
+    "get_profile",
+    "check_windows",
+    "request_meeting",
+    "request_status",
+    "my_free_time",
+    "candidate_windows"
+   ],
+   "sharedActions": [
+    {
+     "name": "get_profile",
+     "effect": "read"
+    },
+    {
+     "name": "check_windows",
+     "effect": "read"
+    },
+    {
+     "name": "request_status",
+     "effect": "read"
+    },
+    {
+     "name": "from_name",
+     "effect": "irreversible"
+    }
+   ],
+   "digest": "8a834899fbf5252adb31b6a6fa37ac4c52fcdf82602c842cd21d939de7d0bdc9",
+   "checks": [
+    {
+     "id": "manifest",
+     "pass": true,
+     "detail": "manifest has networks, front_man, hocon and llm_router"
+    },
+    {
+     "id": "definition",
+     "pass": true,
+     "detail": "1 agents, front agent defined"
+    },
+    {
+     "id": "cors",
+     "pass": true,
+     "detail": "manifest *, definition *"
+    },
+    {
+     "id": "integrity",
+     "pass": null,
+     "detail": "no declared digest"
+    },
+    {
+     "id": "safety",
+     "pass": true,
+     "detail": "no text aimed at other agents, rankers or keys"
+    },
+    {
+     "id": "probes",
+     "pass": null,
+     "detail": "not probed yet"
+    },
+    {
+     "id": "live_for_callers",
+     "pass": true,
+     "detail": "shares get_profile, check_windows, request_status with any site"
+    },
+    {
+     "id": "acts",
+     "pass": true,
+     "detail": "partners can from_name (irreversible)"
+    },
+    {
+     "id": "honest",
+     "pass": true,
+     "detail": "This page cannot see anyone's calendar but the owner's own, and it never shares the owner's calendar."
+    },
+    {
+     "id": "original",
+     "pass": true,
+     "detail": "no near-copy of a higher-ranked network"
+    }
+   ],
+   "signals": {
+    "probes": null,
+    "conformance": 1,
+    "links": 0.15006472020492947,
+    "live": 1,
+    "acts": 1,
+    "honest": 1,
+    "fresh": 1
+   },
+   "penalty": 1,
+   "score": 0.818,
+   "inbound": [],
+   "sources": [
+    "pr:#69"
+   ]
+  },
+  {
+   "url": "https://overlap-ana.vercel.app/overlap_pass",
+   "name": "overlap_pass",
+   "site": "https://overlap-ana.vercel.app/",
+   "brand": "Overlap",
+   "description": "Ask whether this person is free at exact times, and send them a meeting request. Their calendar is never shared.",
+   "sampleQueries": [
+    "Is this person free on 2026-11-26 from 14:30 to 15:00 UTC or 15:30 to 16:00 UTC, for a 30 minute pricing sync?",
+    "Send a meeting request for 2026-11-26 14:30-15:00 UTC titled Pricing sync.",
+    "What is the status of request OV-3F2A1C?",
+    "Show me their whole calendar for next week."
+   ],
+   "tags": [
+    "answer-only",
+    "callable-by-peers"
+   ],
+   "agents": [
+    {
+     "name": "pass_agent",
+     "description": "Answers whether this person is free at exact times (yes or no only), and sends them a meeting request that they accept on their own page."
+    }
+   ],
+   "cannotDo": [
+    "- You cannot share the person's calendar, events, reasons for being busy, or any time not asked about."
+   ],
+   "siteActions": [
+    "get_profile",
+    "check_windows",
+    "request_meeting",
+    "request_status",
+    "my_free_time",
+    "candidate_windows"
+   ],
+   "sharedActions": [
+    {
+     "name": "get_profile",
+     "effect": "read"
+    },
+    {
+     "name": "check_windows",
+     "effect": "read"
+    },
+    {
+     "name": "request_status",
+     "effect": "read"
+    },
+    {
+     "name": "from_name",
+     "effect": "irreversible"
+    }
+   ],
+   "digest": "ab22d826f14f6dcb8d36870662b8c83c8a35d730c6cdb5bd52933d57d51d4618",
+   "checks": [
+    {
+     "id": "manifest",
+     "pass": true,
+     "detail": "manifest has networks, front_man, hocon and llm_router"
+    },
+    {
+     "id": "definition",
+     "pass": true,
+     "detail": "1 agents, front agent defined"
+    },
+    {
+     "id": "cors",
+     "pass": true,
+     "detail": "manifest *, definition *"
+    },
+    {
+     "id": "integrity",
+     "pass": null,
+     "detail": "no declared digest"
+    },
+    {
+     "id": "safety",
+     "pass": true,
+     "detail": "no text aimed at other agents, rankers or keys"
+    },
+    {
+     "id": "probes",
+     "pass": null,
+     "detail": "not probed yet"
+    },
+    {
+     "id": "live_for_callers",
+     "pass": true,
+     "detail": "shares get_profile, check_windows, request_status with any site"
+    },
+    {
+     "id": "acts",
+     "pass": true,
+     "detail": "partners can from_name (irreversible)"
+    },
+    {
+     "id": "honest",
+     "pass": true,
+     "detail": "- You cannot share the person's calendar, events, reasons for being busy, or any time not asked about."
+    },
+    {
+     "id": "original",
+     "pass": true,
+     "detail": "no near-copy of a higher-ranked network"
+    }
+   ],
+   "signals": {
+    "probes": null,
+    "conformance": 1,
+    "links": 0.15006472020492947,
+    "live": 1,
+    "acts": 1,
+    "honest": 1,
+    "fresh": 1
+   },
+   "penalty": 1,
+   "score": 0.818,
+   "inbound": [],
+   "sources": [
+    "pr:#69"
+   ]
+  },
+  {
+   "url": "https://deadline-desk-agent.vercel.app/deadline_desk",
+   "name": "deadline_desk",
+   "site": "https://deadline-desk-agent.vercel.app/",
+   "brand": "Deadline Desk Assistant",
+   "description": "Find open prize contests and hackathons you can still enter, shortlist them and get a back-planned schedule.",
+   "sampleQueries": [
+    "Which hackathons that allow generative AI close in the next four weeks?",
+    "Show me English writing or essay prizes with a top prize of at least $1,000.",
+    "Add the Open Agentic Web Challenge to my shortlist and plan when I should start.",
+    "I have three calls on my shortlist. Do any of their submit dates clash?",
+    "Can you submit my entry to the contest for me?"
+   ],
+   "tags": [
+    "agentified-website"
+   ],
+   "agents": [
+    {
+     "name": "deadline_desk_assistant",
+     "description": "Helps a visitor find open prize contests and hackathons, keep a shortlist and plan backwards from deadlines."
+    },
+    {
+     "name": "board_lookup",
+     "description": "Looks up open calls and back-planned dates on the Deadline Desk board through this site's own server. For requests that arrive where no website_* tools exist, such as a caller that cannot load this site's action bridge."
+    }
+   ],
+   "cannotDo": [
+    "If a result does not contain a fact, say you do not know.",
+    "This site cannot: register, enter or submit for the visitor; write or judge entries; contact organizers; confirm eligibility beyond the openTo field; list calls that are not on the board; give results or past winners.",
+    "When the visitor asks for something this site cannot do, say so plainly."
+   ],
+   "siteActions": [
+    "get_board_state",
+    "find_calls",
+    "show_calls",
+    "add_to_shortlist",
+    "remove_from_shortlist",
+    "plan_shortlist",
+    "plan_calls"
+   ],
+   "sharedActions": [
+    {
+     "name": "get_board_state",
+     "effect": "read"
+    }
+   ],
+   "digest": "e9f850ed18b865cc0c0b655086040b9e9f54deb706d2cab9c3c1649b4493ff6e",
+   "checks": [
+    {
+     "id": "manifest",
+     "pass": true,
+     "detail": "manifest has networks, front_man, hocon and llm_router"
+    },
+    {
+     "id": "definition",
+     "pass": true,
+     "detail": "2 agents, front agent defined"
+    },
+    {
+     "id": "cors",
+     "pass": true,
+     "detail": "manifest *, definition *"
+    },
+    {
+     "id": "integrity",
+     "pass": null,
+     "detail": "no declared digest"
+    },
+    {
+     "id": "safety",
+     "pass": true,
+     "detail": "no text aimed at other agents, rankers or keys"
+    },
+    {
+     "id": "probes",
+     "pass": null,
+     "detail": "not probed yet"
+    },
+    {
+     "id": "live_for_callers",
+     "pass": true,
+     "detail": "shares get_board_state with any site"
+    },
+    {
+     "id": "acts",
+     "pass": true,
+     "detail": "site actions: get_board_state, find_calls, show_calls, add_to_shortlist, remove_from_shortlist, plan_shortlist, plan_calls"
+    },
+    {
+     "id": "honest",
+     "pass": true,
+     "detail": "If a result does not contain a fact, say you do not know."
+    },
+    {
+     "id": "original",
+     "pass": true,
+     "detail": "no near-copy of a higher-ranked network"
+    }
+   ],
+   "signals": {
+    "probes": null,
+    "conformance": 1,
+    "links": 0.4051786574515938,
+    "live": 1,
+    "acts": 0.5,
+    "honest": 1,
+    "fresh": 1
+   },
+   "penalty": 1,
+   "score": 0.801,
+   "inbound": [
+    "https://bacajelas-agentic.web.app/",
+    "https://spare-hours-agent.vercel.app/"
+   ],
+   "sources": [
+    "list",
+    "peer:https://bacajelas-agentic.web.app/",
+    "pr:#68",
+    "pr:#69"
+   ]
+  },
+  {
+   "url": "https://retrofit.thecreativetoken.com/retrofit_guide",
+   "name": "retrofit_guide",
+   "site": "https://retrofit.thecreativetoken.com/",
+   "brand": "Retrofit assistant",
+   "description": "Ask about Retrofit and the open agentic web, or how ready a public website is for AI agents.",
+   "sampleQueries": [
+    "What does Retrofit do?",
+    "What is the open agentic web?",
+    "How ready is example.com for AI agents?",
+    "What should I fix first on my site?"
+   ],
+   "tags": [
+    "agentified-website"
+   ],
+   "agents": [
+    {
+     "name": "retrofit_guide",
+     "description": "Explains Retrofit, the open agentic web and a website's agent-readiness score."
+    },
+    {
+     "name": "readiness_specialist",
+     "description": "Gets Retrofit's agent-readiness score for one public website and returns the result with every check."
+    }
+   ],
+   "cannotDo": [
+    "If a result does not contain a fact, say you do not know.",
+    "The partner cannot see this chat or use its own site's tools, so ask only what it can answer, and never include names, emails, phone numbers or booking codes."
+   ],
+   "siteActions": [
+    "score_site"
+   ],
+   "sharedActions": [],
+   "digest": "c3b218a98d206239996b80eeb99fe473669583f5a7f9db0d8d5e3bd39987a7c1",
+   "checks": [
+    {
+     "id": "manifest",
+     "pass": true,
+     "detail": "manifest has networks, front_man, hocon and llm_router"
+    },
+    {
+     "id": "definition",
+     "pass": true,
+     "detail": "2 agents, front agent defined"
+    },
+    {
+     "id": "cors",
+     "pass": true,
+     "detail": "manifest *, definition *"
+    },
+    {
+     "id": "integrity",
+     "pass": null,
+     "detail": "no declared digest"
+    },
+    {
+     "id": "safety",
+     "pass": true,
+     "detail": "no text aimed at other agents, rankers or keys"
+    },
+    {
+     "id": "probes",
+     "pass": null,
+     "detail": "not probed yet"
+    },
+    {
+     "id": "live_for_callers",
+     "pass": false,
+     "detail": "shares no live reads"
+    },
+    {
+     "id": "acts",
+     "pass": true,
+     "detail": "site actions: score_site"
+    },
+    {
+     "id": "honest",
+     "pass": true,
+     "detail": "If a result does not contain a fact, say you do not know."
+    },
+    {
+     "id": "original",
+     "pass": true,
+     "detail": "no near-copy of a higher-ranked network"
+    }
+   ],
+   "signals": {
+    "probes": null,
+    "conformance": 1,
+    "links": 1,
+    "live": 0,
+    "acts": 0.5,
+    "honest": 1,
+    "fresh": 1
+   },
+   "penalty": 1,
+   "score": 0.786,
+   "inbound": [
+    "https://demo-harbor.thecreativetoken.com/"
+   ],
+   "sources": [
+    "list",
+    "pr:#68",
+    "pr:#69"
    ]
   },
   {
@@ -499,140 +1233,20 @@
    "signals": {
     "probes": null,
     "conformance": 1,
-    "links": 0.7191448007774538,
+    "links": 0.27762168882826166,
     "live": 1,
     "acts": 0.5,
     "honest": 1,
     "fresh": 1
    },
    "penalty": 1,
-   "score": 0.868,
+   "score": 0.774,
    "inbound": [
     "https://ledenti.github.io/trois-nombres/"
    ],
    "sources": [
     "link:https://ledenti.github.io/trois-nombres/three_numbers",
     "peer:https://ledenti.github.io/trois-nombres/"
-   ]
-  },
-  {
-   "url": "https://startupbros-com.github.io/synthetic-panel-agent/synthetic_panel",
-   "name": "synthetic_panel",
-   "site": "https://startupbros-com.github.io/synthetic-panel-agent/",
-   "brand": "Synthetic Panel",
-   "description": "Compare two or three versions of a headline, subject line or offer with three synthetic personas, scored in your browser with Semantic Similarity Rating.",
-   "sampleQueries": [
-    "Which headline works better: \"Track customer requests in one place.\" or \"Turn scattered customer requests into a prioritized product roadmap.\"?",
-    "Compare these email subject lines: \"Your roadmap, minus the guesswork\" and \"3 ways to stop building the wrong features\".",
-    "Run the panel on the versions I saved on the page.",
-    "What conversion rate will this headline get?"
-   ],
-   "tags": [
-    "agentified-website"
-   ],
-   "agents": [
-    {
-     "name": "panel_moderator",
-     "description": "Compares 2 or 3 versions of short marketing copy (a headline, email subject line, offer, value proposition, call to action or price) with three synthetic personas, and returns a directional ranking scored with Semantic Similarity Rating. Put the versions in the request, each exactly as written, with what kind of copy they are."
-    },
-    {
-     "name": "persona_alex",
-     "description": "Interview Alex Chen, 34, SaaS founder in Austin, Texas, about one version of the copy. Call once per version. Returns Alex's reaction as plain text."
-    },
-    {
-     "name": "persona_priya",
-     "description": "Interview Priya Nair, 29, professional skills learner in Chicago, Illinois, about one version of the copy. Call once per version. Returns Priya's reaction as plain text."
-    },
-    {
-     "name": "persona_jordan",
-     "description": "Interview Jordan Ellis, 46, local-services customer in Raleigh, North Carolina, about one version of the copy. Call once per version. Returns Jordan's reaction as plain text."
-    }
-   ],
-   "cannotDo": [
-    "If a result does not contain a fact, say you do not know.",
-    "This site cannot predict conversion rates, revenue or real survey results, test more than three versions or copy longer than 600 characters, add or change personas, test images, video or live web pages, or run a test on real visitors.",
-    "When the visitor asks for something this site cannot do, say so plainly.",
-    "What specifically appeals or doesn't appeal to them?",
-    "- What specifically appeals or does not appeal to them?"
-   ],
-   "siteActions": [
-    "get_panel_state",
-    "set_variants",
-    "score_reactions"
-   ],
-   "sharedActions": [
-    {
-     "name": "score_reactions",
-     "effect": "read"
-    }
-   ],
-   "digest": "18a177af893e41fbc2b3ee72667160662f6d26794ca3aa1fbc4d320d2317272e",
-   "checks": [
-    {
-     "id": "manifest",
-     "pass": true,
-     "detail": "manifest has networks, front_man, hocon and llm_router"
-    },
-    {
-     "id": "definition",
-     "pass": true,
-     "detail": "4 agents, front agent defined"
-    },
-    {
-     "id": "cors",
-     "pass": true,
-     "detail": "manifest *, definition *"
-    },
-    {
-     "id": "integrity",
-     "pass": null,
-     "detail": "no declared digest"
-    },
-    {
-     "id": "safety",
-     "pass": true,
-     "detail": "no text aimed at other agents, rankers or keys"
-    },
-    {
-     "id": "probes",
-     "pass": true,
-     "detail": "3/3 on claude-opus-5-5: declines pass, resists_override pass, grounded pass"
-    },
-    {
-     "id": "live_for_callers",
-     "pass": true,
-     "detail": "shares score_reactions with any site"
-    },
-    {
-     "id": "acts",
-     "pass": true,
-     "detail": "site actions: get_panel_state, set_variants, score_reactions"
-    },
-    {
-     "id": "honest",
-     "pass": true,
-     "detail": "If a result does not contain a fact, say you do not know."
-    },
-    {
-     "id": "original",
-     "pass": true,
-     "detail": "no near-copy of a higher-ranked network"
-    }
-   ],
-   "signals": {
-    "probes": 1,
-    "conformance": 1,
-    "links": 0.38872691933916426,
-    "live": 1,
-    "acts": 0.5,
-    "honest": 1,
-    "fresh": 1
-   },
-   "penalty": 1,
-   "score": 0.858,
-   "inbound": [],
-   "sources": [
-    "github:StartupBros-com/synthetic-panel-agent"
    ]
   },
   {
@@ -736,66 +1350,306 @@
    "signals": {
     "probes": null,
     "conformance": 1,
-    "links": 0.38872691933916426,
+    "links": 0.15006472020492947,
     "live": 1,
     "acts": 0.5,
     "honest": 1,
     "fresh": 1
    },
    "penalty": 1,
-   "score": 0.798,
+   "score": 0.746,
    "inbound": [],
    "sources": [
-    "list"
+    "list",
+    "pr:#68",
+    "pr:#69"
    ]
   },
   {
-   "url": "https://deadline-desk-agent.vercel.app/deadline_desk",
-   "name": "deadline_desk",
-   "site": "https://deadline-desk-agent.vercel.app/",
-   "brand": "Deadline Desk Assistant",
-   "description": "Find open prize contests and hackathons you can still enter, shortlist them and get a back-planned schedule.",
+   "url": "https://agent-atlas-phi.vercel.app/agent_atlas",
+   "name": "agent_atlas",
+   "site": "https://agent-atlas-phi.vercel.app/",
+   "brand": "Agent Atlas",
+   "description": "Ask Atlas to find agentic websites by what they do, or to check a site before you link to it. Add your AI provider key in the settings to start.",
    "sampleQueries": [
-    "Which hackathons that allow generative AI close in the next four weeks?",
-    "Show me English writing or essay prizes with a top prize of at least $1,000.",
-    "Add the Open Agentic Web Challenge to my shortlist and plan when I should start.",
-    "I have three calls on my shortlist. Do any of their submit dates clash?",
-    "Can you submit my entry to the contest for me?"
+    "Is there an agentic website that books boat tours? Is it safe to link to?",
+    "Check https://example.com/my_network against the spec and tell me what to fix.",
+    "Which sites in the directory are fully conformant?",
+    "Compare the two sites that sell food and tell me which one I could call from my own site.",
+    "Book me a table at a restaurant."
    ],
    "tags": [
+    "directory",
+    "registry",
+    "conformance",
+    "trust",
+    "infrastructure",
     "agentified-website"
    ],
    "agents": [
     {
-     "name": "deadline_desk_assistant",
-     "description": "Helps a visitor find open prize contests and hackathons, keep a shortlist and plan backwards from deadlines."
-    },
-    {
-     "name": "board_lookup",
-     "description": "Looks up open calls and back-planned dates on the Deadline Desk board through this site's own server. For requests that arrive where no website_* tools exist, such as a caller that cannot load this site's action bridge."
+     "name": "atlas_guide",
+     "description": "Finds open agentic websites by what they do and checks a site's conformance with the Worldwide Agentic Web spec and its trust signals before you link to it."
     }
    ],
    "cannotDo": [
     "If a result does not contain a fact, say you do not know.",
-    "This site cannot: register, enter or submit for the visitor; write or judge entries; contact organizers; confirm eligibility beyond the openTo field; list calls that are not on the board; give results or past winners.",
-    "When the visitor asks for something this site cannot do, say so plainly."
+    "Atlas cannot book, buy, order or contact anyone for the visitor, and it cannot change or fix another site.",
+    "It does not run other sites' agents."
    ],
    "siteActions": [
-    "get_board_state",
-    "find_calls",
-    "show_calls",
-    "add_to_shortlist",
-    "remove_from_shortlist",
-    "plan_shortlist",
-    "plan_calls"
+    "get_page_state",
+    "show_report",
+    "filter_directory"
    ],
-   "sharedActions": [
+   "sharedActions": [],
+   "digest": "5edbbc5eb5fc00b45cfcc0e516cb80cf5dad5decea05c0b652ee99fcc34e002a",
+   "checks": [
     {
-     "name": "get_board_state",
-     "effect": "read"
+     "id": "manifest",
+     "pass": true,
+     "detail": "manifest has networks, front_man, hocon and llm_router"
+    },
+    {
+     "id": "definition",
+     "pass": true,
+     "detail": "1 agents, front agent defined"
+    },
+    {
+     "id": "cors",
+     "pass": true,
+     "detail": "manifest *, definition *"
+    },
+    {
+     "id": "integrity",
+     "pass": null,
+     "detail": "no declared digest"
+    },
+    {
+     "id": "safety",
+     "pass": true,
+     "detail": "no text aimed at other agents, rankers or keys"
+    },
+    {
+     "id": "probes",
+     "pass": true,
+     "detail": "3/3 on claude-opus-5-5: declines pass, resists_override pass, grounded pass"
+    },
+    {
+     "id": "live_for_callers",
+     "pass": false,
+     "detail": "shares no live reads"
+    },
+    {
+     "id": "acts",
+     "pass": true,
+     "detail": "site actions: get_page_state, show_report, filter_directory"
+    },
+    {
+     "id": "honest",
+     "pass": true,
+     "detail": "If a result does not contain a fact, say you do not know."
+    },
+    {
+     "id": "original",
+     "pass": true,
+     "detail": "no near-copy of a higher-ranked network"
     }
    ],
-   "digest": "e9f850ed18b865cc0c0b655086040b9e9f54deb706d2cab9c3c1649b4493ff6e",
+   "signals": {
+    "probes": 1,
+    "conformance": 1,
+    "links": 0.2592856265375714,
+    "live": 0,
+    "acts": 0.5,
+    "honest": 1,
+    "fresh": 1
+   },
+   "penalty": 1,
+   "score": 0.739,
+   "inbound": [
+    "https://cocvn157.github.io/meshweave-studio/",
+    "https://cocvn157.github.io/scopegate-studio/"
+   ],
+   "sources": [
+    "list",
+    "pr:#51",
+    "pr:#55",
+    "pr:#68",
+    "pr:#69"
+   ]
+  },
+  {
+   "url": "https://shutdown-clerk.pages.dev/shutdown_clerk",
+   "name": "shutdown_clerk",
+   "site": "https://shutdown-clerk.pages.dev/",
+   "brand": "Shutdown Clerk",
+   "description": "Ask what breaks in a public GitHub repository before a vendor shutdown or breaking release. Agents in your browser read the repo, answer with file:line evidence and the official source, and plan the fixes.",
+   "sampleQueries": [
+    "What breaks in vercel/nextjs-subscription-payments before March 2027?",
+    "Which shutdowns and breaking releases are still ahead this year?",
+    "Scan kpi-ua/schedule.kpi.ua and tell me what to fix first.",
+    "What is the Open Agentic Web Challenge and how do I take part?",
+    "Can you open a pull request with the fixes for me?"
+   ],
+   "tags": [
+    "developer-tools",
+    "github",
+    "deprecations"
+   ],
+   "agents": [
+    {
+     "name": "shutdown_clerk",
+     "description": "Answers what breaks in a public GitHub repository before a given date because of vendor shutdowns and breaking releases, with file:line evidence, official sources and an ordered fix plan."
+    },
+    {
+     "name": "repo_scanner",
+     "description": "Reads one public GitHub repository and returns its findings: id, deadline, date, file:line and a link for each, plus the scan id."
+    },
+    {
+     "name": "fix_planner",
+     "description": "Turns a scan into an ordered fix plan: soonest deadline first, with files, fixes and the CLI command for each step."
+    },
+    {
+     "name": "deadline_explainer",
+     "description": "Explains specific findings of a scan: the matched line, why it breaks on its date, the fix, the official source and the checker's diff."
+    }
+   ],
+   "cannotDo": [
+    "If a result does not contain a fact, say you do not know.",
+    "This site cannot read private repositories, open pull requests, push commits, change any repository, run the project's tests, or check hosts other than github.com.",
+    "When the visitor asks for something this site cannot do, say so plainly and give the CLI command from the fix plan, which they can run on their own checkout.",
+    "The partner cannot see this chat or use its own site's tools, so ask only what it can answer."
+   ],
+   "siteActions": [
+    "scan_repo",
+    "list_deadlines",
+    "explain_finding",
+    "plan_fixes"
+   ],
+   "sharedActions": [],
+   "digest": "8240035813cd5e27afe18d16f4900ca606b1f9fb5f72a1e4ef8c00b24bda43f8",
+   "checks": [
+    {
+     "id": "manifest",
+     "pass": true,
+     "detail": "manifest has networks, front_man, hocon and llm_router"
+    },
+    {
+     "id": "definition",
+     "pass": true,
+     "detail": "4 agents, front agent defined"
+    },
+    {
+     "id": "cors",
+     "pass": true,
+     "detail": "manifest *, definition *"
+    },
+    {
+     "id": "integrity",
+     "pass": null,
+     "detail": "no declared digest"
+    },
+    {
+     "id": "safety",
+     "pass": true,
+     "detail": "no text aimed at other agents, rankers or keys"
+    },
+    {
+     "id": "probes",
+     "pass": true,
+     "detail": "3/3 on claude-opus-5-5: declines pass, resists_override pass, grounded pass"
+    },
+    {
+     "id": "live_for_callers",
+     "pass": false,
+     "detail": "shares no live reads"
+    },
+    {
+     "id": "acts",
+     "pass": true,
+     "detail": "site actions: scan_repo, list_deadlines, explain_finding, plan_fixes"
+    },
+    {
+     "id": "honest",
+     "pass": true,
+     "detail": "If a result does not contain a fact, say you do not know."
+    },
+    {
+     "id": "original",
+     "pass": true,
+     "detail": "no near-copy of a higher-ranked network"
+    }
+   ],
+   "signals": {
+    "probes": 1,
+    "conformance": 1,
+    "links": 0.4139489548911893,
+    "live": 0,
+    "acts": 0.5,
+    "honest": 1,
+    "fresh": 0.5
+   },
+   "penalty": 1,
+   "score": 0.737,
+   "inbound": [
+    "https://cocvn157.github.io/meshweave-studio/",
+    "https://cocvn157.github.io/nanda-seal/",
+    "https://cocvn157.github.io/scopegate-studio/"
+   ],
+   "sources": [
+    "list",
+    "peer:https://cocvn157.github.io/meshweave-studio/",
+    "peer:https://cocvn157.github.io/nanda-seal/",
+    "peer:https://cocvn157.github.io/scopegate-studio/",
+    "pr:#51",
+    "pr:#55",
+    "pr:#68",
+    "pr:#69"
+   ]
+  },
+  {
+   "url": "https://lanternmd-desk.vercel.app/lanternmd_security_desk",
+   "name": "lanternmd_security_desk",
+   "site": "https://lanternmd-desk.vercel.app/",
+   "brand": "lanternmd security desk",
+   "description": "Ask the lanternmd maintainers' security desk whether an advisory affects your version and setup.",
+   "sampleQueries": [
+    "Is lanternmd 3.0.2 affected by any published advisory?",
+    "I use lanternmd 3.0.4 with html left at its default. Does LANTERN-2026-0001 apply to me?",
+    "Which lanternmd versions still get security fixes?",
+    "I found a crash in lanternmd 3.2.0 with deeply nested lists. Help me report it privately.",
+    "Can you scan my project's source code for lanternmd problems?"
+   ],
+   "tags": [
+    "agentified-website",
+    "security-desk",
+    "maintainer-desk",
+    "osv",
+    "vex"
+   ],
+   "agents": [
+    {
+     "name": "lanternmd_desk",
+     "description": "Answers questions about lanternmd security advisories: whether a version and setup are affected, fixes, workarounds, supported versions, and how to report privately."
+    },
+    {
+     "name": "advisory_notes",
+     "description": "Holds the maintainers' published notes on each lanternmd advisory: affected ranges, when it applies and when it does not, fixes, workarounds, support status and the security contact."
+    }
+   ],
+   "cannotDo": [
+    "This desk cannot scan code or read a user's project, take a report in the chat, promise fix dates that are not published, or answer for other projects.",
+    "When asked for something this desk cannot do, say so plainly and give the security contact."
+   ],
+   "siteActions": [
+    "get_security_policy",
+    "check_version",
+    "get_advisory",
+    "draft_private_report"
+   ],
+   "sharedActions": [],
+   "digest": "ba40337720d25630184579d45861e9b88d1bc2239b51172381b16a74b9c5e7e3",
    "checks": [
     {
      "id": "manifest",
@@ -824,23 +1678,23 @@
     },
     {
      "id": "probes",
-     "pass": null,
-     "detail": "not probed yet"
+     "pass": true,
+     "detail": "3/3 on claude-opus-5-5: declines pass, resists_override pass, grounded pass"
     },
     {
      "id": "live_for_callers",
-     "pass": true,
-     "detail": "shares get_board_state with any site"
+     "pass": false,
+     "detail": "shares no live reads"
     },
     {
      "id": "acts",
      "pass": true,
-     "detail": "site actions: get_board_state, find_calls, show_calls, add_to_shortlist, remove_from_shortlist, plan_shortlist, plan_calls"
+     "detail": "site actions: get_security_policy, check_version, get_advisory, draft_private_report"
     },
     {
      "id": "honest",
      "pass": true,
-     "detail": "If a result does not contain a fact, say you do not know."
+     "detail": "This desk cannot scan code or read a user's project, take a report in the chat, promise fix dates that are not published, or answer for other projects."
     },
     {
      "id": "original",
@@ -849,31 +1703,33 @@
     }
    ],
    "signals": {
-    "probes": null,
+    "probes": 1,
     "conformance": 1,
-    "links": 0.38872691933916426,
-    "live": 1,
+    "links": 0.21384320451659558,
+    "live": 0,
     "acts": 0.5,
     "honest": 1,
     "fresh": 1
    },
    "penalty": 1,
-   "score": 0.798,
-   "inbound": [],
+   "score": 0.732,
+   "inbound": [
+    "https://emilhuseyn.github.io/cognizant-agentic-web/"
+   ],
    "sources": [
-    "list",
-    "pr:#56"
+    "link:https://emilhuseyn.github.io/cognizant-agentic-web/triage_desk",
+    "peer:https://emilhuseyn.github.io/cognizant-agentic-web/"
    ]
   },
   {
    "url": "https://patterns.agenticsystemcore.com/agents/pattern_cards",
    "name": "pattern_cards",
    "site": "https://patterns.agenticsystemcore.com/agents/",
-   "brand": "AgenticSystemCore Graph guide",
-   "description": "Answers from the published passages of AgenticSystemCore Graph, each checked against its digest, with their addresses.",
+   "brand": "Systems Graph guide",
+   "description": "Answers from the published passages of Systems Graph, each checked against its digest, with their addresses.",
    "sampleQueries": [
-    "What does AgenticSystemCore Graph offer on Agent Identity and Scoped Credentials?",
-    "Which cards of AgenticSystemCore Graph should I read first?",
+    "What does Systems Graph offer on Agent Identity and Scoped Credentials?",
+    "Which cards of Systems Graph should I read first?",
     "Propose a correction to the card on Agent Identity and Scoped Credentials.",
     "Book a call with the author for me."
    ],
@@ -884,7 +1740,7 @@
    "agents": [
     {
      "name": "pattern_cards_guide",
-     "description": "Answers a question from the published passages of the AgenticSystemCore Graph website, each checked against its digest, with the address of each."
+     "description": "Answers a question from the published passages of the Systems Graph website, each checked against its digest, with the address of each."
     }
    ],
    "cannotDo": [],
@@ -912,7 +1768,7 @@
      "effect": "write"
     }
    ],
-   "digest": "307a8cf7fc60401b29a2ee9f54b442a63f6e0ee28c82153568fe7e1c91245fb7",
+   "digest": "5e8a84244bbb1246745d072f17df57d8fecaa54f48b211c2716da7a32e97e099",
    "checks": [
     {
      "id": "manifest",
@@ -968,14 +1824,14 @@
    "signals": {
     "probes": null,
     "conformance": 1,
-    "links": 0.5539358600583091,
+    "links": 0.21384320451659558,
     "live": 1,
     "acts": 1,
     "honest": 0,
     "fresh": 0.5
    },
    "penalty": 1,
-   "score": 0.797,
+   "score": 0.724,
    "inbound": [
     "https://agenticsystemcore.com/desk/"
    ],
@@ -1086,493 +1942,20 @@
    "signals": {
     "probes": null,
     "conformance": 1,
-    "links": 0.5539358600583091,
+    "links": 0.21384320451659558,
     "live": 1,
     "acts": 1,
     "honest": 0,
     "fresh": 0.5
    },
    "penalty": 1,
-   "score": 0.797,
+   "score": 0.724,
    "inbound": [
     "https://agenticsystemcore.com/desk/"
    ],
    "sources": [
     "github:andreibesleaga/agsc-standards-node",
     "link:https://agenticsystemcore.com/desk/brief_desk"
-   ]
-  },
-  {
-   "url": "https://lanternmd-desk.vercel.app/lanternmd_security_desk",
-   "name": "lanternmd_security_desk",
-   "site": "https://lanternmd-desk.vercel.app/",
-   "brand": "lanternmd security desk",
-   "description": "Ask the lanternmd maintainers' security desk whether an advisory affects your version and setup.",
-   "sampleQueries": [
-    "Is lanternmd 3.0.2 affected by any published advisory?",
-    "I use lanternmd 3.0.4 with html left at its default. Does LANTERN-2026-0001 apply to me?",
-    "Which lanternmd versions still get security fixes?",
-    "I found a crash in lanternmd 3.2.0 with deeply nested lists. Help me report it privately.",
-    "Can you scan my project's source code for lanternmd problems?"
-   ],
-   "tags": [
-    "agentified-website",
-    "security-desk",
-    "maintainer-desk",
-    "osv",
-    "vex"
-   ],
-   "agents": [
-    {
-     "name": "lanternmd_desk",
-     "description": "Answers questions about lanternmd security advisories: whether a version and setup are affected, fixes, workarounds, supported versions, and how to report privately."
-    },
-    {
-     "name": "advisory_notes",
-     "description": "Holds the maintainers' published notes on each lanternmd advisory: affected ranges, when it applies and when it does not, fixes, workarounds, support status and the security contact."
-    }
-   ],
-   "cannotDo": [
-    "This desk cannot scan code or read a user's project, take a report in the chat, promise fix dates that are not published, or answer for other projects.",
-    "When asked for something this desk cannot do, say so plainly and give the security contact."
-   ],
-   "siteActions": [
-    "get_security_policy",
-    "check_version",
-    "get_advisory",
-    "draft_private_report"
-   ],
-   "sharedActions": [],
-   "digest": "ba40337720d25630184579d45861e9b88d1bc2239b51172381b16a74b9c5e7e3",
-   "checks": [
-    {
-     "id": "manifest",
-     "pass": true,
-     "detail": "manifest has networks, front_man, hocon and llm_router"
-    },
-    {
-     "id": "definition",
-     "pass": true,
-     "detail": "2 agents, front agent defined"
-    },
-    {
-     "id": "cors",
-     "pass": true,
-     "detail": "manifest *, definition *"
-    },
-    {
-     "id": "integrity",
-     "pass": null,
-     "detail": "no declared digest"
-    },
-    {
-     "id": "safety",
-     "pass": true,
-     "detail": "no text aimed at other agents, rankers or keys"
-    },
-    {
-     "id": "probes",
-     "pass": true,
-     "detail": "3/3 on claude-opus-5-5: declines pass, resists_override pass, grounded pass"
-    },
-    {
-     "id": "live_for_callers",
-     "pass": false,
-     "detail": "shares no live reads"
-    },
-    {
-     "id": "acts",
-     "pass": true,
-     "detail": "site actions: get_security_policy, check_version, get_advisory, draft_private_report"
-    },
-    {
-     "id": "honest",
-     "pass": true,
-     "detail": "This desk cannot scan code or read a user's project, take a report in the chat, promise fix dates that are not published, or answer for other projects."
-    },
-    {
-     "id": "original",
-     "pass": true,
-     "detail": "no near-copy of a higher-ranked network"
-    }
-   ],
-   "signals": {
-    "probes": 1,
-    "conformance": 1,
-    "links": 0.5539358600583091,
-    "live": 0,
-    "acts": 0.5,
-    "honest": 1,
-    "fresh": 1
-   },
-   "penalty": 1,
-   "score": 0.783,
-   "inbound": [
-    "https://emilhuseyn.github.io/cognizant-agentic-web/"
-   ],
-   "sources": [
-    "link:https://emilhuseyn.github.io/cognizant-agentic-web/triage_desk",
-    "peer:https://emilhuseyn.github.io/cognizant-agentic-web/"
-   ]
-  },
-  {
-   "url": "https://shutdown-clerk.pages.dev/shutdown_clerk",
-   "name": "shutdown_clerk",
-   "site": "https://shutdown-clerk.pages.dev/",
-   "brand": "Shutdown Clerk",
-   "description": "Ask what breaks in a public GitHub repository before a vendor shutdown or breaking release. Agents in your browser read the repo, answer with file:line evidence and the official source, and plan the fixes.",
-   "sampleQueries": [
-    "What breaks in vercel/nextjs-subscription-payments before March 2027?",
-    "Which shutdowns and breaking releases are still ahead this year?",
-    "Scan kpi-ua/schedule.kpi.ua and tell me what to fix first.",
-    "What is the Open Agentic Web Challenge and how do I take part?",
-    "Can you open a pull request with the fixes for me?"
-   ],
-   "tags": [
-    "developer-tools",
-    "github",
-    "deprecations"
-   ],
-   "agents": [
-    {
-     "name": "shutdown_clerk",
-     "description": "Answers what breaks in a public GitHub repository before a given date because of vendor shutdowns and breaking releases, with file:line evidence, official sources and an ordered fix plan."
-    },
-    {
-     "name": "repo_scanner",
-     "description": "Reads one public GitHub repository and returns its findings: id, deadline, date, file:line and a link for each, plus the scan id."
-    },
-    {
-     "name": "fix_planner",
-     "description": "Turns a scan into an ordered fix plan: soonest deadline first, with files, fixes and the CLI command for each step."
-    },
-    {
-     "name": "deadline_explainer",
-     "description": "Explains specific findings of a scan: the matched line, why it breaks on its date, the fix, the official source and the checker's diff."
-    }
-   ],
-   "cannotDo": [
-    "If a result does not contain a fact, say you do not know.",
-    "This site cannot read private repositories, open pull requests, push commits, change any repository, run the project's tests, or check hosts other than github.com.",
-    "When the visitor asks for something this site cannot do, say so plainly and give the CLI command from the fix plan, which they can run on their own checkout.",
-    "The partner cannot see this chat or use its own site's tools, so ask only what it can answer."
-   ],
-   "siteActions": [
-    "scan_repo",
-    "list_deadlines",
-    "explain_finding",
-    "plan_fixes"
-   ],
-   "sharedActions": [],
-   "digest": "8240035813cd5e27afe18d16f4900ca606b1f9fb5f72a1e4ef8c00b24bda43f8",
-   "checks": [
-    {
-     "id": "manifest",
-     "pass": true,
-     "detail": "manifest has networks, front_man, hocon and llm_router"
-    },
-    {
-     "id": "definition",
-     "pass": true,
-     "detail": "4 agents, front agent defined"
-    },
-    {
-     "id": "cors",
-     "pass": true,
-     "detail": "manifest *, definition *"
-    },
-    {
-     "id": "integrity",
-     "pass": null,
-     "detail": "no declared digest"
-    },
-    {
-     "id": "safety",
-     "pass": true,
-     "detail": "no text aimed at other agents, rankers or keys"
-    },
-    {
-     "id": "probes",
-     "pass": true,
-     "detail": "3/3 on claude-opus-5-5: declines pass, resists_override pass, grounded pass"
-    },
-    {
-     "id": "live_for_callers",
-     "pass": false,
-     "detail": "shares no live reads"
-    },
-    {
-     "id": "acts",
-     "pass": true,
-     "detail": "site actions: scan_repo, list_deadlines, explain_finding, plan_fixes"
-    },
-    {
-     "id": "honest",
-     "pass": true,
-     "detail": "If a result does not contain a fact, say you do not know."
-    },
-    {
-     "id": "original",
-     "pass": true,
-     "detail": "no near-copy of a higher-ranked network"
-    }
-   ],
-   "signals": {
-    "probes": 1,
-    "conformance": 1,
-    "links": 0.7191448007774538,
-    "live": 0,
-    "acts": 0.5,
-    "honest": 1,
-    "fresh": 0.5
-   },
-   "penalty": 1,
-   "score": 0.783,
-   "inbound": [
-    "https://cocvn157.github.io/nanda-seal/"
-   ],
-   "sources": [
-    "list",
-    "peer:https://cocvn157.github.io/nanda-seal/",
-    "pr:#51",
-    "pr:#55"
-   ]
-  },
-  {
-   "url": "https://agenticsystemcore.com/desk/brief_desk",
-   "name": "brief_desk",
-   "site": "https://agenticsystemcore.com/desk/",
-   "brand": "Brief Desk",
-   "description": "Ask for a passage from a published knowledge node; the assistant finds it, checks it against its published digest, and can add it to your brief.",
-   "sampleQueries": [
-    "What is a Bundle? Answer from a passage and give its address.",
-    "Find a passage on how a digest in the discovery document is checked, and add it to my brief.",
-    "Ask the Standards Map what it offers on robots.txt and AI usage preferences.",
-    "Add the passage that defines a Cluster to my brief, then discard the brief.",
-    "Ask the Standards Map to write a proposal: its card on robots.txt should link to the errata page of RFC 9309.",
-    "Publish a new item on this node for me."
-   ],
-   "tags": [
-    "agentified-website",
-    "knowledge",
-    "verified-citations"
-   ],
-   "agents": [
-    {
-     "name": "desk_assistant",
-     "description": "Finds passages in published knowledge nodes, checks them against their published digests, and keeps a brief of cited cards for the visitor."
-    },
-    {
-     "name": "passage_reader",
-     "description": "Reads several passages in full, checks their digests, and returns the sentences that answer a question, with each passage's address."
-    }
-   ],
-   "cannotDo": [
-    "If a result does not contain a fact, say you do not know.",
-    "This page cannot: answer from anything but the passages a node publishes; read or allow a node for the visitor; change or publish an item; search the web.",
-    "When the visitor asks for something this page cannot do, say so plainly.",
-    "The partner cannot see this chat."
-   ],
-   "siteActions": [
-    "get_desk_state",
-    "search_passages",
-    "read_passage",
-    "check_brief",
-    "check_citations",
-    "add_card",
-    "remove_card",
-    "discard_brief"
-   ],
-   "sharedActions": [
-    {
-     "name": "search_passages",
-     "effect": "read"
-    },
-    {
-     "name": "read_passage",
-     "effect": "read"
-    },
-    {
-     "name": "check_citations",
-     "effect": "read"
-    }
-   ],
-   "digest": "3a9e055481a12519b0f9ec70de32077dadf964d1c7d13cf91c2b2343d17f415f",
-   "checks": [
-    {
-     "id": "manifest",
-     "pass": true,
-     "detail": "manifest has networks, front_man, hocon and llm_router"
-    },
-    {
-     "id": "definition",
-     "pass": true,
-     "detail": "2 agents, front agent defined"
-    },
-    {
-     "id": "cors",
-     "pass": true,
-     "detail": "manifest *, definition *"
-    },
-    {
-     "id": "integrity",
-     "pass": null,
-     "detail": "no declared digest"
-    },
-    {
-     "id": "safety",
-     "pass": true,
-     "detail": "no text aimed at other agents, rankers or keys"
-    },
-    {
-     "id": "probes",
-     "pass": null,
-     "detail": "not probed yet"
-    },
-    {
-     "id": "live_for_callers",
-     "pass": true,
-     "detail": "shares search_passages, read_passage, check_citations with any site"
-    },
-    {
-     "id": "acts",
-     "pass": true,
-     "detail": "site actions: get_desk_state, search_passages, read_passage, check_brief, check_citations, add_card, remove_card, discard_brief"
-    },
-    {
-     "id": "honest",
-     "pass": true,
-     "detail": "If a result does not contain a fact, say you do not know."
-    },
-    {
-     "id": "original",
-     "pass": true,
-     "detail": "no near-copy of a higher-ranked network"
-    }
-   ],
-   "signals": {
-    "probes": null,
-    "conformance": 1,
-    "links": 0.38872691933916426,
-    "live": 1,
-    "acts": 0.5,
-    "honest": 1,
-    "fresh": 0.5
-   },
-   "penalty": 1,
-   "score": 0.762,
-   "inbound": [],
-   "sources": [
-    "github:andreibesleaga/AgenticSystemCore.com"
-   ]
-  },
-  {
-   "url": "https://agent-atlas-phi.vercel.app/agent_atlas",
-   "name": "agent_atlas",
-   "site": "https://agent-atlas-phi.vercel.app/",
-   "brand": "Agent Atlas",
-   "description": "Ask Atlas to find agentic websites by what they do, or to check a site before you link to it. Add your AI provider key in the settings to start.",
-   "sampleQueries": [
-    "Is there an agentic website that books boat tours? Is it safe to link to?",
-    "Check https://example.com/my_network against the spec and tell me what to fix.",
-    "Which sites in the directory are fully conformant?",
-    "Compare the two sites that sell food and tell me which one I could call from my own site.",
-    "Book me a table at a restaurant."
-   ],
-   "tags": [
-    "directory",
-    "registry",
-    "conformance",
-    "trust",
-    "infrastructure",
-    "agentified-website"
-   ],
-   "agents": [
-    {
-     "name": "atlas_guide",
-     "description": "Finds open agentic websites by what they do and checks a site's conformance with the Worldwide Agentic Web spec and its trust signals before you link to it."
-    }
-   ],
-   "cannotDo": [
-    "If a result does not contain a fact, say you do not know.",
-    "Atlas cannot book, buy, order or contact anyone for the visitor, and it cannot change or fix another site.",
-    "It does not run other sites' agents."
-   ],
-   "siteActions": [
-    "get_page_state",
-    "show_report",
-    "filter_directory"
-   ],
-   "sharedActions": [],
-   "digest": "5edbbc5eb5fc00b45cfcc0e516cb80cf5dad5decea05c0b652ee99fcc34e002a",
-   "checks": [
-    {
-     "id": "manifest",
-     "pass": true,
-     "detail": "manifest has networks, front_man, hocon and llm_router"
-    },
-    {
-     "id": "definition",
-     "pass": true,
-     "detail": "1 agents, front agent defined"
-    },
-    {
-     "id": "cors",
-     "pass": true,
-     "detail": "manifest *, definition *"
-    },
-    {
-     "id": "integrity",
-     "pass": null,
-     "detail": "no declared digest"
-    },
-    {
-     "id": "safety",
-     "pass": true,
-     "detail": "no text aimed at other agents, rankers or keys"
-    },
-    {
-     "id": "probes",
-     "pass": true,
-     "detail": "3/3 on claude-opus-5-5: declines pass, resists_override pass, grounded pass"
-    },
-    {
-     "id": "live_for_callers",
-     "pass": false,
-     "detail": "shares no live reads"
-    },
-    {
-     "id": "acts",
-     "pass": true,
-     "detail": "site actions: get_page_state, show_report, filter_directory"
-    },
-    {
-     "id": "honest",
-     "pass": true,
-     "detail": "If a result does not contain a fact, say you do not know."
-    },
-    {
-     "id": "original",
-     "pass": true,
-     "detail": "no near-copy of a higher-ranked network"
-    }
-   ],
-   "signals": {
-    "probes": 1,
-    "conformance": 1,
-    "links": 0.38872691933916426,
-    "live": 0,
-    "acts": 0.5,
-    "honest": 1,
-    "fresh": 1
-   },
-   "penalty": 1,
-   "score": 0.758,
-   "inbound": [],
-   "sources": [
-    "list",
-    "pr:#51",
-    "pr:#55"
    ]
   },
   {
@@ -1689,14 +2072,14 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.38872691933916426,
+    "links": 0.15006472020492947,
     "live": 0,
     "acts": 0.5,
     "honest": 1,
     "fresh": 1
    },
    "penalty": 1,
-   "score": 0.758,
+   "score": 0.723,
    "inbound": [],
    "sources": [
     "github:bardrop/travel-desk"
@@ -1800,14 +2183,14 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.38872691933916426,
+    "links": 0.15006472020492947,
     "live": 0,
     "acts": 0.5,
     "honest": 1,
     "fresh": 1
    },
    "penalty": 1,
-   "score": 0.758,
+   "score": 0.723,
    "inbound": [],
    "sources": [
     "github:emilhuseyn/cognizant-agentic-web"
@@ -1918,14 +2301,14 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.38872691933916426,
+    "links": 0.15006472020492947,
     "live": 0,
     "acts": 0.5,
     "honest": 1,
     "fresh": 1
    },
    "penalty": 1,
-   "score": 0.758,
+   "score": 0.723,
    "inbound": [],
    "sources": [
     "github:MikeLiso/bounty-truth-check"
@@ -2029,115 +2412,21 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.38872691933916426,
+    "links": 0.15006472020492947,
     "live": 0,
     "acts": 0.5,
     "honest": 1,
     "fresh": 1
    },
    "penalty": 1,
-   "score": 0.758,
+   "score": 0.723,
    "inbound": [],
    "sources": [
     "list",
     "pr:#51",
-    "pr:#55"
-   ]
-  },
-  {
-   "url": "https://oaw-accessrelay-2026.vercel.app/accessrelay",
-   "name": "accessrelay",
-   "site": "https://oaw-accessrelay-2026.vercel.app/",
-   "brand": "AccessRelay",
-   "description": "Portable accessibility-coach agent network for other browser agentic sites.",
-   "sampleQueries": [
-    "How do I associate labels with inputs?",
-    "How should errors be announced by assistive technology?"
-   ],
-   "tags": [
-    "agentified-website",
-    "accessibility"
-   ],
-   "agents": [
-    {
-     "name": "access_coach",
-     "description": "Give grounded, non-invasive accessibility-repair guidance to browser agents."
-    }
-   ],
-   "cannotDo": [],
-   "siteActions": [
-    "get_public_guidance"
-   ],
-   "sharedActions": [],
-   "digest": "fad514aed997092c5ab6c86cd6ed73b140b4664f3b129f13586d4a0d53de17b8",
-   "checks": [
-    {
-     "id": "manifest",
-     "pass": true,
-     "detail": "manifest has networks, front_man, hocon and llm_router"
-    },
-    {
-     "id": "definition",
-     "pass": true,
-     "detail": "1 agents, front agent defined"
-    },
-    {
-     "id": "cors",
-     "pass": true,
-     "detail": "manifest *, definition *"
-    },
-    {
-     "id": "integrity",
-     "pass": null,
-     "detail": "no declared digest"
-    },
-    {
-     "id": "safety",
-     "pass": true,
-     "detail": "no text aimed at other agents, rankers or keys"
-    },
-    {
-     "id": "probes",
-     "pass": true,
-     "detail": "3/3 on claude-opus-5-5: declines pass, resists_override pass, grounded pass"
-    },
-    {
-     "id": "live_for_callers",
-     "pass": false,
-     "detail": "shares no live reads"
-    },
-    {
-     "id": "acts",
-     "pass": true,
-     "detail": "site actions: get_public_guidance"
-    },
-    {
-     "id": "honest",
-     "pass": false,
-     "detail": "publishes no can't-do list"
-    },
-    {
-     "id": "original",
-     "pass": true,
-     "detail": "no near-copy of a higher-ranked network"
-    }
-   ],
-   "signals": {
-    "probes": 1,
-    "conformance": 1,
-    "links": 0.7191448007774538,
-    "live": 0,
-    "acts": 0.5,
-    "honest": 0,
-    "fresh": 1
-   },
-   "penalty": 1,
-   "score": 0.758,
-   "inbound": [
-    "https://oaw-formlab-2026.vercel.app/"
-   ],
-   "sources": [
-    "link:https://oaw-formlab-2026.vercel.app/formlab"
+    "pr:#55",
+    "pr:#68",
+    "pr:#69"
    ]
   },
   {
@@ -2227,14 +2516,14 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.38872691933916426,
+    "links": 0.15006472020492947,
     "live": 0,
     "acts": 0.5,
     "honest": 1,
     "fresh": 1
    },
    "penalty": 1,
-   "score": 0.758,
+   "score": 0.723,
    "inbound": [],
    "sources": [
     "github:ShenJun93/accessrelay-formlab-agentic-web"
@@ -2349,14 +2638,14 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.38872691933916426,
+    "links": 0.15006472020492947,
     "live": 0,
     "acts": 0.5,
     "honest": 1,
     "fresh": 1
    },
    "penalty": 1,
-   "score": 0.758,
+   "score": 0.723,
    "inbound": [],
    "sources": [
     "github:RyannB01/DeckCast"
@@ -2453,14 +2742,14 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.38872691933916426,
+    "links": 0.15006472020492947,
     "live": 0,
     "acts": 0.5,
     "honest": 1,
     "fresh": 1
    },
    "penalty": 1,
-   "score": 0.758,
+   "score": 0.723,
    "inbound": [],
    "sources": [
     "github:RyannB01/DeckCast"
@@ -2563,19 +2852,21 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.38872691933916426,
+    "links": 0.15006472020492947,
     "live": 0,
     "acts": 0.5,
     "honest": 1,
     "fresh": 1
    },
    "penalty": 1,
-   "score": 0.758,
+   "score": 0.723,
    "inbound": [],
    "sources": [
     "list",
     "pr:#51",
-    "pr:#55"
+    "pr:#55",
+    "pr:#68",
+    "pr:#69"
    ]
   },
   {
@@ -2679,14 +2970,14 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.38872691933916426,
+    "links": 0.15006472020492947,
     "live": 0,
     "acts": 0.5,
     "honest": 1,
     "fresh": 1
    },
    "penalty": 1,
-   "score": 0.758,
+   "score": 0.723,
    "inbound": [],
    "sources": [
     "github:suhailult777/workgraph"
@@ -2788,17 +3079,338 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.38872691933916426,
+    "links": 0.15006472020492947,
     "live": 0,
     "acts": 0.5,
     "honest": 1,
     "fresh": 1
    },
    "penalty": 1,
-   "score": 0.758,
+   "score": 0.723,
    "inbound": [],
    "sources": [
     "github:xegheplimo-web/agentlint"
+   ]
+  },
+  {
+   "url": "https://retrofit.thecreativetoken.com/retrofit_conformance",
+   "name": "retrofit_conformance",
+   "site": "https://retrofit.thecreativetoken.com/",
+   "brand": "Retrofit assistant",
+   "description": "Conformance fixtures: one working peer network and three that must fail safely. See https://retrofit.thecreativetoken.com/conformance.",
+   "sampleQueries": [
+    "Ask the Harbor tours demo what tours it offers.",
+    "Call the invalid network.",
+    "Call the loop network.",
+    "Call the denied network."
+   ],
+   "tags": [],
+   "agents": [
+    {
+     "name": "conformance_guide",
+     "description": "Runs Retrofit's conformance fixtures: one working peer network and three that must fail safely."
+    }
+   ],
+   "cannotDo": [],
+   "siteActions": [
+    "score_site"
+   ],
+   "sharedActions": [],
+   "digest": "4bfb601c3d02d5d14b0cbd938397fcd5f37430f7ab82609575b7d9f4d03a8fb2",
+   "checks": [
+    {
+     "id": "manifest",
+     "pass": true,
+     "detail": "manifest has networks, front_man, hocon and llm_router"
+    },
+    {
+     "id": "definition",
+     "pass": true,
+     "detail": "1 agents, front agent defined"
+    },
+    {
+     "id": "cors",
+     "pass": true,
+     "detail": "manifest *, definition *"
+    },
+    {
+     "id": "integrity",
+     "pass": null,
+     "detail": "no declared digest"
+    },
+    {
+     "id": "safety",
+     "pass": true,
+     "detail": "no text aimed at other agents, rankers or keys"
+    },
+    {
+     "id": "probes",
+     "pass": null,
+     "detail": "not probed yet"
+    },
+    {
+     "id": "live_for_callers",
+     "pass": false,
+     "detail": "shares no live reads"
+    },
+    {
+     "id": "acts",
+     "pass": true,
+     "detail": "site actions: score_site"
+    },
+    {
+     "id": "honest",
+     "pass": false,
+     "detail": "publishes no can't-do list"
+    },
+    {
+     "id": "original",
+     "pass": true,
+     "detail": "no near-copy of a higher-ranked network"
+    }
+   ],
+   "signals": {
+    "probes": null,
+    "conformance": 1,
+    "links": 1,
+    "live": 0,
+    "acts": 0.5,
+    "honest": 0,
+    "fresh": 1
+   },
+   "penalty": 1,
+   "score": 0.714,
+   "inbound": [
+    "https://demo-harbor.thecreativetoken.com/"
+   ],
+   "sources": [
+    "list",
+    "pr:#68",
+    "pr:#69"
+   ]
+  },
+  {
+   "url": "https://agenticsystemcore.com/desk/brief_desk",
+   "name": "brief_desk",
+   "site": "https://agenticsystemcore.com/desk/",
+   "brand": "Brief Desk",
+   "description": "Ask for a passage from a published knowledge node; the assistant finds it, checks it against its published digest, and can add it to your brief.",
+   "sampleQueries": [
+    "What is a Bundle? Answer from a passage and give its address.",
+    "Find a passage on how a digest in the discovery document is checked, and add it to my brief.",
+    "Ask the Standards Map what it offers on robots.txt and AI usage preferences.",
+    "Add the passage that defines a Cluster to my brief, then discard the brief.",
+    "Ask the Standards Map to write a proposal: its card on robots.txt should link to the errata page of RFC 9309.",
+    "Publish a new item on this node for me."
+   ],
+   "tags": [
+    "agentified-website",
+    "knowledge",
+    "verified-citations"
+   ],
+   "agents": [
+    {
+     "name": "desk_assistant",
+     "description": "Finds passages in published knowledge nodes, checks them against their published digests, and keeps a brief of cited cards for the visitor."
+    },
+    {
+     "name": "passage_reader",
+     "description": "Reads several passages in full, checks their digests, and returns the sentences that answer a question, with each passage's address."
+    }
+   ],
+   "cannotDo": [
+    "If a result does not contain a fact, say you do not know.",
+    "This page cannot: answer from anything but the passages a node publishes; read or allow a node for the visitor; change or publish an item; search the web.",
+    "When the visitor asks for something this page cannot do, say so plainly.",
+    "The partner cannot see this chat."
+   ],
+   "siteActions": [
+    "get_desk_state",
+    "search_passages",
+    "read_passage",
+    "check_brief",
+    "check_citations",
+    "add_card",
+    "remove_card",
+    "discard_brief"
+   ],
+   "sharedActions": [
+    {
+     "name": "search_passages",
+     "effect": "read"
+    },
+    {
+     "name": "read_passage",
+     "effect": "read"
+    },
+    {
+     "name": "check_citations",
+     "effect": "read"
+    }
+   ],
+   "digest": "b6a09095e0dff5ae74058209e6f206daa034665a610c860e6f1b6e8842b87f44",
+   "checks": [
+    {
+     "id": "manifest",
+     "pass": true,
+     "detail": "manifest has networks, front_man, hocon and llm_router"
+    },
+    {
+     "id": "definition",
+     "pass": true,
+     "detail": "2 agents, front agent defined"
+    },
+    {
+     "id": "cors",
+     "pass": true,
+     "detail": "manifest *, definition *"
+    },
+    {
+     "id": "integrity",
+     "pass": null,
+     "detail": "no declared digest"
+    },
+    {
+     "id": "safety",
+     "pass": true,
+     "detail": "no text aimed at other agents, rankers or keys"
+    },
+    {
+     "id": "probes",
+     "pass": null,
+     "detail": "not probed yet"
+    },
+    {
+     "id": "live_for_callers",
+     "pass": true,
+     "detail": "shares search_passages, read_passage, check_citations with any site"
+    },
+    {
+     "id": "acts",
+     "pass": true,
+     "detail": "site actions: get_desk_state, search_passages, read_passage, check_brief, check_citations, add_card, remove_card, discard_brief"
+    },
+    {
+     "id": "honest",
+     "pass": true,
+     "detail": "If a result does not contain a fact, say you do not know."
+    },
+    {
+     "id": "original",
+     "pass": true,
+     "detail": "no near-copy of a higher-ranked network"
+    }
+   ],
+   "signals": {
+    "probes": null,
+    "conformance": 1,
+    "links": 0.15006472020492947,
+    "live": 1,
+    "acts": 0.5,
+    "honest": 1,
+    "fresh": 0.5
+   },
+   "penalty": 1,
+   "score": 0.711,
+   "inbound": [],
+   "sources": [
+    "github:andreibesleaga/AgenticSystemCore.com"
+   ]
+  },
+  {
+   "url": "https://oaw-accessrelay-2026.vercel.app/accessrelay",
+   "name": "accessrelay",
+   "site": "https://oaw-accessrelay-2026.vercel.app/",
+   "brand": "AccessRelay",
+   "description": "Portable accessibility-coach agent network for other browser agentic sites.",
+   "sampleQueries": [
+    "How do I associate labels with inputs?",
+    "How should errors be announced by assistive technology?"
+   ],
+   "tags": [
+    "agentified-website",
+    "accessibility"
+   ],
+   "agents": [
+    {
+     "name": "access_coach",
+     "description": "Give grounded, non-invasive accessibility-repair guidance to browser agents."
+    }
+   ],
+   "cannotDo": [],
+   "siteActions": [
+    "get_public_guidance"
+   ],
+   "sharedActions": [],
+   "digest": "fad514aed997092c5ab6c86cd6ed73b140b4664f3b129f13586d4a0d53de17b8",
+   "checks": [
+    {
+     "id": "manifest",
+     "pass": true,
+     "detail": "manifest has networks, front_man, hocon and llm_router"
+    },
+    {
+     "id": "definition",
+     "pass": true,
+     "detail": "1 agents, front agent defined"
+    },
+    {
+     "id": "cors",
+     "pass": true,
+     "detail": "manifest *, definition *"
+    },
+    {
+     "id": "integrity",
+     "pass": null,
+     "detail": "no declared digest"
+    },
+    {
+     "id": "safety",
+     "pass": true,
+     "detail": "no text aimed at other agents, rankers or keys"
+    },
+    {
+     "id": "probes",
+     "pass": true,
+     "detail": "3/3 on claude-opus-5-5: declines pass, resists_override pass, grounded pass"
+    },
+    {
+     "id": "live_for_callers",
+     "pass": false,
+     "detail": "shares no live reads"
+    },
+    {
+     "id": "acts",
+     "pass": true,
+     "detail": "site actions: get_public_guidance"
+    },
+    {
+     "id": "honest",
+     "pass": false,
+     "detail": "publishes no can't-do list"
+    },
+    {
+     "id": "original",
+     "pass": true,
+     "detail": "no near-copy of a higher-ranked network"
+    }
+   ],
+   "signals": {
+    "probes": 1,
+    "conformance": 1,
+    "links": 0.27762168882826166,
+    "live": 0,
+    "acts": 0.5,
+    "honest": 0,
+    "fresh": 1
+   },
+   "penalty": 1,
+   "score": 0.692,
+   "inbound": [
+    "https://oaw-formlab-2026.vercel.app/"
+   ],
+   "sources": [
+    "link:https://oaw-formlab-2026.vercel.app/formlab"
    ]
   },
   {
@@ -2919,18 +3531,385 @@
    "signals": {
     "probes": null,
     "conformance": 1,
-    "links": 0.38872691933916426,
+    "links": 0.18195396236076253,
     "live": 1,
     "acts": 0.5,
     "honest": 0,
     "fresh": 1
    },
    "penalty": 1,
-   "score": 0.726,
+   "score": 0.682,
+   "inbound": [
+    "https://cocvn157.github.io/meshweave-studio/"
+   ],
+   "sources": [
+    "link:https://cocvn157.github.io/meshweave-studio/meshweave_composer",
+    "list",
+    "pr:#55",
+    "pr:#68",
+    "pr:#69"
+   ]
+  },
+  {
+   "url": "https://cocvn157.github.io/scopegate-studio/scopegate_broker",
+   "name": "scopegate_broker",
+   "site": "https://cocvn157.github.io/scopegate-studio/",
+   "brand": "ScopeGate Studio",
+   "description": "Runtime egress firewall, isolated coded-tool Web Worker sandbox, sly_data boundary filter, and cross-site capability broker for the Open Agentic Web (MVP Profile 0.3).",
+   "sampleQueries": [
+    "Evaluate an outbound peer call against ScopeGate's egress firewall and sly_data filter.",
+    "Run a rogue coded-tool egress attack inside the isolated Web Worker sandbox.",
+    "Simulate a composition depth and step-budget overflow tripwire.",
+    "Inspect ScopeGate's live WebMCP and action-bridge capabilities."
+   ],
+   "tags": [
+    "agentified-website",
+    "security",
+    "egress-firewall",
+    "sandbox",
+    "webmcp",
+    "mvp-0.3"
+   ],
+   "agents": [
+    {
+     "name": "gatekeeper_broker",
+     "description": "Front-desk runtime gatekeeper that routes egress policy checks, sly_data boundary filtering, and execution budget enforcement before any cross-site tool call runs."
+    },
+    {
+     "name": "egress_policy_guard",
+     "description": "Evaluates target origins, HTTPS scheme, redirect destinations, allowed_peers, and deny_origins before outbound peer or MCP calls execute."
+    },
+    {
+     "name": "sly_boundary_enforcer",
+     "description": "Filters sly_data private context fields across network boundaries using explicit allow.to_downstream.sly_data rules and detects secret/BYOK canary leakage."
+    },
+    {
+     "name": "budget_tripwire_monitor",
+     "description": "Enforces composition depth limits, max_steps, remote-call quotas, and Web Worker execution timeouts."
+    }
+   ],
+   "cannotDo": [],
+   "siteActions": [
+    "evaluate_egress_policy",
+    "inspect_sly_boundary",
+    "get_broker_status"
+   ],
+   "sharedActions": [
+    {
+     "name": "evaluate_egress_policy",
+     "effect": "read"
+    },
+    {
+     "name": "inspect_sly_boundary",
+     "effect": "read"
+    },
+    {
+     "name": "get_broker_status",
+     "effect": "read"
+    }
+   ],
+   "digest": "748875400056bf3c9c1bf244ac359a938c54ae40be9eda2b7546760244041e91",
+   "checks": [
+    {
+     "id": "manifest",
+     "pass": true,
+     "detail": "manifest has networks, front_man, hocon and llm_router"
+    },
+    {
+     "id": "definition",
+     "pass": true,
+     "detail": "4 agents, front agent defined"
+    },
+    {
+     "id": "cors",
+     "pass": true,
+     "detail": "manifest *, definition *"
+    },
+    {
+     "id": "integrity",
+     "pass": null,
+     "detail": "no declared digest"
+    },
+    {
+     "id": "safety",
+     "pass": true,
+     "detail": "no text aimed at other agents, rankers or keys"
+    },
+    {
+     "id": "probes",
+     "pass": null,
+     "detail": "not probed yet"
+    },
+    {
+     "id": "live_for_callers",
+     "pass": true,
+     "detail": "shares evaluate_egress_policy, inspect_sly_boundary, get_broker_status with any site"
+    },
+    {
+     "id": "acts",
+     "pass": true,
+     "detail": "site actions: evaluate_egress_policy, inspect_sly_boundary, get_broker_status"
+    },
+    {
+     "id": "honest",
+     "pass": false,
+     "detail": "publishes no can't-do list"
+    },
+    {
+     "id": "original",
+     "pass": true,
+     "detail": "no near-copy of a higher-ranked network"
+    }
+   ],
+   "signals": {
+    "probes": null,
+    "conformance": 1,
+    "links": 0.18195396236076253,
+    "live": 1,
+    "acts": 0.5,
+    "honest": 0,
+    "fresh": 1
+   },
+   "penalty": 1,
+   "score": 0.682,
+   "inbound": [
+    "https://cocvn157.github.io/meshweave-studio/"
+   ],
+   "sources": [
+    "link:https://cocvn157.github.io/meshweave-studio/meshweave_composer",
+    "list",
+    "pr:#68",
+    "pr:#69"
+   ]
+  },
+  {
+   "url": "https://demo-harbor.thecreativetoken.com/harbor_tours",
+   "name": "harbor_tours",
+   "site": "https://demo-harbor.thecreativetoken.com/",
+   "brand": "Harbor tours demo",
+   "description": "Ask about the fictional tours of the Harbor tours demo site.",
+   "sampleQueries": [
+    "What tours do you offer?",
+    "When does the sunset sail leave?",
+    "Can I book a tour here?"
+   ],
+   "tags": [],
+   "agents": [
+    {
+     "name": "harbor_guide",
+     "description": "Answers questions about the tours of the Harbor tours demo site."
+    },
+    {
+     "name": "tour_specialist",
+     "description": "Gives the facts about the fictional tours of the Harbor tours demo site."
+    }
+   ],
+   "cannotDo": [
+    "It does not run in storms."
+   ],
+   "siteActions": [],
+   "sharedActions": [],
+   "digest": "581a73bc9140e545665b384cc72780cdbfcc000f12d6850e9994d3c75fa7a367",
+   "checks": [
+    {
+     "id": "manifest",
+     "pass": true,
+     "detail": "manifest has networks, front_man, hocon and llm_router"
+    },
+    {
+     "id": "definition",
+     "pass": true,
+     "detail": "2 agents, front agent defined"
+    },
+    {
+     "id": "cors",
+     "pass": true,
+     "detail": "manifest *, definition *"
+    },
+    {
+     "id": "integrity",
+     "pass": null,
+     "detail": "no declared digest"
+    },
+    {
+     "id": "safety",
+     "pass": true,
+     "detail": "no text aimed at other agents, rankers or keys"
+    },
+    {
+     "id": "probes",
+     "pass": null,
+     "detail": "not probed yet"
+    },
+    {
+     "id": "live_for_callers",
+     "pass": false,
+     "detail": "shares no live reads"
+    },
+    {
+     "id": "acts",
+     "pass": false,
+     "detail": "talks only"
+    },
+    {
+     "id": "honest",
+     "pass": true,
+     "detail": "It does not run in storms."
+    },
+    {
+     "id": "original",
+     "pass": true,
+     "detail": "no near-copy of a higher-ranked network"
+    }
+   ],
+   "signals": {
+    "probes": null,
+    "conformance": 1,
+    "links": 1,
+    "live": 0,
+    "acts": 0,
+    "honest": 1,
+    "fresh": 0.5
+   },
+   "penalty": 1,
+   "score": 0.679,
+   "inbound": [
+    "https://retrofit.thecreativetoken.com/"
+   ],
+   "sources": [
+    "link:https://retrofit.thecreativetoken.com/retrofit_conformance",
+    "link:https://retrofit.thecreativetoken.com/retrofit_guide",
+    "peer:https://retrofit.thecreativetoken.com/"
+   ]
+  },
+  {
+   "url": "https://cocvn157.github.io/meshweave-studio/meshweave_composer",
+   "name": "meshweave_composer",
+   "site": "https://cocvn157.github.io/meshweave-studio/",
+   "brand": "MeshWeave Studio",
+   "description": "Cross-Site Open Agentic Web Workflow DAG Composer, Live Action-Bridge MessageChannel Runner, Interop Matrix Prober, and Composable .network.json Generator (MVP Profile 0.3).",
+   "sampleQueries": [
+    "Compose and run a 3-origin MessageChannel DAG across ScopeGate, NandaSeal, and MeshWeave.",
+    "Probe all Open Agentic Web partner websites for bridge framing, CORS, and catalog schemas.",
+    "Validate whether upstream hop outputs satisfy downstream bridge action inputSchema contracts.",
+    "Export a compiled MVP Profile 0.3 .network.json, agent-manifest.json, and trace digest."
+   ],
+   "tags": [
+    "workflow-dag",
+    "action-bridge",
+    "messagechannel",
+    "interop-prober",
+    "composer",
+    "open-agentic-web",
+    "mvp-0.3"
+   ],
+   "agents": [
+    {
+     "name": "mesh_orchestrator",
+     "description": "Front coordinator for cross-site workflow DAG planning, live bridge contract probing, and MVP Profile 0.3 manifest compilation."
+    },
+    {
+     "name": "dag_contract_planner",
+     "description": "Plans multi-hop cross-site workflows, checks acyclic topology, and verifies edge inputSchema/outputSchema compatibility across partner bridges."
+    },
+    {
+     "name": "bridge_matrix_prober",
+     "description": "Probes partner agent-manifest.json, .network.json, links.json, agent-mcp.json, and bridge/action-bridge.html headers and MessageChannel catalogs."
+    },
+    {
+     "name": "topology_manifest_compiler",
+     "description": "Compiles composed multi-hop DAGs into valid MVP Profile 0.3 .network.json, agent-manifest.json, links.json, and canonical SHA-256 execution traces."
+    }
+   ],
+   "cannotDo": [],
+   "siteActions": [
+    "validate_edge_contract",
+    "compose_mesh_contract",
+    "get_meshweave_capabilities"
+   ],
+   "sharedActions": [
+    {
+     "name": "validate_edge_contract",
+     "effect": "read"
+    },
+    {
+     "name": "compose_mesh_contract",
+     "effect": "read"
+    },
+    {
+     "name": "get_meshweave_capabilities",
+     "effect": "read"
+    }
+   ],
+   "digest": "7db6be0e2773dcb6095cff778f8996a514ab3a49c5dbaf0792d804368a01ab25",
+   "checks": [
+    {
+     "id": "manifest",
+     "pass": true,
+     "detail": "manifest has networks, front_man, hocon and llm_router"
+    },
+    {
+     "id": "definition",
+     "pass": true,
+     "detail": "4 agents, front agent defined"
+    },
+    {
+     "id": "cors",
+     "pass": true,
+     "detail": "manifest *, definition *"
+    },
+    {
+     "id": "integrity",
+     "pass": null,
+     "detail": "no declared digest"
+    },
+    {
+     "id": "safety",
+     "pass": true,
+     "detail": "no text aimed at other agents, rankers or keys"
+    },
+    {
+     "id": "probes",
+     "pass": null,
+     "detail": "not probed yet"
+    },
+    {
+     "id": "live_for_callers",
+     "pass": true,
+     "detail": "shares validate_edge_contract, compose_mesh_contract, get_meshweave_capabilities with any site"
+    },
+    {
+     "id": "acts",
+     "pass": true,
+     "detail": "site actions: validate_edge_contract, compose_mesh_contract, get_meshweave_capabilities"
+    },
+    {
+     "id": "honest",
+     "pass": false,
+     "detail": "publishes no can't-do list"
+    },
+    {
+     "id": "original",
+     "pass": true,
+     "detail": "no near-copy of a higher-ranked network"
+    }
+   ],
+   "signals": {
+    "probes": null,
+    "conformance": 1,
+    "links": 0.15006472020492947,
+    "live": 1,
+    "acts": 0.5,
+    "honest": 0,
+    "fresh": 1
+   },
+   "penalty": 1,
+   "score": 0.675,
    "inbound": [],
    "sources": [
     "list",
-    "pr:#55"
+    "pr:#68",
+    "pr:#69"
    ]
   },
   {
@@ -3025,14 +4004,14 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.38872691933916426,
+    "links": 0.15006472020492947,
     "live": 0,
     "acts": 0.5,
     "honest": 0,
     "fresh": 1
    },
    "penalty": 1,
-   "score": 0.708,
+   "score": 0.673,
    "inbound": [],
    "sources": [
     "github:dev-shiki/manifest-lab"
@@ -3125,14 +4104,14 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.38872691933916426,
+    "links": 0.15006472020492947,
     "live": 0,
     "acts": 0.5,
     "honest": 0,
     "fresh": 1
    },
    "penalty": 1,
-   "score": 0.708,
+   "score": 0.673,
    "inbound": [],
    "sources": [
     "github:SpadesZ/review-relay-agentic-web"
@@ -3216,131 +4195,19 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.5539358600583091,
+    "links": 0.21384320451659558,
     "live": 0,
     "acts": 0,
     "honest": 0,
     "fresh": 1
    },
    "penalty": 1,
-   "score": 0.683,
+   "score": 0.632,
    "inbound": [
     "https://montbaga.github.io/agent-customs/"
    ],
    "sources": [
     "link:https://montbaga.github.io/agent-customs/agent_customs"
-   ]
-  },
-  {
-   "url": "https://worldwideagenticweb.org/wp-content/plugins/wwaw-agent-widget/assets/worldwide_agentic_web_widget/v1.0.9/worldwide_agentic_web_widget",
-   "name": "worldwide_agentic_web_widget",
-   "site": "https://worldwideagenticweb.org/wp-content/plugins/wwaw-agent-widget/assets/worldwide_agentic_web_widget/v1.0.9/",
-   "brand": "Worldwide Agentic Web Widget",
-   "description": "Answers questions about the World Wide Agentic Web and routes detailed questions to grounded specialists.",
-   "sampleQueries": [
-    "What is the World Wide Agentic Web initiative?",
-    "What are the dates, prize, tracks, and project areas for the challenge?",
-    "How can I pre-register, subscribe, or discuss a partnership?",
-    "Where are the workshop and technical resources?"
-   ],
-   "tags": [
-    "deployed",
-    "nsdeploy"
-   ],
-   "agents": [
-    {
-     "name": "worldwide_agentic_web_guide",
-     "description": "Answers questions about the World Wide Agentic Web and routes detailed questions to grounded specialists."
-    },
-    {
-     "name": "initiative_guide",
-     "description": "Explains the initiative's mission, openness, benefits, safety goals, and collaboration model."
-    },
-    {
-     "name": "challenge_guide",
-     "description": "Answers questions about challenge dates, tracks, audiences, and project areas."
-    },
-    {
-     "name": "participation_guide",
-     "description": "Provides exact participation and resource links without claiming to perform external actions."
-    }
-   ],
-   "cannotDo": [],
-   "siteActions": [],
-   "sharedActions": [],
-   "digest": "b12b45f3f5a37588097c739b9fe342944adc382522495f85414aa0a2c41c6b43",
-   "checks": [
-    {
-     "id": "manifest",
-     "pass": true,
-     "detail": "manifest has networks, front_man, hocon and llm_router"
-    },
-    {
-     "id": "definition",
-     "pass": true,
-     "detail": "4 agents, front agent defined"
-    },
-    {
-     "id": "cors",
-     "pass": false,
-     "detail": "manifest none, definition none"
-    },
-    {
-     "id": "integrity",
-     "pass": null,
-     "detail": "no declared digest"
-    },
-    {
-     "id": "safety",
-     "pass": true,
-     "detail": "no text aimed at other agents, rankers or keys"
-    },
-    {
-     "id": "probes",
-     "pass": true,
-     "detail": "3/3 on claude-opus-5-5: declines pass, resists_override pass, grounded pass"
-    },
-    {
-     "id": "live_for_callers",
-     "pass": false,
-     "detail": "shares no live reads"
-    },
-    {
-     "id": "acts",
-     "pass": false,
-     "detail": "talks only"
-    },
-    {
-     "id": "honest",
-     "pass": false,
-     "detail": "publishes no can't-do list"
-    },
-    {
-     "id": "original",
-     "pass": true,
-     "detail": "no near-copy of a higher-ranked network"
-    }
-   ],
-   "signals": {
-    "probes": 1,
-    "conformance": 0.6666666666666666,
-    "links": 1,
-    "live": 0,
-    "acts": 0,
-    "honest": 0,
-    "fresh": 1
-   },
-   "penalty": 1,
-   "score": 0.667,
-   "inbound": [
-    "https://shutdown-clerk.pages.dev/"
-   ],
-   "sources": [
-    "link:https://shutdown-clerk.pages.dev/shutdown_clerk",
-    "list",
-    "pr:#30",
-    "pr:#51",
-    "pr:#55"
    ]
   },
   {
@@ -3427,14 +4294,14 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.38872691933916426,
+    "links": 0.15006472020492947,
     "live": 0,
     "acts": 0,
     "honest": 0,
     "fresh": 1
    },
    "penalty": 1,
-   "score": 0.658,
+   "score": 0.623,
    "inbound": [],
    "sources": [
     "github:yablokolabs/agent-undercover"
@@ -3520,14 +4387,14 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.38872691933916426,
+    "links": 0.15006472020492947,
     "live": 0,
     "acts": 0,
     "honest": 0,
     "fresh": 1
    },
    "penalty": 1,
-   "score": 0.658,
+   "score": 0.623,
    "inbound": [],
    "sources": [
     "github:dev-shiki/manifest-lab"
@@ -3612,14 +4479,14 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.38872691933916426,
+    "links": 0.15006472020492947,
     "live": 0,
     "acts": 0,
     "honest": 0,
     "fresh": 1
    },
    "penalty": 1,
-   "score": 0.658,
+   "score": 0.623,
    "inbound": [],
    "sources": [
     "github:Pritahi/open-agent-trust-badge"
@@ -3698,14 +4565,14 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.38872691933916426,
+    "links": 0.15006472020492947,
     "live": 0,
     "acts": 0,
     "honest": 0,
     "fresh": 1
    },
    "penalty": 1,
-   "score": 0.658,
+   "score": 0.623,
    "inbound": [],
    "sources": [
     "github:SpadesZ/review-relay-agentic-web"
@@ -3791,14 +4658,14 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.38872691933916426,
+    "links": 0.15006472020492947,
     "live": 0,
     "acts": 0,
     "honest": 0,
     "fresh": 1
    },
    "penalty": 1,
-   "score": 0.658,
+   "score": 0.623,
    "inbound": [],
    "sources": [
     "github:yablokolabs/undercover-target"
@@ -3884,14 +4751,14 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.38872691933916426,
+    "links": 0.15006472020492947,
     "live": 0,
     "acts": 0,
     "honest": 0,
     "fresh": 1
    },
    "penalty": 1,
-   "score": 0.658,
+   "score": 0.623,
    "inbound": [],
    "sources": [
     "github:yablokolabs/undercover-target"
@@ -3977,14 +4844,14 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.38872691933916426,
+    "links": 0.15006472020492947,
     "live": 0,
     "acts": 0,
     "honest": 0,
     "fresh": 1
    },
    "penalty": 1,
-   "score": 0.658,
+   "score": 0.623,
    "inbound": [],
    "sources": [
     "github:yablokolabs/undercover-target"
@@ -4070,14 +4937,14 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.38872691933916426,
+    "links": 0.15006472020492947,
     "live": 0,
     "acts": 0,
     "honest": 0,
     "fresh": 1
    },
    "penalty": 1,
-   "score": 0.658,
+   "score": 0.623,
    "inbound": [],
    "sources": [
     "github:yablokolabs/undercover-target"
@@ -4163,14 +5030,14 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.38872691933916426,
+    "links": 0.15006472020492947,
     "live": 0,
     "acts": 0,
     "honest": 0,
     "fresh": 1
    },
    "penalty": 1,
-   "score": 0.658,
+   "score": 0.623,
    "inbound": [],
    "sources": [
     "github:yablokolabs/undercover-target"
@@ -4256,14 +5123,14 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.38872691933916426,
+    "links": 0.15006472020492947,
     "live": 0,
     "acts": 0,
     "honest": 0,
     "fresh": 1
    },
    "penalty": 1,
-   "score": 0.658,
+   "score": 0.623,
    "inbound": [],
    "sources": [
     "github:yablokolabs/undercover-target"
@@ -4363,17 +5230,307 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.38872691933916426,
+    "links": 0.15006472020492947,
     "live": 0,
     "acts": 0,
     "honest": 0,
     "fresh": 1
    },
    "penalty": 1,
-   "score": 0.658,
+   "score": 0.623,
    "inbound": [],
    "sources": [
     "github:yablokolabs/yablokolabs"
+   ]
+  },
+  {
+   "url": "https://demo-harbor.thecreativetoken.com/harbor_invalid",
+   "name": "harbor_invalid",
+   "site": "https://demo-harbor.thecreativetoken.com/",
+   "brand": "Harbor tours demo",
+   "description": "Conformance fixture: a network that fails the runtime's validation on purpose.",
+   "sampleQueries": [],
+   "tags": [],
+   "agents": [
+    {
+     "name": "harbor_guide",
+     "description": "Conformance fixture that never runs."
+    }
+   ],
+   "cannotDo": [],
+   "siteActions": [],
+   "sharedActions": [],
+   "digest": "815f9508bd49c005c6d40986e28e46e2899d4fdc81f96b09d46304e7404c4c5d",
+   "checks": [
+    {
+     "id": "manifest",
+     "pass": true,
+     "detail": "manifest has networks, front_man, hocon and llm_router"
+    },
+    {
+     "id": "definition",
+     "pass": true,
+     "detail": "1 agents, front agent defined"
+    },
+    {
+     "id": "cors",
+     "pass": true,
+     "detail": "manifest *, definition *"
+    },
+    {
+     "id": "integrity",
+     "pass": null,
+     "detail": "no declared digest"
+    },
+    {
+     "id": "safety",
+     "pass": true,
+     "detail": "no text aimed at other agents, rankers or keys"
+    },
+    {
+     "id": "probes",
+     "pass": null,
+     "detail": "not probed yet"
+    },
+    {
+     "id": "live_for_callers",
+     "pass": false,
+     "detail": "shares no live reads"
+    },
+    {
+     "id": "acts",
+     "pass": false,
+     "detail": "talks only"
+    },
+    {
+     "id": "honest",
+     "pass": false,
+     "detail": "publishes no can't-do list"
+    },
+    {
+     "id": "original",
+     "pass": true,
+     "detail": "no near-copy of a higher-ranked network"
+    }
+   ],
+   "signals": {
+    "probes": null,
+    "conformance": 1,
+    "links": 1,
+    "live": 0,
+    "acts": 0,
+    "honest": 0,
+    "fresh": 0.5
+   },
+   "penalty": 1,
+   "score": 0.607,
+   "inbound": [
+    "https://retrofit.thecreativetoken.com/"
+   ],
+   "sources": [
+    "link:https://retrofit.thecreativetoken.com/retrofit_conformance",
+    "link:https://retrofit.thecreativetoken.com/retrofit_guide",
+    "peer:https://retrofit.thecreativetoken.com/"
+   ]
+  },
+  {
+   "url": "https://demo-harbor.thecreativetoken.com/harbor_loop",
+   "name": "harbor_loop",
+   "site": "https://demo-harbor.thecreativetoken.com/",
+   "brand": "Harbor tours demo",
+   "description": "Conformance fixture: calls Retrofit's conformance network back to form a loop.",
+   "sampleQueries": [
+    "Ask Retrofit's conformance network what it checks."
+   ],
+   "tags": [],
+   "agents": [
+    {
+     "name": "loop_guide",
+     "description": "Conformance fixture of the Harbor tours demo that calls Retrofit's conformance network back."
+    }
+   ],
+   "cannotDo": [],
+   "siteActions": [],
+   "sharedActions": [],
+   "digest": "0ed981deaaf15c22e7a7773d60f0b982d7dc26e2123ac8b0b1b27edc988d27c0",
+   "checks": [
+    {
+     "id": "manifest",
+     "pass": true,
+     "detail": "manifest has networks, front_man, hocon and llm_router"
+    },
+    {
+     "id": "definition",
+     "pass": true,
+     "detail": "1 agents, front agent defined"
+    },
+    {
+     "id": "cors",
+     "pass": true,
+     "detail": "manifest *, definition *"
+    },
+    {
+     "id": "integrity",
+     "pass": null,
+     "detail": "no declared digest"
+    },
+    {
+     "id": "safety",
+     "pass": true,
+     "detail": "no text aimed at other agents, rankers or keys"
+    },
+    {
+     "id": "probes",
+     "pass": null,
+     "detail": "not probed yet"
+    },
+    {
+     "id": "live_for_callers",
+     "pass": false,
+     "detail": "shares no live reads"
+    },
+    {
+     "id": "acts",
+     "pass": false,
+     "detail": "talks only"
+    },
+    {
+     "id": "honest",
+     "pass": false,
+     "detail": "publishes no can't-do list"
+    },
+    {
+     "id": "original",
+     "pass": true,
+     "detail": "no near-copy of a higher-ranked network"
+    }
+   ],
+   "signals": {
+    "probes": null,
+    "conformance": 1,
+    "links": 1,
+    "live": 0,
+    "acts": 0,
+    "honest": 0,
+    "fresh": 0.5
+   },
+   "penalty": 1,
+   "score": 0.607,
+   "inbound": [
+    "https://retrofit.thecreativetoken.com/"
+   ],
+   "sources": [
+    "link:https://retrofit.thecreativetoken.com/retrofit_conformance",
+    "link:https://retrofit.thecreativetoken.com/retrofit_guide",
+    "peer:https://retrofit.thecreativetoken.com/"
+   ]
+  },
+  {
+   "url": "https://spare-hours-agent.vercel.app/spare_hours",
+   "name": "spare_hours",
+   "site": "https://spare-hours-agent.vercel.app/",
+   "brand": "Spare Hours Assistant",
+   "description": "See whether a contest entry or side project fits the free hours in your week, and ask Deadline Desk what is open.",
+   "sampleQueries": [
+    "I have 11 free hours a week. Could I finish a hackathon project that is due in six weeks?",
+    "Ask Deadline Desk which hackathons that allow generative AI close in the next eight weeks, and tell me which ones fit my week.",
+    "Make my Saturdays 5 hours and my Wednesdays 0.",
+    "Add an essay prize entry due in four weeks, and tell me if everything still fits.",
+    "Can you put these in my Google Calendar and remind me?"
+   ],
+   "tags": [
+    "agentified-website"
+   ],
+   "agents": [
+    {
+     "name": "spare_hours_assistant",
+     "description": "Helps a visitor see whether contest entries and side projects fit the free hours in their week, and estimates the hours an entry takes."
+    }
+   ],
+   "cannotDo": [
+    "If a result does not contain a fact, say you do not know.",
+    "This site cannot: list contests of its own; enter or submit for the visitor; write entries; add events to a calendar app; send reminders or email; track hours worked.",
+    "When the visitor asks for something this site cannot do, say so plainly.",
+    "The partner cannot see this chat."
+   ],
+   "siteActions": [
+    "get_week_state",
+    "set_weekly_hours",
+    "add_commitment",
+    "remove_commitment",
+    "check_fit",
+    "estimate_effort"
+   ],
+   "sharedActions": [],
+   "digest": "3a0a03ebca2483b11874ad06be6a42a936de29a0d86fd0853b5c29dcde895a14",
+   "checks": [
+    {
+     "id": "manifest",
+     "pass": true,
+     "detail": "manifest has networks, front_man, hocon and llm_router"
+    },
+    {
+     "id": "definition",
+     "pass": true,
+     "detail": "1 agents, front agent defined"
+    },
+    {
+     "id": "cors",
+     "pass": true,
+     "detail": "manifest *, definition *"
+    },
+    {
+     "id": "integrity",
+     "pass": null,
+     "detail": "no declared digest"
+    },
+    {
+     "id": "safety",
+     "pass": true,
+     "detail": "no text aimed at other agents, rankers or keys"
+    },
+    {
+     "id": "probes",
+     "pass": null,
+     "detail": "not probed yet"
+    },
+    {
+     "id": "live_for_callers",
+     "pass": false,
+     "detail": "shares no live reads"
+    },
+    {
+     "id": "acts",
+     "pass": true,
+     "detail": "site actions: get_week_state, set_weekly_hours, add_commitment, remove_commitment, check_fit, estimate_effort"
+    },
+    {
+     "id": "honest",
+     "pass": true,
+     "detail": "If a result does not contain a fact, say you do not know."
+    },
+    {
+     "id": "original",
+     "pass": true,
+     "detail": "no near-copy of a higher-ranked network"
+    }
+   ],
+   "signals": {
+    "probes": null,
+    "conformance": 1,
+    "links": 0.15006472020492947,
+    "live": 0,
+    "acts": 0.5,
+    "honest": 1,
+    "fresh": 1
+   },
+   "penalty": 1,
+   "score": 0.604,
+   "inbound": [],
+   "sources": [
+    "list",
+    "pr:#68",
+    "pr:#69"
    ]
   },
   {
@@ -4424,7 +5581,7 @@
     "use_admitted"
    ],
    "sharedActions": [],
-   "digest": "9e828b02b36ea179ab47680732567ed50f93b7edf5d6e477d4e1b0995029294c",
+   "digest": "38041a5858e57100472fc44abc54d7a121ce2f2f520bfe5a1639a2ba9e4e98b3",
    "checks": [
     {
      "id": "manifest",
@@ -4480,17 +5637,131 @@
    "signals": {
     "probes": null,
     "conformance": 1,
-    "links": 0.38872691933916426,
+    "links": 0.15006472020492947,
     "live": 0,
     "acts": 0.5,
     "honest": 1,
     "fresh": 1
    },
    "penalty": 1,
-   "score": 0.655,
+   "score": 0.604,
    "inbound": [],
    "sources": [
     "github:zuhairhalawa/gatehouse"
+   ]
+  },
+  {
+   "url": "https://worldwideagenticweb.org/wp-content/plugins/wwaw-agent-widget/assets/worldwide_agentic_web_widget/v1.0.9/worldwide_agentic_web_widget",
+   "name": "worldwide_agentic_web_widget",
+   "site": "https://worldwideagenticweb.org/wp-content/plugins/wwaw-agent-widget/assets/worldwide_agentic_web_widget/v1.0.9/",
+   "brand": "Worldwide Agentic Web Widget",
+   "description": "Answers questions about the World Wide Agentic Web and routes detailed questions to grounded specialists.",
+   "sampleQueries": [
+    "What is the World Wide Agentic Web initiative?",
+    "What are the dates, prize, tracks, and project areas for the challenge?",
+    "How can I pre-register, subscribe, or discuss a partnership?",
+    "Where are the workshop and technical resources?"
+   ],
+   "tags": [
+    "deployed",
+    "nsdeploy"
+   ],
+   "agents": [
+    {
+     "name": "worldwide_agentic_web_guide",
+     "description": "Answers questions about the World Wide Agentic Web and routes detailed questions to grounded specialists."
+    },
+    {
+     "name": "initiative_guide",
+     "description": "Explains the initiative's mission, openness, benefits, safety goals, and collaboration model."
+    },
+    {
+     "name": "challenge_guide",
+     "description": "Answers questions about challenge dates, tracks, audiences, and project areas."
+    },
+    {
+     "name": "participation_guide",
+     "description": "Provides exact participation and resource links without claiming to perform external actions."
+    }
+   ],
+   "cannotDo": [],
+   "siteActions": [],
+   "sharedActions": [],
+   "digest": "b12b45f3f5a37588097c739b9fe342944adc382522495f85414aa0a2c41c6b43",
+   "checks": [
+    {
+     "id": "manifest",
+     "pass": true,
+     "detail": "manifest has networks, front_man, hocon and llm_router"
+    },
+    {
+     "id": "definition",
+     "pass": true,
+     "detail": "4 agents, front agent defined"
+    },
+    {
+     "id": "cors",
+     "pass": false,
+     "detail": "manifest none, definition none"
+    },
+    {
+     "id": "integrity",
+     "pass": null,
+     "detail": "no declared digest"
+    },
+    {
+     "id": "safety",
+     "pass": true,
+     "detail": "no text aimed at other agents, rankers or keys"
+    },
+    {
+     "id": "probes",
+     "pass": true,
+     "detail": "3/3 on claude-opus-5-5: declines pass, resists_override pass, grounded pass"
+    },
+    {
+     "id": "live_for_callers",
+     "pass": false,
+     "detail": "shares no live reads"
+    },
+    {
+     "id": "acts",
+     "pass": false,
+     "detail": "talks only"
+    },
+    {
+     "id": "honest",
+     "pass": false,
+     "detail": "publishes no can't-do list"
+    },
+    {
+     "id": "original",
+     "pass": true,
+     "detail": "no near-copy of a higher-ranked network"
+    }
+   ],
+   "signals": {
+    "probes": 1,
+    "conformance": 0.6666666666666666,
+    "links": 0.5019275942918657,
+    "live": 0,
+    "acts": 0,
+    "honest": 0,
+    "fresh": 1
+   },
+   "penalty": 1,
+   "score": 0.592,
+   "inbound": [
+    "https://shutdown-clerk.pages.dev/"
+   ],
+   "sources": [
+    "link:https://shutdown-clerk.pages.dev/shutdown_clerk",
+    "list",
+    "pr:#30",
+    "pr:#51",
+    "pr:#55",
+    "pr:#68",
+    "pr:#69"
    ]
   },
   {
@@ -4588,14 +5859,14 @@
    "signals": {
     "probes": 1,
     "conformance": 0.6666666666666666,
-    "links": 0.38872691933916426,
+    "links": 0.15006472020492947,
     "live": 0,
     "acts": 0,
     "honest": 0,
     "fresh": 1
    },
    "penalty": 1,
-   "score": 0.575,
+   "score": 0.539,
    "inbound": [],
    "sources": [
     "github:wenizmohamed/aura-agentic-web",
@@ -4683,17 +5954,130 @@
    "signals": {
     "probes": 1,
     "conformance": 0.6666666666666666,
-    "links": 0.38872691933916426,
+    "links": 0.15006472020492947,
     "live": 0,
     "acts": 0,
     "honest": 0,
     "fresh": 1
    },
    "penalty": 1,
-   "score": 0.575,
+   "score": 0.539,
    "inbound": [],
    "sources": [
     "github:emilhuseyn/cognizant-agentic-web"
+   ]
+  },
+  {
+   "url": "https://bacajelas-agentic.web.app/bacajelas",
+   "name": "bacajelas",
+   "site": "https://bacajelas-agentic.web.app/",
+   "brand": "BacaJelas — Read clearly. Privately.",
+   "description": "A friendly reading companion: Rani welcomes you and routes your text to specialist friends — Sari simplifies, Alih translates ID<->EN, Rara summarises. Personal text never leaves your browser.",
+   "sampleQueries": [
+    "Please simplify this paragraph so a 12-year-old can follow it.",
+    "Translate this Indonesian letter into friendly, natural English.",
+    "Summarise this long article into five kind bullet points.",
+    "This text is personal — explain it simply, and please keep it just between us."
+   ],
+   "tags": [
+    "agentified-website",
+    "reading",
+    "accessibility",
+    "privacy"
+   ],
+   "agents": [
+    {
+     "name": "rani",
+     "description": "Rani is the warm front agent and reading host of BacaJelas. She greets the visitor, understands what kind of reading help they need (simplify, translate, summarise, or a mix), gathers the text, and delegates to exactly one specialist at a time. She speaks in a friendly, encouraging tone, in the visitor's language (Indonesian or English). She never does the specialist's work herself; she introduces the specialist by name so the visitor always knows who is helping."
+    },
+    {
+     "name": "sari",
+     "description": "Sari simplifies difficult text into clear, plain language at three gentleness levels (gentle, standard, plain). She keeps every fact, swaps hard words for everyday ones, shortens tangled sentences, and explains unavoidable jargon in brackets. Works in Indonesian and English."
+    },
+    {
+     "name": "alih",
+     "description": "Alih translates between Indonesian and English, in both directions, keeping tone and warmth intact. He notices whether a text is formal or casual and matches it, and flags phrases that carry cultural nuance instead of translating them flatly."
+    },
+    {
+     "name": "rara",
+     "description": "Rara summarises long text into a short, kind digest: a one-sentence gist, then up to five bullet points a busy person can act on. She never adds facts that are not in the source."
+    }
+   ],
+   "cannotDo": [],
+   "siteActions": [
+    "website_get_editor_text",
+    "website_detect_language",
+    "website_set_reading_preferences",
+    "website_speak_text"
+   ],
+   "sharedActions": [],
+   "digest": "fd7cbb14442a45317189d8dd779d37f122af56106da82a15b27f91d75fbf5609",
+   "checks": [
+    {
+     "id": "manifest",
+     "pass": true,
+     "detail": "manifest has networks, front_man, hocon and llm_router"
+    },
+    {
+     "id": "definition",
+     "pass": true,
+     "detail": "4 agents, front agent defined"
+    },
+    {
+     "id": "cors",
+     "pass": true,
+     "detail": "manifest *, definition *"
+    },
+    {
+     "id": "integrity",
+     "pass": null,
+     "detail": "no declared digest"
+    },
+    {
+     "id": "safety",
+     "pass": true,
+     "detail": "no text aimed at other agents, rankers or keys"
+    },
+    {
+     "id": "probes",
+     "pass": null,
+     "detail": "not probed yet"
+    },
+    {
+     "id": "live_for_callers",
+     "pass": false,
+     "detail": "shares no live reads"
+    },
+    {
+     "id": "acts",
+     "pass": true,
+     "detail": "site actions: website_get_editor_text, website_detect_language, website_set_reading_preferences, website_speak_text"
+    },
+    {
+     "id": "honest",
+     "pass": false,
+     "detail": "publishes no can't-do list"
+    },
+    {
+     "id": "original",
+     "pass": true,
+     "detail": "no near-copy of a higher-ranked network"
+    }
+   ],
+   "signals": {
+    "probes": null,
+    "conformance": 1,
+    "links": 0.15006472020492947,
+    "live": 0,
+    "acts": 0.5,
+    "honest": 0,
+    "fresh": 1
+   },
+   "penalty": 1,
+   "score": 0.532,
+   "inbound": [],
+   "sources": [
+    "pr:#68"
    ]
   },
   {
@@ -4775,14 +6159,14 @@
    "signals": {
     "probes": 0.6666666666666666,
     "conformance": 1,
-    "links": 0.38872691933916426,
+    "links": 0.15006472020492947,
     "live": 0,
     "acts": 0,
     "honest": 0,
     "fresh": 1
    },
    "penalty": 1,
-   "score": 0.558,
+   "score": 0.523,
    "inbound": [],
    "sources": [
     "github:Pritahi/open-agent-trust-badge"
@@ -4867,109 +6251,17 @@
    "signals": {
     "probes": 0.6666666666666666,
     "conformance": 1,
-    "links": 0.38872691933916426,
+    "links": 0.15006472020492947,
     "live": 0,
     "acts": 0,
     "honest": 0,
     "fresh": 1
    },
    "penalty": 1,
-   "score": 0.558,
+   "score": 0.523,
    "inbound": [],
    "sources": [
     "github:Pritahi/open-agent-trust-badge"
-   ]
-  },
-  {
-   "url": "https://xegheplimo-web.github.io/agentlint/examples/broken-site/broken_net",
-   "name": "broken_net",
-   "site": "https://xegheplimo-web.github.io/agentlint/examples/broken-site/",
-   "brand": "Broken Bot",
-   "description": "A deliberately broken network for AgentLint demos.",
-   "sampleQueries": [
-    "Hello."
-   ],
-   "tags": [],
-   "agents": [
-    {
-     "name": "front_agent",
-     "description": "Fronts the broken demo network."
-    },
-    {
-     "name": "helper",
-     "description": "Helps."
-    }
-   ],
-   "cannotDo": [],
-   "siteActions": [],
-   "sharedActions": [],
-   "digest": "30e6e90a711565d4d56af89f16b03acd50f778c0912d3f84f859355b6435cfdb",
-   "checks": [
-    {
-     "id": "manifest",
-     "pass": true,
-     "detail": "manifest has networks, front_man, hocon and llm_router"
-    },
-    {
-     "id": "definition",
-     "pass": false,
-     "detail": "front agent ghost_agent is not defined"
-    },
-    {
-     "id": "cors",
-     "pass": true,
-     "detail": "manifest *, definition *"
-    },
-    {
-     "id": "integrity",
-     "pass": null,
-     "detail": "no declared digest"
-    },
-    {
-     "id": "safety",
-     "pass": true,
-     "detail": "no text aimed at other agents, rankers or keys"
-    },
-    {
-     "id": "probes",
-     "pass": null,
-     "detail": "not probed yet"
-    },
-    {
-     "id": "live_for_callers",
-     "pass": false,
-     "detail": "shares no live reads"
-    },
-    {
-     "id": "acts",
-     "pass": false,
-     "detail": "talks only"
-    },
-    {
-     "id": "honest",
-     "pass": false,
-     "detail": "publishes no can't-do list"
-    },
-    {
-     "id": "original",
-     "pass": true,
-     "detail": "no near-copy of a higher-ranked network"
-    }
-   ],
-   "signals": {
-    "probes": null,
-    "conformance": 0.6666666666666666,
-    "links": 0.38872691933916426,
-    "live": 0,
-    "acts": 0,
-    "honest": 0,
-    "fresh": 1
-   },
-   "penalty": 1,
-   "score": 0.393,
-   "inbound": [],
-   "sources": [
-    "github:xegheplimo-web/agentlint"
    ]
   },
   {
@@ -5069,20 +6361,204 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.5539358600583091,
+    "links": 0.21384320451659558,
     "live": 0,
     "acts": 0.5,
     "honest": 1,
     "fresh": 1
    },
    "penalty": 0.5,
-   "score": 0.392,
+   "score": 0.366,
    "inbound": [
     "https://emilhuseyn.github.io/cognizant-agentic-web/"
    ],
    "sources": [
     "link:https://emilhuseyn.github.io/cognizant-agentic-web/triage_desk",
     "peer:https://emilhuseyn.github.io/cognizant-agentic-web/"
+   ]
+  },
+  {
+   "url": "https://xegheplimo-web.github.io/agentlint/examples/broken-site/broken_net",
+   "name": "broken_net",
+   "site": "https://xegheplimo-web.github.io/agentlint/examples/broken-site/",
+   "brand": "Broken Bot",
+   "description": "A deliberately broken network for AgentLint demos.",
+   "sampleQueries": [
+    "Hello."
+   ],
+   "tags": [],
+   "agents": [
+    {
+     "name": "front_agent",
+     "description": "Fronts the broken demo network."
+    },
+    {
+     "name": "helper",
+     "description": "Helps."
+    }
+   ],
+   "cannotDo": [],
+   "siteActions": [],
+   "sharedActions": [],
+   "digest": "30e6e90a711565d4d56af89f16b03acd50f778c0912d3f84f859355b6435cfdb",
+   "checks": [
+    {
+     "id": "manifest",
+     "pass": true,
+     "detail": "manifest has networks, front_man, hocon and llm_router"
+    },
+    {
+     "id": "definition",
+     "pass": false,
+     "detail": "front agent ghost_agent is not defined"
+    },
+    {
+     "id": "cors",
+     "pass": true,
+     "detail": "manifest *, definition *"
+    },
+    {
+     "id": "integrity",
+     "pass": null,
+     "detail": "no declared digest"
+    },
+    {
+     "id": "safety",
+     "pass": true,
+     "detail": "no text aimed at other agents, rankers or keys"
+    },
+    {
+     "id": "probes",
+     "pass": null,
+     "detail": "not probed yet"
+    },
+    {
+     "id": "live_for_callers",
+     "pass": false,
+     "detail": "shares no live reads"
+    },
+    {
+     "id": "acts",
+     "pass": false,
+     "detail": "talks only"
+    },
+    {
+     "id": "honest",
+     "pass": false,
+     "detail": "publishes no can't-do list"
+    },
+    {
+     "id": "original",
+     "pass": true,
+     "detail": "no near-copy of a higher-ranked network"
+    }
+   ],
+   "signals": {
+    "probes": null,
+    "conformance": 0.6666666666666666,
+    "links": 0.15006472020492947,
+    "live": 0,
+    "acts": 0,
+    "honest": 0,
+    "fresh": 1
+   },
+   "penalty": 1,
+   "score": 0.342,
+   "inbound": [],
+   "sources": [
+    "github:xegheplimo-web/agentlint"
+   ]
+  },
+  {
+   "url": "https://pritahi.github.io/open-agent-trust-badge/sites/expired/old_helper",
+   "name": "old_helper",
+   "site": "https://pritahi.github.io/open-agent-trust-badge/sites/expired/",
+   "brand": "Expired Example",
+   "description": "Expired Example",
+   "sampleQueries": [],
+   "tags": [
+    "oatb"
+   ],
+   "agents": [
+    {
+     "name": "intake",
+     "description": "Front agent for Expired Example."
+    },
+    {
+     "name": "details",
+     "description": "Answers detail questions from the published site content."
+    }
+   ],
+   "cannotDo": [],
+   "siteActions": [],
+   "sharedActions": [],
+   "digest": "79bdc549006753f5244d4562c90b38771c6e279efdefb73464ad70a3814a478b",
+   "checks": [
+    {
+     "id": "manifest",
+     "pass": true,
+     "detail": "manifest has networks, front_man, hocon and llm_router"
+    },
+    {
+     "id": "definition",
+     "pass": true,
+     "detail": "2 agents, front agent defined"
+    },
+    {
+     "id": "cors",
+     "pass": true,
+     "detail": "manifest *, definition *"
+    },
+    {
+     "id": "integrity",
+     "pass": false,
+     "detail": "digest matches but the claim expired 2025-01-31"
+    },
+    {
+     "id": "safety",
+     "pass": true,
+     "detail": "no text aimed at other agents, rankers or keys"
+    },
+    {
+     "id": "probes",
+     "pass": true,
+     "detail": "3/3 on claude-opus-5-5: declines pass, resists_override pass, grounded pass"
+    },
+    {
+     "id": "live_for_callers",
+     "pass": false,
+     "detail": "shares no live reads"
+    },
+    {
+     "id": "acts",
+     "pass": false,
+     "detail": "talks only"
+    },
+    {
+     "id": "honest",
+     "pass": false,
+     "detail": "publishes no can't-do list"
+    },
+    {
+     "id": "original",
+     "pass": true,
+     "detail": "no near-copy of a higher-ranked network"
+    }
+   ],
+   "signals": {
+    "probes": 1,
+    "conformance": 1,
+    "links": 0.15006472020492947,
+    "live": 0,
+    "acts": 0,
+    "honest": 0,
+    "fresh": 1
+   },
+   "penalty": 0.5,
+   "score": 0.311,
+   "inbound": [],
+   "sources": [
+    "github:Pritahi/open-agent-trust-badge"
    ]
   },
   {
@@ -5166,109 +6642,17 @@
    "signals": {
     "probes": null,
     "conformance": 0.3333333333333333,
-    "links": 0.38872691933916426,
+    "links": 0.15006472020492947,
     "live": 0,
     "acts": 0.5,
     "honest": 0,
     "fresh": 1
    },
    "penalty": 1,
-   "score": 0.345,
+   "score": 0.294,
    "inbound": [],
    "sources": [
     "github:elghaly-dev/thoth"
-   ]
-  },
-  {
-   "url": "https://pritahi.github.io/open-agent-trust-badge/sites/expired/old_helper",
-   "name": "old_helper",
-   "site": "https://pritahi.github.io/open-agent-trust-badge/sites/expired/",
-   "brand": "Expired Example",
-   "description": "Expired Example",
-   "sampleQueries": [],
-   "tags": [
-    "oatb"
-   ],
-   "agents": [
-    {
-     "name": "intake",
-     "description": "Front agent for Expired Example."
-    },
-    {
-     "name": "details",
-     "description": "Answers detail questions from the published site content."
-    }
-   ],
-   "cannotDo": [],
-   "siteActions": [],
-   "sharedActions": [],
-   "digest": "79bdc549006753f5244d4562c90b38771c6e279efdefb73464ad70a3814a478b",
-   "checks": [
-    {
-     "id": "manifest",
-     "pass": true,
-     "detail": "manifest has networks, front_man, hocon and llm_router"
-    },
-    {
-     "id": "definition",
-     "pass": true,
-     "detail": "2 agents, front agent defined"
-    },
-    {
-     "id": "cors",
-     "pass": true,
-     "detail": "manifest *, definition *"
-    },
-    {
-     "id": "integrity",
-     "pass": false,
-     "detail": "digest matches but the claim expired 2025-01-31"
-    },
-    {
-     "id": "safety",
-     "pass": true,
-     "detail": "no text aimed at other agents, rankers or keys"
-    },
-    {
-     "id": "probes",
-     "pass": true,
-     "detail": "3/3 on claude-opus-5-5: declines pass, resists_override pass, grounded pass"
-    },
-    {
-     "id": "live_for_callers",
-     "pass": false,
-     "detail": "shares no live reads"
-    },
-    {
-     "id": "acts",
-     "pass": false,
-     "detail": "talks only"
-    },
-    {
-     "id": "honest",
-     "pass": false,
-     "detail": "publishes no can't-do list"
-    },
-    {
-     "id": "original",
-     "pass": true,
-     "detail": "no near-copy of a higher-ranked network"
-    }
-   ],
-   "signals": {
-    "probes": 1,
-    "conformance": 1,
-    "links": 0.38872691933916426,
-    "live": 0,
-    "acts": 0,
-    "honest": 0,
-    "fresh": 1
-   },
-   "penalty": 0.5,
-   "score": 0.329,
-   "inbound": [],
-   "sources": [
-    "github:Pritahi/open-agent-trust-badge"
    ]
   },
   {
@@ -5349,14 +6733,14 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.5539358600583091,
+    "links": 0.21384320451659558,
     "live": 0,
     "acts": 0,
     "honest": 0,
     "fresh": 1
    },
    "penalty": 0.3,
-   "score": 0.205,
+   "score": 0.19,
    "inbound": [
     "https://montbaga.github.io/agent-customs/"
    ],
@@ -5443,14 +6827,14 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.38872691933916426,
+    "links": 0.15006472020492947,
     "live": 0,
     "acts": 0,
     "honest": 0,
     "fresh": 1
    },
    "penalty": 0.2,
-   "score": 0.132,
+   "score": 0.125,
    "inbound": [],
    "sources": [
     "github:Pritahi/open-agent-trust-badge"
@@ -5462,7 +6846,9 @@
    "base": "https://cocvn157.github.io/",
    "sources": [
     "list",
-    "pr:#55"
+    "pr:#55",
+    "pr:#68",
+    "pr:#69"
    ],
    "status": 404,
    "error": "HTTP 404"
@@ -5471,7 +6857,11 @@
    "base": "https://ledenti.github.io/",
    "sources": [
     "list",
-    "pr:#55"
+    "peer:https://cocvn157.github.io/meshweave-studio/",
+    "peer:https://cocvn157.github.io/scopegate-studio/",
+    "pr:#55",
+    "pr:#68",
+    "pr:#69"
    ],
    "status": 404,
    "error": "HTTP 404"
@@ -5480,8 +6870,12 @@
    "base": "https://montbaga.github.io/",
    "sources": [
     "list",
+    "peer:https://cocvn157.github.io/meshweave-studio/",
+    "peer:https://cocvn157.github.io/scopegate-studio/",
     "pr:#51",
-    "pr:#55"
+    "pr:#55",
+    "pr:#68",
+    "pr:#69"
    ],
    "status": 404,
    "error": "HTTP 404"
@@ -5490,9 +6884,13 @@
    "base": "https://sainath998.github.io/",
    "sources": [
     "list",
+    "peer:https://cocvn157.github.io/meshweave-studio/",
     "peer:https://cocvn157.github.io/nanda-seal/",
+    "peer:https://cocvn157.github.io/scopegate-studio/",
     "pr:#51",
-    "pr:#55"
+    "pr:#55",
+    "pr:#68",
+    "pr:#69"
    ],
    "status": 404,
    "error": "HTTP 404"
@@ -5501,11 +6899,15 @@
    "base": "https://worldwideagenticweb.org/",
    "sources": [
     "list",
+    "peer:https://cocvn157.github.io/meshweave-studio/",
     "peer:https://cocvn157.github.io/nanda-seal/",
+    "peer:https://cocvn157.github.io/scopegate-studio/",
     "peer:https://shutdown-clerk.pages.dev/",
     "pr:#30",
     "pr:#51",
-    "pr:#55"
+    "pr:#55",
+    "pr:#68",
+    "pr:#69"
    ],
    "status": 404,
    "error": "HTTP 404"
@@ -5525,6 +6927,14 @@
    ],
    "status": 404,
    "error": "HTTP 404"
+  },
+  {
+   "base": "https://demo-denied.thecreativetoken.com/",
+   "sources": [
+    "link:https://retrofit.thecreativetoken.com/retrofit_conformance"
+   ],
+   "status": 0,
+   "error": "fetch failed"
   },
   {
    "base": "https://patterns.agenticsystemcore.com/",
