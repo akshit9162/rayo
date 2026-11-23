@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-22T11:30:35.163Z",
+ "generatedAt": "2026-11-23T12:53:55.455Z",
  "weights": {
   "probes": 0.3,
   "conformance": 0.25,
@@ -16,13 +16,228 @@
   "copy": 0.5
  },
  "stats": {
-  "sites": 53,
-  "networks": 63,
-  "edges": 57,
-  "misses": 13,
+  "sites": 55,
+  "networks": 65,
+  "edges": 58,
+  "misses": 15,
   "probed": 40
  },
  "networks": [
+  {
+   "url": "https://retrofit.thecreativetoken.com/retrofit_guide",
+   "name": "retrofit_guide",
+   "site": "https://retrofit.thecreativetoken.com/",
+   "brand": "Retrofit assistant",
+   "description": "Ask about Retrofit and the open agentic web, or how ready a public website is for AI agents.",
+   "sampleQueries": [
+    "What does Retrofit do?",
+    "What is the open agentic web?",
+    "How ready is example.com for AI agents?",
+    "What should I fix first on my site?"
+   ],
+   "tags": [
+    "agentified-website"
+   ],
+   "agents": [
+    {
+     "name": "retrofit_guide",
+     "description": "Explains Retrofit, the open agentic web and a website's agent-readiness score."
+    },
+    {
+     "name": "readiness_specialist",
+     "description": "Gets Retrofit's agent-readiness score for one public website and returns the result with every check."
+    }
+   ],
+   "cannotDo": [
+    "If a result does not contain a fact, say you do not know.",
+    "The partner cannot see this chat or use its own site's tools, so ask only what it can answer, and never include names, emails, phone numbers or booking codes."
+   ],
+   "siteActions": [
+    "score_site"
+   ],
+   "sharedActions": [
+    {
+     "name": "score_site",
+     "effect": "read"
+    }
+   ],
+   "digest": "c3b218a98d206239996b80eeb99fe473669583f5a7f9db0d8d5e3bd39987a7c1",
+   "checks": [
+    {
+     "id": "manifest",
+     "pass": true,
+     "detail": "manifest has networks, front_man, hocon and llm_router"
+    },
+    {
+     "id": "definition",
+     "pass": true,
+     "detail": "2 agents, front agent defined"
+    },
+    {
+     "id": "cors",
+     "pass": true,
+     "detail": "manifest *, definition *"
+    },
+    {
+     "id": "integrity",
+     "pass": null,
+     "detail": "no declared digest"
+    },
+    {
+     "id": "safety",
+     "pass": true,
+     "detail": "no text aimed at other agents, rankers or keys"
+    },
+    {
+     "id": "probes",
+     "pass": null,
+     "detail": "not probed yet"
+    },
+    {
+     "id": "live_for_callers",
+     "pass": true,
+     "detail": "shares score_site with any site"
+    },
+    {
+     "id": "acts",
+     "pass": true,
+     "detail": "site actions: score_site"
+    },
+    {
+     "id": "honest",
+     "pass": true,
+     "detail": "If a result does not contain a fact, say you do not know."
+    },
+    {
+     "id": "original",
+     "pass": true,
+     "detail": "no near-copy of a higher-ranked network"
+    }
+   ],
+   "signals": {
+    "probes": null,
+    "conformance": 1,
+    "links": 1,
+    "live": 1,
+    "acts": 0.5,
+    "honest": 1,
+    "fresh": 1
+   },
+   "penalty": 1,
+   "score": 0.929,
+   "inbound": [
+    "https://demo-harbor.thecreativetoken.com/"
+   ],
+   "sources": [
+    "link:https://demo-harbor.thecreativetoken.com/harbor_loop",
+    "list",
+    "peer:https://demo-harbor.thecreativetoken.com/",
+    "pr:#72"
+   ]
+  },
+  {
+   "url": "https://retrofit.thecreativetoken.com/retrofit_conformance",
+   "name": "retrofit_conformance",
+   "site": "https://retrofit.thecreativetoken.com/",
+   "brand": "Retrofit assistant",
+   "description": "Conformance fixtures: one working peer network and three that must fail safely. See https://retrofit.thecreativetoken.com/conformance.",
+   "sampleQueries": [
+    "Ask the Harbor tours demo what tours it offers.",
+    "Call the invalid network.",
+    "Call the loop network.",
+    "Call the denied network."
+   ],
+   "tags": [],
+   "agents": [
+    {
+     "name": "conformance_guide",
+     "description": "Runs Retrofit's conformance fixtures: one working peer network and three that must fail safely."
+    }
+   ],
+   "cannotDo": [],
+   "siteActions": [
+    "score_site"
+   ],
+   "sharedActions": [
+    {
+     "name": "score_site",
+     "effect": "read"
+    }
+   ],
+   "digest": "4bfb601c3d02d5d14b0cbd938397fcd5f37430f7ab82609575b7d9f4d03a8fb2",
+   "checks": [
+    {
+     "id": "manifest",
+     "pass": true,
+     "detail": "manifest has networks, front_man, hocon and llm_router"
+    },
+    {
+     "id": "definition",
+     "pass": true,
+     "detail": "1 agents, front agent defined"
+    },
+    {
+     "id": "cors",
+     "pass": true,
+     "detail": "manifest *, definition *"
+    },
+    {
+     "id": "integrity",
+     "pass": null,
+     "detail": "no declared digest"
+    },
+    {
+     "id": "safety",
+     "pass": true,
+     "detail": "no text aimed at other agents, rankers or keys"
+    },
+    {
+     "id": "probes",
+     "pass": null,
+     "detail": "not probed yet"
+    },
+    {
+     "id": "live_for_callers",
+     "pass": true,
+     "detail": "shares score_site with any site"
+    },
+    {
+     "id": "acts",
+     "pass": true,
+     "detail": "site actions: score_site"
+    },
+    {
+     "id": "honest",
+     "pass": false,
+     "detail": "publishes no can't-do list"
+    },
+    {
+     "id": "original",
+     "pass": true,
+     "detail": "no near-copy of a higher-ranked network"
+    }
+   ],
+   "signals": {
+    "probes": null,
+    "conformance": 1,
+    "links": 1,
+    "live": 1,
+    "acts": 0.5,
+    "honest": 0,
+    "fresh": 1
+   },
+   "penalty": 1,
+   "score": 0.857,
+   "inbound": [
+    "https://demo-harbor.thecreativetoken.com/"
+   ],
+   "sources": [
+    "link:https://demo-harbor.thecreativetoken.com/harbor_loop",
+    "list",
+    "peer:https://demo-harbor.thecreativetoken.com/",
+    "pr:#72"
+   ]
+  },
   {
    "url": "https://boond-shop.boond-shop.workers.dev/boond",
    "name": "boond",
@@ -127,7 +342,7 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.15006472020492947,
+    "links": 0.15006681268042668,
     "live": 1,
     "acts": 1,
     "honest": 1,
@@ -245,7 +460,7 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.27762168882826166,
+    "links": 0.2776255643507044,
     "live": 1,
     "acts": 0.5,
     "honest": 1,
@@ -367,7 +582,7 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.15006472020492947,
+    "links": 0.15006681268042668,
     "live": 1,
     "acts": 0.5,
     "honest": 1,
@@ -507,7 +722,7 @@
    "signals": {
     "probes": null,
     "conformance": 1,
-    "links": 0.15006472020492947,
+    "links": 0.15006681268042668,
     "live": 1,
     "acts": 1,
     "honest": 1,
@@ -518,8 +733,138 @@
    "inbound": [],
    "sources": [
     "list",
-    "pr:#68",
-    "pr:#69"
+    "pr:#72"
+   ]
+  },
+  {
+   "url": "https://factgate.vercel.app/factgate",
+   "name": "factgate",
+   "site": "https://factgate.vercel.app/",
+   "brand": "FactGate",
+   "description": "Check an agent website or x402 seller before you connect or pay: live answers, ERC-8004 identity on chain, vet402 delivery records. ALLOW, CAUTION or BLOCK with the reasons, plus AgentFacts.",
+   "sampleQueries": [
+    "Should my agent pay https://agent402.tools/api/weather-forecast? Give FactGate's verdict with the reasons.",
+    "Does https://agent-atlas-phi.vercel.app/agent_atlas answer as its manifest declares? Check its MCP server too.",
+    "Whose wallet is behind https://agent402.tools/api/weather-forecast? Compare its payTo with its ERC-8004 registration.",
+    "How does FactGate decide between ALLOW, CAUTION and BLOCK?",
+    "Pay this seller for me."
+   ],
+   "tags": [
+    "agentified-website",
+    "x402",
+    "erc-8004",
+    "trust"
+   ],
+   "agents": [
+    {
+     "name": "gate_coordinator",
+     "description": "Checks an agent website, an x402 seller or an ERC-8004 agent before the visitor's agent connects or pays, and answers ALLOW, CAUTION or BLOCK with reasons."
+    },
+    {
+     "name": "manifest_inspector",
+     "description": "Reads what a counterparty declares: agent-manifest.json, its network definition and its ERC-8004 registration file."
+    },
+    {
+     "name": "capability_prober",
+     "description": "Checks that a counterparty answers as it declares: MCP tools/list, its x402 terms (read, never paid), its payTo against its own declared wallets, and its declared paid resource."
+    },
+    {
+     "name": "evidence_verifier",
+     "description": "Reads the counterparty's ERC-8004 registration on chain and compares it with its payTo, and reads vet402's production delivery record for an x402 URL."
+    }
+   ],
+   "cannotDo": [
+    "If a result does not contain a fact, say you do not know.",
+    "FactGate reads and judges; it cannot pay, sign, send funds, register agents, or change anything on chain or on another site.",
+    "When the visitor asks for something this site cannot do, say so plainly."
+   ],
+   "siteActions": [
+    "get_gate_state",
+    "gate_check",
+    "inspect_manifest",
+    "probe_capabilities",
+    "read_identity",
+    "check_seller",
+    "evaluate_gate",
+    "save_check"
+   ],
+   "sharedActions": [
+    {
+     "name": "gate_check",
+     "effect": "write"
+    },
+    {
+     "name": "get_gate_state",
+     "effect": "read"
+    }
+   ],
+   "digest": "12cfffd913bbebb3a4e32dd1db0ecfcaadf773bb89d23967b21f817682d33c33",
+   "checks": [
+    {
+     "id": "manifest",
+     "pass": true,
+     "detail": "manifest has networks, front_man, hocon and llm_router"
+    },
+    {
+     "id": "definition",
+     "pass": true,
+     "detail": "4 agents, front agent defined"
+    },
+    {
+     "id": "cors",
+     "pass": true,
+     "detail": "manifest *, definition *"
+    },
+    {
+     "id": "integrity",
+     "pass": null,
+     "detail": "no declared digest"
+    },
+    {
+     "id": "safety",
+     "pass": true,
+     "detail": "no text aimed at other agents, rankers or keys"
+    },
+    {
+     "id": "probes",
+     "pass": null,
+     "detail": "not probed yet"
+    },
+    {
+     "id": "live_for_callers",
+     "pass": true,
+     "detail": "shares get_gate_state with any site"
+    },
+    {
+     "id": "acts",
+     "pass": true,
+     "detail": "partners can gate_check (write)"
+    },
+    {
+     "id": "honest",
+     "pass": true,
+     "detail": "If a result does not contain a fact, say you do not know."
+    },
+    {
+     "id": "original",
+     "pass": true,
+     "detail": "no near-copy of a higher-ranked network"
+    }
+   ],
+   "signals": {
+    "probes": null,
+    "conformance": 1,
+    "links": 0.15006681268042668,
+    "live": 1,
+    "acts": 1,
+    "honest": 1,
+    "fresh": 1
+   },
+   "penalty": 1,
+   "score": 0.818,
+   "inbound": [],
+   "sources": [
+    "pr:#72"
    ]
   },
   {
@@ -636,7 +981,7 @@
    "signals": {
     "probes": null,
     "conformance": 1,
-    "links": 0.15006472020492947,
+    "links": 0.15006681268042668,
     "live": 1,
     "acts": 1,
     "honest": 1,
@@ -648,8 +993,7 @@
    "sources": [
     "list",
     "pr:#55",
-    "pr:#68",
-    "pr:#69"
+    "pr:#72"
    ]
   },
   {
@@ -762,7 +1106,7 @@
    "signals": {
     "probes": null,
     "conformance": 1,
-    "links": 0.15006472020492947,
+    "links": 0.15006681268042668,
     "live": 1,
     "acts": 1,
     "honest": 1,
@@ -772,7 +1116,9 @@
    "score": 0.818,
    "inbound": [],
    "sources": [
-    "pr:#69"
+    "list",
+    "pr:#69",
+    "pr:#72"
    ]
   },
   {
@@ -882,7 +1228,7 @@
    "signals": {
     "probes": null,
     "conformance": 1,
-    "links": 0.15006472020492947,
+    "links": 0.15006681268042668,
     "live": 1,
     "acts": 1,
     "honest": 1,
@@ -892,7 +1238,9 @@
    "score": 0.818,
    "inbound": [],
    "sources": [
-    "pr:#69"
+    "list",
+    "pr:#69",
+    "pr:#72"
    ]
   },
   {
@@ -997,7 +1345,7 @@
    "signals": {
     "probes": null,
     "conformance": 1,
-    "links": 0.4051786574515938,
+    "links": 0.40518431602098204,
     "live": 1,
     "acts": 0.5,
     "honest": 1,
@@ -1012,114 +1360,7 @@
    "sources": [
     "list",
     "peer:https://bacajelas-agentic.web.app/",
-    "pr:#68",
-    "pr:#69"
-   ]
-  },
-  {
-   "url": "https://retrofit.thecreativetoken.com/retrofit_guide",
-   "name": "retrofit_guide",
-   "site": "https://retrofit.thecreativetoken.com/",
-   "brand": "Retrofit assistant",
-   "description": "Ask about Retrofit and the open agentic web, or how ready a public website is for AI agents.",
-   "sampleQueries": [
-    "What does Retrofit do?",
-    "What is the open agentic web?",
-    "How ready is example.com for AI agents?",
-    "What should I fix first on my site?"
-   ],
-   "tags": [
-    "agentified-website"
-   ],
-   "agents": [
-    {
-     "name": "retrofit_guide",
-     "description": "Explains Retrofit, the open agentic web and a website's agent-readiness score."
-    },
-    {
-     "name": "readiness_specialist",
-     "description": "Gets Retrofit's agent-readiness score for one public website and returns the result with every check."
-    }
-   ],
-   "cannotDo": [
-    "If a result does not contain a fact, say you do not know.",
-    "The partner cannot see this chat or use its own site's tools, so ask only what it can answer, and never include names, emails, phone numbers or booking codes."
-   ],
-   "siteActions": [
-    "score_site"
-   ],
-   "sharedActions": [],
-   "digest": "c3b218a98d206239996b80eeb99fe473669583f5a7f9db0d8d5e3bd39987a7c1",
-   "checks": [
-    {
-     "id": "manifest",
-     "pass": true,
-     "detail": "manifest has networks, front_man, hocon and llm_router"
-    },
-    {
-     "id": "definition",
-     "pass": true,
-     "detail": "2 agents, front agent defined"
-    },
-    {
-     "id": "cors",
-     "pass": true,
-     "detail": "manifest *, definition *"
-    },
-    {
-     "id": "integrity",
-     "pass": null,
-     "detail": "no declared digest"
-    },
-    {
-     "id": "safety",
-     "pass": true,
-     "detail": "no text aimed at other agents, rankers or keys"
-    },
-    {
-     "id": "probes",
-     "pass": null,
-     "detail": "not probed yet"
-    },
-    {
-     "id": "live_for_callers",
-     "pass": false,
-     "detail": "shares no live reads"
-    },
-    {
-     "id": "acts",
-     "pass": true,
-     "detail": "site actions: score_site"
-    },
-    {
-     "id": "honest",
-     "pass": true,
-     "detail": "If a result does not contain a fact, say you do not know."
-    },
-    {
-     "id": "original",
-     "pass": true,
-     "detail": "no near-copy of a higher-ranked network"
-    }
-   ],
-   "signals": {
-    "probes": null,
-    "conformance": 1,
-    "links": 1,
-    "live": 0,
-    "acts": 0.5,
-    "honest": 1,
-    "fresh": 1
-   },
-   "penalty": 1,
-   "score": 0.786,
-   "inbound": [
-    "https://demo-harbor.thecreativetoken.com/"
-   ],
-   "sources": [
-    "list",
-    "pr:#68",
-    "pr:#69"
+    "pr:#72"
    ]
   },
   {
@@ -1233,7 +1474,7 @@
    "signals": {
     "probes": null,
     "conformance": 1,
-    "links": 0.27762168882826166,
+    "links": 0.2776255643507044,
     "live": 1,
     "acts": 0.5,
     "honest": 1,
@@ -1350,7 +1591,7 @@
    "signals": {
     "probes": null,
     "conformance": 1,
-    "links": 0.15006472020492947,
+    "links": 0.15006681268042668,
     "live": 1,
     "acts": 0.5,
     "honest": 1,
@@ -1361,8 +1602,7 @@
    "inbound": [],
    "sources": [
     "list",
-    "pr:#68",
-    "pr:#69"
+    "pr:#72"
    ]
   },
   {
@@ -1459,7 +1699,7 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.2592856265375714,
+    "links": 0.2592892461033925,
     "live": 0,
     "acts": 0.5,
     "honest": 1,
@@ -1475,8 +1715,7 @@
     "list",
     "pr:#51",
     "pr:#55",
-    "pr:#68",
-    "pr:#69"
+    "pr:#72"
    ]
   },
   {
@@ -1584,7 +1823,7 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.4139489548911893,
+    "links": 0.4139547371141852,
     "live": 0,
     "acts": 0.5,
     "honest": 1,
@@ -1604,8 +1843,7 @@
     "peer:https://cocvn157.github.io/scopegate-studio/",
     "pr:#51",
     "pr:#55",
-    "pr:#68",
-    "pr:#69"
+    "pr:#72"
    ]
   },
   {
@@ -1705,7 +1943,7 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.21384320451659558,
+    "links": 0.21384618851556553,
     "live": 0,
     "acts": 0.5,
     "honest": 1,
@@ -1824,7 +2062,7 @@
    "signals": {
     "probes": null,
     "conformance": 1,
-    "links": 0.21384320451659558,
+    "links": 0.21384618851556553,
     "live": 1,
     "acts": 1,
     "honest": 0,
@@ -1942,7 +2180,7 @@
    "signals": {
     "probes": null,
     "conformance": 1,
-    "links": 0.21384320451659558,
+    "links": 0.21384618851556553,
     "live": 1,
     "acts": 1,
     "honest": 0,
@@ -2072,7 +2310,7 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.15006472020492947,
+    "links": 0.15006681268042668,
     "live": 0,
     "acts": 0.5,
     "honest": 1,
@@ -2183,7 +2421,7 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.15006472020492947,
+    "links": 0.15006681268042668,
     "live": 0,
     "acts": 0.5,
     "honest": 1,
@@ -2301,7 +2539,7 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.15006472020492947,
+    "links": 0.15006681268042668,
     "live": 0,
     "acts": 0.5,
     "honest": 1,
@@ -2412,7 +2650,7 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.15006472020492947,
+    "links": 0.15006681268042668,
     "live": 0,
     "acts": 0.5,
     "honest": 1,
@@ -2425,8 +2663,7 @@
     "list",
     "pr:#51",
     "pr:#55",
-    "pr:#68",
-    "pr:#69"
+    "pr:#72"
    ]
   },
   {
@@ -2516,7 +2753,7 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.15006472020492947,
+    "links": 0.15006681268042668,
     "live": 0,
     "acts": 0.5,
     "honest": 1,
@@ -2638,7 +2875,7 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.15006472020492947,
+    "links": 0.15006681268042668,
     "live": 0,
     "acts": 0.5,
     "honest": 1,
@@ -2742,7 +2979,7 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.15006472020492947,
+    "links": 0.15006681268042668,
     "live": 0,
     "acts": 0.5,
     "honest": 1,
@@ -2852,7 +3089,7 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.15006472020492947,
+    "links": 0.15006681268042668,
     "live": 0,
     "acts": 0.5,
     "honest": 1,
@@ -2865,8 +3102,7 @@
     "list",
     "pr:#51",
     "pr:#55",
-    "pr:#68",
-    "pr:#69"
+    "pr:#72"
    ]
   },
   {
@@ -2970,7 +3206,7 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.15006472020492947,
+    "links": 0.15006681268042668,
     "live": 0,
     "acts": 0.5,
     "honest": 1,
@@ -3079,7 +3315,7 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.15006472020492947,
+    "links": 0.15006681268042668,
     "live": 0,
     "acts": 0.5,
     "honest": 1,
@@ -3093,103 +3329,6 @@
    ]
   },
   {
-   "url": "https://retrofit.thecreativetoken.com/retrofit_conformance",
-   "name": "retrofit_conformance",
-   "site": "https://retrofit.thecreativetoken.com/",
-   "brand": "Retrofit assistant",
-   "description": "Conformance fixtures: one working peer network and three that must fail safely. See https://retrofit.thecreativetoken.com/conformance.",
-   "sampleQueries": [
-    "Ask the Harbor tours demo what tours it offers.",
-    "Call the invalid network.",
-    "Call the loop network.",
-    "Call the denied network."
-   ],
-   "tags": [],
-   "agents": [
-    {
-     "name": "conformance_guide",
-     "description": "Runs Retrofit's conformance fixtures: one working peer network and three that must fail safely."
-    }
-   ],
-   "cannotDo": [],
-   "siteActions": [
-    "score_site"
-   ],
-   "sharedActions": [],
-   "digest": "4bfb601c3d02d5d14b0cbd938397fcd5f37430f7ab82609575b7d9f4d03a8fb2",
-   "checks": [
-    {
-     "id": "manifest",
-     "pass": true,
-     "detail": "manifest has networks, front_man, hocon and llm_router"
-    },
-    {
-     "id": "definition",
-     "pass": true,
-     "detail": "1 agents, front agent defined"
-    },
-    {
-     "id": "cors",
-     "pass": true,
-     "detail": "manifest *, definition *"
-    },
-    {
-     "id": "integrity",
-     "pass": null,
-     "detail": "no declared digest"
-    },
-    {
-     "id": "safety",
-     "pass": true,
-     "detail": "no text aimed at other agents, rankers or keys"
-    },
-    {
-     "id": "probes",
-     "pass": null,
-     "detail": "not probed yet"
-    },
-    {
-     "id": "live_for_callers",
-     "pass": false,
-     "detail": "shares no live reads"
-    },
-    {
-     "id": "acts",
-     "pass": true,
-     "detail": "site actions: score_site"
-    },
-    {
-     "id": "honest",
-     "pass": false,
-     "detail": "publishes no can't-do list"
-    },
-    {
-     "id": "original",
-     "pass": true,
-     "detail": "no near-copy of a higher-ranked network"
-    }
-   ],
-   "signals": {
-    "probes": null,
-    "conformance": 1,
-    "links": 1,
-    "live": 0,
-    "acts": 0.5,
-    "honest": 0,
-    "fresh": 1
-   },
-   "penalty": 1,
-   "score": 0.714,
-   "inbound": [
-    "https://demo-harbor.thecreativetoken.com/"
-   ],
-   "sources": [
-    "list",
-    "pr:#68",
-    "pr:#69"
-   ]
-  },
-  {
    "url": "https://agenticsystemcore.com/desk/brief_desk",
    "name": "brief_desk",
    "site": "https://agenticsystemcore.com/desk/",
@@ -3200,7 +3339,7 @@
     "Find a passage on how a digest in the discovery document is checked, and add it to my brief.",
     "Ask the Standards Map what it offers on robots.txt and AI usage preferences.",
     "Add the passage that defines a Cluster to my brief, then discard the brief.",
-    "Ask the Standards Map to write a proposal: its card on robots.txt should link to the errata page of RFC 9309.",
+    "Ask the Standards Map to write a proposal: its card on robots.txt should link to the errata page of RFC 9309. The page is https://www.rfc-editor.org/errata/rfc9309",
     "Publish a new item on this node for me."
    ],
    "tags": [
@@ -3248,7 +3387,7 @@
      "effect": "read"
     }
    ],
-   "digest": "b6a09095e0dff5ae74058209e6f206daa034665a610c860e6f1b6e8842b87f44",
+   "digest": "c6b62eaa88add5e157d1fa35da2c8fd4d3da05ff2563321932b99e0901d96515",
    "checks": [
     {
      "id": "manifest",
@@ -3304,7 +3443,7 @@
    "signals": {
     "probes": null,
     "conformance": 1,
-    "links": 0.15006472020492947,
+    "links": 0.15006681268042668,
     "live": 1,
     "acts": 0.5,
     "honest": 1,
@@ -3398,7 +3537,7 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.27762168882826166,
+    "links": 0.2776255643507044,
     "live": 0,
     "acts": 0.5,
     "honest": 0,
@@ -3531,7 +3670,7 @@
    "signals": {
     "probes": null,
     "conformance": 1,
-    "links": 0.18195396236076253,
+    "links": 0.1819565005979961,
     "live": 1,
     "acts": 0.5,
     "honest": 0,
@@ -3546,8 +3685,7 @@
     "link:https://cocvn157.github.io/meshweave-studio/meshweave_composer",
     "list",
     "pr:#55",
-    "pr:#68",
-    "pr:#69"
+    "pr:#72"
    ]
   },
   {
@@ -3664,7 +3802,7 @@
    "signals": {
     "probes": null,
     "conformance": 1,
-    "links": 0.18195396236076253,
+    "links": 0.1819565005979961,
     "live": 1,
     "acts": 0.5,
     "honest": 0,
@@ -3678,8 +3816,7 @@
    "sources": [
     "link:https://cocvn157.github.io/meshweave-studio/meshweave_composer",
     "list",
-    "pr:#68",
-    "pr:#69"
+    "pr:#72"
    ]
   },
   {
@@ -3777,9 +3914,7 @@
     "https://retrofit.thecreativetoken.com/"
    ],
    "sources": [
-    "link:https://retrofit.thecreativetoken.com/retrofit_conformance",
-    "link:https://retrofit.thecreativetoken.com/retrofit_guide",
-    "peer:https://retrofit.thecreativetoken.com/"
+    "link:https://retrofit.thecreativetoken.com/retrofit_conformance"
    ]
   },
   {
@@ -3897,7 +4032,7 @@
    "signals": {
     "probes": null,
     "conformance": 1,
-    "links": 0.15006472020492947,
+    "links": 0.15006681268042668,
     "live": 1,
     "acts": 0.5,
     "honest": 0,
@@ -3908,8 +4043,7 @@
    "inbound": [],
    "sources": [
     "list",
-    "pr:#68",
-    "pr:#69"
+    "pr:#72"
    ]
   },
   {
@@ -4004,7 +4138,7 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.15006472020492947,
+    "links": 0.15006681268042668,
     "live": 0,
     "acts": 0.5,
     "honest": 0,
@@ -4104,7 +4238,7 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.15006472020492947,
+    "links": 0.15006681268042668,
     "live": 0,
     "acts": 0.5,
     "honest": 0,
@@ -4195,7 +4329,7 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.21384320451659558,
+    "links": 0.21384618851556553,
     "live": 0,
     "acts": 0,
     "honest": 0,
@@ -4294,7 +4428,7 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.15006472020492947,
+    "links": 0.15006681268042668,
     "live": 0,
     "acts": 0,
     "honest": 0,
@@ -4387,7 +4521,7 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.15006472020492947,
+    "links": 0.15006681268042668,
     "live": 0,
     "acts": 0,
     "honest": 0,
@@ -4479,7 +4613,7 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.15006472020492947,
+    "links": 0.15006681268042668,
     "live": 0,
     "acts": 0,
     "honest": 0,
@@ -4565,7 +4699,7 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.15006472020492947,
+    "links": 0.15006681268042668,
     "live": 0,
     "acts": 0,
     "honest": 0,
@@ -4658,7 +4792,7 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.15006472020492947,
+    "links": 0.15006681268042668,
     "live": 0,
     "acts": 0,
     "honest": 0,
@@ -4751,7 +4885,7 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.15006472020492947,
+    "links": 0.15006681268042668,
     "live": 0,
     "acts": 0,
     "honest": 0,
@@ -4844,7 +4978,7 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.15006472020492947,
+    "links": 0.15006681268042668,
     "live": 0,
     "acts": 0,
     "honest": 0,
@@ -4937,7 +5071,7 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.15006472020492947,
+    "links": 0.15006681268042668,
     "live": 0,
     "acts": 0,
     "honest": 0,
@@ -5030,7 +5164,7 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.15006472020492947,
+    "links": 0.15006681268042668,
     "live": 0,
     "acts": 0,
     "honest": 0,
@@ -5123,7 +5257,7 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.15006472020492947,
+    "links": 0.15006681268042668,
     "live": 0,
     "acts": 0,
     "honest": 0,
@@ -5230,7 +5364,7 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.15006472020492947,
+    "links": 0.15006681268042668,
     "live": 0,
     "acts": 0,
     "honest": 0,
@@ -5328,9 +5462,7 @@
     "https://retrofit.thecreativetoken.com/"
    ],
    "sources": [
-    "link:https://retrofit.thecreativetoken.com/retrofit_conformance",
-    "link:https://retrofit.thecreativetoken.com/retrofit_guide",
-    "peer:https://retrofit.thecreativetoken.com/"
+    "link:https://retrofit.thecreativetoken.com/retrofit_conformance"
    ]
   },
   {
@@ -5420,9 +5552,7 @@
     "https://retrofit.thecreativetoken.com/"
    ],
    "sources": [
-    "link:https://retrofit.thecreativetoken.com/retrofit_conformance",
-    "link:https://retrofit.thecreativetoken.com/retrofit_guide",
-    "peer:https://retrofit.thecreativetoken.com/"
+    "link:https://retrofit.thecreativetoken.com/retrofit_conformance"
    ]
   },
   {
@@ -5518,7 +5648,7 @@
    "signals": {
     "probes": null,
     "conformance": 1,
-    "links": 0.15006472020492947,
+    "links": 0.15006681268042668,
     "live": 0,
     "acts": 0.5,
     "honest": 1,
@@ -5529,8 +5659,7 @@
    "inbound": [],
    "sources": [
     "list",
-    "pr:#68",
-    "pr:#69"
+    "pr:#72"
    ]
   },
   {
@@ -5581,7 +5710,7 @@
     "use_admitted"
    ],
    "sharedActions": [],
-   "digest": "38041a5858e57100472fc44abc54d7a121ce2f2f520bfe5a1639a2ba9e4e98b3",
+   "digest": "2d48065b0dc26e8dede44ffaf28d45ad98b5eb96818add41f75486ee0a32a539",
    "checks": [
     {
      "id": "manifest",
@@ -5637,7 +5766,7 @@
    "signals": {
     "probes": null,
     "conformance": 1,
-    "links": 0.15006472020492947,
+    "links": 0.15006681268042668,
     "live": 0,
     "acts": 0.5,
     "honest": 1,
@@ -5743,7 +5872,7 @@
    "signals": {
     "probes": 1,
     "conformance": 0.6666666666666666,
-    "links": 0.5019275942918657,
+    "links": 0.5019346115241361,
     "live": 0,
     "acts": 0,
     "honest": 0,
@@ -5760,8 +5889,7 @@
     "pr:#30",
     "pr:#51",
     "pr:#55",
-    "pr:#68",
-    "pr:#69"
+    "pr:#72"
    ]
   },
   {
@@ -5859,7 +5987,7 @@
    "signals": {
     "probes": 1,
     "conformance": 0.6666666666666666,
-    "links": 0.15006472020492947,
+    "links": 0.15006681268042668,
     "live": 0,
     "acts": 0,
     "honest": 0,
@@ -5954,7 +6082,7 @@
    "signals": {
     "probes": 1,
     "conformance": 0.6666666666666666,
-    "links": 0.15006472020492947,
+    "links": 0.15006681268042668,
     "live": 0,
     "acts": 0,
     "honest": 0,
@@ -6067,7 +6195,7 @@
    "signals": {
     "probes": null,
     "conformance": 1,
-    "links": 0.15006472020492947,
+    "links": 0.15006681268042668,
     "live": 0,
     "acts": 0.5,
     "honest": 0,
@@ -6077,7 +6205,126 @@
    "score": 0.532,
    "inbound": [],
    "sources": [
-    "pr:#68"
+    "list",
+    "pr:#68",
+    "pr:#72"
+   ]
+  },
+  {
+   "url": "https://pecopeko.github.io/aegisweave/aegisweave_hub",
+   "name": "aegisweave_hub",
+   "site": "https://pecopeko.github.io/aegisweave/",
+   "brand": "AegisWeave — Policy-Bound Agentic Commerce & Peer Firewall",
+   "description": "Policy-bound multi-agent procurement, sealed-bid arbitration, destination-scoped sly_data firewall, and MVP Profile 0.3 peer conformance auditor running 100% in the browser.",
+   "sampleQueries": [
+    "Compare quotes from Nordic Compute and Kyoto Studio for an urgent GPU + localization sprint under $480 with >= 99.5% SLA, and issue a SHA-256 mandate receipt.",
+    "Audit the peer network at ./peers/nordic_compute/nordic_compute for MVP Profile 0.3 conformance and prompt safety.",
+    "Test our firewall against the adversarial peer at ./peers/rogue_peer/rogue_peer — verify BYOK key isolation, sly_data blocking, and cycle protection.",
+    "Run the 7-check MVP Profile 0.3 Interoperability Suite and show the live CRUSE compliance table and chart."
+   ],
+   "tags": [
+    "open-agentic-web",
+    "mvp-profile-0.3",
+    "agent-commerce",
+    "privacy-firewall",
+    "conformance-auditor",
+    "cruse"
+   ],
+   "agents": [
+    {
+     "name": "procurement_concierge",
+     "description": "Front agent for AegisWeave. Coordinates policy-bound vendor quotes across linked Open Agentic Web peer sites, enforces privacy firewalls, runs MVP Profile 0.3 audits, and issues cryptographic settlement receipts."
+    },
+    {
+     "name": "privacy_steward",
+     "description": "Enforces destination-scoped sly_data filtering, PII redaction, and BYOK credential isolation before any peer contact."
+    },
+    {
+     "name": "policy_arbiter",
+     "description": "Creates policy-bound spending mandates, evaluates sealed vendor bids via deterministic SLA-weighted Pareto/Vickrey arbitration, and issues SHA-256 verifiable settlement receipts."
+    },
+    {
+     "name": "conformance_auditor",
+     "description": "Audits any Open Agentic Web peer URL against 15 normative MVP Profile 0.3 checks including manifest validity, exact network resolution, unresolved HOCON directives, SHA-256 artifact pinning, SRI integrity, peer policy, and untrusted-instruction prompt injection heuristics."
+    }
+   ],
+   "cannotDo": [],
+   "siteActions": [
+    "create_spending_mandate",
+    "evaluate_sealed_bids",
+    "issue_settlement_receipt",
+    "audit_peer_manifest",
+    "list_receipts"
+   ],
+   "sharedActions": [],
+   "digest": "4094123948e834d33b6153fb139f64dea457c0e7cccb161293ff6bfd8b0d71a6",
+   "checks": [
+    {
+     "id": "manifest",
+     "pass": true,
+     "detail": "manifest has networks, front_man, hocon and llm_router"
+    },
+    {
+     "id": "definition",
+     "pass": true,
+     "detail": "4 agents, front agent defined"
+    },
+    {
+     "id": "cors",
+     "pass": true,
+     "detail": "manifest *, definition *"
+    },
+    {
+     "id": "integrity",
+     "pass": null,
+     "detail": "no declared digest"
+    },
+    {
+     "id": "safety",
+     "pass": true,
+     "detail": "no text aimed at other agents, rankers or keys"
+    },
+    {
+     "id": "probes",
+     "pass": null,
+     "detail": "not probed yet"
+    },
+    {
+     "id": "live_for_callers",
+     "pass": false,
+     "detail": "shares no live reads"
+    },
+    {
+     "id": "acts",
+     "pass": true,
+     "detail": "site actions: create_spending_mandate, evaluate_sealed_bids, issue_settlement_receipt, audit_peer_manifest, list_receipts"
+    },
+    {
+     "id": "honest",
+     "pass": false,
+     "detail": "publishes no can't-do list"
+    },
+    {
+     "id": "original",
+     "pass": true,
+     "detail": "no near-copy of a higher-ranked network"
+    }
+   ],
+   "signals": {
+    "probes": null,
+    "conformance": 1,
+    "links": 0.15006681268042668,
+    "live": 0,
+    "acts": 0.5,
+    "honest": 0,
+    "fresh": 1
+   },
+   "penalty": 1,
+   "score": 0.532,
+   "inbound": [],
+   "sources": [
+    "list",
+    "pr:#72"
    ]
   },
   {
@@ -6159,7 +6406,7 @@
    "signals": {
     "probes": 0.6666666666666666,
     "conformance": 1,
-    "links": 0.15006472020492947,
+    "links": 0.15006681268042668,
     "live": 0,
     "acts": 0,
     "honest": 0,
@@ -6251,7 +6498,7 @@
    "signals": {
     "probes": 0.6666666666666666,
     "conformance": 1,
-    "links": 0.15006472020492947,
+    "links": 0.15006681268042668,
     "live": 0,
     "acts": 0,
     "honest": 0,
@@ -6361,7 +6608,7 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.21384320451659558,
+    "links": 0.21384618851556553,
     "live": 0,
     "acts": 0.5,
     "honest": 1,
@@ -6456,7 +6703,7 @@
    "signals": {
     "probes": null,
     "conformance": 0.6666666666666666,
-    "links": 0.15006472020492947,
+    "links": 0.15006681268042668,
     "live": 0,
     "acts": 0,
     "honest": 0,
@@ -6548,7 +6795,7 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.15006472020492947,
+    "links": 0.15006681268042668,
     "live": 0,
     "acts": 0,
     "honest": 0,
@@ -6642,7 +6889,7 @@
    "signals": {
     "probes": null,
     "conformance": 0.3333333333333333,
-    "links": 0.15006472020492947,
+    "links": 0.15006681268042668,
     "live": 0,
     "acts": 0.5,
     "honest": 0,
@@ -6733,7 +6980,7 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.21384320451659558,
+    "links": 0.21384618851556553,
     "live": 0,
     "acts": 0,
     "honest": 0,
@@ -6827,7 +7074,7 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.15006472020492947,
+    "links": 0.15006681268042668,
     "live": 0,
     "acts": 0,
     "honest": 0,
@@ -6847,8 +7094,7 @@
    "sources": [
     "list",
     "pr:#55",
-    "pr:#68",
-    "pr:#69"
+    "pr:#72"
    ],
    "status": 404,
    "error": "HTTP 404"
@@ -6860,8 +7106,7 @@
     "peer:https://cocvn157.github.io/meshweave-studio/",
     "peer:https://cocvn157.github.io/scopegate-studio/",
     "pr:#55",
-    "pr:#68",
-    "pr:#69"
+    "pr:#72"
    ],
    "status": 404,
    "error": "HTTP 404"
@@ -6874,8 +7119,16 @@
     "peer:https://cocvn157.github.io/scopegate-studio/",
     "pr:#51",
     "pr:#55",
-    "pr:#68",
-    "pr:#69"
+    "pr:#72"
+   ],
+   "status": 404,
+   "error": "HTTP 404"
+  },
+  {
+   "base": "https://pecopeko.github.io/",
+   "sources": [
+    "list",
+    "pr:#72"
    ],
    "status": 404,
    "error": "HTTP 404"
@@ -6889,8 +7142,7 @@
     "peer:https://cocvn157.github.io/scopegate-studio/",
     "pr:#51",
     "pr:#55",
-    "pr:#68",
-    "pr:#69"
+    "pr:#72"
    ],
    "status": 404,
    "error": "HTTP 404"
@@ -6906,8 +7158,7 @@
     "pr:#30",
     "pr:#51",
     "pr:#55",
-    "pr:#68",
-    "pr:#69"
+    "pr:#72"
    ],
    "status": 404,
    "error": "HTTP 404"
@@ -6972,6 +7223,14 @@
    "base": "https://three-numbers-mcp.onrender.com/",
    "sources": [
     "peer:https://ledenti.github.io/trois-nombres/"
+   ],
+   "status": 404,
+   "error": "HTTP 404"
+  },
+  {
+   "base": "https://vet402.com/",
+   "sources": [
+    "peer:https://factgate.vercel.app/"
    ],
    "status": 404,
    "error": "HTTP 404"
