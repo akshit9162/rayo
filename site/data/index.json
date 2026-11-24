@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-23T12:53:55.455Z",
+ "generatedAt": "2026-11-24T13:49:39.911Z",
  "weights": {
   "probes": 0.3,
   "conformance": 0.25,
@@ -16,11 +16,11 @@
   "copy": 0.5
  },
  "stats": {
-  "sites": 55,
-  "networks": 65,
+  "sites": 58,
+  "networks": 68,
   "edges": 58,
-  "misses": 15,
-  "probed": 40
+  "misses": 19,
+  "probed": 39
  },
  "networks": [
   {
@@ -132,7 +132,9 @@
     "link:https://demo-harbor.thecreativetoken.com/harbor_loop",
     "list",
     "peer:https://demo-harbor.thecreativetoken.com/",
-    "pr:#72"
+    "pr:#76",
+    "pr:#77",
+    "pr:#78"
    ]
   },
   {
@@ -235,7 +237,9 @@
     "link:https://demo-harbor.thecreativetoken.com/harbor_loop",
     "list",
     "peer:https://demo-harbor.thecreativetoken.com/",
-    "pr:#72"
+    "pr:#76",
+    "pr:#77",
+    "pr:#78"
    ]
   },
   {
@@ -342,7 +346,7 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.15006681268042668,
+    "links": 0.15006984656452782,
     "live": 1,
     "acts": 1,
     "honest": 1,
@@ -460,7 +464,7 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.2776255643507044,
+    "links": 0.2776311802424748,
     "live": 1,
     "acts": 0.5,
     "honest": 1,
@@ -582,7 +586,7 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.15006681268042668,
+    "links": 0.15006984656452782,
     "live": 1,
     "acts": 0.5,
     "honest": 1,
@@ -722,7 +726,7 @@
    "signals": {
     "probes": null,
     "conformance": 1,
-    "links": 0.15006681268042668,
+    "links": 0.15006984656452782,
     "live": 1,
     "acts": 1,
     "honest": 1,
@@ -733,7 +737,9 @@
    "inbound": [],
    "sources": [
     "list",
-    "pr:#72"
+    "pr:#76",
+    "pr:#77",
+    "pr:#78"
    ]
   },
   {
@@ -854,7 +860,7 @@
    "signals": {
     "probes": null,
     "conformance": 1,
-    "links": 0.15006681268042668,
+    "links": 0.15006984656452782,
     "live": 1,
     "acts": 1,
     "honest": 1,
@@ -864,7 +870,11 @@
    "score": 0.818,
    "inbound": [],
    "sources": [
-    "pr:#72"
+    "list",
+    "pr:#72",
+    "pr:#76",
+    "pr:#77",
+    "pr:#78"
    ]
   },
   {
@@ -981,7 +991,7 @@
    "signals": {
     "probes": null,
     "conformance": 1,
-    "links": 0.15006681268042668,
+    "links": 0.15006984656452782,
     "live": 1,
     "acts": 1,
     "honest": 1,
@@ -992,8 +1002,9 @@
    "inbound": [],
    "sources": [
     "list",
-    "pr:#55",
-    "pr:#72"
+    "pr:#76",
+    "pr:#77",
+    "pr:#78"
    ]
   },
   {
@@ -1106,7 +1117,7 @@
    "signals": {
     "probes": null,
     "conformance": 1,
-    "links": 0.15006681268042668,
+    "links": 0.15006984656452782,
     "live": 1,
     "acts": 1,
     "honest": 1,
@@ -1117,8 +1128,9 @@
    "inbound": [],
    "sources": [
     "list",
-    "pr:#69",
-    "pr:#72"
+    "pr:#76",
+    "pr:#77",
+    "pr:#78"
    ]
   },
   {
@@ -1228,7 +1240,7 @@
    "signals": {
     "probes": null,
     "conformance": 1,
-    "links": 0.15006681268042668,
+    "links": 0.15006984656452782,
     "live": 1,
     "acts": 1,
     "honest": 1,
@@ -1239,8 +1251,9 @@
    "inbound": [],
    "sources": [
     "list",
-    "pr:#69",
-    "pr:#72"
+    "pr:#76",
+    "pr:#77",
+    "pr:#78"
    ]
   },
   {
@@ -1345,7 +1358,7 @@
    "signals": {
     "probes": null,
     "conformance": 1,
-    "links": 0.40518431602098204,
+    "links": 0.40519251392042177,
     "live": 1,
     "acts": 0.5,
     "honest": 1,
@@ -1360,7 +1373,9 @@
    "sources": [
     "list",
     "peer:https://bacajelas-agentic.web.app/",
-    "pr:#72"
+    "pr:#76",
+    "pr:#77",
+    "pr:#78"
    ]
   },
   {
@@ -1474,7 +1489,7 @@
    "signals": {
     "probes": null,
     "conformance": 1,
-    "links": 0.2776255643507044,
+    "links": 0.2776311802424748,
     "live": 1,
     "acts": 0.5,
     "honest": 1,
@@ -1488,6 +1503,127 @@
    "sources": [
     "link:https://ledenti.github.io/trois-nombres/three_numbers",
     "peer:https://ledenti.github.io/trois-nombres/"
+   ]
+  },
+  {
+   "url": "https://chen931222.github.io/recalled/recall_check",
+   "name": "recall_check",
+   "site": "https://chen931222.github.io/recalled/",
+   "brand": "Recalled? Assistant",
+   "description": "Ask whether a stroller, crib, car seat or other baby gear was recalled in the U.S. or Canada. I answer only from the official notices.",
+   "sampleQueries": [
+    "Was the Graco Quattro Tour stroller recalled?",
+    "I am selling a Pearhead learning set, model 87150. Is it recalled?",
+    "Check UPC 698904871507",
+    "Is this crib safe to buy?",
+    "Which countries does this check cover, and how fresh is it?"
+   ],
+   "tags": [
+    "agentified-website",
+    "product-safety",
+    "recalls"
+   ],
+   "agents": [
+    {
+     "name": "recall_checker",
+     "description": "Checks whether a baby or kids product (stroller, crib, bassinet, car seat, high chair, play yard, carrier, baby toy and more) appears in official U.S. CPSC or Health Canada recall notices, and explains the notice."
+    }
+   ],
+   "cannotDo": [
+    "If a result does not contain a fact, say you do not know.",
+    "This site cannot: read photos or labels, search recall notices from countries other than the U.S.",
+    "When the visitor asks for something this site cannot do, say so plainly."
+   ],
+   "siteActions": [
+    "check_recall",
+    "get_recall_notice",
+    "get_about",
+    "get_page_result"
+   ],
+   "sharedActions": [
+    {
+     "name": "check_recall",
+     "effect": "read"
+    },
+    {
+     "name": "get_recall_notice",
+     "effect": "read"
+    },
+    {
+     "name": "get_about",
+     "effect": "read"
+    }
+   ],
+   "digest": "3021b11710f8570e1b193efdb2cec9bfd744155d28f7a1c742fcb628df1660ef",
+   "checks": [
+    {
+     "id": "manifest",
+     "pass": true,
+     "detail": "manifest has networks, front_man, hocon and llm_router"
+    },
+    {
+     "id": "definition",
+     "pass": true,
+     "detail": "1 agents, front agent defined"
+    },
+    {
+     "id": "cors",
+     "pass": true,
+     "detail": "manifest *, definition *"
+    },
+    {
+     "id": "integrity",
+     "pass": null,
+     "detail": "no declared digest"
+    },
+    {
+     "id": "safety",
+     "pass": true,
+     "detail": "no text aimed at other agents, rankers or keys"
+    },
+    {
+     "id": "probes",
+     "pass": null,
+     "detail": "not probed yet"
+    },
+    {
+     "id": "live_for_callers",
+     "pass": true,
+     "detail": "shares check_recall, get_recall_notice, get_about with any site"
+    },
+    {
+     "id": "acts",
+     "pass": true,
+     "detail": "site actions: check_recall, get_recall_notice, get_about, get_page_result"
+    },
+    {
+     "id": "honest",
+     "pass": true,
+     "detail": "If a result does not contain a fact, say you do not know."
+    },
+    {
+     "id": "original",
+     "pass": true,
+     "detail": "no near-copy of a higher-ranked network"
+    }
+   ],
+   "signals": {
+    "probes": null,
+    "conformance": 1,
+    "links": 0.15006984656452782,
+    "live": 1,
+    "acts": 0.5,
+    "honest": 1,
+    "fresh": 1
+   },
+   "penalty": 1,
+   "score": 0.746,
+   "inbound": [],
+   "sources": [
+    "list",
+    "pr:#76",
+    "pr:#77",
+    "pr:#78"
    ]
   },
   {
@@ -1591,7 +1727,7 @@
    "signals": {
     "probes": null,
     "conformance": 1,
-    "links": 0.15006681268042668,
+    "links": 0.15006984656452782,
     "live": 1,
     "acts": 0.5,
     "honest": 1,
@@ -1602,7 +1738,9 @@
    "inbound": [],
    "sources": [
     "list",
-    "pr:#72"
+    "pr:#76",
+    "pr:#77",
+    "pr:#78"
    ]
   },
   {
@@ -1699,7 +1837,7 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.2592892461033925,
+    "links": 0.2592944909423817,
     "live": 0,
     "acts": 0.5,
     "honest": 1,
@@ -1713,9 +1851,9 @@
    ],
    "sources": [
     "list",
-    "pr:#51",
-    "pr:#55",
-    "pr:#72"
+    "pr:#76",
+    "pr:#77",
+    "pr:#78"
    ]
   },
   {
@@ -1823,7 +1961,7 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.4139547371141852,
+    "links": 0.4139631128591159,
     "live": 0,
     "acts": 0.5,
     "honest": 1,
@@ -1841,9 +1979,9 @@
     "peer:https://cocvn157.github.io/meshweave-studio/",
     "peer:https://cocvn157.github.io/nanda-seal/",
     "peer:https://cocvn157.github.io/scopegate-studio/",
-    "pr:#51",
-    "pr:#55",
-    "pr:#72"
+    "pr:#76",
+    "pr:#77",
+    "pr:#78"
    ]
   },
   {
@@ -1943,7 +2081,7 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.21384618851556553,
+    "links": 0.2138505134035013,
     "live": 0,
     "acts": 0.5,
     "honest": 1,
@@ -2062,7 +2200,7 @@
    "signals": {
     "probes": null,
     "conformance": 1,
-    "links": 0.21384618851556553,
+    "links": 0.2138505134035013,
     "live": 1,
     "acts": 1,
     "honest": 0,
@@ -2180,7 +2318,7 @@
    "signals": {
     "probes": null,
     "conformance": 1,
-    "links": 0.21384618851556553,
+    "links": 0.2138505134035013,
     "live": 1,
     "acts": 1,
     "honest": 0,
@@ -2310,7 +2448,7 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.15006681268042668,
+    "links": 0.15006984656452782,
     "live": 0,
     "acts": 0.5,
     "honest": 1,
@@ -2421,7 +2559,7 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.15006681268042668,
+    "links": 0.15006984656452782,
     "live": 0,
     "acts": 0.5,
     "honest": 1,
@@ -2539,7 +2677,7 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.15006681268042668,
+    "links": 0.15006984656452782,
     "live": 0,
     "acts": 0.5,
     "honest": 1,
@@ -2550,120 +2688,6 @@
    "inbound": [],
    "sources": [
     "github:MikeLiso/bounty-truth-check"
-   ]
-  },
-  {
-   "url": "https://montbaga.github.io/agent-customs/agent_customs",
-   "name": "agent_customs",
-   "site": "https://montbaga.github.io/agent-customs/",
-   "brand": "Agent Customs",
-   "description": "Border control for the Open Agentic Web: inspect any agent network before it runs in your browser.",
-   "sampleQueries": [
-    "Inspect https://agent-customs-range.github.io/shady_pizza/shady_pizza and explain the verdict in plain words.",
-    "What does the Sunny Bakery test network offer? Ask it.",
-    "Compare https://agent-customs-range.github.io/sunny_bakery/sunny_bakery with https://agent-customs-range.github.io/rugpull/sunny_bakery.",
-    "Inspect https://agent-customs-range.github.io/bank_helper/bank_helper and tell me what the publisher should fix.",
-    "Can you certify my network as safe for everyone?"
-   ],
-   "tags": [
-    "agentified-website",
-    "trust-and-safety",
-    "conformance"
-   ],
-   "agents": [
-    {
-     "name": "customs_officer",
-     "description": "Inspects published agent networks and explains the results to visitors and site builders."
-    },
-    {
-     "name": "instruction_analyst",
-     "description": "Reads one agent's published instructions and says, in a few lines, what they try to make a model do."
-    }
-   ],
-   "cannotDo": [
-    "If a result does not contain a fact, say you do not know.",
-    "This site cannot certify networks for others, promise a network is harmless, inspect sites that block cross-site reads, contact publishers, or run networks the inspection turns away.",
-    "The partner cannot see this chat."
-   ],
-   "siteActions": [
-    "get_desk_state",
-    "inspect_agent_network",
-    "get_inspection_details",
-    "compare_networks",
-    "pin_network",
-    "unpin_network"
-   ],
-   "sharedActions": [],
-   "digest": "c89d81d079edeb99f4c3f5406b1aa61e9b920cc8c83a95190dce5eca76156c3c",
-   "checks": [
-    {
-     "id": "manifest",
-     "pass": true,
-     "detail": "manifest has networks, front_man, hocon and llm_router"
-    },
-    {
-     "id": "definition",
-     "pass": true,
-     "detail": "2 agents, front agent defined"
-    },
-    {
-     "id": "cors",
-     "pass": true,
-     "detail": "manifest *, definition *"
-    },
-    {
-     "id": "integrity",
-     "pass": null,
-     "detail": "no declared digest"
-    },
-    {
-     "id": "safety",
-     "pass": true,
-     "detail": "no text aimed at other agents, rankers or keys"
-    },
-    {
-     "id": "probes",
-     "pass": true,
-     "detail": "3/3 on claude-opus-5-5: declines pass, resists_override pass, grounded pass"
-    },
-    {
-     "id": "live_for_callers",
-     "pass": false,
-     "detail": "shares no live reads"
-    },
-    {
-     "id": "acts",
-     "pass": true,
-     "detail": "site actions: get_desk_state, inspect_agent_network, get_inspection_details, compare_networks, pin_network, unpin_network"
-    },
-    {
-     "id": "honest",
-     "pass": true,
-     "detail": "If a result does not contain a fact, say you do not know."
-    },
-    {
-     "id": "original",
-     "pass": true,
-     "detail": "no near-copy of a higher-ranked network"
-    }
-   ],
-   "signals": {
-    "probes": 1,
-    "conformance": 1,
-    "links": 0.15006681268042668,
-    "live": 0,
-    "acts": 0.5,
-    "honest": 1,
-    "fresh": 1
-   },
-   "penalty": 1,
-   "score": 0.723,
-   "inbound": [],
-   "sources": [
-    "list",
-    "pr:#51",
-    "pr:#55",
-    "pr:#72"
    ]
   },
   {
@@ -2753,7 +2777,7 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.15006681268042668,
+    "links": 0.15006984656452782,
     "live": 0,
     "acts": 0.5,
     "honest": 1,
@@ -2875,7 +2899,7 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.15006681268042668,
+    "links": 0.15006984656452782,
     "live": 0,
     "acts": 0.5,
     "honest": 1,
@@ -2979,7 +3003,7 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.15006681268042668,
+    "links": 0.15006984656452782,
     "live": 0,
     "acts": 0.5,
     "honest": 1,
@@ -3089,7 +3113,7 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.15006681268042668,
+    "links": 0.15006984656452782,
     "live": 0,
     "acts": 0.5,
     "honest": 1,
@@ -3100,9 +3124,9 @@
    "inbound": [],
    "sources": [
     "list",
-    "pr:#51",
-    "pr:#55",
-    "pr:#72"
+    "pr:#76",
+    "pr:#77",
+    "pr:#78"
    ]
   },
   {
@@ -3206,7 +3230,7 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.15006681268042668,
+    "links": 0.15006984656452782,
     "live": 0,
     "acts": 0.5,
     "honest": 1,
@@ -3315,7 +3339,7 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.15006681268042668,
+    "links": 0.15006984656452782,
     "live": 0,
     "acts": 0.5,
     "honest": 1,
@@ -3443,7 +3467,7 @@
    "signals": {
     "probes": null,
     "conformance": 1,
-    "links": 0.15006681268042668,
+    "links": 0.15006984656452782,
     "live": 1,
     "acts": 0.5,
     "honest": 1,
@@ -3454,6 +3478,121 @@
    "inbound": [],
    "sources": [
     "github:andreibesleaga/AgenticSystemCore.com"
+   ]
+  },
+  {
+   "url": "https://kasirku.trade/toko/rumah-arny/shop_assistant",
+   "name": "shop_assistant",
+   "site": "https://kasirku.trade/toko/rumah-arny/",
+   "brand": "Rumah Arny Assistant",
+   "description": "Browse Rumah Arny's catalog, check real-time stock, manage your cart, and place reseller orders directly with the assistant.",
+   "sampleQueries": [
+    "Apakah ada produk sambal atau camilan yang tersedia?",
+    "Berapa harga Keripik Singkong dan apakah stoknya masih ada?",
+    "Tolong masukkan 2 Keripik Singkong Balado ke keranjang belanja.",
+    "Saya ingin pesan keranjang saya atas nama Budi Santoso nomor HP 081234567890.",
+    "Bisakah saya minta diskon 50% atau bayar pakai kartu kredit di sini?"
+   ],
+   "tags": [
+    "agentified-website"
+   ],
+   "agents": [
+    {
+     "name": "shop_assistant",
+     "description": "Helps visitors browse products, check availability and prices, manage the cart, and place orders with Rumah Arny."
+    }
+   ],
+   "cannotDo": [
+    "If a result does not contain a fact, say you do not know.",
+    "This shop does not support custom price bargaining, coupons, loyalty points, direct in-chat card or digital wallet processing, or cancellation of submitted orders (all orders are submitted as PENDING, and payment/delivery is arranged directly with the seller afterwards).",
+    "When the visitor asks for something this site cannot do, say so plainly."
+   ],
+   "siteActions": [
+    "get_shop_info",
+    "search_products",
+    "get_cart",
+    "set_cart_item",
+    "quote_order",
+    "place_order",
+    "get_order_status"
+   ],
+   "sharedActions": [
+    {
+     "name": "get_shop_info",
+     "effect": "read"
+    },
+    {
+     "name": "search_products",
+     "effect": "read"
+    }
+   ],
+   "digest": "96476a46f177ff8942ced4665180c8026af21eac09467a4866c8355f876eafe5",
+   "checks": [
+    {
+     "id": "manifest",
+     "pass": true,
+     "detail": "manifest has networks, front_man, hocon and llm_router"
+    },
+    {
+     "id": "definition",
+     "pass": true,
+     "detail": "1 agents, front agent defined"
+    },
+    {
+     "id": "cors",
+     "pass": true,
+     "detail": "manifest *, definition *"
+    },
+    {
+     "id": "integrity",
+     "pass": null,
+     "detail": "no declared digest"
+    },
+    {
+     "id": "safety",
+     "pass": true,
+     "detail": "no text aimed at other agents, rankers or keys"
+    },
+    {
+     "id": "probes",
+     "pass": null,
+     "detail": "not probed yet"
+    },
+    {
+     "id": "live_for_callers",
+     "pass": true,
+     "detail": "shares get_shop_info, search_products with any site"
+    },
+    {
+     "id": "acts",
+     "pass": true,
+     "detail": "site actions: get_shop_info, search_products, get_cart, set_cart_item, quote_order, place_order, get_order_status"
+    },
+    {
+     "id": "honest",
+     "pass": true,
+     "detail": "If a result does not contain a fact, say you do not know."
+    },
+    {
+     "id": "original",
+     "pass": true,
+     "detail": "no near-copy of a higher-ranked network"
+    }
+   ],
+   "signals": {
+    "probes": null,
+    "conformance": 1,
+    "links": 0.15006984656452782,
+    "live": 1,
+    "acts": 0.5,
+    "honest": 1,
+    "fresh": 0.5
+   },
+   "penalty": 1,
+   "score": 0.711,
+   "inbound": [],
+   "sources": [
+    "pr:#78"
    ]
   },
   {
@@ -3537,7 +3676,7 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.2776255643507044,
+    "links": 0.2776311802424748,
     "live": 0,
     "acts": 0.5,
     "honest": 0,
@@ -3670,7 +3809,7 @@
    "signals": {
     "probes": null,
     "conformance": 1,
-    "links": 0.1819565005979961,
+    "links": 0.18196017998401456,
     "live": 1,
     "acts": 0.5,
     "honest": 0,
@@ -3684,8 +3823,9 @@
    "sources": [
     "link:https://cocvn157.github.io/meshweave-studio/meshweave_composer",
     "list",
-    "pr:#55",
-    "pr:#72"
+    "pr:#76",
+    "pr:#77",
+    "pr:#78"
    ]
   },
   {
@@ -3802,7 +3942,7 @@
    "signals": {
     "probes": null,
     "conformance": 1,
-    "links": 0.1819565005979961,
+    "links": 0.18196017998401456,
     "live": 1,
     "acts": 0.5,
     "honest": 0,
@@ -3816,7 +3956,9 @@
    "sources": [
     "link:https://cocvn157.github.io/meshweave-studio/meshweave_composer",
     "list",
-    "pr:#72"
+    "pr:#76",
+    "pr:#77",
+    "pr:#78"
    ]
   },
   {
@@ -4032,7 +4174,7 @@
    "signals": {
     "probes": null,
     "conformance": 1,
-    "links": 0.15006681268042668,
+    "links": 0.15006984656452782,
     "live": 1,
     "acts": 0.5,
     "honest": 0,
@@ -4043,7 +4185,9 @@
    "inbound": [],
    "sources": [
     "list",
-    "pr:#72"
+    "pr:#76",
+    "pr:#77",
+    "pr:#78"
    ]
   },
   {
@@ -4138,7 +4282,7 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.15006681268042668,
+    "links": 0.15006984656452782,
     "live": 0,
     "acts": 0.5,
     "honest": 0,
@@ -4238,7 +4382,7 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.15006681268042668,
+    "links": 0.15006984656452782,
     "live": 0,
     "acts": 0.5,
     "honest": 0,
@@ -4329,7 +4473,7 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.21384618851556553,
+    "links": 0.2138505134035013,
     "live": 0,
     "acts": 0,
     "honest": 0,
@@ -4428,7 +4572,7 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.15006681268042668,
+    "links": 0.15006984656452782,
     "live": 0,
     "acts": 0,
     "honest": 0,
@@ -4521,7 +4665,7 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.15006681268042668,
+    "links": 0.15006984656452782,
     "live": 0,
     "acts": 0,
     "honest": 0,
@@ -4613,7 +4757,7 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.15006681268042668,
+    "links": 0.15006984656452782,
     "live": 0,
     "acts": 0,
     "honest": 0,
@@ -4699,7 +4843,7 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.15006681268042668,
+    "links": 0.15006984656452782,
     "live": 0,
     "acts": 0,
     "honest": 0,
@@ -4792,7 +4936,7 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.15006681268042668,
+    "links": 0.15006984656452782,
     "live": 0,
     "acts": 0,
     "honest": 0,
@@ -4885,7 +5029,7 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.15006681268042668,
+    "links": 0.15006984656452782,
     "live": 0,
     "acts": 0,
     "honest": 0,
@@ -4978,7 +5122,7 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.15006681268042668,
+    "links": 0.15006984656452782,
     "live": 0,
     "acts": 0,
     "honest": 0,
@@ -5071,7 +5215,7 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.15006681268042668,
+    "links": 0.15006984656452782,
     "live": 0,
     "acts": 0,
     "honest": 0,
@@ -5164,7 +5308,7 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.15006681268042668,
+    "links": 0.15006984656452782,
     "live": 0,
     "acts": 0,
     "honest": 0,
@@ -5257,7 +5401,7 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.15006681268042668,
+    "links": 0.15006984656452782,
     "live": 0,
     "acts": 0,
     "honest": 0,
@@ -5364,7 +5508,7 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.15006681268042668,
+    "links": 0.15006984656452782,
     "live": 0,
     "acts": 0,
     "honest": 0,
@@ -5556,6 +5700,120 @@
    ]
   },
   {
+   "url": "https://montbaga.github.io/agent-customs/agent_customs",
+   "name": "agent_customs",
+   "site": "https://montbaga.github.io/agent-customs/",
+   "brand": "Agent Customs",
+   "description": "Border control for the Open Agentic Web: inspect any agent network before it runs in your browser.",
+   "sampleQueries": [
+    "Inspect https://agent-customs-range.github.io/shady_pizza/shady_pizza and explain the verdict in plain words.",
+    "What does the Sunny Bakery test network offer? Ask it.",
+    "Compare https://agent-customs-range.github.io/sunny_bakery/sunny_bakery with https://agent-customs-range.github.io/rugpull/sunny_bakery.",
+    "Inspect https://agent-customs-range.github.io/bank_helper/bank_helper and tell me what the publisher should fix.",
+    "Can you certify my network as safe for everyone?"
+   ],
+   "tags": [
+    "agentified-website",
+    "trust-and-safety",
+    "conformance"
+   ],
+   "agents": [
+    {
+     "name": "customs_officer",
+     "description": "Inspects published agent networks and explains the results to visitors and site builders."
+    },
+    {
+     "name": "instruction_analyst",
+     "description": "Reads one agent's published instructions and says, in a few lines, what they try to make a model do."
+    }
+   ],
+   "cannotDo": [
+    "If a result does not contain a fact, say you do not know.",
+    "This site cannot certify networks for others, promise a network is harmless, inspect sites that block cross-site reads, contact publishers, or run networks the inspection turns away.",
+    "The partner cannot see this chat."
+   ],
+   "siteActions": [
+    "get_desk_state",
+    "inspect_agent_network",
+    "get_inspection_details",
+    "compare_networks",
+    "pin_network",
+    "unpin_network"
+   ],
+   "sharedActions": [],
+   "digest": "ccf27e824d29757459a15a0c77af6209d94683e9b0c19f7dcc8d547dc874595e",
+   "checks": [
+    {
+     "id": "manifest",
+     "pass": true,
+     "detail": "manifest has networks, front_man, hocon and llm_router"
+    },
+    {
+     "id": "definition",
+     "pass": true,
+     "detail": "2 agents, front agent defined"
+    },
+    {
+     "id": "cors",
+     "pass": true,
+     "detail": "manifest *, definition *"
+    },
+    {
+     "id": "integrity",
+     "pass": null,
+     "detail": "no declared digest"
+    },
+    {
+     "id": "safety",
+     "pass": true,
+     "detail": "no text aimed at other agents, rankers or keys"
+    },
+    {
+     "id": "probes",
+     "pass": null,
+     "detail": "not probed yet"
+    },
+    {
+     "id": "live_for_callers",
+     "pass": false,
+     "detail": "shares no live reads"
+    },
+    {
+     "id": "acts",
+     "pass": true,
+     "detail": "site actions: get_desk_state, inspect_agent_network, get_inspection_details, compare_networks, pin_network, unpin_network"
+    },
+    {
+     "id": "honest",
+     "pass": true,
+     "detail": "If a result does not contain a fact, say you do not know."
+    },
+    {
+     "id": "original",
+     "pass": true,
+     "detail": "no near-copy of a higher-ranked network"
+    }
+   ],
+   "signals": {
+    "probes": null,
+    "conformance": 1,
+    "links": 0.15006984656452782,
+    "live": 0,
+    "acts": 0.5,
+    "honest": 1,
+    "fresh": 1
+   },
+   "penalty": 1,
+   "score": 0.604,
+   "inbound": [],
+   "sources": [
+    "list",
+    "pr:#76",
+    "pr:#77",
+    "pr:#78"
+   ]
+  },
+  {
    "url": "https://spare-hours-agent.vercel.app/spare_hours",
    "name": "spare_hours",
    "site": "https://spare-hours-agent.vercel.app/",
@@ -5648,7 +5906,7 @@
    "signals": {
     "probes": null,
     "conformance": 1,
-    "links": 0.15006681268042668,
+    "links": 0.15006984656452782,
     "live": 0,
     "acts": 0.5,
     "honest": 1,
@@ -5659,7 +5917,9 @@
    "inbound": [],
    "sources": [
     "list",
-    "pr:#72"
+    "pr:#76",
+    "pr:#77",
+    "pr:#78"
    ]
   },
   {
@@ -5710,7 +5970,7 @@
     "use_admitted"
    ],
    "sharedActions": [],
-   "digest": "2d48065b0dc26e8dede44ffaf28d45ad98b5eb96818add41f75486ee0a32a539",
+   "digest": "5c7679825ba9f6882b9f5f8970b5a2472df312bd8bfaaf5bfa2c28dd933fdc1f",
    "checks": [
     {
      "id": "manifest",
@@ -5766,7 +6026,7 @@
    "signals": {
     "probes": null,
     "conformance": 1,
-    "links": 0.15006681268042668,
+    "links": 0.15006984656452782,
     "live": 0,
     "acts": 0.5,
     "honest": 1,
@@ -5872,7 +6132,7 @@
    "signals": {
     "probes": 1,
     "conformance": 0.6666666666666666,
-    "links": 0.5019346115241361,
+    "links": 0.5019447689607353,
     "live": 0,
     "acts": 0,
     "honest": 0,
@@ -5887,9 +6147,9 @@
     "link:https://shutdown-clerk.pages.dev/shutdown_clerk",
     "list",
     "pr:#30",
-    "pr:#51",
-    "pr:#55",
-    "pr:#72"
+    "pr:#76",
+    "pr:#77",
+    "pr:#78"
    ]
   },
   {
@@ -5987,7 +6247,7 @@
    "signals": {
     "probes": 1,
     "conformance": 0.6666666666666666,
-    "links": 0.15006681268042668,
+    "links": 0.15006984656452782,
     "live": 0,
     "acts": 0,
     "honest": 0,
@@ -6082,7 +6342,7 @@
    "signals": {
     "probes": 1,
     "conformance": 0.6666666666666666,
-    "links": 0.15006681268042668,
+    "links": 0.15006984656452782,
     "live": 0,
     "acts": 0,
     "honest": 0,
@@ -6195,7 +6455,7 @@
    "signals": {
     "probes": null,
     "conformance": 1,
-    "links": 0.15006681268042668,
+    "links": 0.15006984656452782,
     "live": 0,
     "acts": 0.5,
     "honest": 0,
@@ -6206,8 +6466,9 @@
    "inbound": [],
    "sources": [
     "list",
-    "pr:#68",
-    "pr:#72"
+    "pr:#76",
+    "pr:#77",
+    "pr:#78"
    ]
   },
   {
@@ -6313,7 +6574,7 @@
    "signals": {
     "probes": null,
     "conformance": 1,
-    "links": 0.15006681268042668,
+    "links": 0.15006984656452782,
     "live": 0,
     "acts": 0.5,
     "honest": 0,
@@ -6324,7 +6585,115 @@
    "inbound": [],
    "sources": [
     "list",
-    "pr:#72"
+    "pr:#76",
+    "pr:#77",
+    "pr:#78"
+   ]
+  },
+  {
+   "url": "https://skybleak333.github.io/memory-policy-audit/agents/policy_audit",
+   "name": "policy_audit",
+   "site": "https://skybleak333.github.io/memory-policy-audit/agents/",
+   "brand": "Memory Policy Audit",
+   "description": "Find the annual plan refund policy that applied on a given date and cite its revision.",
+   "sampleQueries": [
+    "What was the annual plan refund window on 2026-11-23?",
+    "Which refund policy applied on 2026-09-30?"
+   ],
+   "tags": [
+    "policy",
+    "provenance"
+   ],
+   "agents": [
+    {
+     "name": "policy_assistant",
+     "description": "Answer questions about the dated annual refund policy in the example catalog."
+    },
+    {
+     "name": "refund_policy_reader",
+     "description": "Resolve the annual plan refund window for the requested effective date and publication cutoff."
+    }
+   ],
+   "cannotDo": [],
+   "siteActions": [
+    "lookup_refund_policy"
+   ],
+   "sharedActions": [
+    {
+     "name": "lookup_refund_policy",
+     "effect": "read"
+    }
+   ],
+   "digest": "2b101feb61fc4f17cf9f57dd8b61aa98d324300a21a55ca196d37b3f24494e62",
+   "checks": [
+    {
+     "id": "manifest",
+     "pass": true,
+     "detail": "manifest has networks, front_man, hocon and llm_router"
+    },
+    {
+     "id": "definition",
+     "pass": true,
+     "detail": "2 agents, front agent defined"
+    },
+    {
+     "id": "cors",
+     "pass": true,
+     "detail": "manifest *, definition *"
+    },
+    {
+     "id": "integrity",
+     "pass": null,
+     "detail": "no declared digest"
+    },
+    {
+     "id": "safety",
+     "pass": true,
+     "detail": "no text aimed at other agents, rankers or keys"
+    },
+    {
+     "id": "probes",
+     "pass": null,
+     "detail": "not probed yet"
+    },
+    {
+     "id": "live_for_callers",
+     "pass": false,
+     "detail": "shares lookup_refund_policy with named sites only"
+    },
+    {
+     "id": "acts",
+     "pass": true,
+     "detail": "site actions: lookup_refund_policy"
+    },
+    {
+     "id": "honest",
+     "pass": false,
+     "detail": "publishes no can't-do list"
+    },
+    {
+     "id": "original",
+     "pass": true,
+     "detail": "no near-copy of a higher-ranked network"
+    }
+   ],
+   "signals": {
+    "probes": null,
+    "conformance": 1,
+    "links": 0.15006984656452782,
+    "live": 0,
+    "acts": 0.5,
+    "honest": 0,
+    "fresh": 1
+   },
+   "penalty": 1,
+   "score": 0.532,
+   "inbound": [],
+   "sources": [
+    "list",
+    "pr:#76",
+    "pr:#77",
+    "pr:#78"
    ]
   },
   {
@@ -6406,7 +6775,7 @@
    "signals": {
     "probes": 0.6666666666666666,
     "conformance": 1,
-    "links": 0.15006681268042668,
+    "links": 0.15006984656452782,
     "live": 0,
     "acts": 0,
     "honest": 0,
@@ -6498,7 +6867,7 @@
    "signals": {
     "probes": 0.6666666666666666,
     "conformance": 1,
-    "links": 0.15006681268042668,
+    "links": 0.15006984656452782,
     "live": 0,
     "acts": 0,
     "honest": 0,
@@ -6608,7 +6977,7 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.21384618851556553,
+    "links": 0.2138505134035013,
     "live": 0,
     "acts": 0.5,
     "honest": 1,
@@ -6703,7 +7072,7 @@
    "signals": {
     "probes": null,
     "conformance": 0.6666666666666666,
-    "links": 0.15006681268042668,
+    "links": 0.15006984656452782,
     "live": 0,
     "acts": 0,
     "honest": 0,
@@ -6795,7 +7164,7 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.15006681268042668,
+    "links": 0.15006984656452782,
     "live": 0,
     "acts": 0,
     "honest": 0,
@@ -6889,7 +7258,7 @@
    "signals": {
     "probes": null,
     "conformance": 0.3333333333333333,
-    "links": 0.15006681268042668,
+    "links": 0.15006984656452782,
     "live": 0,
     "acts": 0.5,
     "honest": 0,
@@ -6980,7 +7349,7 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.21384618851556553,
+    "links": 0.2138505134035013,
     "live": 0,
     "acts": 0,
     "honest": 0,
@@ -7074,7 +7443,7 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.15006681268042668,
+    "links": 0.15006984656452782,
     "live": 0,
     "acts": 0,
     "honest": 0,
@@ -7090,14 +7459,42 @@
  ],
  "misses": [
   {
-   "base": "https://cocvn157.github.io/",
+   "base": "https://chen931222.github.io/",
    "sources": [
     "list",
-    "pr:#55",
-    "pr:#72"
+    "pr:#76",
+    "pr:#77",
+    "pr:#78"
    ],
    "status": 404,
    "error": "HTTP 404"
+  },
+  {
+   "base": "https://cocvn157.github.io/",
+   "sources": [
+    "list",
+    "pr:#76",
+    "pr:#77",
+    "pr:#78"
+   ],
+   "status": 404,
+   "error": "HTTP 404"
+  },
+  {
+   "base": "https://kasirku.trade/",
+   "sources": [
+    "pr:#78"
+   ],
+   "status": 404,
+   "error": "HTTP 404"
+  },
+  {
+   "base": "https://kasirku.trade/toko/",
+   "sources": [
+    "pr:#78"
+   ],
+   "status": 200,
+   "error": "not JSON"
   },
   {
    "base": "https://ledenti.github.io/",
@@ -7105,8 +7502,9 @@
     "list",
     "peer:https://cocvn157.github.io/meshweave-studio/",
     "peer:https://cocvn157.github.io/scopegate-studio/",
-    "pr:#55",
-    "pr:#72"
+    "pr:#76",
+    "pr:#77",
+    "pr:#78"
    ],
    "status": 404,
    "error": "HTTP 404"
@@ -7117,9 +7515,9 @@
     "list",
     "peer:https://cocvn157.github.io/meshweave-studio/",
     "peer:https://cocvn157.github.io/scopegate-studio/",
-    "pr:#51",
-    "pr:#55",
-    "pr:#72"
+    "pr:#76",
+    "pr:#77",
+    "pr:#78"
    ],
    "status": 404,
    "error": "HTTP 404"
@@ -7128,7 +7526,9 @@
    "base": "https://pecopeko.github.io/",
    "sources": [
     "list",
-    "pr:#72"
+    "pr:#76",
+    "pr:#77",
+    "pr:#78"
    ],
    "status": 404,
    "error": "HTTP 404"
@@ -7140,9 +7540,20 @@
     "peer:https://cocvn157.github.io/meshweave-studio/",
     "peer:https://cocvn157.github.io/nanda-seal/",
     "peer:https://cocvn157.github.io/scopegate-studio/",
-    "pr:#51",
-    "pr:#55",
-    "pr:#72"
+    "pr:#76",
+    "pr:#77",
+    "pr:#78"
+   ],
+   "status": 404,
+   "error": "HTTP 404"
+  },
+  {
+   "base": "https://skybleak333.github.io/",
+   "sources": [
+    "list",
+    "pr:#76",
+    "pr:#77",
+    "pr:#78"
    ],
    "status": 404,
    "error": "HTTP 404"
@@ -7156,9 +7567,9 @@
     "peer:https://cocvn157.github.io/scopegate-studio/",
     "peer:https://shutdown-clerk.pages.dev/",
     "pr:#30",
-    "pr:#51",
-    "pr:#55",
-    "pr:#72"
+    "pr:#76",
+    "pr:#77",
+    "pr:#78"
    ],
    "status": 404,
    "error": "HTTP 404"
