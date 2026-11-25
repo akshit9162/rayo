@@ -46,6 +46,7 @@ export async function crawl({ seeds, fetcher, previous = null, maxSites = 300, c
   const get = withRetry(fetcher, retry);
   const prevNetworks = new Map((previous?.sites ?? []).flatMap((s) => s.networks.map((n) => [n.url, n])));
   const prevEdges = previous?.edges ?? [];
+  const prevSites = new Map((previous?.sites ?? []).map((s) => [normalizeBase(s.base), s]));
   const seen = new Map(); // base -> sources
   const sites = [];
   const misses = [];
@@ -71,7 +72,22 @@ export async function crawl({ seeds, fetcher, previous = null, maxSites = 300, c
       const sources = [...seen.get(base)].sort();
       const r = results[i];
       if (r.miss) {
-        misses.push({ base, sources, ...r.miss });
+        // A host that is down for a moment (no answer, or a 5xx) keeps its last crawl, marked stale;
+        // a 404 or a broken manifest is a real change and drops the site.
+        const old = prevSites.get(base);
+        const transient = !r.miss.status || r.miss.status >= 500;
+        if (!transient || !old || sites.length >= maxSites) {
+          misses.push({ base, sources, ...r.miss });
+          continue;
+        }
+        const note = `${r.miss.error}; using the record from ${old.fetchedAt ?? "the last crawl"}`;
+        const networks = old.networks.map((n) => ({ ...n, stale: true, problems: [...(n.problems ?? []), note] }));
+        sites.push({ ...old, networks, stale: true, sources: [...new Set([...old.sources, ...sources])].sort() });
+        log(`site ${base} unreachable, kept from the last crawl`);
+        for (const e of prevEdges.filter((e) => e.from.startsWith(base))) {
+          edges.push(e);
+          add(next, e.kind === "tool" ? splitNetworkUrl(e.to).base : e.to, `${e.kind === "tool" ? "link" : "peer"}:${e.from}`);
+        }
         continue;
       }
       // Hosts with rewrites serve one manifest under several paths; the first base in sorted order wins.

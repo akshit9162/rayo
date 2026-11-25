@@ -148,6 +148,21 @@ test("a definition that times out keeps its last good record and links", async (
   assert.match(n.problems[0], /timeout\); using the record from/);
 });
 
+test("a site that cannot be reached keeps its last good record; one that is gone (404) drops out", async () => {
+  const good = await crawl({ seeds, fetcher: web() });
+  const base = "https://good.example/";
+  const down = (status) => { const real = web(); return async (url) => (url.startsWith(base) ? { ok: false, status, finalUrl: url, error: status ? `HTTP ${status}` : "connection failed" } : real(url)); };
+  const again = await crawl({ seeds, fetcher: down(0), previous: good, retry: { backoffMs: 0 } });
+  const site = again.sites.find((s) => s.base === base);
+  assert.ok(site, "the unreachable site is kept");
+  assert.ok(site.networks.every((n) => n.stale));
+  assert.deepEqual(site.networks.map((n) => n.digest), good.sites.find((s) => s.base === base).networks.map((n) => n.digest));
+  assert.match(site.networks[0].problems.at(-1), /connection failed; using the record from/);
+  assert.ok(!again.misses.some((m) => m.base === base));
+  const gone = await crawl({ seeds, fetcher: down(404), previous: good, retry: { backoffMs: 0 } });
+  assert.ok(!gone.sites.some((s) => s.base === base), "a 404 is a real removal");
+});
+
 test("probes: unchanged probes are reused from the cache, only the changed one is asked", async () => {
   const { probeAll, PROBE_MODEL } = await import("../src/probe.mjs");
   const calls = [];
