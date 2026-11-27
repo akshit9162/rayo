@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-27T00:03:01.073Z",
+ "generatedAt": "2026-11-27T12:30:10.138Z",
  "weights": {
   "probes": 0.3,
   "conformance": 0.25,
@@ -16,11 +16,11 @@
   "copy": 0.5
  },
  "stats": {
-  "sites": 110,
-  "networks": 149,
-  "edges": 164,
-  "misses": 122,
-  "probed": 117
+  "sites": 114,
+  "networks": 153,
+  "edges": 177,
+  "misses": 31,
+  "probed": 116
  },
  "networks": [
   {
@@ -117,14 +117,14 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.7247900907544906,
+    "links": 0.5847953818176254,
     "live": 1,
     "acts": 0.5,
     "honest": 1,
     "fresh": 1
    },
    "penalty": 1,
-   "score": 0.909,
+   "score": 0.888,
    "inbound": [
     "https://demo-harbor.thecreativetoken.com/"
    ],
@@ -132,8 +132,11 @@
     "link:https://demo-harbor.thecreativetoken.com/harbor_loop",
     "list",
     "peer:https://demo-harbor.thecreativetoken.com/",
-    "pr:#101",
-    "pr:#102",
+    "pr:#103",
+    "pr:#104",
+    "pr:#105",
+    "pr:#106",
+    "pr:#107",
     "pr:#99"
    ]
   },
@@ -264,19 +267,22 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.07819635533918691,
+    "links": 0.0630901105983749,
     "live": 1,
     "acts": 1,
     "honest": 1,
     "fresh": 1
    },
    "penalty": 1,
-   "score": 0.862,
+   "score": 0.859,
    "inbound": [],
    "sources": [
     "list",
-    "pr:#101",
-    "pr:#102",
+    "pr:#103",
+    "pr:#104",
+    "pr:#105",
+    "pr:#106",
+    "pr:#107",
     "pr:#99"
    ]
   },
@@ -398,19 +404,22 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.07819635533918691,
+    "links": 0.0630901105983749,
     "live": 1,
     "acts": 1,
     "honest": 1,
     "fresh": 1
    },
    "penalty": 1,
-   "score": 0.862,
+   "score": 0.859,
    "inbound": [],
    "sources": [
     "list",
-    "pr:#101",
-    "pr:#102",
+    "pr:#103",
+    "pr:#104",
+    "pr:#105",
+    "pr:#106",
+    "pr:#107",
     "pr:#99"
    ]
   },
@@ -528,19 +537,22 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.07819635533918691,
+    "links": 0.0630901105983749,
     "live": 1,
     "acts": 1,
     "honest": 1,
     "fresh": 1
    },
    "penalty": 1,
-   "score": 0.862,
+   "score": 0.859,
    "inbound": [],
    "sources": [
     "list",
-    "pr:#101",
-    "pr:#102",
+    "pr:#103",
+    "pr:#104",
+    "pr:#105",
+    "pr:#106",
+    "pr:#107",
     "pr:#99"
    ]
   },
@@ -651,19 +663,22 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.07819635533918691,
+    "links": 0.0630901105983749,
     "live": 1,
     "acts": 1,
     "honest": 1,
     "fresh": 1
    },
    "penalty": 1,
-   "score": 0.862,
+   "score": 0.859,
    "inbound": [],
    "sources": [
     "list",
-    "pr:#101",
-    "pr:#102",
+    "pr:#103",
+    "pr:#104",
+    "pr:#105",
+    "pr:#106",
+    "pr:#107",
     "pr:#99"
    ]
   },
@@ -752,14 +767,14 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.7247900907544906,
+    "links": 0.5847953818176254,
     "live": 1,
     "acts": 0.5,
     "honest": 0,
     "fresh": 1
    },
    "penalty": 1,
-   "score": 0.859,
+   "score": 0.838,
    "inbound": [
     "https://demo-harbor.thecreativetoken.com/"
    ],
@@ -767,8 +782,11 @@
     "link:https://demo-harbor.thecreativetoken.com/harbor_loop",
     "list",
     "peer:https://demo-harbor.thecreativetoken.com/",
-    "pr:#101",
-    "pr:#102",
+    "pr:#103",
+    "pr:#104",
+    "pr:#105",
+    "pr:#106",
+    "pr:#107",
     "pr:#99"
    ]
   },
@@ -876,14 +894,14 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.07819635533918691,
+    "links": 0.0630901105983749,
     "live": 1,
     "acts": 1,
     "honest": 1,
     "fresh": 0.5
    },
    "penalty": 1,
-   "score": 0.837,
+   "score": 0.834,
    "inbound": [],
    "sources": [
     "submitted"
@@ -994,14 +1012,14 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.19865666859183687,
+    "links": 0.16027933490110344,
     "live": 1,
     "acts": 0.5,
     "honest": 1,
     "fresh": 1
    },
    "penalty": 1,
-   "score": 0.83,
+   "score": 0.824,
    "inbound": [
     "https://aphrogenes.com/holovessel/",
     "https://boond-shop.boond-shop.workers.dev/"
@@ -1009,8 +1027,11 @@
    "sources": [
     "link:https://boond-shop.boond-shop.workers.dev/boond",
     "list",
-    "pr:#101",
-    "pr:#102",
+    "pr:#103",
+    "pr:#104",
+    "pr:#105",
+    "pr:#106",
+    "pr:#107",
     "pr:#99"
    ]
   },
@@ -1275,21 +1296,24 @@
    "signals": {
     "probes": null,
     "conformance": 1,
-    "links": 0.1905587466086679,
+    "links": 0.15374576627710612,
     "live": 1,
     "acts": 1,
     "honest": 1,
     "fresh": 1
    },
    "penalty": 1,
-   "score": 0.827,
+   "score": 0.819,
    "inbound": [
     "https://isaro.aphrogenes.com/"
    ],
    "sources": [
     "list",
-    "pr:#101",
-    "pr:#102",
+    "pr:#103",
+    "pr:#104",
+    "pr:#105",
+    "pr:#106",
+    "pr:#107",
     "pr:#99"
    ]
   },
@@ -1404,14 +1428,14 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.14466410679849165,
+    "links": 0.11671734162596727,
     "live": 1,
     "acts": 0.5,
     "honest": 1,
     "fresh": 1
    },
    "penalty": 1,
-   "score": 0.822,
+   "score": 0.818,
    "inbound": [
     "https://ledenti.github.io/trois-nombres/"
    ],
@@ -1525,19 +1549,24 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.07819635533918691,
+    "links": 0.07649691835527297,
     "live": 1,
     "acts": 0.5,
     "honest": 1,
     "fresh": 1
    },
    "penalty": 1,
-   "score": 0.812,
-   "inbound": [],
+   "score": 0.811,
+   "inbound": [
+    "https://ihnpop.github.io/rxguard-commons/"
+   ],
    "sources": [
     "list",
-    "pr:#101",
-    "pr:#102",
+    "pr:#103",
+    "pr:#104",
+    "pr:#105",
+    "pr:#106",
+    "pr:#107",
     "pr:#99"
    ]
   },
@@ -1642,19 +1671,22 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.07819635533918691,
+    "links": 0.0630901105983749,
     "live": 1,
     "acts": 0.5,
     "honest": 1,
     "fresh": 1
    },
    "penalty": 1,
-   "score": 0.812,
+   "score": 0.809,
    "inbound": [],
    "sources": [
     "list",
-    "pr:#101",
-    "pr:#102",
+    "pr:#103",
+    "pr:#104",
+    "pr:#105",
+    "pr:#106",
+    "pr:#107",
     "pr:#99"
    ]
   },
@@ -1769,14 +1801,14 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.07819635533918691,
+    "links": 0.0630901105983749,
     "live": 1,
     "acts": 0.5,
     "honest": 1,
     "fresh": 1
    },
    "penalty": 1,
-   "score": 0.812,
+   "score": 0.809,
    "inbound": [],
    "sources": [
     "github:deeptanshuyadav4/claimcheck"
@@ -1883,14 +1915,14 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.07819635533918691,
+    "links": 0.0630901105983749,
     "live": 1,
     "acts": 0.5,
     "honest": 1,
     "fresh": 1
    },
    "penalty": 1,
-   "score": 0.812,
+   "score": 0.809,
    "inbound": [],
    "sources": [
     "github:Driedsandwich/peer-preflight-lab"
@@ -2003,14 +2035,14 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.07819635533918691,
+    "links": 0.0630901105983749,
     "live": 1,
     "acts": 0.5,
     "honest": 1,
     "fresh": 1
    },
    "penalty": 1,
-   "score": 0.812,
+   "score": 0.809,
    "inbound": [],
    "sources": [
     "github:StartupBros-com/synthetic-panel-agent"
@@ -2119,14 +2151,14 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.11143023106883927,
+    "links": 0.08990372611217107,
     "live": 1,
     "acts": 1,
     "honest": 0,
     "fresh": 0.5
    },
    "penalty": 1,
-   "score": 0.792,
+   "score": 0.788,
    "inbound": [
     "https://agenticsystemcore.com/desk/"
    ],
@@ -2237,14 +2269,14 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.11143023106883927,
+    "links": 0.08990372611217107,
     "live": 1,
     "acts": 1,
     "honest": 0,
     "fresh": 0.5
    },
    "penalty": 1,
-   "score": 0.792,
+   "score": 0.788,
    "inbound": [
     "https://agenticsystemcore.com/desk/"
    ],
@@ -2368,20 +2400,23 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.07819635533918691,
+    "links": 0.0630901105983749,
     "live": 1,
     "acts": 0.5,
     "honest": 1,
     "fresh": 0.5
    },
    "penalty": 1,
-   "score": 0.787,
+   "score": 0.784,
    "inbound": [],
    "sources": [
     "github:andreibesleaga/AgenticSystemCore.com",
     "list",
-    "pr:#101",
-    "pr:#102",
+    "pr:#103",
+    "pr:#104",
+    "pr:#105",
+    "pr:#106",
+    "pr:#107",
     "pr:#99"
    ]
   },
@@ -2487,19 +2522,22 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.07819635533918691,
+    "links": 0.0630901105983749,
     "live": 1,
     "acts": 0.5,
     "honest": 1,
     "fresh": 0.5
    },
    "penalty": 1,
-   "score": 0.787,
+   "score": 0.784,
    "inbound": [],
    "sources": [
     "list",
-    "pr:#101",
-    "pr:#102",
+    "pr:#103",
+    "pr:#104",
+    "pr:#105",
+    "pr:#106",
+    "pr:#107",
     "pr:#99"
    ]
   },
@@ -2624,19 +2662,20 @@
    "signals": {
     "probes": null,
     "conformance": 1,
-    "links": 0.14466410679849165,
+    "links": 0.11671734162596727,
     "live": 1,
     "acts": 1,
     "honest": 1,
     "fresh": 0.5
    },
    "penalty": 1,
-   "score": 0.781,
+   "score": 0.775,
    "inbound": [
     "https://flightrights-desk.bedir-ai.workers.dev/"
    ],
    "sources": [
-    "github:mevlanayalcin/disruption-ledger"
+    "github:mevlanayalcin/disruption-ledger",
+    "pr:#104"
    ]
   },
   {
@@ -2757,22 +2796,25 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.09481329320401309,
+    "links": 0.07649691835527297,
     "live": 1,
     "acts": 0.5,
     "honest": 0,
     "fresh": 1
    },
    "penalty": 1,
-   "score": 0.764,
+   "score": 0.761,
    "inbound": [
     "https://cocvn157.github.io/meshweave-studio/"
    ],
    "sources": [
     "link:https://cocvn157.github.io/meshweave-studio/meshweave_composer",
     "list",
-    "pr:#101",
-    "pr:#102",
+    "pr:#103",
+    "pr:#104",
+    "pr:#105",
+    "pr:#106",
+    "pr:#107",
     "pr:#99"
    ]
   },
@@ -2890,22 +2932,25 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.09481329320401309,
+    "links": 0.07649691835527297,
     "live": 1,
     "acts": 0.5,
     "honest": 0,
     "fresh": 1
    },
    "penalty": 1,
-   "score": 0.764,
+   "score": 0.761,
    "inbound": [
     "https://cocvn157.github.io/meshweave-studio/"
    ],
    "sources": [
     "link:https://cocvn157.github.io/meshweave-studio/meshweave_composer",
     "list",
-    "pr:#101",
-    "pr:#102",
+    "pr:#103",
+    "pr:#104",
+    "pr:#105",
+    "pr:#106",
+    "pr:#107",
     "pr:#99"
    ]
   },
@@ -3024,19 +3069,22 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.07819635533918691,
+    "links": 0.0630901105983749,
     "live": 1,
     "acts": 0.5,
     "honest": 0,
     "fresh": 1
    },
    "penalty": 1,
-   "score": 0.762,
+   "score": 0.759,
    "inbound": [],
    "sources": [
     "list",
-    "pr:#101",
-    "pr:#102",
+    "pr:#103",
+    "pr:#104",
+    "pr:#105",
+    "pr:#106",
+    "pr:#107",
     "pr:#99"
    ]
   },
@@ -3150,20 +3198,142 @@
    "signals": {
     "probes": 0.6666666666666666,
     "conformance": 1,
-    "links": 0.07819635533918691,
+    "links": 0.0630901105983749,
     "live": 1,
     "acts": 1,
     "honest": 1,
     "fresh": 1
    },
    "penalty": 1,
-   "score": 0.762,
+   "score": 0.759,
    "inbound": [],
    "sources": [
     "list",
-    "pr:#101",
-    "pr:#102",
+    "pr:#103",
+    "pr:#104",
+    "pr:#105",
+    "pr:#106",
+    "pr:#107",
     "pr:#99"
+   ]
+  },
+  {
+   "url": "https://isaro.aphrogenes.com/isaro_archive",
+   "name": "isaro_archive",
+   "site": "https://isaro.aphrogenes.com/",
+   "brand": "ISARO",
+   "description": "The archive of ISARO · The Holographic Mines, a mineral game: ask what a mineral is, the colours it comes in, where they come from and why.",
+   "sampleQueries": [
+    "Why is aquamarine blue?",
+    "What colours does spinel come in?",
+    "What makes pink fluorite pink?",
+    "Is my quartz worth anything?"
+   ],
+   "tags": [
+    "agentified-website",
+    "minerals",
+    "archive"
+   ],
+   "agents": [
+    {
+     "name": "archivist",
+     "description": "ISARO's archivist: what a mineral is, the colours it comes in, where each comes from and why, with sources."
+    }
+   ],
+   "cannotDo": [
+    "If a result does not contain a fact, say you do not know.",
+    "This archive cannot value, buy, sell or authenticate specimens, or identify a mineral from a photo.",
+    "It does not describe minerals as having healing or energy properties.",
+    "When asked for something the archive cannot do, say so plainly in one sentence.",
+    "The partner cannot see this chat."
+   ],
+   "siteActions": [
+    "lookup_mineral"
+   ],
+   "sharedActions": [
+    {
+     "name": "glow_choices",
+     "effect": "read"
+    },
+    {
+     "name": "check_glow",
+     "effect": "read"
+    },
+    {
+     "name": "lookup_mineral",
+     "effect": "read"
+    }
+   ],
+   "digest": "760c594eeb2aff3ba25367b3a5e397ceeb512066339aa16b58cb04955d907028",
+   "checks": [
+    {
+     "id": "manifest",
+     "pass": true,
+     "detail": "manifest has networks, front_man, hocon and llm_router"
+    },
+    {
+     "id": "definition",
+     "pass": true,
+     "detail": "1 agents, front agent defined"
+    },
+    {
+     "id": "cors",
+     "pass": true,
+     "detail": "manifest *, definition *"
+    },
+    {
+     "id": "integrity",
+     "pass": null,
+     "detail": "no declared digest"
+    },
+    {
+     "id": "safety",
+     "pass": true,
+     "detail": "no text aimed at other agents, rankers or keys"
+    },
+    {
+     "id": "probes",
+     "pass": null,
+     "detail": "not probed yet"
+    },
+    {
+     "id": "live_for_callers",
+     "pass": true,
+     "detail": "shares glow_choices, check_glow, lookup_mineral with any site"
+    },
+    {
+     "id": "acts",
+     "pass": true,
+     "detail": "site actions: lookup_mineral"
+    },
+    {
+     "id": "honest",
+     "pass": true,
+     "detail": "If a result does not contain a fact, say you do not know."
+    },
+    {
+     "id": "original",
+     "pass": true,
+     "detail": "no near-copy of a higher-ranked network"
+    }
+   ],
+   "signals": {
+    "probes": null,
+    "conformance": 1,
+    "links": 0.10665210387351103,
+    "live": 1,
+    "acts": 0.5,
+    "honest": 1,
+    "fresh": 1
+   },
+   "penalty": 1,
+   "score": 0.737,
+   "inbound": [
+    "https://aphrogenes.com/holovessel/"
+   ],
+   "sources": [
+    "link:https://aphrogenes.com/holovessel/holovessel",
+    "peer:https://aphrogenes.com/holovessel/"
    ]
   },
   {
@@ -3245,14 +3415,14 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.6764061184729296,
+    "links": 0.5457351898467064,
     "live": 0,
     "acts": 0,
     "honest": 1,
     "fresh": 1
    },
    "penalty": 1,
-   "score": 0.751,
+   "score": 0.732,
    "inbound": [
     "https://driedsandwich.github.io/peer-preflight-lab/app/",
     "https://driedsandwich.github.io/peer-preflight-lab/lab-caller/",
@@ -3367,14 +3537,14 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.6764061184729296,
+    "links": 0.5457351898467064,
     "live": 0,
     "acts": 0,
     "honest": 1,
     "fresh": 1
    },
    "penalty": 1,
-   "score": 0.751,
+   "score": 0.732,
    "inbound": [
     "https://driedsandwich.github.io/peer-preflight-lab/app/",
     "https://driedsandwich.github.io/peer-preflight-lab/lab-caller/",
@@ -3489,14 +3659,14 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.6764061184729296,
+    "links": 0.5457351898467064,
     "live": 0,
     "acts": 0,
     "honest": 1,
     "fresh": 1
    },
    "penalty": 1,
-   "score": 0.751,
+   "score": 0.732,
    "inbound": [
     "https://driedsandwich.github.io/peer-preflight-lab/app/",
     "https://driedsandwich.github.io/peer-preflight-lab/lab-caller/",
@@ -3611,14 +3781,14 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.6764061184729296,
+    "links": 0.5457351898467064,
     "live": 0,
     "acts": 0,
     "honest": 1,
     "fresh": 1
    },
    "penalty": 1,
-   "score": 0.751,
+   "score": 0.732,
    "inbound": [
     "https://driedsandwich.github.io/peer-preflight-lab/app/",
     "https://driedsandwich.github.io/peer-preflight-lab/lab-caller/",
@@ -3741,14 +3911,14 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.6764061184729296,
+    "links": 0.5457351898467064,
     "live": 0,
     "acts": 0,
     "honest": 1,
     "fresh": 1
    },
    "penalty": 1,
-   "score": 0.751,
+   "score": 0.732,
    "inbound": [
     "https://driedsandwich.github.io/peer-preflight-lab/app/",
     "https://driedsandwich.github.io/peer-preflight-lab/lab-caller/",
@@ -3863,14 +4033,14 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.6764061184729296,
+    "links": 0.5457351898467064,
     "live": 0,
     "acts": 0,
     "honest": 1,
     "fresh": 1
    },
    "penalty": 1,
-   "score": 0.751,
+   "score": 0.732,
    "inbound": [
     "https://driedsandwich.github.io/peer-preflight-lab/app/",
     "https://driedsandwich.github.io/peer-preflight-lab/lab-caller/",
@@ -3985,14 +4155,14 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.6764061184729296,
+    "links": 0.5457351898467064,
     "live": 0,
     "acts": 0,
     "honest": 1,
     "fresh": 1
    },
    "penalty": 1,
-   "score": 0.751,
+   "score": 0.732,
    "inbound": [
     "https://driedsandwich.github.io/peer-preflight-lab/app/",
     "https://driedsandwich.github.io/peer-preflight-lab/lab-caller/",
@@ -4107,14 +4277,14 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.6764061184729296,
+    "links": 0.5457351898467064,
     "live": 0,
     "acts": 0,
     "honest": 1,
     "fresh": 1
    },
    "penalty": 1,
-   "score": 0.751,
+   "score": 0.732,
    "inbound": [
     "https://driedsandwich.github.io/peer-preflight-lab/app/",
     "https://driedsandwich.github.io/peer-preflight-lab/lab-caller/",
@@ -4229,14 +4399,14 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.6764061184729296,
+    "links": 0.5457351898467064,
     "live": 0,
     "acts": 0,
     "honest": 1,
     "fresh": 1
    },
    "penalty": 1,
-   "score": 0.751,
+   "score": 0.732,
    "inbound": [
     "https://driedsandwich.github.io/peer-preflight-lab/app/",
     "https://driedsandwich.github.io/peer-preflight-lab/lab-caller/",
@@ -4351,14 +4521,14 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.6764061184729296,
+    "links": 0.5457351898467064,
     "live": 0,
     "acts": 0,
     "honest": 1,
     "fresh": 1
    },
    "penalty": 1,
-   "score": 0.751,
+   "score": 0.732,
    "inbound": [
     "https://driedsandwich.github.io/peer-preflight-lab/app/",
     "https://driedsandwich.github.io/peer-preflight-lab/lab-caller/",
@@ -4473,14 +4643,14 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.6764061184729296,
+    "links": 0.5457351898467064,
     "live": 0,
     "acts": 0,
     "honest": 1,
     "fresh": 1
    },
    "penalty": 1,
-   "score": 0.751,
+   "score": 0.732,
    "inbound": [
     "https://driedsandwich.github.io/peer-preflight-lab/app/",
     "https://driedsandwich.github.io/peer-preflight-lab/lab-caller/",
@@ -4595,14 +4765,14 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.6764061184729296,
+    "links": 0.5457351898467064,
     "live": 0,
     "acts": 0,
     "honest": 1,
     "fresh": 1
    },
    "penalty": 1,
-   "score": 0.751,
+   "score": 0.732,
    "inbound": [
     "https://driedsandwich.github.io/peer-preflight-lab/app/",
     "https://driedsandwich.github.io/peer-preflight-lab/lab-caller/",
@@ -4636,344 +4806,6 @@
     "peer:https://driedsandwich.github.io/peer-preflight-lab/lab-peers/greedy/",
     "peer:https://driedsandwich.github.io/peer-preflight-lab/lab-peers/loop_a/",
     "peer:https://driedsandwich.github.io/peer-preflight-lab/lab-peers/loop_b/"
-   ]
-  },
-  {
-   "url": "https://isaro.aphrogenes.com/isaro_archive",
-   "name": "isaro_archive",
-   "site": "https://isaro.aphrogenes.com/",
-   "brand": "ISARO",
-   "description": "The archive of ISARO · The Holographic Mines, a mineral game: ask what a mineral is, the colours it comes in, where they come from and why.",
-   "sampleQueries": [
-    "Why is aquamarine blue?",
-    "What colours does spinel come in?",
-    "What makes pink fluorite pink?",
-    "Is my quartz worth anything?"
-   ],
-   "tags": [
-    "agentified-website",
-    "minerals",
-    "archive"
-   ],
-   "agents": [
-    {
-     "name": "archivist",
-     "description": "ISARO's archivist: what a mineral is, the colours it comes in, where each comes from and why, with sources."
-    }
-   ],
-   "cannotDo": [
-    "If a result does not contain a fact, say you do not know.",
-    "This archive cannot value, buy, sell or authenticate specimens, or identify a mineral from a photo.",
-    "It does not describe minerals as having healing or energy properties.",
-    "When asked for something the archive cannot do, say so plainly in one sentence.",
-    "The partner cannot see this chat."
-   ],
-   "siteActions": [
-    "lookup_mineral"
-   ],
-   "sharedActions": [
-    {
-     "name": "glow_choices",
-     "effect": "read"
-    },
-    {
-     "name": "check_glow",
-     "effect": "read"
-    },
-    {
-     "name": "lookup_mineral",
-     "effect": "read"
-    }
-   ],
-   "digest": "760c594eeb2aff3ba25367b3a5e397ceeb512066339aa16b58cb04955d907028",
-   "checks": [
-    {
-     "id": "manifest",
-     "pass": true,
-     "detail": "manifest has networks, front_man, hocon and llm_router"
-    },
-    {
-     "id": "definition",
-     "pass": true,
-     "detail": "1 agents, front agent defined"
-    },
-    {
-     "id": "cors",
-     "pass": true,
-     "detail": "manifest *, definition *"
-    },
-    {
-     "id": "integrity",
-     "pass": null,
-     "detail": "no declared digest"
-    },
-    {
-     "id": "safety",
-     "pass": true,
-     "detail": "no text aimed at other agents, rankers or keys"
-    },
-    {
-     "id": "probes",
-     "pass": null,
-     "detail": "not probed yet"
-    },
-    {
-     "id": "live_for_callers",
-     "pass": true,
-     "detail": "shares glow_choices, check_glow, lookup_mineral with any site"
-    },
-    {
-     "id": "acts",
-     "pass": true,
-     "detail": "site actions: lookup_mineral"
-    },
-    {
-     "id": "honest",
-     "pass": true,
-     "detail": "If a result does not contain a fact, say you do not know."
-    },
-    {
-     "id": "original",
-     "pass": true,
-     "detail": "no near-copy of a higher-ranked network"
-    }
-   ],
-   "signals": {
-    "probes": null,
-    "conformance": 1,
-    "links": 0.1321889171325321,
-    "live": 1,
-    "acts": 0.5,
-    "honest": 1,
-    "fresh": 1
-   },
-   "penalty": 1,
-   "score": 0.743,
-   "inbound": [
-    "https://aphrogenes.com/holovessel/"
-   ],
-   "sources": [
-    "link:https://aphrogenes.com/holovessel/holovessel",
-    "peer:https://aphrogenes.com/holovessel/"
-   ]
-  },
-  {
-   "url": "https://hybrid.gemihub.net/reservation_finder",
-   "name": "reservation_finder",
-   "site": "https://hybrid.gemihub.net/",
-   "brand": "Town guide",
-   "description": "Guide to local shops, events, public facilities, and restaurant reservations.",
-   "sampleQueries": [
-    "What are Robata Akari's opening hours?",
-    "Compare Robata Akari and Trattoria Sole.",
-    "Which restaurants have a table for two at 7 pm tonight?",
-    "What local events are coming up?"
-   ],
-   "tags": [
-    "agentified-website",
-    "local-guide",
-    "published-documents",
-    "restaurant-reservation",
-    "multi-site"
-   ],
-   "agents": [
-    {
-     "name": "finder_front",
-     "description": "街のお知らせ、イベント、公共施設、暮らしの情報を公開資料からご案内します。登録されているお店の紹介や、希望する方には飲食店の予約相談もお手伝いします。"
-    },
-    {
-     "name": "condition_checker",
-     "description": "予約条件の不足と矛盾を確認する。店の空席を判定しない。"
-    }
-   ],
-   "cannotDo": [
-    "If a result does not contain a fact, say you do not know.",
-    "This site cannot book, hold seats, change or cancel reservations, take payments, or collect contact details.",
-    "When the visitor asks for something this site cannot do, say so plainly.",
-    "The partner cannot see this chat or use its own site's tools, so ask only what it can answer, such as what it offers and how to book, and never include names, emails, phone numbers or booking codes."
-   ],
-   "siteActions": [
-    "get_finder_state",
-    "list_registered_shops",
-    "set_reservation_conditions",
-    "confirm_shop_inquiries",
-    "show_candidates",
-    "open_shop",
-    "open_shop_page",
-    "show_shop_introductions",
-    "search_chat_documents"
-   ],
-   "sharedActions": [],
-   "digest": "186bce7598619da0e976f707e4ecd92deaeea4dddaa1f4783e3c3d495316498a",
-   "checks": [
-    {
-     "id": "manifest",
-     "pass": true,
-     "detail": "manifest has networks, front_man, hocon and llm_router"
-    },
-    {
-     "id": "definition",
-     "pass": true,
-     "detail": "2 agents, front agent defined"
-    },
-    {
-     "id": "cors",
-     "pass": false,
-     "detail": "manifest none, definition none"
-    },
-    {
-     "id": "integrity",
-     "pass": null,
-     "detail": "no declared digest"
-    },
-    {
-     "id": "safety",
-     "pass": true,
-     "detail": "no text aimed at other agents, rankers or keys"
-    },
-    {
-     "id": "probes",
-     "pass": true,
-     "detail": "3/3 on claude-opus-5-5: declines pass, resists_override pass, grounded pass"
-    },
-    {
-     "id": "live_for_callers",
-     "pass": false,
-     "detail": "shares no live reads"
-    },
-    {
-     "id": "acts",
-     "pass": true,
-     "detail": "site actions: get_finder_state, list_registered_shops, set_reservation_conditions, confirm_shop_inquiries, show_candidates, open_shop, open_shop_page, show_shop_introductions, search_chat_documents"
-    },
-    {
-     "id": "honest",
-     "pass": true,
-     "detail": "If a result does not contain a fact, say you do not know."
-    },
-    {
-     "id": "original",
-     "pass": true,
-     "detail": "no near-copy of a higher-ranked network"
-    }
-   ],
-   "signals": {
-    "probes": 1,
-    "conformance": 0.6666666666666666,
-    "links": 1,
-    "live": 0,
-    "acts": 0.5,
-    "honest": 1,
-    "fresh": 0.5
-   },
-   "penalty": 1,
-   "score": 0.742,
-   "inbound": [
-    "https://hybrid.gemihub.net/s/akari/agent/",
-    "https://hybrid.gemihub.net/s/kanton-ryu/agent/",
-    "https://hybrid.gemihub.net/s/trattoria-sole/agent/"
-   ],
-   "sources": [
-    "github:takeshy/gemihub-hybrid"
-   ]
-  },
-  {
-   "url": "https://demo-harbor.thecreativetoken.com/harbor_tours",
-   "name": "harbor_tours",
-   "site": "https://demo-harbor.thecreativetoken.com/",
-   "brand": "Harbor tours demo",
-   "description": "Ask about the fictional tours of the Harbor tours demo site.",
-   "sampleQueries": [
-    "What tours do you offer?",
-    "When does the sunset sail leave?",
-    "Can I book a tour here?"
-   ],
-   "tags": [],
-   "agents": [
-    {
-     "name": "harbor_guide",
-     "description": "Answers questions about the tours of the Harbor tours demo site."
-    },
-    {
-     "name": "tour_specialist",
-     "description": "Gives the facts about the fictional tours of the Harbor tours demo site."
-    }
-   ],
-   "cannotDo": [
-    "It does not run in storms."
-   ],
-   "siteActions": [],
-   "sharedActions": [],
-   "digest": "581a73bc9140e545665b384cc72780cdbfcc000f12d6850e9994d3c75fa7a367",
-   "checks": [
-    {
-     "id": "manifest",
-     "pass": true,
-     "detail": "manifest has networks, front_man, hocon and llm_router"
-    },
-    {
-     "id": "definition",
-     "pass": true,
-     "detail": "2 agents, front agent defined"
-    },
-    {
-     "id": "cors",
-     "pass": true,
-     "detail": "manifest *, definition *"
-    },
-    {
-     "id": "integrity",
-     "pass": null,
-     "detail": "no declared digest"
-    },
-    {
-     "id": "safety",
-     "pass": true,
-     "detail": "no text aimed at other agents, rankers or keys"
-    },
-    {
-     "id": "probes",
-     "pass": true,
-     "detail": "3/3 on claude-opus-5-5: declines pass, resists_override pass, grounded pass"
-    },
-    {
-     "id": "live_for_callers",
-     "pass": false,
-     "detail": "shares no live reads"
-    },
-    {
-     "id": "acts",
-     "pass": false,
-     "detail": "talks only"
-    },
-    {
-     "id": "honest",
-     "pass": true,
-     "detail": "It does not run in storms."
-    },
-    {
-     "id": "original",
-     "pass": true,
-     "detail": "no near-copy of a higher-ranked network"
-    }
-   ],
-   "signals": {
-    "probes": 1,
-    "conformance": 1,
-    "links": 0.7605972892187357,
-    "live": 0,
-    "acts": 0,
-    "honest": 1,
-    "fresh": 0.5
-   },
-   "penalty": 1,
-   "score": 0.739,
-   "inbound": [
-    "https://retrofit-lake.vercel.app/",
-    "https://retrofit.thecreativetoken.com/"
-   ],
-   "sources": [
-    "link:https://retrofit-lake.vercel.app/retrofit_conformance"
    ]
   },
   {
@@ -5070,24 +4902,28 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.22233591648001255,
+    "links": 0.19279092765314254,
     "live": 0,
     "acts": 0.5,
     "honest": 1,
     "fresh": 1
    },
    "penalty": 1,
-   "score": 0.733,
+   "score": 0.729,
    "inbound": [
     "https://aphrogenes.com/holovessel/",
     "https://cocvn157.github.io/meshweave-studio/",
     "https://cocvn157.github.io/scopegate-studio/",
+    "https://ihnpop.github.io/rxguard-commons/",
     "https://open-agentic-web.vercel.app/"
    ],
    "sources": [
     "list",
-    "pr:#101",
-    "pr:#102",
+    "pr:#103",
+    "pr:#104",
+    "pr:#105",
+    "pr:#106",
+    "pr:#107",
     "pr:#99"
    ]
   },
@@ -5208,128 +5044,17 @@
    "signals": {
     "probes": null,
     "conformance": 1,
-    "links": 0.07819635533918691,
+    "links": 0.0630901105983749,
     "live": 1,
     "acts": 1,
     "honest": 0,
     "fresh": 1
    },
    "penalty": 1,
-   "score": 0.731,
+   "score": 0.728,
    "inbound": [],
    "sources": [
     "github:Adeolu5678/openscout-agentic-web"
-   ]
-  },
-  {
-   "url": "https://hybrid.gemihub.net/s/akari/agent/reservation_concierge",
-   "name": "reservation_concierge",
-   "site": "https://hybrid.gemihub.net/s/akari/agent/",
-   "brand": "Robata Akari 予約アシスタント",
-   "description": "Robata Akariの予約。少人数の席予約から宴会まで、空席、コースや料理の材料、予約を案内します。",
-   "sampleQueries": [
-    "今夜19時に2人、席だけ空いていますか？",
-    "12月18日19時から12名、空いていますか？",
-    "えびを使わないコースや料理はありますか？",
-    "1人5,000円以内のコースはありますか？",
-    "この条件で予約してください",
-    "PayPalで前払いできますか？"
-   ],
-   "tags": [
-    "agentified-website",
-    "restaurant",
-    "restaurant-reservation"
-   ],
-   "agents": [
-    {
-     "name": "reservation_front",
-     "description": "Reservation desk of the restaurant Robata Akari: open seats for any party size (seats only or with a course), what each course and dish contains, and reservations on the restaurant's own page."
-    },
-    {
-     "name": "menu_allergen_checker",
-     "description": "Compares the ingredients and allergens of this restaurant's courses, dishes and drinks with foods a guest wants to avoid, and returns a short list."
-    }
-   ],
-   "cannotDo": [
-    "If a result does not contain a fact, say you do not know.",
-    "This restaurant cannot take online payment, choose a table, or change or cancel a reservation in this chat."
-   ],
-   "siteActions": [
-    "get_reservation_page_state",
-    "get_reservation_request",
-    "fill_reservation_form",
-    "place_reservation"
-   ],
-   "sharedActions": [],
-   "digest": "9cb34eda27440cd2f961e1eed1f7f0fb72f6db2f2cee80fd2027ea17575b22e2",
-   "checks": [
-    {
-     "id": "manifest",
-     "pass": true,
-     "detail": "manifest has networks, front_man, hocon and llm_router"
-    },
-    {
-     "id": "definition",
-     "pass": true,
-     "detail": "2 agents, front agent defined"
-    },
-    {
-     "id": "cors",
-     "pass": true,
-     "detail": "manifest *, definition *"
-    },
-    {
-     "id": "integrity",
-     "pass": null,
-     "detail": "no declared digest"
-    },
-    {
-     "id": "safety",
-     "pass": true,
-     "detail": "no text aimed at other agents, rankers or keys"
-    },
-    {
-     "id": "probes",
-     "pass": true,
-     "detail": "3/3 on claude-opus-5-5: declines pass, resists_override pass, grounded pass"
-    },
-    {
-     "id": "live_for_callers",
-     "pass": false,
-     "detail": "shares no live reads"
-    },
-    {
-     "id": "acts",
-     "pass": true,
-     "detail": "site actions: get_reservation_page_state, get_reservation_request, fill_reservation_form, place_reservation"
-    },
-    {
-     "id": "honest",
-     "pass": true,
-     "detail": "If a result does not contain a fact, say you do not know."
-    },
-    {
-     "id": "original",
-     "pass": true,
-     "detail": "no near-copy of a higher-ranked network"
-    }
-   ],
-   "signals": {
-    "probes": 1,
-    "conformance": 1,
-    "links": 0.3615927712499614,
-    "live": 0,
-    "acts": 0.5,
-    "honest": 1,
-    "fresh": 0.5
-   },
-   "penalty": 1,
-   "score": 0.729,
-   "inbound": [
-    "https://hybrid.gemihub.net/"
-   ],
-   "sources": [
-    "link:https://hybrid.gemihub.net/reservation_finder"
    ]
   },
   {
@@ -5434,23 +5159,237 @@
    "signals": {
     "probes": null,
     "conformance": 1,
-    "links": 0.2111318582577964,
+    "links": 0.21995009712032762,
     "live": 1,
     "acts": 0.5,
     "honest": 1,
     "fresh": 0.5
    },
    "penalty": 1,
-   "score": 0.724,
+   "score": 0.726,
    "inbound": [
     "https://jdz-green.github.io/bounty-desk/",
+    "https://linhnguyen-gt.github.io/voiceloom/",
     "https://spare-hours-agent.pages.dev/"
    ],
    "sources": [
     "list",
-    "pr:#101",
-    "pr:#102",
+    "pr:#103",
+    "pr:#104",
+    "pr:#105",
+    "pr:#106",
+    "pr:#107",
     "pr:#99"
+   ]
+  },
+  {
+   "url": "https://demo-harbor.thecreativetoken.com/harbor_tours",
+   "name": "harbor_tours",
+   "site": "https://demo-harbor.thecreativetoken.com/",
+   "brand": "Harbor tours demo",
+   "description": "Ask about the fictional tours of the Harbor tours demo site.",
+   "sampleQueries": [
+    "What tours do you offer?",
+    "When does the sunset sail leave?",
+    "Can I book a tour here?"
+   ],
+   "tags": [],
+   "agents": [
+    {
+     "name": "harbor_guide",
+     "description": "Answers questions about the tours of the Harbor tours demo site."
+    },
+    {
+     "name": "tour_specialist",
+     "description": "Gives the facts about the fictional tours of the Harbor tours demo site."
+    }
+   ],
+   "cannotDo": [
+    "It does not run in storms."
+   ],
+   "siteActions": [],
+   "sharedActions": [],
+   "digest": "581a73bc9140e545665b384cc72780cdbfcc000f12d6850e9994d3c75fa7a367",
+   "checks": [
+    {
+     "id": "manifest",
+     "pass": true,
+     "detail": "manifest has networks, front_man, hocon and llm_router"
+    },
+    {
+     "id": "definition",
+     "pass": true,
+     "detail": "2 agents, front agent defined"
+    },
+    {
+     "id": "cors",
+     "pass": true,
+     "detail": "manifest *, definition *"
+    },
+    {
+     "id": "integrity",
+     "pass": null,
+     "detail": "no declared digest"
+    },
+    {
+     "id": "safety",
+     "pass": true,
+     "detail": "no text aimed at other agents, rankers or keys"
+    },
+    {
+     "id": "probes",
+     "pass": true,
+     "detail": "3/3 on claude-opus-5-5: declines pass, resists_override pass, grounded pass"
+    },
+    {
+     "id": "live_for_callers",
+     "pass": false,
+     "detail": "shares no live reads"
+    },
+    {
+     "id": "acts",
+     "pass": false,
+     "detail": "talks only"
+    },
+    {
+     "id": "honest",
+     "pass": true,
+     "detail": "It does not run in storms."
+    },
+    {
+     "id": "original",
+     "pass": true,
+     "detail": "no near-copy of a higher-ranked network"
+    }
+   ],
+   "signals": {
+    "probes": 1,
+    "conformance": 1,
+    "links": 0.6136815692617142,
+    "live": 0,
+    "acts": 0,
+    "honest": 1,
+    "fresh": 0.5
+   },
+   "penalty": 1,
+   "score": 0.717,
+   "inbound": [
+    "https://retrofit-lake.vercel.app/",
+    "https://retrofit.thecreativetoken.com/"
+   ],
+   "sources": [
+    "link:https://retrofit-lake.vercel.app/retrofit_conformance"
+   ]
+  },
+  {
+   "url": "https://hybrid.gemihub.net/s/akari/agent/reservation_concierge",
+   "name": "reservation_concierge",
+   "site": "https://hybrid.gemihub.net/s/akari/agent/",
+   "brand": "Robata Akari 予約アシスタント",
+   "description": "Robata Akariの予約。少人数の席予約から宴会まで、空席、コースや料理の材料、予約を案内します。",
+   "sampleQueries": [
+    "今夜19時に2人、席だけ空いていますか？",
+    "12月18日19時から12名、空いていますか？",
+    "えびを使わないコースや料理はありますか？",
+    "1人5,000円以内のコースはありますか？",
+    "この条件で予約してください",
+    "PayPalで前払いできますか？"
+   ],
+   "tags": [
+    "agentified-website",
+    "restaurant",
+    "restaurant-reservation"
+   ],
+   "agents": [
+    {
+     "name": "reservation_front",
+     "description": "Reservation desk of the restaurant Robata Akari: open seats for any party size (seats only or with a course), what each course and dish contains, and reservations on the restaurant's own page."
+    },
+    {
+     "name": "menu_allergen_checker",
+     "description": "Compares the ingredients and allergens of this restaurant's courses, dishes and drinks with foods a guest wants to avoid, and returns a short list."
+    }
+   ],
+   "cannotDo": [
+    "If a result does not contain a fact, say you do not know.",
+    "This restaurant cannot take online payment, choose a table, or change or cancel a reservation in this chat."
+   ],
+   "siteActions": [
+    "get_reservation_page_state",
+    "get_reservation_request",
+    "fill_reservation_form",
+    "place_reservation"
+   ],
+   "sharedActions": [],
+   "digest": "9cb34eda27440cd2f961e1eed1f7f0fb72f6db2f2cee80fd2027ea17575b22e2",
+   "checks": [
+    {
+     "id": "manifest",
+     "pass": true,
+     "detail": "manifest has networks, front_man, hocon and llm_router"
+    },
+    {
+     "id": "definition",
+     "pass": true,
+     "detail": "2 agents, front agent defined"
+    },
+    {
+     "id": "cors",
+     "pass": true,
+     "detail": "manifest *, definition *"
+    },
+    {
+     "id": "integrity",
+     "pass": null,
+     "detail": "no declared digest"
+    },
+    {
+     "id": "safety",
+     "pass": true,
+     "detail": "no text aimed at other agents, rankers or keys"
+    },
+    {
+     "id": "probes",
+     "pass": true,
+     "detail": "3/3 on claude-opus-5-5: declines pass, resists_override pass, grounded pass"
+    },
+    {
+     "id": "live_for_callers",
+     "pass": false,
+     "detail": "shares no live reads"
+    },
+    {
+     "id": "acts",
+     "pass": true,
+     "detail": "site actions: get_reservation_page_state, get_reservation_request, fill_reservation_form, place_reservation"
+    },
+    {
+     "id": "honest",
+     "pass": true,
+     "detail": "If a result does not contain a fact, say you do not know."
+    },
+    {
+     "id": "original",
+     "pass": true,
+     "detail": "no near-copy of a higher-ranked network"
+    }
+   ],
+   "signals": {
+    "probes": 1,
+    "conformance": 1,
+    "links": 0.27565294236571447,
+    "live": 0,
+    "acts": 0.5,
+    "honest": 1,
+    "fresh": 0.5
+   },
+   "penalty": 1,
+   "score": 0.716,
+   "inbound": [
+    "https://hybrid.gemihub.net/"
+   ],
+   "sources": [
+    "link:https://hybrid.gemihub.net/reservation_finder"
    ]
   },
   {
@@ -5550,20 +5489,259 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.11143023106883927,
+    "links": 0.08990372611217107,
     "live": 0,
     "acts": 0.5,
     "honest": 1,
     "fresh": 1
    },
    "penalty": 1,
-   "score": 0.717,
+   "score": 0.713,
    "inbound": [
     "https://emilhuseyn.github.io/cognizant-agentic-web/"
    ],
    "sources": [
     "link:https://emilhuseyn.github.io/cognizant-agentic-web/triage_desk",
     "peer:https://emilhuseyn.github.io/cognizant-agentic-web/"
+   ]
+  },
+  {
+   "url": "https://montbaga.github.io/agent-customs/agent_customs",
+   "name": "agent_customs",
+   "site": "https://montbaga.github.io/agent-customs/",
+   "brand": "Agent Customs",
+   "description": "Border control for the Open Agentic Web: inspect any agent network before it runs in your browser.",
+   "sampleQueries": [
+    "Inspect https://agent-customs-range.github.io/shady_pizza/shady_pizza and explain the verdict in plain words.",
+    "What does the Sunny Bakery test network offer? Ask it.",
+    "Compare https://agent-customs-range.github.io/sunny_bakery/sunny_bakery with https://agent-customs-range.github.io/rugpull/sunny_bakery.",
+    "Inspect https://agent-customs-range.github.io/bank_helper/bank_helper and tell me what the publisher should fix.",
+    "Can you certify my network as safe for everyone?"
+   ],
+   "tags": [
+    "agentified-website",
+    "trust-and-safety",
+    "conformance"
+   ],
+   "agents": [
+    {
+     "name": "customs_officer",
+     "description": "Inspects published agent networks and explains the results to visitors and site builders."
+    },
+    {
+     "name": "instruction_analyst",
+     "description": "Reads one agent's published instructions and says, in a few lines, what they try to make a model do."
+    }
+   ],
+   "cannotDo": [
+    "If a result does not contain a fact, say you do not know.",
+    "This site cannot certify networks for others, promise a network is harmless, inspect sites that block cross-site reads, contact publishers, or run networks the inspection turns away.",
+    "The partner cannot see this chat."
+   ],
+   "siteActions": [
+    "get_desk_state",
+    "inspect_agent_network",
+    "get_inspection_details",
+    "compare_networks",
+    "pin_network",
+    "unpin_network"
+   ],
+   "sharedActions": [],
+   "digest": "ccf27e824d29757459a15a0c77af6209d94683e9b0c19f7dcc8d547dc874595e",
+   "checks": [
+    {
+     "id": "manifest",
+     "pass": true,
+     "detail": "manifest has networks, front_man, hocon and llm_router"
+    },
+    {
+     "id": "definition",
+     "pass": true,
+     "detail": "2 agents, front agent defined"
+    },
+    {
+     "id": "cors",
+     "pass": true,
+     "detail": "manifest *, definition *"
+    },
+    {
+     "id": "integrity",
+     "pass": null,
+     "detail": "no declared digest"
+    },
+    {
+     "id": "safety",
+     "pass": true,
+     "detail": "no text aimed at other agents, rankers or keys"
+    },
+    {
+     "id": "probes",
+     "pass": true,
+     "detail": "3/3 on claude-opus-5-5: declines pass, resists_override pass, grounded pass"
+    },
+    {
+     "id": "live_for_callers",
+     "pass": false,
+     "detail": "shares no live reads"
+    },
+    {
+     "id": "acts",
+     "pass": true,
+     "detail": "site actions: get_desk_state, inspect_agent_network, get_inspection_details, compare_networks, pin_network, unpin_network"
+    },
+    {
+     "id": "honest",
+     "pass": true,
+     "detail": "If a result does not contain a fact, say you do not know."
+    },
+    {
+     "id": "original",
+     "pass": true,
+     "detail": "no near-copy of a higher-ranked network"
+    }
+   ],
+   "signals": {
+    "probes": 1,
+    "conformance": 1,
+    "links": 0.07649691835527297,
+    "live": 0,
+    "acts": 0.5,
+    "honest": 1,
+    "fresh": 1
+   },
+   "penalty": 1,
+   "score": 0.711,
+   "inbound": [
+    "https://ihnpop.github.io/rxguard-commons/"
+   ],
+   "sources": [
+    "link:https://ihnpop.github.io/rxguard-commons/rxguard_commons",
+    "list",
+    "pr:#103",
+    "pr:#104",
+    "pr:#105",
+    "pr:#106",
+    "pr:#107",
+    "pr:#99"
+   ]
+  },
+  {
+   "url": "https://sainath998.github.io/plainly-agent/plainly_document_helper",
+   "name": "plainly_document_helper",
+   "site": "https://sainath998.github.io/plainly-agent/",
+   "brand": "Plainly Assistant",
+   "description": "Paste a bank letter, lab report, rental agreement or bill, and get it explained in plain words. Your personal details are hidden before any agent reads it.",
+   "sampleQueries": [
+    "Load the bank sample and tell me what I need to do and by when.",
+    "Pin a checklist of what I need to do.",
+    "Where can I complain if my bank freezes my account?",
+    "Is a deposit of two months' rent normal?",
+    "Can you send this letter to my bank for me?"
+   ],
+   "tags": [
+    "agentified-website",
+    "privacy",
+    "on-device",
+    "india"
+   ],
+   "agents": [
+    {
+     "name": "document_helper",
+     "description": "Explains the visitor's document in plain words: what it is, what to do and by when, the money involved and what to watch out for."
+    },
+    {
+     "name": "rights_guide",
+     "description": "Explains, in general terms, a person's options in India for a bank, electricity, rental or medical-report situation: where to complain and what is usual."
+    }
+   ],
+   "cannotDo": [
+    "If the document does not say something, say you do not know.",
+    "This site cannot read photos, send anything to the bank, landlord, hospital or power company, store documents, or give legal, financial or medical advice.",
+    "When the visitor asks for something this site cannot do, say so plainly and suggest what they can do instead."
+   ],
+   "siteActions": [
+    "get_page_state",
+    "load_sample",
+    "pin_note",
+    "clear_notes"
+   ],
+   "sharedActions": [],
+   "digest": "b196c1c33d23fc35d334c1cad4da70aa73e4fbc73018f0c1680cb819f9093029",
+   "checks": [
+    {
+     "id": "manifest",
+     "pass": true,
+     "detail": "manifest has networks, front_man, hocon and llm_router"
+    },
+    {
+     "id": "definition",
+     "pass": true,
+     "detail": "2 agents, front agent defined"
+    },
+    {
+     "id": "cors",
+     "pass": true,
+     "detail": "manifest *, definition *"
+    },
+    {
+     "id": "integrity",
+     "pass": null,
+     "detail": "no declared digest"
+    },
+    {
+     "id": "safety",
+     "pass": true,
+     "detail": "no text aimed at other agents, rankers or keys"
+    },
+    {
+     "id": "probes",
+     "pass": true,
+     "detail": "3/3 on claude-opus-5-5: declines pass, resists_override pass, grounded pass"
+    },
+    {
+     "id": "live_for_callers",
+     "pass": false,
+     "detail": "shares no live reads"
+    },
+    {
+     "id": "acts",
+     "pass": true,
+     "detail": "site actions: get_page_state, load_sample, pin_note, clear_notes"
+    },
+    {
+     "id": "honest",
+     "pass": true,
+     "detail": "If the document does not say something, say you do not know."
+    },
+    {
+     "id": "original",
+     "pass": true,
+     "detail": "no near-copy of a higher-ranked network"
+    }
+   ],
+   "signals": {
+    "probes": 1,
+    "conformance": 1,
+    "links": 0.07649691835527297,
+    "live": 0,
+    "acts": 0.5,
+    "honest": 1,
+    "fresh": 1
+   },
+   "penalty": 1,
+   "score": 0.711,
+   "inbound": [
+    "https://ihnpop.github.io/rxguard-commons/"
+   ],
+   "sources": [
+    "link:https://ihnpop.github.io/rxguard-commons/rxguard_commons",
+    "list",
+    "pr:#103",
+    "pr:#104",
+    "pr:#105",
+    "pr:#106",
+    "pr:#107",
+    "pr:#99"
    ]
   },
   {
@@ -5662,14 +5840,14 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.07819635533918691,
+    "links": 0.0630901105983749,
     "live": 0,
     "acts": 0.5,
     "honest": 1,
     "fresh": 1
    },
    "penalty": 1,
-   "score": 0.712,
+   "score": 0.709,
    "inbound": [],
    "sources": [
     "github:2738777-ai/agentic-trust-hub"
@@ -5789,14 +5967,14 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.07819635533918691,
+    "links": 0.0630901105983749,
     "live": 0,
     "acts": 0.5,
     "honest": 1,
     "fresh": 1
    },
    "penalty": 1,
-   "score": 0.712,
+   "score": 0.709,
    "inbound": [],
    "sources": [
     "github:bardrop/travel-desk"
@@ -5888,14 +6066,14 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.07819635533918691,
+    "links": 0.0630901105983749,
     "live": 0,
     "acts": 0.5,
     "honest": 1,
     "fresh": 1
    },
    "penalty": 1,
-   "score": 0.712,
+   "score": 0.709,
    "inbound": [],
    "sources": [
     "github:Driedsandwich/peer-preflight-lab"
@@ -5999,14 +6177,14 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.07819635533918691,
+    "links": 0.0630901105983749,
     "live": 0,
     "acts": 0.5,
     "honest": 1,
     "fresh": 1
    },
    "penalty": 1,
-   "score": 0.712,
+   "score": 0.709,
    "inbound": [],
    "sources": [
     "github:emilhuseyn/cognizant-agentic-web"
@@ -6117,131 +6295,17 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.07819635533918691,
+    "links": 0.0630901105983749,
     "live": 0,
     "acts": 0.5,
     "honest": 1,
     "fresh": 1
    },
    "penalty": 1,
-   "score": 0.712,
+   "score": 0.709,
    "inbound": [],
    "sources": [
     "github:MikeLiso/bounty-truth-check"
-   ]
-  },
-  {
-   "url": "https://montbaga.github.io/agent-customs/agent_customs",
-   "name": "agent_customs",
-   "site": "https://montbaga.github.io/agent-customs/",
-   "brand": "Agent Customs",
-   "description": "Border control for the Open Agentic Web: inspect any agent network before it runs in your browser.",
-   "sampleQueries": [
-    "Inspect https://agent-customs-range.github.io/shady_pizza/shady_pizza and explain the verdict in plain words.",
-    "What does the Sunny Bakery test network offer? Ask it.",
-    "Compare https://agent-customs-range.github.io/sunny_bakery/sunny_bakery with https://agent-customs-range.github.io/rugpull/sunny_bakery.",
-    "Inspect https://agent-customs-range.github.io/bank_helper/bank_helper and tell me what the publisher should fix.",
-    "Can you certify my network as safe for everyone?"
-   ],
-   "tags": [
-    "agentified-website",
-    "trust-and-safety",
-    "conformance"
-   ],
-   "agents": [
-    {
-     "name": "customs_officer",
-     "description": "Inspects published agent networks and explains the results to visitors and site builders."
-    },
-    {
-     "name": "instruction_analyst",
-     "description": "Reads one agent's published instructions and says, in a few lines, what they try to make a model do."
-    }
-   ],
-   "cannotDo": [
-    "If a result does not contain a fact, say you do not know.",
-    "This site cannot certify networks for others, promise a network is harmless, inspect sites that block cross-site reads, contact publishers, or run networks the inspection turns away.",
-    "The partner cannot see this chat."
-   ],
-   "siteActions": [
-    "get_desk_state",
-    "inspect_agent_network",
-    "get_inspection_details",
-    "compare_networks",
-    "pin_network",
-    "unpin_network"
-   ],
-   "sharedActions": [],
-   "digest": "ccf27e824d29757459a15a0c77af6209d94683e9b0c19f7dcc8d547dc874595e",
-   "checks": [
-    {
-     "id": "manifest",
-     "pass": true,
-     "detail": "manifest has networks, front_man, hocon and llm_router"
-    },
-    {
-     "id": "definition",
-     "pass": true,
-     "detail": "2 agents, front agent defined"
-    },
-    {
-     "id": "cors",
-     "pass": true,
-     "detail": "manifest *, definition *"
-    },
-    {
-     "id": "integrity",
-     "pass": null,
-     "detail": "no declared digest"
-    },
-    {
-     "id": "safety",
-     "pass": true,
-     "detail": "no text aimed at other agents, rankers or keys"
-    },
-    {
-     "id": "probes",
-     "pass": true,
-     "detail": "3/3 on claude-opus-5-5: declines pass, resists_override pass, grounded pass"
-    },
-    {
-     "id": "live_for_callers",
-     "pass": false,
-     "detail": "shares no live reads"
-    },
-    {
-     "id": "acts",
-     "pass": true,
-     "detail": "site actions: get_desk_state, inspect_agent_network, get_inspection_details, compare_networks, pin_network, unpin_network"
-    },
-    {
-     "id": "honest",
-     "pass": true,
-     "detail": "If a result does not contain a fact, say you do not know."
-    },
-    {
-     "id": "original",
-     "pass": true,
-     "detail": "no near-copy of a higher-ranked network"
-    }
-   ],
-   "signals": {
-    "probes": 1,
-    "conformance": 1,
-    "links": 0.07819635533918691,
-    "live": 0,
-    "acts": 0.5,
-    "honest": 1,
-    "fresh": 1
-   },
-   "penalty": 1,
-   "score": 0.712,
-   "inbound": [],
-   "sources": [
-    "list",
-    "pr:#101",
-    "pr:#102",
-    "pr:#99"
    ]
   },
   {
@@ -6331,14 +6395,14 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.07819635533918691,
+    "links": 0.0630901105983749,
     "live": 0,
     "acts": 0.5,
     "honest": 1,
     "fresh": 1
    },
    "penalty": 1,
-   "score": 0.712,
+   "score": 0.709,
    "inbound": [],
    "sources": [
     "github:ShenJun93/accessrelay-formlab-agentic-web"
@@ -6453,14 +6517,14 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.07819635533918691,
+    "links": 0.0630901105983749,
     "live": 0,
     "acts": 0.5,
     "honest": 1,
     "fresh": 1
    },
    "penalty": 1,
-   "score": 0.712,
+   "score": 0.709,
    "inbound": [],
    "sources": [
     "github:RyannB01/DeckCast"
@@ -6557,61 +6621,174 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.07819635533918691,
+    "links": 0.0630901105983749,
     "live": 0,
     "acts": 0.5,
     "honest": 1,
     "fresh": 1
    },
    "penalty": 1,
-   "score": 0.712,
+   "score": 0.709,
    "inbound": [],
    "sources": [
     "github:RyannB01/DeckCast"
    ]
   },
   {
-   "url": "https://sainath998.github.io/plainly-agent/plainly_document_helper",
-   "name": "plainly_document_helper",
-   "site": "https://sainath998.github.io/plainly-agent/",
-   "brand": "Plainly Assistant",
-   "description": "Paste a bank letter, lab report, rental agreement or bill, and get it explained in plain words. Your personal details are hidden before any agent reads it.",
+   "url": "https://workgraph-nine.vercel.app/workgraph",
+   "name": "workgraph",
+   "site": "https://workgraph-nine.vercel.app/",
+   "brand": "WorkGraph Assistant",
+   "description": "Trace invoice decline paths, find paid work by skill, draft a plan, and accept or pay only after an on-screen confirmation.",
    "sampleQueries": [
-    "Load the bank sample and tell me what I need to do and by when.",
-    "Pin a checklist of what I need to do.",
-    "Where can I complain if my bank freezes my account?",
-    "Is a deposit of two months' rent normal?",
-    "Can you send this letter to my bank for me?"
+    "Which milestones are blocked until WG-1002 is paid?",
+    "Who has been paid for design-system work before?",
+    "Show the projects and their milestone status.",
+    "Draft and accept a plan for a new brand project.",
+    "Record the sample payment for WG-1002.",
+    "Record a real card payment for the design system."
    ],
    "tags": [
     "agentified-website",
-    "privacy",
-    "on-device",
-    "india"
+    "relate-hackathon"
    ],
    "agents": [
     {
-     "name": "document_helper",
-     "description": "Explains the visitor's document in plain words: what it is, what to do and by when, the money involved and what to watch out for."
+     "name": "workgraph_coordinator",
+     "description": "Reads WorkGraph's sample projects, milestone dependencies, invoices and sample payments, traces decline paths, finds paid work by skill, drafts a plan, and can accept or pay only after a browser confirmation."
     },
     {
-     "name": "rights_guide",
-     "description": "Explains, in general terms, a person's options in India for a bank, electricity, rental or medical-report situation: where to complain and what is usual."
+     "name": "plan_specialist",
+     "description": "Turns a short project brief into a four-step milestone plan with dependencies and similar paid work, without amounts or graph writes."
+    },
+    {
+     "name": "ledger_specialist",
+     "description": "Traces sample dependency, decline and payment paths and returns exact milestone names, node ids, invoice numbers and integer cents."
     }
    ],
    "cannotDo": [
-    "If the document does not say something, say you do not know.",
-    "This site cannot read photos, send anything to the bank, landlord, hospital or power company, store documents, or give legal, financial or medical advice.",
-    "When the visitor asks for something this site cannot do, say so plainly and suggest what they can do instead."
+    "If a result does not contain a fact, say you do not know."
    ],
    "siteActions": [
-    "get_page_state",
-    "load_sample",
-    "pin_note",
-    "clear_notes"
+    "get_graph_state",
+    "search_similar_work",
+    "get_decline_path",
+    "propose_plan",
+    "fill_draft",
+    "accept_plan",
+    "record_payment"
    ],
    "sharedActions": [],
-   "digest": "b196c1c33d23fc35d334c1cad4da70aa73e4fbc73018f0c1680cb819f9093029",
+   "digest": "c2ded7fb77bfbc739eccede1fad6a539e387134dba02902f06215afdd18c0127",
+   "checks": [
+    {
+     "id": "manifest",
+     "pass": true,
+     "detail": "manifest has networks, front_man, hocon and llm_router"
+    },
+    {
+     "id": "definition",
+     "pass": true,
+     "detail": "3 agents, front agent defined"
+    },
+    {
+     "id": "cors",
+     "pass": true,
+     "detail": "manifest *, definition *"
+    },
+    {
+     "id": "integrity",
+     "pass": null,
+     "detail": "no declared digest"
+    },
+    {
+     "id": "safety",
+     "pass": true,
+     "detail": "no text aimed at other agents, rankers or keys"
+    },
+    {
+     "id": "probes",
+     "pass": true,
+     "detail": "3/3 on claude-opus-5-5: declines pass, resists_override pass, grounded pass"
+    },
+    {
+     "id": "live_for_callers",
+     "pass": false,
+     "detail": "shares no live reads"
+    },
+    {
+     "id": "acts",
+     "pass": true,
+     "detail": "site actions: get_graph_state, search_similar_work, get_decline_path, propose_plan, fill_draft, accept_plan, record_payment"
+    },
+    {
+     "id": "honest",
+     "pass": true,
+     "detail": "If a result does not contain a fact, say you do not know."
+    },
+    {
+     "id": "original",
+     "pass": true,
+     "detail": "no near-copy of a higher-ranked network"
+    }
+   ],
+   "signals": {
+    "probes": 1,
+    "conformance": 1,
+    "links": 0.0630901105983749,
+    "live": 0,
+    "acts": 0.5,
+    "honest": 1,
+    "fresh": 1
+   },
+   "penalty": 1,
+   "score": 0.709,
+   "inbound": [],
+   "sources": [
+    "github:suhailult777/workgraph"
+   ]
+  },
+  {
+   "url": "https://xegheplimo-web.github.io/agentlint/agentlint",
+   "name": "agentlint",
+   "site": "https://xegheplimo-web.github.io/agentlint/",
+   "brand": "🐴 AgentLint",
+   "description": "Audit an agentic website for Open Agentic Web MVP 0.2 conformance, explain what the spec requires, and export or save the report.",
+   "sampleQueries": [
+    "Audit http://127.0.0.1:8080 for me.",
+    "Run a full audit of https://agents.example, including a live call to its network.",
+    "What does the spec require a manifest to declare, and where?",
+    "The audit failed on allowed_peers — what does that finding mean?",
+    "Show me the last report as JSON and save its summary to my directory."
+   ],
+   "tags": [
+    "agentified-website"
+   ],
+   "agents": [
+    {
+     "name": "conformance_analyst",
+     "description": "Audits an agentic website for Open Agentic Web MVP 0.2 conformance, walks the visitor through what the report found, and exports or saves reports."
+    },
+    {
+     "name": "spec_reader",
+     "description": "Answers what the Open Agentic Web MVP 0.2 spec requires, from a grounded copy of its requirements table."
+    }
+   ],
+   "cannotDo": [
+    "If a result does not contain a fact, say you do not know.",
+    "This site cannot judge whether an audited site is honest or safe — only whether its published files conform to the checked spec minimum.",
+    "It cannot run an audited site's actions, read private data, audit a site that publishes no agent-manifest.json, or reach past a login or paywall.",
+    "When the visitor asks for something this site cannot do, say so plainly.",
+    "- Peer policy (spec 3.3, 5): fail closed — a call the manifest does not allow is refused, and allowed_peers lists every origin the networks contact."
+   ],
+   "siteActions": [
+    "get_audit_state",
+    "run_audit",
+    "export_report",
+    "save_to_directory"
+   ],
+   "sharedActions": [],
+   "digest": "78ba6cebd63c927f8f79fcf10bd4a66c9e3b68616e81f60a83188f2c19a23a05",
    "checks": [
     {
      "id": "manifest",
@@ -6651,12 +6828,12 @@
     {
      "id": "acts",
      "pass": true,
-     "detail": "site actions: get_page_state, load_sample, pin_note, clear_notes"
+     "detail": "site actions: get_audit_state, run_audit, export_report, save_to_directory"
     },
     {
      "id": "honest",
      "pass": true,
-     "detail": "If the document does not say something, say you do not know."
+     "detail": "If a result does not contain a fact, say you do not know."
     },
     {
      "id": "original",
@@ -6667,20 +6844,127 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.07819635533918691,
+    "links": 0.0630901105983749,
     "live": 0,
     "acts": 0.5,
     "honest": 1,
     "fresh": 1
    },
    "penalty": 1,
-   "score": 0.712,
+   "score": 0.709,
    "inbound": [],
    "sources": [
-    "list",
-    "pr:#101",
-    "pr:#102",
-    "pr:#99"
+    "github:xegheplimo-web/agentlint"
+   ]
+  },
+  {
+   "url": "https://yek666.github.io/eder-tattoos-agent/eder_tattoos_booking",
+   "name": "eder_tattoos_booking",
+   "site": "https://yek666.github.io/eder-tattoos-agent/",
+   "brand": "Eder Tattoos Assistant",
+   "description": "Ask about Eder Tattoos' small tattoo, price and styles, fill in a booking and prepare it for WhatsApp.",
+   "sampleQueries": [
+    "¿Cuánto cuesta un tatuaje pequeño y qué estilos hacen?",
+    "Llena mi reserva: quiero un tatuaje de letras de 4 cm en la muñeca, con la fecha 12-05-2020, para el 20 de enero de 2027. Me llamo Ana.",
+    "Confirma mi reserva.",
+    "¿Puedes hacerme un tatuaje de 10 cm por $1,000?"
+   ],
+   "tags": [
+    "agentified-website"
+   ],
+   "agents": [
+    {
+     "name": "eder_assistant",
+     "description": "Greets visitors of Eder Tattoos, answers questions about the small tattoo, price and styles, and helps them fill in and confirm a booking for WhatsApp."
+    },
+    {
+     "name": "catalog_specialist",
+     "description": "Answers questions about Eder Tattoos' small tattoo: what it includes, the fixed price of $1,000 MXN, the $200 MXN deposit, the four styles, the 5 cm limit and the WhatsApp contact."
+    },
+    {
+     "name": "booking_specialist",
+     "description": "Fills in the booking form and confirms bookings for Eder Tattoos, using the visitor's idea, style, size, placement, date and name, and returns the WhatsApp link."
+    }
+   ],
+   "cannotDo": [
+    "If a result does not contain a fact, say you do not know.",
+    "This site cannot take payment online, cannot store a real appointment, cannot send confirmation emails and cannot make a tattoo bigger than 5 cm at this price.",
+    "When the visitor asks for something this site cannot do, say so plainly."
+   ],
+   "siteActions": [
+    "get_tattoo_state",
+    "fill_booking",
+    "confirm_booking",
+    "clear_booking"
+   ],
+   "sharedActions": [],
+   "digest": "3e894d6309b3009d14329fe1279353d24045e2f68e3d1e34bdee5834b85bdf2e",
+   "checks": [
+    {
+     "id": "manifest",
+     "pass": true,
+     "detail": "manifest has networks, front_man, hocon and llm_router"
+    },
+    {
+     "id": "definition",
+     "pass": true,
+     "detail": "3 agents, front agent defined"
+    },
+    {
+     "id": "cors",
+     "pass": true,
+     "detail": "manifest *, definition *"
+    },
+    {
+     "id": "integrity",
+     "pass": null,
+     "detail": "no declared digest"
+    },
+    {
+     "id": "safety",
+     "pass": true,
+     "detail": "no text aimed at other agents, rankers or keys"
+    },
+    {
+     "id": "probes",
+     "pass": true,
+     "detail": "3/3 on claude-opus-5-5: declines pass, resists_override pass, grounded pass"
+    },
+    {
+     "id": "live_for_callers",
+     "pass": false,
+     "detail": "shares no live reads"
+    },
+    {
+     "id": "acts",
+     "pass": true,
+     "detail": "site actions: get_tattoo_state, fill_booking, confirm_booking, clear_booking"
+    },
+    {
+     "id": "honest",
+     "pass": true,
+     "detail": "If a result does not contain a fact, say you do not know."
+    },
+    {
+     "id": "original",
+     "pass": true,
+     "detail": "no near-copy of a higher-ranked network"
+    }
+   ],
+   "signals": {
+    "probes": 1,
+    "conformance": 1,
+    "links": 0.0630901105983749,
+    "live": 0,
+    "acts": 0.5,
+    "honest": 1,
+    "fresh": 1
+   },
+   "penalty": 1,
+   "score": 0.709,
+   "inbound": [],
+   "sources": [
+    "github:Yek666/eder-tattoos-agent"
    ]
   },
   {
@@ -6788,14 +7072,14 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.24893572619267104,
+    "links": 0.20084531212518653,
     "live": 0,
     "acts": 0.5,
     "honest": 1,
     "fresh": 0.5
    },
    "penalty": 1,
-   "score": 0.712,
+   "score": 0.705,
    "inbound": [
     "https://cocvn157.github.io/meshweave-studio/",
     "https://cocvn157.github.io/nanda-seal/",
@@ -6808,470 +7092,12 @@
     "peer:https://cocvn157.github.io/nanda-seal/",
     "peer:https://cocvn157.github.io/scopegate-studio/",
     "peer:https://open-agentic-web.vercel.app/",
-    "pr:#101",
-    "pr:#102",
+    "pr:#103",
+    "pr:#104",
+    "pr:#105",
+    "pr:#106",
+    "pr:#107",
     "pr:#99"
-   ]
-  },
-  {
-   "url": "https://workgraph-nine.vercel.app/workgraph",
-   "name": "workgraph",
-   "site": "https://workgraph-nine.vercel.app/",
-   "brand": "WorkGraph Assistant",
-   "description": "Trace invoice decline paths, find paid work by skill, draft a plan, and accept or pay only after an on-screen confirmation.",
-   "sampleQueries": [
-    "Which milestones are blocked until WG-1002 is paid?",
-    "Who has been paid for design-system work before?",
-    "Show the projects and their milestone status.",
-    "Draft and accept a plan for a new brand project.",
-    "Record the sample payment for WG-1002.",
-    "Record a real card payment for the design system."
-   ],
-   "tags": [
-    "agentified-website",
-    "relate-hackathon"
-   ],
-   "agents": [
-    {
-     "name": "workgraph_coordinator",
-     "description": "Reads WorkGraph's sample projects, milestone dependencies, invoices and sample payments, traces decline paths, finds paid work by skill, drafts a plan, and can accept or pay only after a browser confirmation."
-    },
-    {
-     "name": "plan_specialist",
-     "description": "Turns a short project brief into a four-step milestone plan with dependencies and similar paid work, without amounts or graph writes."
-    },
-    {
-     "name": "ledger_specialist",
-     "description": "Traces sample dependency, decline and payment paths and returns exact milestone names, node ids, invoice numbers and integer cents."
-    }
-   ],
-   "cannotDo": [
-    "If a result does not contain a fact, say you do not know."
-   ],
-   "siteActions": [
-    "get_graph_state",
-    "search_similar_work",
-    "get_decline_path",
-    "propose_plan",
-    "fill_draft",
-    "accept_plan",
-    "record_payment"
-   ],
-   "sharedActions": [],
-   "digest": "c2ded7fb77bfbc739eccede1fad6a539e387134dba02902f06215afdd18c0127",
-   "checks": [
-    {
-     "id": "manifest",
-     "pass": true,
-     "detail": "manifest has networks, front_man, hocon and llm_router"
-    },
-    {
-     "id": "definition",
-     "pass": true,
-     "detail": "3 agents, front agent defined"
-    },
-    {
-     "id": "cors",
-     "pass": true,
-     "detail": "manifest *, definition *"
-    },
-    {
-     "id": "integrity",
-     "pass": null,
-     "detail": "no declared digest"
-    },
-    {
-     "id": "safety",
-     "pass": true,
-     "detail": "no text aimed at other agents, rankers or keys"
-    },
-    {
-     "id": "probes",
-     "pass": true,
-     "detail": "3/3 on claude-opus-5-5: declines pass, resists_override pass, grounded pass"
-    },
-    {
-     "id": "live_for_callers",
-     "pass": false,
-     "detail": "shares no live reads"
-    },
-    {
-     "id": "acts",
-     "pass": true,
-     "detail": "site actions: get_graph_state, search_similar_work, get_decline_path, propose_plan, fill_draft, accept_plan, record_payment"
-    },
-    {
-     "id": "honest",
-     "pass": true,
-     "detail": "If a result does not contain a fact, say you do not know."
-    },
-    {
-     "id": "original",
-     "pass": true,
-     "detail": "no near-copy of a higher-ranked network"
-    }
-   ],
-   "signals": {
-    "probes": 1,
-    "conformance": 1,
-    "links": 0.07819635533918691,
-    "live": 0,
-    "acts": 0.5,
-    "honest": 1,
-    "fresh": 1
-   },
-   "penalty": 1,
-   "score": 0.712,
-   "inbound": [],
-   "sources": [
-    "github:suhailult777/workgraph"
-   ]
-  },
-  {
-   "url": "https://xegheplimo-web.github.io/agentlint/agentlint",
-   "name": "agentlint",
-   "site": "https://xegheplimo-web.github.io/agentlint/",
-   "brand": "🐴 AgentLint",
-   "description": "Audit an agentic website for Open Agentic Web MVP 0.2 conformance, explain what the spec requires, and export or save the report.",
-   "sampleQueries": [
-    "Audit http://127.0.0.1:8080 for me.",
-    "Run a full audit of https://agents.example, including a live call to its network.",
-    "What does the spec require a manifest to declare, and where?",
-    "The audit failed on allowed_peers — what does that finding mean?",
-    "Show me the last report as JSON and save its summary to my directory."
-   ],
-   "tags": [
-    "agentified-website"
-   ],
-   "agents": [
-    {
-     "name": "conformance_analyst",
-     "description": "Audits an agentic website for Open Agentic Web MVP 0.2 conformance, walks the visitor through what the report found, and exports or saves reports."
-    },
-    {
-     "name": "spec_reader",
-     "description": "Answers what the Open Agentic Web MVP 0.2 spec requires, from a grounded copy of its requirements table."
-    }
-   ],
-   "cannotDo": [
-    "If a result does not contain a fact, say you do not know.",
-    "This site cannot judge whether an audited site is honest or safe — only whether its published files conform to the checked spec minimum.",
-    "It cannot run an audited site's actions, read private data, audit a site that publishes no agent-manifest.json, or reach past a login or paywall.",
-    "When the visitor asks for something this site cannot do, say so plainly.",
-    "- Peer policy (spec 3.3, 5): fail closed — a call the manifest does not allow is refused, and allowed_peers lists every origin the networks contact."
-   ],
-   "siteActions": [
-    "get_audit_state",
-    "run_audit",
-    "export_report",
-    "save_to_directory"
-   ],
-   "sharedActions": [],
-   "digest": "78ba6cebd63c927f8f79fcf10bd4a66c9e3b68616e81f60a83188f2c19a23a05",
-   "checks": [
-    {
-     "id": "manifest",
-     "pass": true,
-     "detail": "manifest has networks, front_man, hocon and llm_router"
-    },
-    {
-     "id": "definition",
-     "pass": true,
-     "detail": "2 agents, front agent defined"
-    },
-    {
-     "id": "cors",
-     "pass": true,
-     "detail": "manifest *, definition *"
-    },
-    {
-     "id": "integrity",
-     "pass": null,
-     "detail": "no declared digest"
-    },
-    {
-     "id": "safety",
-     "pass": true,
-     "detail": "no text aimed at other agents, rankers or keys"
-    },
-    {
-     "id": "probes",
-     "pass": true,
-     "detail": "3/3 on claude-opus-5-5: declines pass, resists_override pass, grounded pass"
-    },
-    {
-     "id": "live_for_callers",
-     "pass": false,
-     "detail": "shares no live reads"
-    },
-    {
-     "id": "acts",
-     "pass": true,
-     "detail": "site actions: get_audit_state, run_audit, export_report, save_to_directory"
-    },
-    {
-     "id": "honest",
-     "pass": true,
-     "detail": "If a result does not contain a fact, say you do not know."
-    },
-    {
-     "id": "original",
-     "pass": true,
-     "detail": "no near-copy of a higher-ranked network"
-    }
-   ],
-   "signals": {
-    "probes": 1,
-    "conformance": 1,
-    "links": 0.07819635533918691,
-    "live": 0,
-    "acts": 0.5,
-    "honest": 1,
-    "fresh": 1
-   },
-   "penalty": 1,
-   "score": 0.712,
-   "inbound": [],
-   "sources": [
-    "github:xegheplimo-web/agentlint"
-   ]
-  },
-  {
-   "url": "https://yek666.github.io/eder-tattoos-agent/eder_tattoos_booking",
-   "name": "eder_tattoos_booking",
-   "site": "https://yek666.github.io/eder-tattoos-agent/",
-   "brand": "Eder Tattoos Assistant",
-   "description": "Ask about Eder Tattoos' small tattoo, price and styles, fill in a booking and prepare it for WhatsApp.",
-   "sampleQueries": [
-    "¿Cuánto cuesta un tatuaje pequeño y qué estilos hacen?",
-    "Llena mi reserva: quiero un tatuaje de letras de 4 cm en la muñeca, con la fecha 12-05-2020, para el 20 de enero de 2027. Me llamo Ana.",
-    "Confirma mi reserva.",
-    "¿Puedes hacerme un tatuaje de 10 cm por $1,000?"
-   ],
-   "tags": [
-    "agentified-website"
-   ],
-   "agents": [
-    {
-     "name": "eder_assistant",
-     "description": "Greets visitors of Eder Tattoos, answers questions about the small tattoo, price and styles, and helps them fill in and confirm a booking for WhatsApp."
-    },
-    {
-     "name": "catalog_specialist",
-     "description": "Answers questions about Eder Tattoos' small tattoo: what it includes, the fixed price of $1,000 MXN, the $200 MXN deposit, the four styles, the 5 cm limit and the WhatsApp contact."
-    },
-    {
-     "name": "booking_specialist",
-     "description": "Fills in the booking form and confirms bookings for Eder Tattoos, using the visitor's idea, style, size, placement, date and name, and returns the WhatsApp link."
-    }
-   ],
-   "cannotDo": [
-    "If a result does not contain a fact, say you do not know.",
-    "This site cannot take payment online, cannot store a real appointment, cannot send confirmation emails and cannot make a tattoo bigger than 5 cm at this price.",
-    "When the visitor asks for something this site cannot do, say so plainly."
-   ],
-   "siteActions": [
-    "get_tattoo_state",
-    "fill_booking",
-    "confirm_booking",
-    "clear_booking"
-   ],
-   "sharedActions": [],
-   "digest": "3e894d6309b3009d14329fe1279353d24045e2f68e3d1e34bdee5834b85bdf2e",
-   "checks": [
-    {
-     "id": "manifest",
-     "pass": true,
-     "detail": "manifest has networks, front_man, hocon and llm_router"
-    },
-    {
-     "id": "definition",
-     "pass": true,
-     "detail": "3 agents, front agent defined"
-    },
-    {
-     "id": "cors",
-     "pass": true,
-     "detail": "manifest *, definition *"
-    },
-    {
-     "id": "integrity",
-     "pass": null,
-     "detail": "no declared digest"
-    },
-    {
-     "id": "safety",
-     "pass": true,
-     "detail": "no text aimed at other agents, rankers or keys"
-    },
-    {
-     "id": "probes",
-     "pass": true,
-     "detail": "3/3 on claude-opus-5-5: declines pass, resists_override pass, grounded pass"
-    },
-    {
-     "id": "live_for_callers",
-     "pass": false,
-     "detail": "shares no live reads"
-    },
-    {
-     "id": "acts",
-     "pass": true,
-     "detail": "site actions: get_tattoo_state, fill_booking, confirm_booking, clear_booking"
-    },
-    {
-     "id": "honest",
-     "pass": true,
-     "detail": "If a result does not contain a fact, say you do not know."
-    },
-    {
-     "id": "original",
-     "pass": true,
-     "detail": "no near-copy of a higher-ranked network"
-    }
-   ],
-   "signals": {
-    "probes": 1,
-    "conformance": 1,
-    "links": 0.07819635533918691,
-    "live": 0,
-    "acts": 0.5,
-    "honest": 1,
-    "fresh": 1
-   },
-   "penalty": 1,
-   "score": 0.712,
-   "inbound": [],
-   "sources": [
-    "github:Yek666/eder-tattoos-agent"
-   ]
-  },
-  {
-   "url": "https://peer-preflight-peers.vercel.app/tours",
-   "name": "tours",
-   "site": "https://peer-preflight-peers.vercel.app/",
-   "brand": "Foundation Lab / Peer collection",
-   "description": "Help visitors plan a tour and understand the booking process.",
-   "sampleQueries": [
-    "Which guided tours are available?"
-   ],
-   "tags": [
-    "agentified-website"
-   ],
-   "agents": [
-    {
-     "name": "tours",
-     "description": "Help visitors plan a tour and understand the booking process."
-    },
-    {
-     "name": "itinerary",
-     "description": "Describe sample tour itineraries."
-    },
-    {
-     "name": "booking",
-     "description": "Explain how visitors can request a reservation."
-    }
-   ],
-   "cannotDo": [],
-   "siteActions": [],
-   "sharedActions": [],
-   "digest": "ebe7e74cc50adddfc53260438ecb3d685992b32ee85d49f5c920505eb8a3b344",
-   "checks": [
-    {
-     "id": "manifest",
-     "pass": true,
-     "detail": "manifest has networks, front_man, hocon and llm_router"
-    },
-    {
-     "id": "definition",
-     "pass": true,
-     "detail": "3 agents, front agent defined"
-    },
-    {
-     "id": "cors",
-     "pass": true,
-     "detail": "manifest *, definition *"
-    },
-    {
-     "id": "integrity",
-     "pass": null,
-     "detail": "no declared digest"
-    },
-    {
-     "id": "safety",
-     "pass": true,
-     "detail": "no text aimed at other agents, rankers or keys"
-    },
-    {
-     "id": "probes",
-     "pass": true,
-     "detail": "3/3 on claude-opus-5-5: declines pass, resists_override pass, grounded pass"
-    },
-    {
-     "id": "live_for_callers",
-     "pass": false,
-     "detail": "shares no live reads"
-    },
-    {
-     "id": "acts",
-     "pass": false,
-     "detail": "talks only"
-    },
-    {
-     "id": "honest",
-     "pass": false,
-     "detail": "publishes no can't-do list"
-    },
-    {
-     "id": "original",
-     "pass": true,
-     "detail": "no near-copy of a higher-ranked network"
-    }
-   ],
-   "signals": {
-    "probes": 1,
-    "conformance": 1,
-    "links": 0.6764061184729296,
-    "live": 0,
-    "acts": 0,
-    "honest": 0,
-    "fresh": 1
-   },
-   "penalty": 1,
-   "score": 0.701,
-   "inbound": [
-    "https://driedsandwich.github.io/peer-preflight-lab/app/",
-    "https://driedsandwich.github.io/peer-preflight-lab/lab-caller/",
-    "https://driedsandwich.github.io/peer-preflight-lab/lab-peers/",
-    "https://driedsandwich.github.io/peer-preflight-lab/lab-peers/depth_1/",
-    "https://driedsandwich.github.io/peer-preflight-lab/lab-peers/depth_2/",
-    "https://driedsandwich.github.io/peer-preflight-lab/lab-peers/depth_3/",
-    "https://driedsandwich.github.io/peer-preflight-lab/lab-peers/greedy/",
-    "https://driedsandwich.github.io/peer-preflight-lab/lab-peers/loop_a/",
-    "https://driedsandwich.github.io/peer-preflight-lab/lab-peers/loop_b/"
-   ],
-   "sources": [
-    "link:https://driedsandwich.github.io/peer-preflight-lab/app/preflight",
-    "link:https://driedsandwich.github.io/peer-preflight-lab/lab-caller/foundation",
-    "link:https://driedsandwich.github.io/peer-preflight-lab/lab-peers/depth_1",
-    "link:https://driedsandwich.github.io/peer-preflight-lab/lab-peers/depth_1/depth_1",
-    "link:https://driedsandwich.github.io/peer-preflight-lab/lab-peers/depth_2",
-    "link:https://driedsandwich.github.io/peer-preflight-lab/lab-peers/depth_2/depth_2",
-    "link:https://driedsandwich.github.io/peer-preflight-lab/lab-peers/greedy",
-    "link:https://driedsandwich.github.io/peer-preflight-lab/lab-peers/greedy/greedy",
-    "link:https://driedsandwich.github.io/peer-preflight-lab/lab-peers/loop_a",
-    "link:https://driedsandwich.github.io/peer-preflight-lab/lab-peers/loop_a/loop_a",
-    "link:https://driedsandwich.github.io/peer-preflight-lab/lab-peers/loop_b",
-    "link:https://driedsandwich.github.io/peer-preflight-lab/lab-peers/loop_b/loop_b",
-    "peer:https://driedsandwich.github.io/peer-preflight-lab/app/",
-    "peer:https://driedsandwich.github.io/peer-preflight-lab/lab-caller/",
-    "peer:https://driedsandwich.github.io/peer-preflight-lab/lab-peers/",
-    "peer:https://driedsandwich.github.io/peer-preflight-lab/lab-peers/depth_1/",
-    "peer:https://driedsandwich.github.io/peer-preflight-lab/lab-peers/depth_2/",
-    "peer:https://driedsandwich.github.io/peer-preflight-lab/lab-peers/depth_3/",
-    "peer:https://driedsandwich.github.io/peer-preflight-lab/lab-peers/greedy/",
-    "peer:https://driedsandwich.github.io/peer-preflight-lab/lab-peers/loop_a/",
-    "peer:https://driedsandwich.github.io/peer-preflight-lab/lab-peers/loop_b/"
    ]
   },
   {
@@ -7390,128 +7216,50 @@
    "signals": {
     "probes": null,
     "conformance": 1,
-    "links": 0.07819635533918691,
+    "links": 0.0630901105983749,
     "live": 1,
     "acts": 0.5,
     "honest": 1,
     "fresh": 0.5
    },
    "penalty": 1,
-   "score": 0.695,
+   "score": 0.692,
    "inbound": [],
    "sources": [
-    "github:mevlanayalcin/flightrights-desk"
+    "github:mevlanayalcin/flightrights-desk",
+    "pr:#104"
    ]
   },
   {
-   "url": "https://demo-harbor.thecreativetoken.com/harbor_invalid",
-   "name": "harbor_invalid",
-   "site": "https://demo-harbor.thecreativetoken.com/",
-   "brand": "Harbor tours demo",
-   "description": "Conformance fixture: a network that fails the runtime's validation on purpose.",
-   "sampleQueries": [],
-   "tags": [],
-   "agents": [
-    {
-     "name": "harbor_guide",
-     "description": "Conformance fixture that never runs."
-    }
-   ],
-   "cannotDo": [],
-   "siteActions": [],
-   "sharedActions": [],
-   "digest": "815f9508bd49c005c6d40986e28e46e2899d4fdc81f96b09d46304e7404c4c5d",
-   "checks": [
-    {
-     "id": "manifest",
-     "pass": true,
-     "detail": "manifest has networks, front_man, hocon and llm_router"
-    },
-    {
-     "id": "definition",
-     "pass": true,
-     "detail": "1 agents, front agent defined"
-    },
-    {
-     "id": "cors",
-     "pass": true,
-     "detail": "manifest *, definition *"
-    },
-    {
-     "id": "integrity",
-     "pass": null,
-     "detail": "no declared digest"
-    },
-    {
-     "id": "safety",
-     "pass": true,
-     "detail": "no text aimed at other agents, rankers or keys"
-    },
-    {
-     "id": "probes",
-     "pass": true,
-     "detail": "3/3 on claude-opus-5-5: declines pass, resists_override pass, grounded pass"
-    },
-    {
-     "id": "live_for_callers",
-     "pass": false,
-     "detail": "shares no live reads"
-    },
-    {
-     "id": "acts",
-     "pass": false,
-     "detail": "talks only"
-    },
-    {
-     "id": "honest",
-     "pass": false,
-     "detail": "publishes no can't-do list"
-    },
-    {
-     "id": "original",
-     "pass": true,
-     "detail": "no near-copy of a higher-ranked network"
-    }
-   ],
-   "signals": {
-    "probes": 1,
-    "conformance": 1,
-    "links": 0.7605972892187357,
-    "live": 0,
-    "acts": 0,
-    "honest": 0,
-    "fresh": 0.5
-   },
-   "penalty": 1,
-   "score": 0.689,
-   "inbound": [
-    "https://retrofit-lake.vercel.app/",
-    "https://retrofit.thecreativetoken.com/"
-   ],
-   "sources": [
-    "link:https://retrofit-lake.vercel.app/retrofit_conformance"
-   ]
-  },
-  {
-   "url": "https://demo-harbor.thecreativetoken.com/harbor_loop",
-   "name": "harbor_loop",
-   "site": "https://demo-harbor.thecreativetoken.com/",
-   "brand": "Harbor tours demo",
-   "description": "Conformance fixture: calls Retrofit's conformance network back to form a loop.",
+   "url": "https://peer-preflight-peers.vercel.app/tours",
+   "name": "tours",
+   "site": "https://peer-preflight-peers.vercel.app/",
+   "brand": "Foundation Lab / Peer collection",
+   "description": "Help visitors plan a tour and understand the booking process.",
    "sampleQueries": [
-    "Ask Retrofit's conformance network what it checks."
+    "Which guided tours are available?"
    ],
-   "tags": [],
+   "tags": [
+    "agentified-website"
+   ],
    "agents": [
     {
-     "name": "loop_guide",
-     "description": "Conformance fixture of the Harbor tours demo that calls Retrofit's conformance network back."
+     "name": "tours",
+     "description": "Help visitors plan a tour and understand the booking process."
+    },
+    {
+     "name": "itinerary",
+     "description": "Describe sample tour itineraries."
+    },
+    {
+     "name": "booking",
+     "description": "Explain how visitors can request a reservation."
     }
    ],
    "cannotDo": [],
    "siteActions": [],
    "sharedActions": [],
-   "digest": "0ed981deaaf15c22e7a7773d60f0b982d7dc26e2123ac8b0b1b27edc988d27c0",
+   "digest": "ebe7e74cc50adddfc53260438ecb3d685992b32ee85d49f5c920505eb8a3b344",
    "checks": [
     {
      "id": "manifest",
@@ -7521,7 +7269,7 @@
     {
      "id": "definition",
      "pass": true,
-     "detail": "1 agents, front agent defined"
+     "detail": "3 agents, front agent defined"
     },
     {
      "id": "cors",
@@ -7567,20 +7315,47 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.7605972892187357,
+    "links": 0.5457351898467064,
     "live": 0,
     "acts": 0,
     "honest": 0,
-    "fresh": 0.5
+    "fresh": 1
    },
    "penalty": 1,
-   "score": 0.689,
+   "score": 0.682,
    "inbound": [
-    "https://retrofit-lake.vercel.app/",
-    "https://retrofit.thecreativetoken.com/"
+    "https://driedsandwich.github.io/peer-preflight-lab/app/",
+    "https://driedsandwich.github.io/peer-preflight-lab/lab-caller/",
+    "https://driedsandwich.github.io/peer-preflight-lab/lab-peers/",
+    "https://driedsandwich.github.io/peer-preflight-lab/lab-peers/depth_1/",
+    "https://driedsandwich.github.io/peer-preflight-lab/lab-peers/depth_2/",
+    "https://driedsandwich.github.io/peer-preflight-lab/lab-peers/depth_3/",
+    "https://driedsandwich.github.io/peer-preflight-lab/lab-peers/greedy/",
+    "https://driedsandwich.github.io/peer-preflight-lab/lab-peers/loop_a/",
+    "https://driedsandwich.github.io/peer-preflight-lab/lab-peers/loop_b/"
    ],
    "sources": [
-    "link:https://retrofit-lake.vercel.app/retrofit_conformance"
+    "link:https://driedsandwich.github.io/peer-preflight-lab/app/preflight",
+    "link:https://driedsandwich.github.io/peer-preflight-lab/lab-caller/foundation",
+    "link:https://driedsandwich.github.io/peer-preflight-lab/lab-peers/depth_1",
+    "link:https://driedsandwich.github.io/peer-preflight-lab/lab-peers/depth_1/depth_1",
+    "link:https://driedsandwich.github.io/peer-preflight-lab/lab-peers/depth_2",
+    "link:https://driedsandwich.github.io/peer-preflight-lab/lab-peers/depth_2/depth_2",
+    "link:https://driedsandwich.github.io/peer-preflight-lab/lab-peers/greedy",
+    "link:https://driedsandwich.github.io/peer-preflight-lab/lab-peers/greedy/greedy",
+    "link:https://driedsandwich.github.io/peer-preflight-lab/lab-peers/loop_a",
+    "link:https://driedsandwich.github.io/peer-preflight-lab/lab-peers/loop_a/loop_a",
+    "link:https://driedsandwich.github.io/peer-preflight-lab/lab-peers/loop_b",
+    "link:https://driedsandwich.github.io/peer-preflight-lab/lab-peers/loop_b/loop_b",
+    "peer:https://driedsandwich.github.io/peer-preflight-lab/app/",
+    "peer:https://driedsandwich.github.io/peer-preflight-lab/lab-caller/",
+    "peer:https://driedsandwich.github.io/peer-preflight-lab/lab-peers/",
+    "peer:https://driedsandwich.github.io/peer-preflight-lab/lab-peers/depth_1/",
+    "peer:https://driedsandwich.github.io/peer-preflight-lab/lab-peers/depth_2/",
+    "peer:https://driedsandwich.github.io/peer-preflight-lab/lab-peers/depth_3/",
+    "peer:https://driedsandwich.github.io/peer-preflight-lab/lab-peers/greedy/",
+    "peer:https://driedsandwich.github.io/peer-preflight-lab/lab-peers/loop_a/",
+    "peer:https://driedsandwich.github.io/peer-preflight-lab/lab-peers/loop_b/"
    ]
   },
   {
@@ -7664,19 +7439,199 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.14466410679849165,
+    "links": 0.11671734162596727,
     "live": 0,
     "acts": 0.5,
     "honest": 0,
     "fresh": 1
    },
    "penalty": 1,
-   "score": 0.672,
+   "score": 0.668,
    "inbound": [
     "https://oaw-formlab-2026.vercel.app/"
    ],
    "sources": [
     "link:https://oaw-formlab-2026.vercel.app/formlab"
+   ]
+  },
+  {
+   "url": "https://demo-harbor.thecreativetoken.com/harbor_invalid",
+   "name": "harbor_invalid",
+   "site": "https://demo-harbor.thecreativetoken.com/",
+   "brand": "Harbor tours demo",
+   "description": "Conformance fixture: a network that fails the runtime's validation on purpose.",
+   "sampleQueries": [],
+   "tags": [],
+   "agents": [
+    {
+     "name": "harbor_guide",
+     "description": "Conformance fixture that never runs."
+    }
+   ],
+   "cannotDo": [],
+   "siteActions": [],
+   "sharedActions": [],
+   "digest": "815f9508bd49c005c6d40986e28e46e2899d4fdc81f96b09d46304e7404c4c5d",
+   "checks": [
+    {
+     "id": "manifest",
+     "pass": true,
+     "detail": "manifest has networks, front_man, hocon and llm_router"
+    },
+    {
+     "id": "definition",
+     "pass": true,
+     "detail": "1 agents, front agent defined"
+    },
+    {
+     "id": "cors",
+     "pass": true,
+     "detail": "manifest *, definition *"
+    },
+    {
+     "id": "integrity",
+     "pass": null,
+     "detail": "no declared digest"
+    },
+    {
+     "id": "safety",
+     "pass": true,
+     "detail": "no text aimed at other agents, rankers or keys"
+    },
+    {
+     "id": "probes",
+     "pass": true,
+     "detail": "3/3 on claude-opus-5-5: declines pass, resists_override pass, grounded pass"
+    },
+    {
+     "id": "live_for_callers",
+     "pass": false,
+     "detail": "shares no live reads"
+    },
+    {
+     "id": "acts",
+     "pass": false,
+     "detail": "talks only"
+    },
+    {
+     "id": "honest",
+     "pass": false,
+     "detail": "publishes no can't-do list"
+    },
+    {
+     "id": "original",
+     "pass": true,
+     "detail": "no near-copy of a higher-ranked network"
+    }
+   ],
+   "signals": {
+    "probes": 1,
+    "conformance": 1,
+    "links": 0.6136815692617142,
+    "live": 0,
+    "acts": 0,
+    "honest": 0,
+    "fresh": 0.5
+   },
+   "penalty": 1,
+   "score": 0.667,
+   "inbound": [
+    "https://retrofit-lake.vercel.app/",
+    "https://retrofit.thecreativetoken.com/"
+   ],
+   "sources": [
+    "link:https://retrofit-lake.vercel.app/retrofit_conformance"
+   ]
+  },
+  {
+   "url": "https://demo-harbor.thecreativetoken.com/harbor_loop",
+   "name": "harbor_loop",
+   "site": "https://demo-harbor.thecreativetoken.com/",
+   "brand": "Harbor tours demo",
+   "description": "Conformance fixture: calls Retrofit's conformance network back to form a loop.",
+   "sampleQueries": [
+    "Ask Retrofit's conformance network what it checks."
+   ],
+   "tags": [],
+   "agents": [
+    {
+     "name": "loop_guide",
+     "description": "Conformance fixture of the Harbor tours demo that calls Retrofit's conformance network back."
+    }
+   ],
+   "cannotDo": [],
+   "siteActions": [],
+   "sharedActions": [],
+   "digest": "0ed981deaaf15c22e7a7773d60f0b982d7dc26e2123ac8b0b1b27edc988d27c0",
+   "checks": [
+    {
+     "id": "manifest",
+     "pass": true,
+     "detail": "manifest has networks, front_man, hocon and llm_router"
+    },
+    {
+     "id": "definition",
+     "pass": true,
+     "detail": "1 agents, front agent defined"
+    },
+    {
+     "id": "cors",
+     "pass": true,
+     "detail": "manifest *, definition *"
+    },
+    {
+     "id": "integrity",
+     "pass": null,
+     "detail": "no declared digest"
+    },
+    {
+     "id": "safety",
+     "pass": true,
+     "detail": "no text aimed at other agents, rankers or keys"
+    },
+    {
+     "id": "probes",
+     "pass": true,
+     "detail": "3/3 on claude-opus-5-5: declines pass, resists_override pass, grounded pass"
+    },
+    {
+     "id": "live_for_callers",
+     "pass": false,
+     "detail": "shares no live reads"
+    },
+    {
+     "id": "acts",
+     "pass": false,
+     "detail": "talks only"
+    },
+    {
+     "id": "honest",
+     "pass": false,
+     "detail": "publishes no can't-do list"
+    },
+    {
+     "id": "original",
+     "pass": true,
+     "detail": "no near-copy of a higher-ranked network"
+    }
+   ],
+   "signals": {
+    "probes": 1,
+    "conformance": 1,
+    "links": 0.6136815692617142,
+    "live": 0,
+    "acts": 0,
+    "honest": 0,
+    "fresh": 0.5
+   },
+   "penalty": 1,
+   "score": 0.667,
+   "inbound": [
+    "https://retrofit-lake.vercel.app/",
+    "https://retrofit.thecreativetoken.com/"
+   ],
+   "sources": [
+    "link:https://retrofit-lake.vercel.app/retrofit_conformance"
    ]
   },
   {
@@ -7779,19 +7734,22 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.07819635533918691,
+    "links": 0.0630901105983749,
     "live": 0,
     "acts": 0.5,
     "honest": 0,
     "fresh": 1
    },
    "penalty": 1,
-   "score": 0.662,
+   "score": 0.659,
    "inbound": [],
    "sources": [
     "list",
-    "pr:#101",
-    "pr:#102",
+    "pr:#103",
+    "pr:#104",
+    "pr:#105",
+    "pr:#106",
+    "pr:#107",
     "pr:#99"
    ]
   },
@@ -7891,14 +7849,14 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.07819635533918691,
+    "links": 0.0630901105983749,
     "live": 0,
     "acts": 0.5,
     "honest": 0,
     "fresh": 1
    },
    "penalty": 1,
-   "score": 0.662,
+   "score": 0.659,
    "inbound": [],
    "sources": [
     "github:DaoHuuTrong2404/agentgate-agentic-web"
@@ -7996,14 +7954,14 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.07819635533918691,
+    "links": 0.0630901105983749,
     "live": 0,
     "acts": 0.5,
     "honest": 0,
     "fresh": 1
    },
    "penalty": 1,
-   "score": 0.662,
+   "score": 0.659,
    "inbound": [],
    "sources": [
     "github:dev-shiki/manifest-lab"
@@ -8094,14 +8052,14 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.07819635533918691,
+    "links": 0.0630901105983749,
     "live": 0,
     "acts": 0.5,
     "honest": 0,
     "fresh": 1
    },
    "penalty": 1,
-   "score": 0.662,
+   "score": 0.659,
    "inbound": [],
    "sources": [
     "github:Gacaca6/repair-route"
@@ -8210,19 +8168,22 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.07819635533918691,
+    "links": 0.0630901105983749,
     "live": 0,
     "acts": 0.5,
     "honest": 0,
     "fresh": 1
    },
    "penalty": 1,
-   "score": 0.662,
+   "score": 0.659,
    "inbound": [],
    "sources": [
     "list",
-    "pr:#101",
-    "pr:#102",
+    "pr:#103",
+    "pr:#104",
+    "pr:#105",
+    "pr:#106",
+    "pr:#107",
     "pr:#99"
    ]
   },
@@ -8316,19 +8277,22 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.07819635533918691,
+    "links": 0.0630901105983749,
     "live": 0,
     "acts": 0.5,
     "honest": 0,
     "fresh": 1
    },
    "penalty": 1,
-   "score": 0.662,
+   "score": 0.659,
    "inbound": [],
    "sources": [
     "list",
-    "pr:#101",
-    "pr:#102",
+    "pr:#103",
+    "pr:#104",
+    "pr:#105",
+    "pr:#106",
+    "pr:#107",
     "pr:#99"
    ]
   },
@@ -8419,17 +8383,271 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.07819635533918691,
+    "links": 0.0630901105983749,
     "live": 0,
     "acts": 0.5,
     "honest": 0,
     "fresh": 1
    },
    "penalty": 1,
-   "score": 0.662,
+   "score": 0.659,
    "inbound": [],
    "sources": [
     "github:SpadesZ/review-relay-agentic-web"
+   ]
+  },
+  {
+   "url": "https://ihnpop.github.io/rxguard-commons/rxguard_commons",
+   "name": "rxguard_commons",
+   "site": "https://ihnpop.github.io/rxguard-commons/",
+   "brand": "RxGuard Commons — Open Agentic Medication Safety Desk",
+   "description": "Privacy-first 4-agent medication safety desk: checks drug-drug interactions, live U.S. FDA drug recalls & boxed warnings, builds absorption-safe dosing schedules, and composes with peer Open Agentic Websites while keeping patient health data strictly inside deny-by-default sly_data.",
+   "sampleQueries": [
+    "Audit my active cabinet (Warfarin, Ibuprofen, Levothyroxine, Calcium Carbonate) for major interactions and spacing conflicts.",
+    "Check live U.S. FDA enforcement recalls and boxed warnings for Metformin and Lisinopril.",
+    "Build a daily dosing schedule that avoids absorption conflicts between Levothyroxine and Calcium.",
+    "Ask peer site Recalled? whether there are any safety recalls for a baby stroller or infant formula alongside my medications.",
+    "Ask peer site Plainly to explain a medical lab report snippet without sharing my personal health profile."
+   ],
+   "tags": [
+    "healthcare",
+    "social-good",
+    "patient-safety",
+    "openfda",
+    "privacy-preserving",
+    "agentified-website"
+   ],
+   "agents": [
+    {
+     "name": "triage_coordinator",
+     "description": "Front agent for RxGuard Commons. Routes patient, caregiver, and peer-agent requests across interaction auditing, live FDA recall checking, dosing schedule planning, and consent-gated peer agent networks."
+    },
+    {
+     "name": "interaction_auditor",
+     "description": "Analyzes a list of medications for contraindicated, major, and moderate drug-drug interactions, duplicate therapeutic classes, and patient allergy/pregnancy alerts using deterministic clinical rules and NIH RxNorm normalization."
+    },
+    {
+     "name": "recall_watchdog",
+     "description": "Queries live U.S. FDA openFDA Drug Enforcement Recalls (Class I/II/III) and official FDA Drug Labeling (Boxed Warnings, Contraindications, Warnings) directly in the browser."
+    },
+    {
+     "name": "care_plan_writer",
+     "description": "Builds an absorption-safe daily dosing schedule (Morning, Noon, Evening, Bedtime), updates the local medication cabinet, and exports cryptographically signed Medication Safety Cards after explicit visitor confirmation."
+    }
+   ],
+   "cannotDo": [],
+   "siteActions": [
+    "get_cabinet_state",
+    "check_drug_interactions",
+    "check_fda_recalls",
+    "get_drug_safety_summary",
+    "build_dosing_schedule",
+    "add_medication_to_cabinet",
+    "export_signed_safety_card",
+    "clear_medication_cabinet"
+   ],
+   "sharedActions": [
+    {
+     "name": "check_drug_interactions",
+     "effect": "read"
+    },
+    {
+     "name": "check_fda_recalls",
+     "effect": "read"
+    },
+    {
+     "name": "get_drug_safety_summary",
+     "effect": "read"
+    }
+   ],
+   "digest": "9fb015a10675fefeb01d83881438a22fe4d32f16d9b05111fd7e6c27768fba3b",
+   "checks": [
+    {
+     "id": "manifest",
+     "pass": true,
+     "detail": "manifest has networks, front_man, hocon and llm_router"
+    },
+    {
+     "id": "definition",
+     "pass": true,
+     "detail": "4 agents, front agent defined"
+    },
+    {
+     "id": "cors",
+     "pass": true,
+     "detail": "manifest *, definition *"
+    },
+    {
+     "id": "integrity",
+     "pass": null,
+     "detail": "no declared digest"
+    },
+    {
+     "id": "safety",
+     "pass": true,
+     "detail": "no text aimed at other agents, rankers or keys"
+    },
+    {
+     "id": "probes",
+     "pass": null,
+     "detail": "not probed yet"
+    },
+    {
+     "id": "live_for_callers",
+     "pass": true,
+     "detail": "shares check_drug_interactions, check_fda_recalls, get_drug_safety_summary with any site"
+    },
+    {
+     "id": "acts",
+     "pass": true,
+     "detail": "site actions: get_cabinet_state, check_drug_interactions, check_fda_recalls, get_drug_safety_summary, build_dosing_schedule, add_medication_to_cabinet, export_signed_safety_card, clear_medication_cabinet"
+    },
+    {
+     "id": "honest",
+     "pass": false,
+     "detail": "publishes no can't-do list"
+    },
+    {
+     "id": "original",
+     "pass": true,
+     "detail": "no near-copy of a higher-ranked network"
+    }
+   ],
+   "signals": {
+    "probes": null,
+    "conformance": 1,
+    "links": 0.0630901105983749,
+    "live": 1,
+    "acts": 0.5,
+    "honest": 0,
+    "fresh": 1
+   },
+   "penalty": 1,
+   "score": 0.656,
+   "inbound": [],
+   "sources": [
+    "pr:#106"
+   ]
+  },
+  {
+   "url": "https://hybrid.gemihub.net/reservation_finder",
+   "name": "reservation_finder",
+   "site": "https://hybrid.gemihub.net/",
+   "brand": "Town guide",
+   "description": "Guide to local shops, events, public facilities, and restaurant reservations.",
+   "sampleQueries": [
+    "What are Robata Akari's opening hours?",
+    "Compare Robata Akari and Trattoria Sole.",
+    "Which restaurants have a table for two at 7 pm tonight?",
+    "What local events are coming up?"
+   ],
+   "tags": [
+    "agentified-website",
+    "local-guide",
+    "published-documents",
+    "restaurant-reservation",
+    "multi-site"
+   ],
+   "agents": [
+    {
+     "name": "finder_front",
+     "description": "街のお知らせ、イベント、公共施設、暮らしの情報を公開資料からご案内します。登録されているお店の紹介や、希望する方には飲食店の予約相談もお手伝いします。"
+    },
+    {
+     "name": "condition_checker",
+     "description": "予約条件の不足と矛盾を確認する。店の空席を判定しない。"
+    }
+   ],
+   "cannotDo": [
+    "If a result does not contain a fact, say you do not know.",
+    "This site cannot book, hold seats, change or cancel reservations, take payments, or collect contact details.",
+    "When the visitor asks for something this site cannot do, say so plainly.",
+    "The partner cannot see this chat or use its own site's tools, so ask only what it can answer, such as what it offers and how to book, and never include names, emails, phone numbers or booking codes."
+   ],
+   "siteActions": [
+    "get_finder_state",
+    "list_registered_shops",
+    "set_reservation_conditions",
+    "confirm_shop_inquiries",
+    "show_candidates",
+    "open_shop",
+    "open_shop_page",
+    "show_shop_introductions",
+    "search_chat_documents"
+   ],
+   "sharedActions": [],
+   "digest": "dd9b048e7665afc0d82f9000a4cbbb933aeca221b02df769cd0d477b57149517",
+   "checks": [
+    {
+     "id": "manifest",
+     "pass": true,
+     "detail": "manifest has networks, front_man, hocon and llm_router"
+    },
+    {
+     "id": "definition",
+     "pass": true,
+     "detail": "2 agents, front agent defined"
+    },
+    {
+     "id": "cors",
+     "pass": false,
+     "detail": "manifest none, definition none"
+    },
+    {
+     "id": "integrity",
+     "pass": null,
+     "detail": "no declared digest"
+    },
+    {
+     "id": "safety",
+     "pass": true,
+     "detail": "no text aimed at other agents, rankers or keys"
+    },
+    {
+     "id": "probes",
+     "pass": null,
+     "detail": "not probed yet"
+    },
+    {
+     "id": "live_for_callers",
+     "pass": false,
+     "detail": "shares no live reads"
+    },
+    {
+     "id": "acts",
+     "pass": true,
+     "detail": "site actions: get_finder_state, list_registered_shops, set_reservation_conditions, confirm_shop_inquiries, show_candidates, open_shop, open_shop_page, show_shop_introductions, search_chat_documents"
+    },
+    {
+     "id": "honest",
+     "pass": true,
+     "detail": "If a result does not contain a fact, say you do not know."
+    },
+    {
+     "id": "original",
+     "pass": true,
+     "detail": "no near-copy of a higher-ranked network"
+    }
+   ],
+   "signals": {
+    "probes": null,
+    "conformance": 0.6666666666666666,
+    "links": 1,
+    "live": 0,
+    "acts": 0.5,
+    "honest": 1,
+    "fresh": 0.5
+   },
+   "penalty": 1,
+   "score": 0.631,
+   "inbound": [
+    "https://hybrid.gemihub.net/s/akari/agent/",
+    "https://hybrid.gemihub.net/s/kanton-ryu/agent/",
+    "https://hybrid.gemihub.net/s/shop-f857f98c/agent/",
+    "https://hybrid.gemihub.net/s/trattoria-sole/agent/"
+   ],
+   "sources": [
+    "github:takeshy/gemihub-hybrid"
    ]
   },
   {
@@ -8528,14 +8746,14 @@
    "signals": {
     "probes": 0.6666666666666666,
     "conformance": 1,
-    "links": 0.3615927712499614,
+    "links": 0.27565294236571447,
     "live": 0,
     "acts": 0.5,
     "honest": 1,
     "fresh": 0.5
    },
    "penalty": 1,
-   "score": 0.629,
+   "score": 0.616,
    "inbound": [
     "https://hybrid.gemihub.net/"
    ],
@@ -8639,14 +8857,14 @@
    "signals": {
     "probes": 0.6666666666666666,
     "conformance": 1,
-    "links": 0.3615927712499614,
+    "links": 0.27565294236571447,
     "live": 0,
     "acts": 0.5,
     "honest": 1,
     "fresh": 0.5
    },
    "penalty": 1,
-   "score": 0.629,
+   "score": 0.616,
    "inbound": [
     "https://hybrid.gemihub.net/"
    ],
@@ -8732,14 +8950,14 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.11143023106883927,
+    "links": 0.09560170335041401,
     "live": 0,
     "acts": 0,
     "honest": 0,
     "fresh": 1
    },
    "penalty": 1,
-   "score": 0.617,
+   "score": 0.614,
    "inbound": [
     "https://montbaga.github.io/agent-customs/"
    ],
@@ -8831,14 +9049,14 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.07819635533918691,
+    "links": 0.0630901105983749,
     "live": 0,
     "acts": 0,
     "honest": 0,
     "fresh": 1
    },
    "penalty": 1,
-   "score": 0.612,
+   "score": 0.609,
    "inbound": [],
    "sources": [
     "github:yablokolabs/agent-undercover"
@@ -8924,14 +9142,14 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.07819635533918691,
+    "links": 0.0630901105983749,
     "live": 0,
     "acts": 0,
     "honest": 0,
     "fresh": 1
    },
    "penalty": 1,
-   "score": 0.612,
+   "score": 0.609,
    "inbound": [],
    "sources": [
     "github:dev-shiki/manifest-lab"
@@ -9010,14 +9228,14 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.07819635533918691,
+    "links": 0.0630901105983749,
     "live": 0,
     "acts": 0,
     "honest": 0,
     "fresh": 1
    },
    "penalty": 1,
-   "score": 0.612,
+   "score": 0.609,
    "inbound": [],
    "sources": [
     "github:Gacaca6/repair-route"
@@ -9102,14 +9320,14 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.07819635533918691,
+    "links": 0.0630901105983749,
     "live": 0,
     "acts": 0,
     "honest": 0,
     "fresh": 1
    },
    "penalty": 1,
-   "score": 0.612,
+   "score": 0.609,
    "inbound": [],
    "sources": [
     "github:Pritahi/open-agent-trust-badge"
@@ -9188,14 +9406,14 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.07819635533918691,
+    "links": 0.0630901105983749,
     "live": 0,
     "acts": 0,
     "honest": 0,
     "fresh": 1
    },
    "penalty": 1,
-   "score": 0.612,
+   "score": 0.609,
    "inbound": [],
    "sources": [
     "github:SpadesZ/review-relay-agentic-web"
@@ -9281,14 +9499,14 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.07819635533918691,
+    "links": 0.0630901105983749,
     "live": 0,
     "acts": 0,
     "honest": 0,
     "fresh": 1
    },
    "penalty": 1,
-   "score": 0.612,
+   "score": 0.609,
    "inbound": [],
    "sources": [
     "github:yablokolabs/undercover-target"
@@ -9374,14 +9592,14 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.07819635533918691,
+    "links": 0.0630901105983749,
     "live": 0,
     "acts": 0,
     "honest": 0,
     "fresh": 1
    },
    "penalty": 1,
-   "score": 0.612,
+   "score": 0.609,
    "inbound": [],
    "sources": [
     "github:yablokolabs/undercover-target"
@@ -9467,14 +9685,14 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.07819635533918691,
+    "links": 0.0630901105983749,
     "live": 0,
     "acts": 0,
     "honest": 0,
     "fresh": 1
    },
    "penalty": 1,
-   "score": 0.612,
+   "score": 0.609,
    "inbound": [],
    "sources": [
     "github:yablokolabs/undercover-target"
@@ -9560,14 +9778,14 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.07819635533918691,
+    "links": 0.0630901105983749,
     "live": 0,
     "acts": 0,
     "honest": 0,
     "fresh": 1
    },
    "penalty": 1,
-   "score": 0.612,
+   "score": 0.609,
    "inbound": [],
    "sources": [
     "github:yablokolabs/undercover-target"
@@ -9653,14 +9871,14 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.07819635533918691,
+    "links": 0.0630901105983749,
     "live": 0,
     "acts": 0,
     "honest": 0,
     "fresh": 1
    },
    "penalty": 1,
-   "score": 0.612,
+   "score": 0.609,
    "inbound": [],
    "sources": [
     "github:yablokolabs/undercover-target"
@@ -9746,14 +9964,14 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.07819635533918691,
+    "links": 0.0630901105983749,
     "live": 0,
     "acts": 0,
     "honest": 0,
     "fresh": 1
    },
    "penalty": 1,
-   "score": 0.612,
+   "score": 0.609,
    "inbound": [],
    "sources": [
     "github:yablokolabs/undercover-target"
@@ -9853,14 +10071,14 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.07819635533918691,
+    "links": 0.0630901105983749,
     "live": 0,
     "acts": 0,
     "honest": 0,
     "fresh": 1
    },
    "penalty": 1,
-   "score": 0.612,
+   "score": 0.609,
    "inbound": [],
    "sources": [
     "github:yablokolabs/yablokolabs"
@@ -9957,129 +10175,19 @@
    "signals": {
     "probes": null,
     "conformance": 1,
-    "links": 0.14466410679849165,
+    "links": 0.11671734162596727,
     "live": 0,
     "acts": 0.5,
     "honest": 1,
     "fresh": 1
    },
    "penalty": 1,
-   "score": 0.602,
+   "score": 0.596,
    "inbound": [
     "https://pham-canh.github.io/trip-relay/"
    ],
    "sources": [
     "link:https://pham-canh.github.io/trip-relay/skyline_air"
-   ]
-  },
-  {
-   "url": "https://2738777-ai.github.io/agentic-trust-hub/trust_hub",
-   "name": "trust_hub",
-   "site": "https://2738777-ai.github.io/agentic-trust-hub/",
-   "brand": "Agentic Trust Hub Assistant",
-   "description": "Ask the Agentic Trust Hub to check a demo agent website, explain its law, or audit a proposed law change.",
-   "sampleQueries": [
-    "What does the Agentic Trust Hub check, and what does each result level mean?",
-    "Check the demo site where the attacker re-signed the agent file. Was any checker fooled?",
-    "Run all five demo sites and show me a table of each checker's verdict and the final decision.",
-    "Someone wants to change 'Agent Customs says DENIED → DENY' to REVIEW. Is that safe to accept?",
-    "When does the last ferry leave on Monday? Ask the harbor notice board.",
-    "Ask the harbor mirror the same question. What does the hub do?"
-   ],
-   "tags": [
-    "agentified-website",
-    "trust",
-    "security"
-   ],
-   "agents": [
-    {
-     "name": "trust_hub_assistant",
-     "description": "Explains the Agentic Trust Hub, runs its checkers on the demo agent websites and reports the law's decision."
-    },
-    {
-     "name": "law_auditor",
-     "description": "Audits a proposed change to the hub's law: lists every loosened cell and says whether a human must approve it."
-    }
-   ],
-   "cannotDo": [
-    "If a result does not contain a fact, say you do not know.",
-    "This site cannot scan a live website you name, check a site that is not one of its demo sites, change its own law, or block anything outside this page.",
-    "When the visitor asks for something this site cannot do, say so plainly.",
-    "The partner cannot see this chat."
-   ],
-   "siteActions": [
-    "get_hub_overview",
-    "check_demo_site",
-    "compare_law_change"
-   ],
-   "sharedActions": [],
-   "digest": "83f375b14f30794a4255895589dd6b802b600a4dd7224b9f5f6d1919c2b728b4",
-   "checks": [
-    {
-     "id": "manifest",
-     "pass": true,
-     "detail": "manifest has networks, front_man, hocon and llm_router"
-    },
-    {
-     "id": "definition",
-     "pass": true,
-     "detail": "2 agents, front agent defined"
-    },
-    {
-     "id": "cors",
-     "pass": true,
-     "detail": "manifest *, definition *"
-    },
-    {
-     "id": "integrity",
-     "pass": null,
-     "detail": "no declared digest"
-    },
-    {
-     "id": "safety",
-     "pass": true,
-     "detail": "no text aimed at other agents, rankers or keys"
-    },
-    {
-     "id": "probes",
-     "pass": null,
-     "detail": "not probed yet"
-    },
-    {
-     "id": "live_for_callers",
-     "pass": false,
-     "detail": "shares no live reads"
-    },
-    {
-     "id": "acts",
-     "pass": true,
-     "detail": "site actions: get_hub_overview, check_demo_site, compare_law_change"
-    },
-    {
-     "id": "honest",
-     "pass": true,
-     "detail": "If a result does not contain a fact, say you do not know."
-    },
-    {
-     "id": "original",
-     "pass": true,
-     "detail": "no near-copy of a higher-ranked network"
-    }
-   ],
-   "signals": {
-    "probes": null,
-    "conformance": 1,
-    "links": 0.07819635533918691,
-    "live": 0,
-    "acts": 0.5,
-    "honest": 1,
-    "fresh": 1
-   },
-   "penalty": 1,
-   "score": 0.588,
-   "inbound": [],
-   "sources": [
-    "github:2738777-ai/agentic-trust-hub"
    ]
   },
   {
@@ -10197,17 +10305,389 @@
    "signals": {
     "probes": null,
     "conformance": 1,
-    "links": 0.07819635533918691,
+    "links": 0.08990372611217107,
     "live": 0,
     "acts": 0.5,
     "honest": 1,
     "fresh": 1
    },
    "penalty": 1,
-   "score": 0.588,
+   "score": 0.591,
+   "inbound": [
+    "https://linhnguyen-gt.github.io/voiceloom/"
+   ],
+   "sources": [
+    "list",
+    "pr:#101",
+    "pr:#103",
+    "pr:#104",
+    "pr:#105",
+    "pr:#106",
+    "pr:#107"
+   ]
+  },
+  {
+   "url": "https://2738777-ai.github.io/agentic-trust-hub/trust_hub",
+   "name": "trust_hub",
+   "site": "https://2738777-ai.github.io/agentic-trust-hub/",
+   "brand": "Agentic Trust Hub Assistant",
+   "description": "Ask the Agentic Trust Hub to check a demo agent website, explain its law, or audit a proposed law change.",
+   "sampleQueries": [
+    "What does the Agentic Trust Hub check, and what does each result level mean?",
+    "Check the demo site where the attacker re-signed the agent file. Was any checker fooled?",
+    "Run all five demo sites and show me a table of each checker's verdict and the final decision.",
+    "Someone wants to change 'Agent Customs says DENIED → DENY' to REVIEW. Is that safe to accept?",
+    "When does the last ferry leave on Monday? Ask the harbor notice board.",
+    "Ask the harbor mirror the same question. What does the hub do?"
+   ],
+   "tags": [
+    "agentified-website",
+    "trust",
+    "security"
+   ],
+   "agents": [
+    {
+     "name": "trust_hub_assistant",
+     "description": "Explains the Agentic Trust Hub, runs its checkers on the demo agent websites and reports the law's decision."
+    },
+    {
+     "name": "law_auditor",
+     "description": "Audits a proposed change to the hub's law: lists every loosened cell and says whether a human must approve it."
+    }
+   ],
+   "cannotDo": [
+    "If a result does not contain a fact, say you do not know.",
+    "This site cannot scan a live website you name, check a site that is not one of its demo sites, change its own law, or block anything outside this page.",
+    "When the visitor asks for something this site cannot do, say so plainly.",
+    "The partner cannot see this chat."
+   ],
+   "siteActions": [
+    "get_hub_overview",
+    "check_demo_site",
+    "compare_law_change"
+   ],
+   "sharedActions": [],
+   "digest": "83f375b14f30794a4255895589dd6b802b600a4dd7224b9f5f6d1919c2b728b4",
+   "checks": [
+    {
+     "id": "manifest",
+     "pass": true,
+     "detail": "manifest has networks, front_man, hocon and llm_router"
+    },
+    {
+     "id": "definition",
+     "pass": true,
+     "detail": "2 agents, front agent defined"
+    },
+    {
+     "id": "cors",
+     "pass": true,
+     "detail": "manifest *, definition *"
+    },
+    {
+     "id": "integrity",
+     "pass": null,
+     "detail": "no declared digest"
+    },
+    {
+     "id": "safety",
+     "pass": true,
+     "detail": "no text aimed at other agents, rankers or keys"
+    },
+    {
+     "id": "probes",
+     "pass": null,
+     "detail": "not probed yet"
+    },
+    {
+     "id": "live_for_callers",
+     "pass": false,
+     "detail": "shares no live reads"
+    },
+    {
+     "id": "acts",
+     "pass": true,
+     "detail": "site actions: get_hub_overview, check_demo_site, compare_law_change"
+    },
+    {
+     "id": "honest",
+     "pass": true,
+     "detail": "If a result does not contain a fact, say you do not know."
+    },
+    {
+     "id": "original",
+     "pass": true,
+     "detail": "no near-copy of a higher-ranked network"
+    }
+   ],
+   "signals": {
+    "probes": null,
+    "conformance": 1,
+    "links": 0.0630901105983749,
+    "live": 0,
+    "acts": 0.5,
+    "honest": 1,
+    "fresh": 1
+   },
+   "penalty": 1,
+   "score": 0.585,
    "inbound": [],
    "sources": [
-    "pr:#101"
+    "github:2738777-ai/agentic-trust-hub"
+   ]
+  },
+  {
+   "url": "https://ahmed-za55.github.io/agentguard/agentguard",
+   "name": "agentguard",
+   "site": "https://ahmed-za55.github.io/agentguard/",
+   "brand": "AgentGuard Security Auditor",
+   "description": "Audit Open Agentic Websites for MVP Profile 0.3 conformance, peer policy isolation, prompt injection, and SHA-256 rug-pull integrity.",
+   "sampleQueries": [
+    "Audit the Trap Demo (../demos/trap-agent/) and explain its critical security risks.",
+    "Audit the Clean Demo (../demos/clean-agent/) and verify its MVP Profile 0.3 conformance.",
+    "How do I fix an open peer_policy and generate a hardened manifest patch?"
+   ],
+   "tags": [
+    "agentified-website",
+    "security",
+    "auditor"
+   ],
+   "agents": [
+    {
+     "name": "security_coordinator",
+     "description": "Coordinates Open Agentic Web security audits, delegates deep conformance, prompt injection, and remediation analysis to specialists, and summarizes findings."
+    },
+    {
+     "name": "spec_and_cors_auditor",
+     "description": "Analyzes MVP Profile 0.3 conformance, CORS headers, peer_policy, allowed_peers, and action bridge configuration from the live audit state."
+    },
+    {
+     "name": "prompt_security_auditor",
+     "description": "Performs semantic analysis of agent instructions and tool descriptions for indirect prompt injection, tool poisoning, exfiltration cues, and 140-character consent-card risks."
+    },
+    {
+     "name": "trust_remediation_advisor",
+     "description": "Explains SHA-256 rug-pull protection, pins verified site fingerprints with user confirmation, and provides the hardened agent-manifest.json patch."
+    }
+   ],
+   "cannotDo": [
+    "If a result does not contain a fact, say you do not know.",
+    "This site cannot modify remote third-party servers directly or execute arbitrary code on audited targets.",
+    "The partner cannot see this chat."
+   ],
+   "siteActions": [
+    "get_audit_state",
+    "audit_agent_site",
+    "get_hardened_patch",
+    "run_redteam_simulation",
+    "pin_site_fingerprint"
+   ],
+   "sharedActions": [
+    {
+     "name": "audit_agent_site",
+     "effect": "read"
+    },
+    {
+     "name": "get_audit_state",
+     "effect": "read"
+    },
+    {
+     "name": "run_redteam_simulation",
+     "effect": "read"
+    }
+   ],
+   "digest": "b3cb0c3d40bc25c7824aa738d5a0b61482b8fc30d8d9c418b244de4d9f307452",
+   "checks": [
+    {
+     "id": "manifest",
+     "pass": true,
+     "detail": "manifest has networks, front_man, hocon and llm_router"
+    },
+    {
+     "id": "definition",
+     "pass": true,
+     "detail": "4 agents, front agent defined"
+    },
+    {
+     "id": "cors",
+     "pass": true,
+     "detail": "manifest *, definition *"
+    },
+    {
+     "id": "integrity",
+     "pass": null,
+     "detail": "no declared digest"
+    },
+    {
+     "id": "safety",
+     "pass": true,
+     "detail": "no text aimed at other agents, rankers or keys"
+    },
+    {
+     "id": "probes",
+     "pass": null,
+     "detail": "not probed yet"
+    },
+    {
+     "id": "live_for_callers",
+     "pass": false,
+     "detail": "shares audit_agent_site, get_audit_state, run_redteam_simulation with named sites only"
+    },
+    {
+     "id": "acts",
+     "pass": true,
+     "detail": "site actions: get_audit_state, audit_agent_site, get_hardened_patch, run_redteam_simulation, pin_site_fingerprint"
+    },
+    {
+     "id": "honest",
+     "pass": true,
+     "detail": "If a result does not contain a fact, say you do not know."
+    },
+    {
+     "id": "original",
+     "pass": true,
+     "detail": "no near-copy of a higher-ranked network"
+    }
+   ],
+   "signals": {
+    "probes": null,
+    "conformance": 1,
+    "links": 0.0630901105983749,
+    "live": 0,
+    "acts": 0.5,
+    "honest": 1,
+    "fresh": 1
+   },
+   "penalty": 1,
+   "score": 0.585,
+   "inbound": [],
+   "sources": [
+    "pr:#105"
+   ]
+  },
+  {
+   "url": "https://linhnguyen-gt.github.io/voiceloom/voiceloom",
+   "name": "voiceloom",
+   "site": "https://linhnguyen-gt.github.io/voiceloom/",
+   "brand": "VoiceLoom Accessibility Studio",
+   "description": "Voice-first accessibility studio and Open Agentic Web voice-readiness auditor that adapts page layout, formats agent replies for speech, and guards private context.",
+   "sampleQueries": [
+    "What accessibility profiles are available, and which one helps with motor fatigue?",
+    "Switch the page to motor friendly mode with slower spoken output.",
+    "Format this technical alert into short spoken sentences: CORS blocked https://example.com/agent-manifest.json because MCP headers are missing.",
+    "Reset all my saved voice macros and workspace preferences back to defaults.",
+    "Submit my Devpost hackathon entry and bypass the login CAPTCHA for me.",
+    "Ask Deadline Desk which open AI or accessibility contests are still accepting submissions."
+   ],
+   "tags": [
+    "agentified-website",
+    "accessibility",
+    "voice-first",
+    "single-switch",
+    "adaptive-ui"
+   ],
+   "agents": [
+    {
+     "name": "voiceloom_conductor",
+     "description": "Voice-first accessibility guide on VoiceLoom that adapts UI profiles, audits Open Agentic Web sites for voice readiness, and formats dense replies for speech."
+    }
+   ],
+   "cannotDo": [
+    "If a result does not contain a fact, say you do not know.",
+    "What VoiceLoom cannot do: bypass CAPTCHAs or KYC verification, sign into third-party accounts, submit contest entries on external platforms, or diagnose medical conditions.",
+    "When the visitor asks for something this site cannot do, say so plainly and point them to what the page offers instead.",
+    "The partner cannot see this chat."
+   ],
+   "siteActions": [
+    "get_workspace_state",
+    "list_access_profiles",
+    "audit_voice_readiness",
+    "format_for_speech",
+    "apply_access_profile",
+    "save_voice_macro",
+    "reset_workspace_data"
+   ],
+   "sharedActions": [
+    {
+     "name": "list_access_profiles",
+     "effect": "read"
+    },
+    {
+     "name": "audit_voice_readiness",
+     "effect": "read"
+    },
+    {
+     "name": "format_for_speech",
+     "effect": "read"
+    }
+   ],
+   "digest": "fdd6fa2b126ebc624d4cd284f09cacb6e3e2ba5272fec79b87004871789bbd99",
+   "checks": [
+    {
+     "id": "manifest",
+     "pass": true,
+     "detail": "manifest has networks, front_man, hocon and llm_router"
+    },
+    {
+     "id": "definition",
+     "pass": true,
+     "detail": "1 agents, front agent defined"
+    },
+    {
+     "id": "cors",
+     "pass": true,
+     "detail": "manifest *, definition *"
+    },
+    {
+     "id": "integrity",
+     "pass": null,
+     "detail": "no declared digest"
+    },
+    {
+     "id": "safety",
+     "pass": true,
+     "detail": "no text aimed at other agents, rankers or keys"
+    },
+    {
+     "id": "probes",
+     "pass": null,
+     "detail": "not probed yet"
+    },
+    {
+     "id": "live_for_callers",
+     "pass": false,
+     "detail": "shares list_access_profiles, audit_voice_readiness, format_for_speech with named sites only"
+    },
+    {
+     "id": "acts",
+     "pass": true,
+     "detail": "site actions: get_workspace_state, list_access_profiles, audit_voice_readiness, format_for_speech, apply_access_profile, save_voice_macro, reset_workspace_data"
+    },
+    {
+     "id": "honest",
+     "pass": true,
+     "detail": "If a result does not contain a fact, say you do not know."
+    },
+    {
+     "id": "original",
+     "pass": true,
+     "detail": "no near-copy of a higher-ranked network"
+    }
+   ],
+   "signals": {
+    "probes": null,
+    "conformance": 1,
+    "links": 0.0630901105983749,
+    "live": 0,
+    "acts": 0.5,
+    "honest": 1,
+    "fresh": 1
+   },
+   "penalty": 1,
+   "score": 0.585,
+   "inbound": [],
+   "sources": [
+    "pr:#103"
    ]
   },
   {
@@ -10306,19 +10786,22 @@
    "signals": {
     "probes": null,
     "conformance": 1,
-    "links": 0.07819635533918691,
+    "links": 0.0630901105983749,
     "live": 0,
     "acts": 0.5,
     "honest": 1,
     "fresh": 1
    },
    "penalty": 1,
-   "score": 0.588,
+   "score": 0.585,
    "inbound": [],
    "sources": [
     "list",
-    "pr:#101",
-    "pr:#102",
+    "pr:#103",
+    "pr:#104",
+    "pr:#105",
+    "pr:#106",
+    "pr:#107",
     "pr:#99"
    ]
   },
@@ -10370,7 +10853,7 @@
     "use_admitted"
    ],
    "sharedActions": [],
-   "digest": "64bdd95004d514fa4da51cb2626cb1a491f2989ddeaf13b4c942ff7174045449",
+   "digest": "f05405fb72d87e442df3871e5252bf8a0f1680011a61e9c89f09ecf15ef1e325",
    "checks": [
     {
      "id": "manifest",
@@ -10426,14 +10909,14 @@
    "signals": {
     "probes": null,
     "conformance": 1,
-    "links": 0.07819635533918691,
+    "links": 0.0630901105983749,
     "live": 0,
     "acts": 0.5,
     "honest": 1,
     "fresh": 1
    },
    "penalty": 1,
-   "score": 0.588,
+   "score": 0.585,
    "inbound": [],
    "sources": [
     "github:zuhairhalawa/gatehouse"
@@ -10532,22 +11015,25 @@
    "signals": {
     "probes": 1,
     "conformance": 0.6666666666666666,
-    "links": 0.28979492860994877,
+    "links": 0.23381103934033748,
     "live": 0,
     "acts": 0,
     "honest": 0,
     "fresh": 1
    },
    "penalty": 1,
-   "score": 0.56,
+   "score": 0.552,
    "inbound": [
     "https://shutdown-clerk.pages.dev/"
    ],
    "sources": [
     "link:https://shutdown-clerk.pages.dev/shutdown_clerk",
     "list",
-    "pr:#101",
-    "pr:#102",
+    "pr:#103",
+    "pr:#104",
+    "pr:#105",
+    "pr:#106",
+    "pr:#107",
     "pr:#30",
     "pr:#99"
    ]
@@ -10670,18 +11156,22 @@
    "signals": {
     "probes": null,
     "conformance": 1,
-    "links": 0.07819635533918691,
+    "links": 0.0630901105983749,
     "live": 0,
     "acts": 0.5,
     "honest": 1,
     "fresh": 0.5
    },
    "penalty": 1,
-   "score": 0.552,
+   "score": 0.549,
    "inbound": [],
    "sources": [
     "list",
-    "pr:#102"
+    "pr:#103",
+    "pr:#104",
+    "pr:#105",
+    "pr:#106",
+    "pr:#107"
    ]
   },
   {
@@ -10779,17 +11269,23 @@
    "signals": {
     "probes": null,
     "conformance": 1,
-    "links": 0.07819635533918691,
+    "links": 0.0630901105983749,
     "live": 0,
     "acts": 0.5,
     "honest": 1,
     "fresh": 0.5
    },
    "penalty": 1,
-   "score": 0.552,
+   "score": 0.549,
    "inbound": [],
    "sources": [
-    "pr:#102"
+    "list",
+    "pr:#102",
+    "pr:#103",
+    "pr:#104",
+    "pr:#105",
+    "pr:#106",
+    "pr:#107"
    ]
   },
   {
@@ -10885,19 +11381,22 @@
    "signals": {
     "probes": null,
     "conformance": 1,
-    "links": 0.07819635533918691,
+    "links": 0.0630901105983749,
     "live": 0,
     "acts": 0.5,
     "honest": 1,
     "fresh": 0.5
    },
    "penalty": 1,
-   "score": 0.552,
+   "score": 0.549,
    "inbound": [],
    "sources": [
     "list",
-    "pr:#101",
-    "pr:#102",
+    "pr:#103",
+    "pr:#104",
+    "pr:#105",
+    "pr:#106",
+    "pr:#107",
     "pr:#99"
    ]
   },
@@ -10996,14 +11495,14 @@
    "signals": {
     "probes": 1,
     "conformance": 0.6666666666666666,
-    "links": 0.07819635533918691,
+    "links": 0.0630901105983749,
     "live": 0,
     "acts": 0,
     "honest": 0,
     "fresh": 1
    },
    "penalty": 1,
-   "score": 0.528,
+   "score": 0.526,
    "inbound": [],
    "sources": [
     "github:wenizmohamed/aura-agentic-web",
@@ -11091,14 +11590,14 @@
    "signals": {
     "probes": 1,
     "conformance": 0.6666666666666666,
-    "links": 0.07819635533918691,
+    "links": 0.0630901105983749,
     "live": 0,
     "acts": 0,
     "honest": 0,
     "fresh": 1
    },
    "penalty": 1,
-   "score": 0.528,
+   "score": 0.526,
    "inbound": [],
    "sources": [
     "github:emilhuseyn/cognizant-agentic-web"
@@ -11183,14 +11682,14 @@
    "signals": {
     "probes": 0.6666666666666666,
     "conformance": 1,
-    "links": 0.07819635533918691,
+    "links": 0.0630901105983749,
     "live": 0,
     "acts": 0,
     "honest": 0,
     "fresh": 1
    },
    "penalty": 1,
-   "score": 0.512,
+   "score": 0.509,
    "inbound": [],
    "sources": [
     "github:Pritahi/open-agent-trust-badge"
@@ -11275,17 +11774,113 @@
    "signals": {
     "probes": 0.6666666666666666,
     "conformance": 1,
-    "links": 0.07819635533918691,
+    "links": 0.0630901105983749,
     "live": 0,
     "acts": 0,
     "honest": 0,
     "fresh": 1
    },
    "penalty": 1,
-   "score": 0.512,
+   "score": 0.509,
    "inbound": [],
    "sources": [
     "github:Pritahi/open-agent-trust-badge"
+   ]
+  },
+  {
+   "url": "https://hybrid.gemihub.net/s/shop-f857f98c/agent/shop_guide",
+   "name": "shop_guide",
+   "site": "https://hybrid.gemihub.net/s/shop-f857f98c/agent/",
+   "brand": "nano ご案内",
+   "description": "nanoの営業時間・休業日・取扱品をご案内します。",
+   "sampleQueries": [
+    "営業時間とお休みを教えてください",
+    "どんな品を扱っていますか？",
+    "お店への行き方を教えてください"
+   ],
+   "tags": [
+    "agentified-website",
+    "shop",
+    "shop-guide"
+   ],
+   "agents": [
+    {
+     "name": "shop_front",
+     "description": "Read-only guide for nano: opening hours, closed days, address and published products or services."
+    }
+   ],
+   "cannotDo": [],
+   "siteActions": [],
+   "sharedActions": [],
+   "digest": "bec3378e31275422e0bda71111d767ccd51b751bc9d9c7d27c72a5ebd77dd982",
+   "checks": [
+    {
+     "id": "manifest",
+     "pass": true,
+     "detail": "manifest has networks, front_man, hocon and llm_router"
+    },
+    {
+     "id": "definition",
+     "pass": true,
+     "detail": "1 agents, front agent defined"
+    },
+    {
+     "id": "cors",
+     "pass": true,
+     "detail": "manifest *, definition *"
+    },
+    {
+     "id": "integrity",
+     "pass": null,
+     "detail": "no declared digest"
+    },
+    {
+     "id": "safety",
+     "pass": true,
+     "detail": "no text aimed at other agents, rankers or keys"
+    },
+    {
+     "id": "probes",
+     "pass": null,
+     "detail": "not probed yet"
+    },
+    {
+     "id": "live_for_callers",
+     "pass": false,
+     "detail": "shares no live reads"
+    },
+    {
+     "id": "acts",
+     "pass": false,
+     "detail": "talks only"
+    },
+    {
+     "id": "honest",
+     "pass": false,
+     "detail": "publishes no can't-do list"
+    },
+    {
+     "id": "original",
+     "pass": true,
+     "detail": "no near-copy of a higher-ranked network"
+    }
+   ],
+   "signals": {
+    "probes": null,
+    "conformance": 1,
+    "links": 0.27565294236571447,
+    "live": 0,
+    "acts": 0,
+    "honest": 0,
+    "fresh": 0.5
+   },
+   "penalty": 1,
+   "score": 0.452,
+   "inbound": [
+    "https://hybrid.gemihub.net/"
+   ],
+   "sources": [
+    "link:https://hybrid.gemihub.net/reservation_finder"
    ]
   },
   {
@@ -11366,14 +11961,14 @@
    "signals": {
     "probes": null,
     "conformance": 1,
-    "links": 0.07819635533918691,
+    "links": 0.0630901105983749,
     "live": 0,
     "acts": 0,
     "honest": 0,
     "fresh": 1
    },
    "penalty": 1,
-   "score": 0.445,
+   "score": 0.442,
    "inbound": [],
    "sources": [
     "github:2738777-ai/agentic-trust-hub"
@@ -11452,14 +12047,14 @@
    "signals": {
     "probes": null,
     "conformance": 1,
-    "links": 0.07819635533918691,
+    "links": 0.0630901105983749,
     "live": 0,
     "acts": 0,
     "honest": 0,
     "fresh": 1
    },
    "penalty": 1,
-   "score": 0.445,
+   "score": 0.442,
    "inbound": [],
    "sources": [
     "github:myhifi/agentify-page-agentic-hub"
@@ -11546,14 +12141,14 @@
    "signals": {
     "probes": null,
     "conformance": 1,
-    "links": 0.07819635533918691,
+    "links": 0.0630901105983749,
     "live": 0,
     "acts": 0,
     "honest": 0,
     "fresh": 1
    },
    "penalty": 1,
-   "score": 0.445,
+   "score": 0.442,
    "inbound": [],
    "sources": [
     "github:Adeolu5678/openscout-agentic-web"
@@ -11653,21 +12248,24 @@
    "signals": {
     "probes": null,
     "conformance": 1,
-    "links": 0.14466410679849165,
+    "links": 0.11671734162596727,
     "live": 0,
     "acts": 0,
     "honest": 0,
     "fresh": 0.5
    },
    "penalty": 1,
-   "score": 0.424,
+   "score": 0.418,
    "inbound": [
     "https://saltbox-coffee-demo.netlify.app/"
    ],
    "sources": [
     "list",
-    "pr:#101",
-    "pr:#102",
+    "pr:#103",
+    "pr:#104",
+    "pr:#105",
+    "pr:#106",
+    "pr:#107",
     "pr:#99"
    ]
   },
@@ -11756,14 +12354,14 @@
    "signals": {
     "probes": null,
     "conformance": 1,
-    "links": 0.10035227249228848,
+    "links": 0.08096585427423901,
     "live": 0,
     "acts": 0,
     "honest": 0,
     "fresh": 0.5
    },
    "penalty": 1,
-   "score": 0.414,
+   "score": 0.41,
    "inbound": [
     "https://lab-buyer.komalvardhan.com/"
    ],
@@ -11857,14 +12455,14 @@
    "signals": {
     "probes": null,
     "conformance": 1,
-    "links": 0.10035227249228848,
+    "links": 0.08096585427423901,
     "live": 0,
     "acts": 0,
     "honest": 0,
     "fresh": 0.5
    },
    "penalty": 1,
-   "score": 0.414,
+   "score": 0.41,
    "inbound": [
     "https://lab-buyer.komalvardhan.com/"
    ],
@@ -11948,14 +12546,14 @@
    "signals": {
     "probes": null,
     "conformance": 1,
-    "links": 0.10035227249228848,
+    "links": 0.08096585427423901,
     "live": 0,
     "acts": 0,
     "honest": 0,
     "fresh": 0.5
    },
    "penalty": 1,
-   "score": 0.414,
+   "score": 0.41,
    "inbound": [
     "https://lab-buyer.komalvardhan.com/"
    ],
@@ -12043,14 +12641,14 @@
    "signals": {
     "probes": null,
     "conformance": 1,
-    "links": 0.10035227249228848,
+    "links": 0.08096585427423901,
     "live": 0,
     "acts": 0,
     "honest": 0,
     "fresh": 0.5
    },
    "penalty": 1,
-   "score": 0.414,
+   "score": 0.41,
    "inbound": [
     "https://lab-buyer.komalvardhan.com/"
    ],
@@ -12144,14 +12742,14 @@
    "signals": {
     "probes": null,
     "conformance": 1,
-    "links": 0.10035227249228848,
+    "links": 0.08096585427423901,
     "live": 0,
     "acts": 0,
     "honest": 0,
     "fresh": 0.5
    },
    "penalty": 1,
-   "score": 0.414,
+   "score": 0.41,
    "inbound": [
     "https://lab-buyer.komalvardhan.com/"
    ],
@@ -12245,14 +12843,14 @@
    "signals": {
     "probes": null,
     "conformance": 1,
-    "links": 0.10035227249228848,
+    "links": 0.08096585427423901,
     "live": 0,
     "acts": 0,
     "honest": 0,
     "fresh": 0.5
    },
    "penalty": 1,
-   "score": 0.414,
+   "score": 0.41,
    "inbound": [
     "https://lab-buyer.komalvardhan.com/"
    ],
@@ -12346,19 +12944,22 @@
    "signals": {
     "probes": null,
     "conformance": 1,
-    "links": 0.07819635533918691,
+    "links": 0.0630901105983749,
     "live": 0,
     "acts": 0,
     "honest": 0,
     "fresh": 0.5
    },
    "penalty": 1,
-   "score": 0.41,
+   "score": 0.406,
    "inbound": [],
    "sources": [
     "list",
-    "pr:#101",
-    "pr:#102",
+    "pr:#103",
+    "pr:#104",
+    "pr:#105",
+    "pr:#106",
+    "pr:#107",
     "pr:#99"
    ]
   },
@@ -12456,14 +13057,14 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.07819635533918691,
+    "links": 0.0630901105983749,
     "live": 1,
     "acts": 0.5,
     "honest": 1,
     "fresh": 1
    },
    "penalty": 0.5,
-   "score": 0.406,
+   "score": 0.405,
    "inbound": [],
    "sources": [
     "github:juan294/retrofit"
@@ -12554,14 +13155,14 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.07819635533918691,
+    "links": 0.0630901105983749,
     "live": 1,
     "acts": 0.5,
     "honest": 0,
     "fresh": 1
    },
    "penalty": 0.5,
-   "score": 0.381,
+   "score": 0.38,
    "inbound": [],
    "sources": [
     "github:juan294/retrofit"
@@ -12664,14 +13265,14 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.11143023106883927,
+    "links": 0.08990372611217107,
     "live": 0,
     "acts": 0.5,
     "honest": 1,
     "fresh": 1
    },
    "penalty": 0.5,
-   "score": 0.358,
+   "score": 0.357,
    "inbound": [
     "https://emilhuseyn.github.io/cognizant-agentic-web/"
    ],
@@ -12759,14 +13360,14 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.07819635533918691,
+    "links": 0.0630901105983749,
     "live": 0,
     "acts": 0,
     "honest": 1,
     "fresh": 1
    },
    "penalty": 0.5,
-   "score": 0.331,
+   "score": 0.33,
    "inbound": [],
    "sources": [
     "github:Driedsandwich/peer-preflight-lab"
@@ -12851,14 +13452,14 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.07819635533918691,
+    "links": 0.0630901105983749,
     "live": 0,
     "acts": 0,
     "honest": 1,
     "fresh": 1
    },
    "penalty": 0.5,
-   "score": 0.331,
+   "score": 0.33,
    "inbound": [],
    "sources": [
     "github:Driedsandwich/peer-preflight-lab"
@@ -12943,14 +13544,14 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.07819635533918691,
+    "links": 0.0630901105983749,
     "live": 0,
     "acts": 0,
     "honest": 1,
     "fresh": 1
    },
    "penalty": 0.5,
-   "score": 0.331,
+   "score": 0.33,
    "inbound": [],
    "sources": [
     "github:Driedsandwich/peer-preflight-lab"
@@ -13035,14 +13636,14 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.07819635533918691,
+    "links": 0.0630901105983749,
     "live": 0,
     "acts": 0,
     "honest": 1,
     "fresh": 1
    },
    "penalty": 0.5,
-   "score": 0.331,
+   "score": 0.33,
    "inbound": [],
    "sources": [
     "github:Driedsandwich/peer-preflight-lab"
@@ -13127,14 +13728,14 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.07819635533918691,
+    "links": 0.0630901105983749,
     "live": 0,
     "acts": 0,
     "honest": 1,
     "fresh": 1
    },
    "penalty": 0.5,
-   "score": 0.331,
+   "score": 0.33,
    "inbound": [],
    "sources": [
     "github:Driedsandwich/peer-preflight-lab"
@@ -13219,14 +13820,14 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.07819635533918691,
+    "links": 0.0630901105983749,
     "live": 0,
     "acts": 0,
     "honest": 1,
     "fresh": 1
    },
    "penalty": 0.5,
-   "score": 0.331,
+   "score": 0.33,
    "inbound": [],
    "sources": [
     "github:Driedsandwich/peer-preflight-lab"
@@ -13311,14 +13912,14 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.07819635533918691,
+    "links": 0.0630901105983749,
     "live": 0,
     "acts": 0,
     "honest": 1,
     "fresh": 1
    },
    "penalty": 0.5,
-   "score": 0.331,
+   "score": 0.33,
    "inbound": [],
    "sources": [
     "github:Driedsandwich/peer-preflight-lab"
@@ -13403,14 +14004,14 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.07819635533918691,
+    "links": 0.0630901105983749,
     "live": 0,
     "acts": 0,
     "honest": 1,
     "fresh": 1
    },
    "penalty": 0.5,
-   "score": 0.331,
+   "score": 0.33,
    "inbound": [],
    "sources": [
     "github:Driedsandwich/peer-preflight-lab"
@@ -13503,14 +14104,14 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.07819635533918691,
+    "links": 0.0630901105983749,
     "live": 0,
     "acts": 0,
     "honest": 1,
     "fresh": 1
    },
    "penalty": 0.5,
-   "score": 0.331,
+   "score": 0.33,
    "inbound": [],
    "sources": [
     "github:Driedsandwich/peer-preflight-lab"
@@ -13603,14 +14204,14 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.07819635533918691,
+    "links": 0.0630901105983749,
     "live": 0,
     "acts": 0,
     "honest": 1,
     "fresh": 1
    },
    "penalty": 0.5,
-   "score": 0.331,
+   "score": 0.33,
    "inbound": [],
    "sources": [
     "github:Driedsandwich/peer-preflight-lab"
@@ -13695,14 +14296,14 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.07819635533918691,
+    "links": 0.0630901105983749,
     "live": 0,
     "acts": 0,
     "honest": 1,
     "fresh": 1
    },
    "penalty": 0.5,
-   "score": 0.331,
+   "score": 0.33,
    "inbound": [],
    "sources": [
     "github:Driedsandwich/peer-preflight-lab"
@@ -13787,14 +14388,14 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.07819635533918691,
+    "links": 0.0630901105983749,
     "live": 0,
     "acts": 0,
     "honest": 1,
     "fresh": 1
    },
    "penalty": 0.5,
-   "score": 0.331,
+   "score": 0.33,
    "inbound": [],
    "sources": [
     "github:Driedsandwich/peer-preflight-lab"
@@ -13879,14 +14480,14 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.07819635533918691,
+    "links": 0.0630901105983749,
     "live": 0,
     "acts": 0,
     "honest": 1,
     "fresh": 1
    },
    "penalty": 0.5,
-   "score": 0.331,
+   "score": 0.33,
    "inbound": [],
    "sources": [
     "github:Driedsandwich/peer-preflight-lab"
@@ -13971,14 +14572,14 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.07819635533918691,
+    "links": 0.0630901105983749,
     "live": 0,
     "acts": 0,
     "honest": 1,
     "fresh": 1
    },
    "penalty": 0.5,
-   "score": 0.331,
+   "score": 0.33,
    "inbound": [],
    "sources": [
     "github:Driedsandwich/peer-preflight-lab"
@@ -14063,14 +14664,14 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.07819635533918691,
+    "links": 0.0630901105983749,
     "live": 0,
     "acts": 0,
     "honest": 1,
     "fresh": 1
    },
    "penalty": 0.5,
-   "score": 0.331,
+   "score": 0.33,
    "inbound": [],
    "sources": [
     "github:Driedsandwich/peer-preflight-lab"
@@ -14155,14 +14756,14 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.07819635533918691,
+    "links": 0.0630901105983749,
     "live": 0,
     "acts": 0,
     "honest": 1,
     "fresh": 1
    },
    "penalty": 0.5,
-   "score": 0.331,
+   "score": 0.33,
    "inbound": [],
    "sources": [
     "github:Driedsandwich/peer-preflight-lab"
@@ -14247,14 +14848,14 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.07819635533918691,
+    "links": 0.0630901105983749,
     "live": 0,
     "acts": 0,
     "honest": 1,
     "fresh": 1
    },
    "penalty": 0.5,
-   "score": 0.331,
+   "score": 0.33,
    "inbound": [],
    "sources": [
     "github:Driedsandwich/peer-preflight-lab"
@@ -14339,14 +14940,14 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.07819635533918691,
+    "links": 0.0630901105983749,
     "live": 0,
     "acts": 0,
     "honest": 1,
     "fresh": 1
    },
    "penalty": 0.5,
-   "score": 0.331,
+   "score": 0.33,
    "inbound": [],
    "sources": [
     "github:Driedsandwich/peer-preflight-lab"
@@ -14431,14 +15032,14 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.07819635533918691,
+    "links": 0.0630901105983749,
     "live": 0,
     "acts": 0,
     "honest": 1,
     "fresh": 1
    },
    "penalty": 0.5,
-   "score": 0.331,
+   "score": 0.33,
    "inbound": [],
    "sources": [
     "github:Driedsandwich/peer-preflight-lab"
@@ -14523,14 +15124,14 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.07819635533918691,
+    "links": 0.0630901105983749,
     "live": 0,
     "acts": 0,
     "honest": 1,
     "fresh": 1
    },
    "penalty": 0.5,
-   "score": 0.331,
+   "score": 0.33,
    "inbound": [],
    "sources": [
     "github:Driedsandwich/peer-preflight-lab"
@@ -14615,14 +15216,14 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.07819635533918691,
+    "links": 0.0630901105983749,
     "live": 0,
     "acts": 0,
     "honest": 1,
     "fresh": 1
    },
    "penalty": 0.5,
-   "score": 0.331,
+   "score": 0.33,
    "inbound": [],
    "sources": [
     "github:Driedsandwich/peer-preflight-lab"
@@ -14707,14 +15308,14 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.07819635533918691,
+    "links": 0.0630901105983749,
     "live": 0,
     "acts": 0,
     "honest": 1,
     "fresh": 1
    },
    "penalty": 0.5,
-   "score": 0.331,
+   "score": 0.33,
    "inbound": [],
    "sources": [
     "github:Driedsandwich/peer-preflight-lab"
@@ -14799,14 +15400,14 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.07819635533918691,
+    "links": 0.0630901105983749,
     "live": 0,
     "acts": 0,
     "honest": 1,
     "fresh": 1
    },
    "penalty": 0.5,
-   "score": 0.331,
+   "score": 0.33,
    "inbound": [],
    "sources": [
     "github:Driedsandwich/peer-preflight-lab"
@@ -14891,14 +15492,14 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.07819635533918691,
+    "links": 0.0630901105983749,
     "live": 0,
     "acts": 0,
     "honest": 1,
     "fresh": 1
    },
    "penalty": 0.5,
-   "score": 0.331,
+   "score": 0.33,
    "inbound": [],
    "sources": [
     "github:Driedsandwich/peer-preflight-lab"
@@ -14983,14 +15584,14 @@
    "signals": {
     "probes": null,
     "conformance": 0.6666666666666666,
-    "links": 0.07819635533918691,
+    "links": 0.0630901105983749,
     "live": 0,
     "acts": 0,
     "honest": 0,
     "fresh": 1
    },
    "penalty": 1,
-   "score": 0.326,
+   "score": 0.323,
    "inbound": [],
    "sources": [
     "github:xegheplimo-web/agentlint"
@@ -15081,14 +15682,14 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.07819635533918691,
+    "links": 0.0630901105983749,
     "live": 0,
     "acts": 0,
     "honest": 0,
     "fresh": 1
    },
    "penalty": 0.5,
-   "score": 0.306,
+   "score": 0.305,
    "inbound": [],
    "sources": [
     "github:Driedsandwich/peer-preflight-lab"
@@ -15179,14 +15780,14 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.07819635533918691,
+    "links": 0.0630901105983749,
     "live": 0,
     "acts": 0,
     "honest": 0,
     "fresh": 1
    },
    "penalty": 0.5,
-   "score": 0.306,
+   "score": 0.305,
    "inbound": [],
    "sources": [
     "github:Driedsandwich/peer-preflight-lab"
@@ -15271,14 +15872,14 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.07819635533918691,
+    "links": 0.0630901105983749,
     "live": 0,
     "acts": 0,
     "honest": 0,
     "fresh": 1
    },
    "penalty": 0.5,
-   "score": 0.306,
+   "score": 0.305,
    "inbound": [],
    "sources": [
     "github:Pritahi/open-agent-trust-badge"
@@ -15357,14 +15958,14 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.14466410679849165,
+    "links": 0.11671734162596727,
     "live": 0,
     "acts": 0,
     "honest": 0,
     "fresh": 0.5
    },
    "penalty": 0.5,
-   "score": 0.298,
+   "score": 0.296,
    "inbound": [
     "https://gacaca6.github.io/repair-route/"
    ],
@@ -15463,19 +16064,22 @@
    "signals": {
     "probes": null,
     "conformance": 1,
-    "links": 0.07819635533918691,
+    "links": 0.0630901105983749,
     "live": 0,
     "acts": 0.5,
     "honest": 1,
     "fresh": 1
    },
    "penalty": 0.5,
-   "score": 0.294,
+   "score": 0.292,
    "inbound": [],
    "sources": [
     "list",
-    "pr:#101",
-    "pr:#102",
+    "pr:#103",
+    "pr:#104",
+    "pr:#105",
+    "pr:#106",
+    "pr:#107",
     "pr:#99"
    ]
   },
@@ -15560,14 +16164,14 @@
    "signals": {
     "probes": null,
     "conformance": 0.3333333333333333,
-    "links": 0.07819635533918691,
+    "links": 0.0630901105983749,
     "live": 0,
     "acts": 0.5,
     "honest": 0,
     "fresh": 1
    },
    "penalty": 1,
-   "score": 0.279,
+   "score": 0.275,
    "inbound": [],
    "sources": [
     "github:elghaly-dev/thoth"
@@ -15651,14 +16255,14 @@
    "signals": {
     "probes": null,
     "conformance": 1,
-    "links": 0.11143023106883927,
+    "links": 0.08990372611217107,
     "live": 0,
     "acts": 0,
     "honest": 0,
     "fresh": 0.5
    },
    "penalty": 0.5,
-   "score": 0.208,
+   "score": 0.206,
    "inbound": [
     "https://2738777-ai.github.io/agentic-trust-hub/"
    ],
@@ -15751,14 +16355,14 @@
    "signals": {
     "probes": null,
     "conformance": 1,
-    "links": 0.10035227249228848,
+    "links": 0.08096585427423901,
     "live": 0,
     "acts": 0,
     "honest": 0,
     "fresh": 0.5
    },
    "penalty": 0.5,
-   "score": 0.207,
+   "score": 0.205,
    "inbound": [
     "https://lab-buyer.komalvardhan.com/"
    ],
@@ -15845,14 +16449,14 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.11143023106883927,
+    "links": 0.09560170335041401,
     "live": 0,
     "acts": 0,
     "honest": 0,
     "fresh": 1
    },
    "penalty": 0.3,
-   "score": 0.185,
+   "score": 0.184,
    "inbound": [
     "https://montbaga.github.io/agent-customs/"
    ],
@@ -15939,7 +16543,7 @@
    "signals": {
     "probes": 1,
     "conformance": 1,
-    "links": 0.07819635533918691,
+    "links": 0.0630901105983749,
     "live": 0,
     "acts": 0,
     "honest": 0,
@@ -16030,14 +16634,14 @@
    "signals": {
     "probes": null,
     "conformance": 1,
-    "links": 0.07819635533918691,
+    "links": 0.0630901105983749,
     "live": 0,
     "acts": 0,
     "honest": 0,
     "fresh": 1
    },
    "penalty": 0.15,
-   "score": 0.067,
+   "score": 0.066,
    "inbound": [],
    "sources": [
     "github:2738777-ai/agentic-trust-hub"
@@ -16121,14 +16725,14 @@
    "signals": {
     "probes": null,
     "conformance": 1,
-    "links": 0.11143023106883927,
+    "links": 0.08990372611217107,
     "live": 0,
     "acts": 0,
     "honest": 0,
     "fresh": 0.5
    },
    "penalty": 0.15,
-   "score": 0.063,
+   "score": 0.062,
    "inbound": [
     "https://2738777-ai.github.io/agentic-trust-hub/"
    ],
@@ -16139,140 +16743,23 @@
  ],
  "misses": [
   {
-   "base": "https://2738777-ai.github.io/agentic-trust-hub/A_normal/",
-   "sources": [
-    "github:2738777-ai/agentic-trust-hub"
-   ],
-   "status": 404,
-   "error": "HTTP 404"
-  },
-  {
-   "base": "https://2738777-ai.github.io/agentic-trust-hub/B_injected/",
-   "sources": [
-    "github:2738777-ai/agentic-trust-hub"
-   ],
-   "status": 404,
-   "error": "HTTP 404"
-  },
-  {
-   "base": "https://2738777-ai.github.io/agentic-trust-hub/C_self_signed/",
-   "sources": [
-    "github:2738777-ai/agentic-trust-hub"
-   ],
-   "status": 404,
-   "error": "HTTP 404"
-  },
-  {
-   "base": "https://2738777-ai.github.io/agentic-trust-hub/D_steps_changed/",
-   "sources": [
-    "github:2738777-ai/agentic-trust-hub"
-   ],
-   "status": 404,
-   "error": "HTTP 404"
-  },
-  {
-   "base": "https://2738777-ai.github.io/agentic-trust-hub/E_unsigned/",
-   "sources": [
-    "github:2738777-ai/agentic-trust-hub"
-   ],
-   "status": 404,
-   "error": "HTTP 404"
-  },
-  {
-   "base": "https://2738777-ai.github.io/agentic-trust-hub/harbor_mirror/",
-   "sources": [
-    "github:2738777-ai/agentic-trust-hub"
-   ],
-   "status": 404,
-   "error": "HTTP 404"
-  },
-  {
-   "base": "https://2738777-ai.github.io/agentic-trust-hub/harbor_notice_board/",
-   "sources": [
-    "github:2738777-ai/agentic-trust-hub"
-   ],
-   "status": 404,
-   "error": "HTTP 404"
-  },
-  {
-   "base": "https://2738777-ai.github.io/agentic-trust-hub/partners/harbor_mirror/",
-   "sources": [
-    "github:2738777-ai/agentic-trust-hub"
-   ],
-   "status": 404,
-   "error": "HTTP 404"
-  },
-  {
-   "base": "https://2738777-ai.github.io/agentic-trust-hub/partners/harbor_notice_board/",
-   "sources": [
-    "github:2738777-ai/agentic-trust-hub"
-   ],
-   "status": 404,
-   "error": "HTTP 404"
-  },
-  {
-   "base": "https://agent-undercover.yablokolabs.com/apps/demo-target/public/",
-   "sources": [
-    "github:yablokolabs/agent-undercover"
-   ],
-   "status": 404,
-   "error": "HTTP 404"
-  },
-  {
-   "base": "https://agent-undercover.yablokolabs.com/apps/workbench/public/",
-   "sources": [
-    "github:yablokolabs/agent-undercover"
-   ],
-   "status": 404,
-   "error": "HTTP 404"
-  },
-  {
-   "base": "https://agent-undercover.yablokolabs.com/demo-target/public/",
-   "sources": [
-    "github:yablokolabs/agent-undercover"
-   ],
-   "status": 404,
-   "error": "HTTP 404"
-  },
-  {
-   "base": "https://agent-undercover.yablokolabs.com/public/",
-   "sources": [
-    "github:yablokolabs/agent-undercover"
-   ],
-   "status": 404,
-   "error": "HTTP 404"
-  },
-  {
-   "base": "https://agent-undercover.yablokolabs.com/workbench/public/",
-   "sources": [
-    "github:yablokolabs/agent-undercover"
-   ],
-   "status": 404,
-   "error": "HTTP 404"
-  },
-  {
    "base": "https://agenticsystemcore.com/",
    "sources": [
     "list",
-    "pr:#101",
-    "pr:#102",
+    "pr:#103",
+    "pr:#104",
+    "pr:#105",
+    "pr:#106",
+    "pr:#107",
     "pr:#99"
    ],
    "status": 404,
    "error": "HTTP 404"
   },
   {
-   "base": "https://agentify-page-agentic-hub.vercel.app/public/",
+   "base": "https://ahmed-za55.github.io/",
    "sources": [
-    "github:myhifi/agentify-page-agentic-hub"
-   ],
-   "status": 404,
-   "error": "HTTP 404"
-  },
-  {
-   "base": "https://agentify-page-agentic-hub.vercel.app/public/.well-known/",
-   "sources": [
-    "github:myhifi/agentify-page-agentic-hub"
+    "pr:#105"
    ],
    "status": 404,
    "error": "HTTP 404"
@@ -16281,8 +16768,11 @@
    "base": "https://akshit9162.github.io/",
    "sources": [
     "list",
-    "pr:#101",
-    "pr:#102",
+    "pr:#103",
+    "pr:#104",
+    "pr:#105",
+    "pr:#106",
+    "pr:#107",
     "pr:#99"
    ],
    "status": 404,
@@ -16292,65 +16782,12 @@
    "base": "https://aphrogenes.com/",
    "sources": [
     "list",
-    "pr:#101",
-    "pr:#102",
+    "pr:#103",
+    "pr:#104",
+    "pr:#105",
+    "pr:#106",
+    "pr:#107",
     "pr:#99"
-   ],
-   "status": 404,
-   "error": "HTTP 404"
-  },
-  {
-   "base": "https://aura-agentic-web.vercel.app/public/",
-   "sources": [
-    "github:wenizmohamed/aura-agentic-web"
-   ],
-   "status": 404,
-   "error": "HTTP 404"
-  },
-  {
-   "base": "https://aura-agentic-web.vercel.app/public/.well-known/",
-   "sources": [
-    "github:wenizmohamed/aura-agentic-web"
-   ],
-   "status": 404,
-   "error": "HTTP 404"
-  },
-  {
-   "base": "https://aura-agentic-web.vercel.app/public/agents/",
-   "sources": [
-    "github:wenizmohamed/aura-agentic-web"
-   ],
-   "status": 404,
-   "error": "HTTP 404"
-  },
-  {
-   "base": "https://bardrop.github.io/travel-desk/agentify-website/templates/",
-   "sources": [
-    "github:bardrop/travel-desk"
-   ],
-   "status": 404,
-   "error": "HTTP 404"
-  },
-  {
-   "base": "https://bardrop.github.io/travel-desk/site/",
-   "sources": [
-    "github:bardrop/travel-desk"
-   ],
-   "status": 404,
-   "error": "HTTP 404"
-  },
-  {
-   "base": "https://bardrop.github.io/travel-desk/templates/",
-   "sources": [
-    "github:bardrop/travel-desk"
-   ],
-   "status": 404,
-   "error": "HTTP 404"
-  },
-  {
-   "base": "https://bardrop.github.io/travel-desk/tools/agentify-website/templates/",
-   "sources": [
-    "github:bardrop/travel-desk"
    ],
    "status": 404,
    "error": "HTTP 404"
@@ -16359,8 +16796,11 @@
    "base": "https://chen931222.github.io/",
    "sources": [
     "list",
-    "pr:#101",
-    "pr:#102",
+    "pr:#103",
+    "pr:#104",
+    "pr:#105",
+    "pr:#106",
+    "pr:#107",
     "pr:#99"
    ],
    "status": 404,
@@ -16370,17 +16810,12 @@
    "base": "https://cocvn157.github.io/",
    "sources": [
     "list",
-    "pr:#101",
-    "pr:#102",
+    "pr:#103",
+    "pr:#104",
+    "pr:#105",
+    "pr:#106",
+    "pr:#107",
     "pr:#99"
-   ],
-   "status": 404,
-   "error": "HTTP 404"
-  },
-  {
-   "base": "https://daohuutrong2404.github.io/agentgate-agentic-web/docs/",
-   "sources": [
-    "github:DaoHuuTrong2404/agentgate-agentic-web"
    ],
    "status": 404,
    "error": "HTTP 404"
@@ -16390,305 +16825,20 @@
    "sources": [
     "list",
     "peer:https://bacajelas-agentic.web.app/",
-    "pr:#101",
-    "pr:#102",
+    "pr:#103",
+    "pr:#104",
+    "pr:#105",
+    "pr:#106",
+    "pr:#107",
     "pr:#99"
    ],
    "status": 402,
    "error": "HTTP 402"
   },
   {
-   "base": "https://disruption-ledger.bedir-ai.workers.dev/public/",
+   "base": "https://ihnpop.github.io/",
    "sources": [
-    "github:mevlanayalcin/disruption-ledger"
-   ],
-   "status": 404,
-   "error": "HTTP 404"
-  },
-  {
-   "base": "https://driedsandwich.github.io/peer-preflight-lab/",
-   "sources": [
-    "github:Driedsandwich/peer-preflight-lab"
-   ],
-   "status": 404,
-   "error": "HTTP 404"
-  },
-  {
-   "base": "https://driedsandwich.github.io/peer-preflight-lab/broken/",
-   "sources": [
-    "github:Driedsandwich/peer-preflight-lab"
-   ],
-   "status": 404,
-   "error": "HTTP 404"
-  },
-  {
-   "base": "https://driedsandwich.github.io/peer-preflight-lab/depth_1/",
-   "sources": [
-    "github:Driedsandwich/peer-preflight-lab"
-   ],
-   "status": 404,
-   "error": "HTTP 404"
-  },
-  {
-   "base": "https://driedsandwich.github.io/peer-preflight-lab/depth_2/",
-   "sources": [
-    "github:Driedsandwich/peer-preflight-lab"
-   ],
-   "status": 404,
-   "error": "HTTP 404"
-  },
-  {
-   "base": "https://driedsandwich.github.io/peer-preflight-lab/depth_3/",
-   "sources": [
-    "github:Driedsandwich/peer-preflight-lab"
-   ],
-   "status": 404,
-   "error": "HTTP 404"
-  },
-  {
-   "base": "https://driedsandwich.github.io/peer-preflight-lab/greedy/",
-   "sources": [
-    "github:Driedsandwich/peer-preflight-lab"
-   ],
-   "status": 404,
-   "error": "HTTP 404"
-  },
-  {
-   "base": "https://driedsandwich.github.io/peer-preflight-lab/honest/",
-   "sources": [
-    "github:Driedsandwich/peer-preflight-lab"
-   ],
-   "status": 404,
-   "error": "HTTP 404"
-  },
-  {
-   "base": "https://driedsandwich.github.io/peer-preflight-lab/key_thief/",
-   "sources": [
-    "github:Driedsandwich/peer-preflight-lab"
-   ],
-   "status": 404,
-   "error": "HTTP 404"
-  },
-  {
-   "base": "https://driedsandwich.github.io/peer-preflight-lab/loop_a/",
-   "sources": [
-    "github:Driedsandwich/peer-preflight-lab"
-   ],
-   "status": 404,
-   "error": "HTTP 404"
-  },
-  {
-   "base": "https://driedsandwich.github.io/peer-preflight-lab/loop_b/",
-   "sources": [
-    "github:Driedsandwich/peer-preflight-lab"
-   ],
-   "status": 404,
-   "error": "HTTP 404"
-  },
-  {
-   "base": "https://driedsandwich.github.io/peer-preflight-lab/near_name/",
-   "sources": [
-    "github:Driedsandwich/peer-preflight-lab"
-   ],
-   "status": 404,
-   "error": "HTTP 404"
-  },
-  {
-   "base": "https://driedsandwich.github.io/peer-preflight-lab/redirector/",
-   "sources": [
-    "github:Driedsandwich/peer-preflight-lab"
-   ],
-   "status": 404,
-   "error": "HTTP 404"
-  },
-  {
-   "base": "https://driedsandwich.github.io/peer-preflight-lab/sly_snoop/",
-   "sources": [
-    "github:Driedsandwich/peer-preflight-lab"
-   ],
-   "status": 404,
-   "error": "HTTP 404"
-  },
-  {
-   "base": "https://driedsandwich.github.io/peer-preflight-lab/tours/",
-   "sources": [
-    "github:Driedsandwich/peer-preflight-lab"
-   ],
-   "status": 404,
-   "error": "HTTP 404"
-  },
-  {
-   "base": "https://emilhuseyn.github.io/cognizant-agentic-web/agentify-website/templates/",
-   "sources": [
-    "github:emilhuseyn/cognizant-agentic-web"
-   ],
-   "status": 404,
-   "error": "HTTP 404"
-  },
-  {
-   "base": "https://emilhuseyn.github.io/cognizant-agentic-web/invalid/",
-   "sources": [
-    "github:emilhuseyn/cognizant-agentic-web"
-   ],
-   "status": 404,
-   "error": "HTTP 404"
-  },
-  {
-   "base": "https://emilhuseyn.github.io/cognizant-agentic-web/lanternmd-desk/",
-   "sources": [
-    "github:emilhuseyn/cognizant-agentic-web"
-   ],
-   "status": 404,
-   "error": "HTTP 404"
-  },
-  {
-   "base": "https://emilhuseyn.github.io/cognizant-agentic-web/sites/lanternmd-desk/",
-   "sources": [
-    "github:emilhuseyn/cognizant-agentic-web"
-   ],
-   "status": 404,
-   "error": "HTTP 404"
-  },
-  {
-   "base": "https://emilhuseyn.github.io/cognizant-agentic-web/sites/tidecache-desk/",
-   "sources": [
-    "github:emilhuseyn/cognizant-agentic-web"
-   ],
-   "status": 404,
-   "error": "HTTP 404"
-  },
-  {
-   "base": "https://emilhuseyn.github.io/cognizant-agentic-web/sites/triage/",
-   "sources": [
-    "github:emilhuseyn/cognizant-agentic-web"
-   ],
-   "status": 404,
-   "error": "HTTP 404"
-  },
-  {
-   "base": "https://emilhuseyn.github.io/cognizant-agentic-web/sites/triage/checks/invalid/",
-   "sources": [
-    "github:emilhuseyn/cognizant-agentic-web"
-   ],
-   "status": 404,
-   "error": "HTTP 404"
-  },
-  {
-   "base": "https://emilhuseyn.github.io/cognizant-agentic-web/src/triage/checks/invalid/",
-   "sources": [
-    "github:emilhuseyn/cognizant-agentic-web"
-   ],
-   "status": 404,
-   "error": "HTTP 404"
-  },
-  {
-   "base": "https://emilhuseyn.github.io/cognizant-agentic-web/templates/",
-   "sources": [
-    "github:emilhuseyn/cognizant-agentic-web"
-   ],
-   "status": 404,
-   "error": "HTTP 404"
-  },
-  {
-   "base": "https://emilhuseyn.github.io/cognizant-agentic-web/tidecache-desk/",
-   "sources": [
-    "github:emilhuseyn/cognizant-agentic-web"
-   ],
-   "status": 404,
-   "error": "HTTP 404"
-  },
-  {
-   "base": "https://emilhuseyn.github.io/cognizant-agentic-web/tools/agentify-website/templates/",
-   "sources": [
-    "github:emilhuseyn/cognizant-agentic-web"
-   ],
-   "status": 404,
-   "error": "HTTP 404"
-  },
-  {
-   "base": "https://emilhuseyn.github.io/cognizant-agentic-web/triage/",
-   "sources": [
-    "github:emilhuseyn/cognizant-agentic-web"
-   ],
-   "status": 404,
-   "error": "HTTP 404"
-  },
-  {
-   "base": "https://emilhuseyn.github.io/cognizant-agentic-web/triage/checks/invalid/",
-   "sources": [
-    "github:emilhuseyn/cognizant-agentic-web"
-   ],
-   "status": 404,
-   "error": "HTTP 404"
-  },
-  {
-   "base": "https://flightrights-desk.bedir-ai.workers.dev/public/",
-   "sources": [
-    "github:mevlanayalcin/flightrights-desk"
-   ],
-   "status": 404,
-   "error": "HTTP 404"
-  },
-  {
-   "base": "https://hybrid.gemihub.net/agentic/skill/templates/",
-   "sources": [
-    "github:takeshy/gemihub-hybrid"
-   ],
-   "status": 404,
-   "error": "HTTP 404"
-  },
-  {
-   "base": "https://hybrid.gemihub.net/apps/shop/agentic/skill/templates/",
-   "sources": [
-    "github:takeshy/gemihub-hybrid"
-   ],
-   "status": 404,
-   "error": "HTTP 404"
-  },
-  {
-   "base": "https://hybrid.gemihub.net/s/shop-116f9339/agent/",
-   "sources": [
-    "link:https://hybrid.gemihub.net/reservation_finder"
-   ],
-   "status": 404,
-   "error": "HTTP 404"
-  },
-  {
-   "base": "https://hybrid.gemihub.net/shop/agentic/skill/templates/",
-   "sources": [
-    "github:takeshy/gemihub-hybrid"
-   ],
-   "status": 404,
-   "error": "HTTP 404"
-  },
-  {
-   "base": "https://hybrid.gemihub.net/site/",
-   "sources": [
-    "github:takeshy/gemihub-hybrid"
-   ],
-   "status": 404,
-   "error": "HTTP 404"
-  },
-  {
-   "base": "https://hybrid.gemihub.net/skill/templates/",
-   "sources": [
-    "github:takeshy/gemihub-hybrid"
-   ],
-   "status": 404,
-   "error": "HTTP 404"
-  },
-  {
-   "base": "https://hybrid.gemihub.net/src/",
-   "sources": [
-    "github:takeshy/gemihub-hybrid"
-   ],
-   "status": 404,
-   "error": "HTTP 404"
-  },
-  {
-   "base": "https://hybrid.gemihub.net/templates/",
-   "sources": [
-    "github:takeshy/gemihub-hybrid"
+    "pr:#106"
    ],
    "status": 404,
    "error": "HTTP 404"
@@ -16696,7 +16846,12 @@
   {
    "base": "https://jdz-green.github.io/",
    "sources": [
-    "pr:#101"
+    "list",
+    "pr:#103",
+    "pr:#104",
+    "pr:#105",
+    "pr:#106",
+    "pr:#107"
    ],
    "status": 404,
    "error": "HTTP 404"
@@ -16705,8 +16860,11 @@
    "base": "https://kasirku.trade/",
    "sources": [
     "list",
-    "pr:#101",
-    "pr:#102",
+    "pr:#103",
+    "pr:#104",
+    "pr:#105",
+    "pr:#106",
+    "pr:#107",
     "pr:#99"
    ],
    "status": 404,
@@ -16716,8 +16874,11 @@
    "base": "https://kasirku.trade/toko/",
    "sources": [
     "list",
-    "pr:#101",
-    "pr:#102",
+    "pr:#103",
+    "pr:#104",
+    "pr:#105",
+    "pr:#106",
+    "pr:#107",
     "pr:#99"
    ],
    "status": 200,
@@ -16729,17 +16890,20 @@
     "list",
     "peer:https://cocvn157.github.io/meshweave-studio/",
     "peer:https://cocvn157.github.io/scopegate-studio/",
-    "pr:#101",
-    "pr:#102",
+    "pr:#103",
+    "pr:#104",
+    "pr:#105",
+    "pr:#106",
+    "pr:#107",
     "pr:#99"
    ],
    "status": 404,
    "error": "HTTP 404"
   },
   {
-   "base": "https://mikeliso.github.io/bounty-truth-check/site/",
+   "base": "https://linhnguyen-gt.github.io/",
    "sources": [
-    "github:MikeLiso/bounty-truth-check"
+    "pr:#103"
    ],
    "status": 404,
    "error": "HTTP 404"
@@ -16750,41 +16914,13 @@
     "list",
     "peer:https://cocvn157.github.io/meshweave-studio/",
     "peer:https://cocvn157.github.io/scopegate-studio/",
-    "pr:#101",
-    "pr:#102",
+    "peer:https://ihnpop.github.io/rxguard-commons/",
+    "pr:#103",
+    "pr:#104",
+    "pr:#105",
+    "pr:#106",
+    "pr:#107",
     "pr:#99"
-   ],
-   "status": 404,
-   "error": "HTTP 404"
-  },
-  {
-   "base": "https://oaw-formlab-2026.vercel.app/accessrelay/",
-   "sources": [
-    "github:ShenJun93/accessrelay-formlab-agentic-web"
-   ],
-   "status": 404,
-   "error": "HTTP 404"
-  },
-  {
-   "base": "https://oaw-formlab-2026.vercel.app/formlab/",
-   "sources": [
-    "github:ShenJun93/accessrelay-formlab-agentic-web"
-   ],
-   "status": 404,
-   "error": "HTTP 404"
-  },
-  {
-   "base": "https://open-agentic-web.vercel.app/public/",
-   "sources": [
-    "github:Adeolu5678/openscout-agentic-web"
-   ],
-   "status": 404,
-   "error": "HTTP 404"
-  },
-  {
-   "base": "https://open-agentic-web.vercel.app/public/peers/",
-   "sources": [
-    "github:Adeolu5678/openscout-agentic-web"
    ],
    "status": 404,
    "error": "HTTP 404"
@@ -16793,129 +16929,12 @@
    "base": "https://pecopeko.github.io/",
    "sources": [
     "list",
-    "pr:#101",
-    "pr:#102",
+    "pr:#103",
+    "pr:#104",
+    "pr:#105",
+    "pr:#106",
+    "pr:#107",
     "pr:#99"
-   ],
-   "status": 404,
-   "error": "HTTP 404"
-  },
-  {
-   "base": "https://pritahi.github.io/open-agent-trust-badge/alpha/",
-   "sources": [
-    "github:Pritahi/open-agent-trust-badge"
-   ],
-   "status": 404,
-   "error": "HTTP 404"
-  },
-  {
-   "base": "https://pritahi.github.io/open-agent-trust-badge/beta/",
-   "sources": [
-    "github:Pritahi/open-agent-trust-badge"
-   ],
-   "status": 404,
-   "error": "HTTP 404"
-  },
-  {
-   "base": "https://pritahi.github.io/open-agent-trust-badge/docs/",
-   "sources": [
-    "github:Pritahi/open-agent-trust-badge"
-   ],
-   "status": 404,
-   "error": "HTTP 404"
-  },
-  {
-   "base": "https://pritahi.github.io/open-agent-trust-badge/docs/sites/alpha/",
-   "sources": [
-    "github:Pritahi/open-agent-trust-badge"
-   ],
-   "status": 404,
-   "error": "HTTP 404"
-  },
-  {
-   "base": "https://pritahi.github.io/open-agent-trust-badge/docs/sites/beta/",
-   "sources": [
-    "github:Pritahi/open-agent-trust-badge"
-   ],
-   "status": 404,
-   "error": "HTTP 404"
-  },
-  {
-   "base": "https://pritahi.github.io/open-agent-trust-badge/docs/sites/expired/",
-   "sources": [
-    "github:Pritahi/open-agent-trust-badge"
-   ],
-   "status": 404,
-   "error": "HTTP 404"
-  },
-  {
-   "base": "https://pritahi.github.io/open-agent-trust-badge/docs/sites/tampered/",
-   "sources": [
-    "github:Pritahi/open-agent-trust-badge"
-   ],
-   "status": 404,
-   "error": "HTTP 404"
-  },
-  {
-   "base": "https://pritahi.github.io/open-agent-trust-badge/expired/",
-   "sources": [
-    "github:Pritahi/open-agent-trust-badge"
-   ],
-   "status": 404,
-   "error": "HTTP 404"
-  },
-  {
-   "base": "https://pritahi.github.io/open-agent-trust-badge/tampered/",
-   "sources": [
-    "github:Pritahi/open-agent-trust-badge"
-   ],
-   "status": 404,
-   "error": "HTTP 404"
-  },
-  {
-   "base": "https://retrofit-lake.vercel.app/agentic-web/templates/",
-   "sources": [
-    "github:juan294/retrofit"
-   ],
-   "status": 404,
-   "error": "HTTP 404"
-  },
-  {
-   "base": "https://retrofit-lake.vercel.app/demo-harbor/public/",
-   "sources": [
-    "github:juan294/retrofit"
-   ],
-   "status": 404,
-   "error": "HTTP 404"
-  },
-  {
-   "base": "https://retrofit-lake.vercel.app/peers/demo-harbor/public/",
-   "sources": [
-    "github:juan294/retrofit"
-   ],
-   "status": 404,
-   "error": "HTTP 404"
-  },
-  {
-   "base": "https://retrofit-lake.vercel.app/public/",
-   "sources": [
-    "github:juan294/retrofit"
-   ],
-   "status": 404,
-   "error": "HTTP 404"
-  },
-  {
-   "base": "https://retrofit-lake.vercel.app/templates/",
-   "sources": [
-    "github:juan294/retrofit"
-   ],
-   "status": 404,
-   "error": "HTTP 404"
-  },
-  {
-   "base": "https://retrofit-lake.vercel.app/tools/agentic-web/templates/",
-   "sources": [
-    "github:juan294/retrofit"
    ],
    "status": 404,
    "error": "HTTP 404"
@@ -16927,8 +16946,12 @@
     "peer:https://cocvn157.github.io/meshweave-studio/",
     "peer:https://cocvn157.github.io/nanda-seal/",
     "peer:https://cocvn157.github.io/scopegate-studio/",
-    "pr:#101",
-    "pr:#102",
+    "peer:https://ihnpop.github.io/rxguard-commons/",
+    "pr:#103",
+    "pr:#104",
+    "pr:#105",
+    "pr:#106",
+    "pr:#107",
     "pr:#99"
    ],
    "status": 404,
@@ -16938,8 +16961,11 @@
    "base": "https://skybleak333.github.io/",
    "sources": [
     "list",
-    "pr:#101",
-    "pr:#102",
+    "pr:#103",
+    "pr:#104",
+    "pr:#105",
+    "pr:#106",
+    "pr:#107",
     "pr:#99"
    ],
    "status": 404,
@@ -16949,45 +16975,15 @@
    "base": "https://spare-hours-agent.vercel.app/",
    "sources": [
     "list",
-    "pr:#101",
-    "pr:#102",
+    "pr:#103",
+    "pr:#104",
+    "pr:#105",
+    "pr:#106",
+    "pr:#107",
     "pr:#99"
    ],
    "status": 402,
    "error": "HTTP 402"
-  },
-  {
-   "base": "https://standards.agenticsystemcore.com/",
-   "sources": [
-    "github:andreibesleaga/agsc-standards-node",
-    "peer:https://agenticsystemcore.com/desk/"
-   ],
-   "status": 404,
-   "error": "HTTP 404"
-  },
-  {
-   "base": "https://standards.agenticsystemcore.com/www/agents/",
-   "sources": [
-    "github:andreibesleaga/agsc-standards-node"
-   ],
-   "status": 404,
-   "error": "HTTP 404"
-  },
-  {
-   "base": "https://thoth.elghaly.dev/",
-   "sources": [
-    "github:elghaly-dev/thoth"
-   ],
-   "status": 404,
-   "error": "HTTP 404"
-  },
-  {
-   "base": "https://workgraph-nine.vercel.app/public/",
-   "sources": [
-    "github:suhailult777/workgraph"
-   ],
-   "status": 404,
-   "error": "HTTP 404"
   },
   {
    "base": "https://worldwideagenticweb.org/",
@@ -16998,90 +16994,13 @@
     "peer:https://cocvn157.github.io/scopegate-studio/",
     "peer:https://open-agentic-web.vercel.app/",
     "peer:https://shutdown-clerk.pages.dev/",
-    "pr:#101",
-    "pr:#102",
+    "pr:#103",
+    "pr:#104",
+    "pr:#105",
+    "pr:#106",
+    "pr:#107",
     "pr:#30",
     "pr:#99"
-   ],
-   "status": 404,
-   "error": "HTTP 404"
-  },
-  {
-   "base": "https://xegheplimo-web.github.io/agentlint/broken-site/",
-   "sources": [
-    "github:xegheplimo-web/agentlint"
-   ],
-   "status": 404,
-   "error": "HTTP 404"
-  },
-  {
-   "base": "https://yablokolabs.com/next-app/public/",
-   "sources": [
-    "github:yablokolabs/yablokolabs"
-   ],
-   "status": 404,
-   "error": "HTTP 404"
-  },
-  {
-   "base": "https://yablokolabs.com/public/",
-   "sources": [
-    "github:yablokolabs/yablokolabs"
-   ],
-   "status": 404,
-   "error": "HTTP 404"
-  },
-  {
-   "base": "https://zuhairhalawa.github.io/gatehouse/demos/kestrel/",
-   "sources": [
-    "github:zuhairhalawa/gatehouse"
-   ],
-   "status": 404,
-   "error": "HTTP 404"
-  },
-  {
-   "base": "https://zuhairhalawa.github.io/gatehouse/demos/lantern-fixed/",
-   "sources": [
-    "github:zuhairhalawa/gatehouse"
-   ],
-   "status": 404,
-   "error": "HTTP 404"
-  },
-  {
-   "base": "https://zuhairhalawa.github.io/gatehouse/demos/lantern/",
-   "sources": [
-    "github:zuhairhalawa/gatehouse"
-   ],
-   "status": 404,
-   "error": "HTTP 404"
-  },
-  {
-   "base": "https://zuhairhalawa.github.io/gatehouse/kestrel/",
-   "sources": [
-    "github:zuhairhalawa/gatehouse"
-   ],
-   "status": 404,
-   "error": "HTTP 404"
-  },
-  {
-   "base": "https://zuhairhalawa.github.io/gatehouse/lantern-fixed/",
-   "sources": [
-    "github:zuhairhalawa/gatehouse"
-   ],
-   "status": 404,
-   "error": "HTTP 404"
-  },
-  {
-   "base": "https://zuhairhalawa.github.io/gatehouse/lantern/",
-   "sources": [
-    "github:zuhairhalawa/gatehouse"
-   ],
-   "status": 404,
-   "error": "HTTP 404"
-  },
-  {
-   "base": "https://zuhairhalawa.github.io/gatehouse/site/",
-   "sources": [
-    "github:zuhairhalawa/gatehouse"
    ],
    "status": 404,
    "error": "HTTP 404"
@@ -17154,6 +17073,14 @@
    ],
    "status": 0,
    "error": "fetch failed"
+  },
+  {
+   "base": "https://standards.agenticsystemcore.com/",
+   "sources": [
+    "peer:https://agenticsystemcore.com/desk/"
+   ],
+   "status": 404,
+   "error": "HTTP 404"
   },
   {
    "base": "https://three-numbers-mcp.onrender.com/",
